@@ -1,0 +1,4093 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de colaboradore": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall de colaboradore": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "exame": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "exame": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "exame.codcoligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "CODCOLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codcoligada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Col": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exame.nomefantasia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "NOMEFANTASIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nomefantasia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Empresa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exame.codigo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "CODIGO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codigo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "exame.chapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "CHAPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "exame.nome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "NOME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Colaborador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exame.dataadmissao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "DATAADMISSAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Admissão": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.dataadmissao.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "DATAADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.dataadmissao.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "DATAADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dataadmissao yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.dataadmissao.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "DATAADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dataadmissao qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.dataadmissao.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "DATAADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dataadmissao mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.dataadmissao.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "DATAADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.funcao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "FUNCAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "funcao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Função dos Colaboradores": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Função": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exame.situacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "SITUACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Situação dos Colaboradores": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Situação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exame.ear": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "EAR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ear": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "auricle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "earlobe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "earhole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lobe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "lug": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "shell-like": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "ability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "sensitivity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "talent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "knack": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "exame.vencimentocnh": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "VENCIMENTOCNH"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimentocnh": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Venc. Toxicológico CNH": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.vencimentocnh.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VENCIMENTOCNH",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimentocnh date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.vencimentocnh.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VENCIMENTOCNH",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimentocnh year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vencimentocnh yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.vencimentocnh.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VENCIMENTOCNH",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimentocnh quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vencimentocnh qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.vencimentocnh.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VENCIMENTOCNH",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimentocnh month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vencimentocnh mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.vencimentocnh.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VENCIMENTOCNH",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimentocnh day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.validademopp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "VALIDADEMOPP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "validademopp": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Venc. MOPP": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.validademopp.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VALIDADEMOPP",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "validademopp date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.validademopp.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VALIDADEMOPP",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "validademopp year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "validademopp yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.validademopp.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VALIDADEMOPP",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "validademopp quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "validademopp qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.validademopp.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VALIDADEMOPP",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "validademopp month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "validademopp mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.validademopp.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VALIDADEMOPP",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "validademopp day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.vencimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "VENCIMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Venc. Toxicológico Empresa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.vencimento.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VENCIMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimento date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.vencimento.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VENCIMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimento year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vencimento yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.vencimento.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VENCIMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimento quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vencimento qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.vencimento.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VENCIMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimento month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vencimento mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.vencimento.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "VENCIMENTO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimento day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "STATUS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Status dos Colaboradores": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Status Geral": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_a_CNH_em_dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com a CNH em Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com a CNH em dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_a_CNH_a_vencer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com a CNH a Vencer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com a CNH a vencer": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_a_CNH_vencida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com a CNH Vencida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com a CNH vencida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_da_empresa_com_o_toxicológico_em_dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com da Empresa com o Toxicológico em Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com da empresa com o toxicológico em dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_da_empresa_com_o_toxicológico_a_vencer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com da Empresa com o Toxicológico a Vencer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com da empresa com o toxicológico a vencer": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_da_empresa_com_o_toxicológico_vencido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com da Empresa com o Toxicológico Vencido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com da empresa com o toxicológico vencido": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_o_MOPP_em_dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com o MOPP em Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com o MOPP em dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_o_MOPP_a_vencer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com o MOPP a Vencer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com o MOPP a vencer": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_o_MOPP_vencido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com o MOPP Vencido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com o MOPP vencido": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "exame.statuscnh": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "STATUSCNH"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "statuscnh": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Status Toxicológicos CNH": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Status Toxicológico CNH": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exame.statusmopp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "STATUSMOPP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "statusmopp": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Status MOPP": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "exame.statusemp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "STATUSEMP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "statusemp": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Status Toxicológicos Empresa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Status Toxicológico Empresa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_EAR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com EAR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com EAR": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de colaboradore com ear": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall de colaboradore com ear": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total de colaboradore com auricle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "total de colaboradore com earlobe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "total de colaboradore com earhole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "total de colaboradore com lobe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "total de colaboradore com lug": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "total de colaboradore com shell-like": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "total de colaboradore com ability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "total de colaboradore com sensitivity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_sem_EAR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores sem EAR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores sem EAR": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de colaboradore sem ear": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall de colaboradore sem ear": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total de colaboradore sem auricle": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "total de colaboradore sem earlobe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "total de colaboradore sem earhole": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "total de colaboradore sem lobe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "total de colaboradore sem lug": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "total de colaboradore sem shell-like": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "total de colaboradore sem ability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        },
+			        {
+			          "total de colaboradore sem sensitivity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.494
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_habilitação_a_vencer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com Habilitação a Vencer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com habilitação a vencer": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_habilitação_em_dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com Habilitação em Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com habilitação em dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores_com_habilitação_vencida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores com Habilitação Vencida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores com habilitação vencida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "exame.dtvenchabilit": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "DTVENCHABILIT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtvenchabilit": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Venc. CNH": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.dtvenchabilit.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "DTVENCHABILIT",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtvenchabilit date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.dtvenchabilit.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "DTVENCHABILIT",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtvenchabilit year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dtvenchabilit yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.dtvenchabilit.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "DTVENCHABILIT",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtvenchabilit quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dtvenchabilit qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.dtvenchabilit.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "DTVENCHABILIT",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtvenchabilit month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dtvenchabilit mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.dtvenchabilit.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "VariationSource": "DTVENCHABILIT",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtvenchabilit day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "exame.statushabilitcnh": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Exames",
+			          "ConceptualProperty": "STATUSHABILITCNH"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "statushabilitcnh": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Status CNH": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "exame_validademopp_date_hierarchy_has_exame_validademopp_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.validademopp.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.validademopp.date_hierarchy"
+			          }
+			        },
+			        "exame.validademopp.quarter": {
+			          "Target": {
+			            "Entity": "exame.validademopp.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.validademopp.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.validademopp.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "validademopp_date_hierarchies_have_validademopp_quarters"
+			        }
+			      ]
+			    },
+			    "exame_validademopp_date_hierarchy_has_exame_validademopp_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.validademopp.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.validademopp.date_hierarchy"
+			          }
+			        },
+			        "exame.validademopp.year": {
+			          "Target": {
+			            "Entity": "exame.validademopp.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.validademopp.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.validademopp.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "validademopp_date_hierarchies_have_validademopp_years"
+			        }
+			      ]
+			    },
+			    "exame_validademopp_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.validademopp": {
+			          "Target": {
+			            "Entity": "exame.validademopp"
+			          }
+			        },
+			        "exame.validademopp.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.validademopp.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.validademopp"
+			            },
+			            "Object": {
+			              "Role": "exame.validademopp.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "validademopps_have_validademopp_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "exame_vencimentocnh_date_hierarchy_has_exame_vencimentocnh_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.vencimentocnh.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.vencimentocnh.date_hierarchy"
+			          }
+			        },
+			        "exame.vencimentocnh.day": {
+			          "Target": {
+			            "Entity": "exame.vencimentocnh.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.vencimentocnh.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.vencimentocnh.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencimentocnh_date_hierarchies_have_vencimentocnh_days"
+			        }
+			      ]
+			    },
+			    "exame_vencimentocnh_date_hierarchy_has_exame_vencimentocnh_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.vencimentocnh.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.vencimentocnh.date_hierarchy"
+			          }
+			        },
+			        "exame.vencimentocnh.month": {
+			          "Target": {
+			            "Entity": "exame.vencimentocnh.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.vencimentocnh.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.vencimentocnh.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencimentocnh_date_hierarchies_have_vencimentocnh_months"
+			        }
+			      ]
+			    },
+			    "exame_vencimentocnh_date_hierarchy_has_exame_vencimentocnh_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.vencimentocnh.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.vencimentocnh.date_hierarchy"
+			          }
+			        },
+			        "exame.vencimentocnh.quarter": {
+			          "Target": {
+			            "Entity": "exame.vencimentocnh.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.vencimentocnh.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.vencimentocnh.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencimentocnh_date_hierarchies_have_vencimentocnh_quarters"
+			        }
+			      ]
+			    },
+			    "exame_vencimentocnh_date_hierarchy_has_exame_vencimentocnh_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.vencimentocnh.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.vencimentocnh.date_hierarchy"
+			          }
+			        },
+			        "exame.vencimentocnh.year": {
+			          "Target": {
+			            "Entity": "exame.vencimentocnh.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.vencimentocnh.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.vencimentocnh.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencimentocnh_date_hierarchies_have_vencimentocnh_years"
+			        }
+			      ]
+			    },
+			    "exame_vencimentocnh_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.vencimentocnh": {
+			          "Target": {
+			            "Entity": "exame.vencimentocnh"
+			          }
+			        },
+			        "exame.vencimentocnh.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.vencimentocnh.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.vencimentocnh"
+			            },
+			            "Object": {
+			              "Role": "exame.vencimentocnh.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencimentocnhs_have_vencimentocnh_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "exame_dataadmissao_date_hierarchy_has_exame_dataadmissao_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.dataadmissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.dataadmissao.date_hierarchy"
+			          }
+			        },
+			        "exame.dataadmissao.day": {
+			          "Target": {
+			            "Entity": "exame.dataadmissao.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.dataadmissao.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.dataadmissao.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataadmissao_date_hierarchies_have_dataadmissao_days"
+			        }
+			      ]
+			    },
+			    "exame_dataadmissao_date_hierarchy_has_exame_dataadmissao_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.dataadmissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.dataadmissao.date_hierarchy"
+			          }
+			        },
+			        "exame.dataadmissao.month": {
+			          "Target": {
+			            "Entity": "exame.dataadmissao.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.dataadmissao.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.dataadmissao.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataadmissao_date_hierarchies_have_dataadmissao_months"
+			        }
+			      ]
+			    },
+			    "exame_dataadmissao_date_hierarchy_has_exame_dataadmissao_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.dataadmissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.dataadmissao.date_hierarchy"
+			          }
+			        },
+			        "exame.dataadmissao.quarter": {
+			          "Target": {
+			            "Entity": "exame.dataadmissao.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.dataadmissao.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.dataadmissao.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataadmissao_date_hierarchies_have_dataadmissao_quarters"
+			        }
+			      ]
+			    },
+			    "exame_dataadmissao_date_hierarchy_has_exame_dataadmissao_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.dataadmissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.dataadmissao.date_hierarchy"
+			          }
+			        },
+			        "exame.dataadmissao.year": {
+			          "Target": {
+			            "Entity": "exame.dataadmissao.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.dataadmissao.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.dataadmissao.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataadmissao_date_hierarchies_have_dataadmissao_years"
+			        }
+			      ]
+			    },
+			    "exame_dataadmissao_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.dataadmissao": {
+			          "Target": {
+			            "Entity": "exame.dataadmissao"
+			          }
+			        },
+			        "exame.dataadmissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.dataadmissao.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.dataadmissao"
+			            },
+			            "Object": {
+			              "Role": "exame.dataadmissao.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataadmissaos_have_dataadmissao_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "exame_has_statushabilitcnh": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.statushabilitcnh": {
+			          "Target": {
+			            "Entity": "exame.statushabilitcnh"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.statushabilitcnh"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_statushabilitcnhs"
+			        }
+			      ]
+			    },
+			    "exame_has_dtvenchabilit": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.dtvenchabilit": {
+			          "Target": {
+			            "Entity": "exame.dtvenchabilit"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.dtvenchabilit"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_dtvenchabilits"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_habilitação_vencida": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_habilitação_vencida": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_habilitação_vencida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_habilitação_vencida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_habilitação_vencida"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_habilitação_em_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_habilitação_em_dia": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_habilitação_em_dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_habilitação_em_dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_habilitação_em_dia"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_habilitação_a_vencer": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_habilitação_a_vencer": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_habilitação_a_vencer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_habilitação_a_vencer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_habilitação_a_vencer"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_sem_EAR": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_sem_EAR": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_sem_EAR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_sem_EAR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_sem_EAR"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_EAR": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_EAR": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_EAR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_EAR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_EAR"
+			        }
+			      ]
+			    },
+			    "exame_has_statusemp": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.statusemp": {
+			          "Target": {
+			            "Entity": "exame.statusemp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.statusemp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_statusemps"
+			        }
+			      ]
+			    },
+			    "exame_has_statusmopp": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.statusmopp": {
+			          "Target": {
+			            "Entity": "exame.statusmopp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.statusmopp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_statusmopps"
+			        }
+			      ]
+			    },
+			    "exame_has_statuscnh": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.statuscnh": {
+			          "Target": {
+			            "Entity": "exame.statuscnh"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.statuscnh"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_statuscnhs"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_o_MOPP_vencido": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_o_MOPP_vencido": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_o_MOPP_vencido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_o_MOPP_vencido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_o_MOPP_vencido"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_o_MOPP_a_vencer": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_o_MOPP_a_vencer": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_o_MOPP_a_vencer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_o_MOPP_a_vencer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_o_MOPP_a_vencer"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_o_MOPP_em_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_o_MOPP_em_dia": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_o_MOPP_em_dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_o_MOPP_em_dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_o_MOPP_em_dia"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_da_empresa_com_o_toxicológico_vencido": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_da_empresa_com_o_toxicológico_vencido": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_da_empresa_com_o_toxicológico_vencido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_da_empresa_com_o_toxicológico_vencido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_da_empresa_com_o_toxicológico_vencido"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_da_empresa_com_o_toxicológico_a_vencer": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_da_empresa_com_o_toxicológico_a_vencer": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_da_empresa_com_o_toxicológico_a_vencer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_da_empresa_com_o_toxicológico_a_vencer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_da_empresa_com_o_toxicológico_a_vencer"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_da_empresa_com_o_toxicológico_em_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_da_empresa_com_o_toxicológico_em_dia": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_da_empresa_com_o_toxicológico_em_dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_da_empresa_com_o_toxicológico_em_dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_da_empresa_com_o_toxicológico_em_dia"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_a_CNH_vencida": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_a_CNH_vencida": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_a_CNH_vencida"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_a_CNH_vencida"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_a_CNH_vencida"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_a_CNH_a_vencer": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_a_CNH_a_vencer": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_a_CNH_a_vencer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_a_CNH_a_vencer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_a_CNH_a_vencer"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores_com_a_CNH_em_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores_com_a_CNH_em_dia": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores_com_a_CNH_em_dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores_com_a_CNH_em_dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores_com_a_CNH_em_dia"
+			        }
+			      ]
+			    },
+			    "exame_has_status": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.status": {
+			          "Target": {
+			            "Entity": "exame.status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_statuses"
+			        }
+			      ]
+			    },
+			    "exame_has_vencimento": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.vencimento": {
+			          "Target": {
+			            "Entity": "exame.vencimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.vencimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_vencimentos"
+			        }
+			      ]
+			    },
+			    "exame_has_validademopp": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.validademopp": {
+			          "Target": {
+			            "Entity": "exame.validademopp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.validademopp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_validademopps"
+			        }
+			      ]
+			    },
+			    "exame_has_vencimentocnh": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.vencimentocnh": {
+			          "Target": {
+			            "Entity": "exame.vencimentocnh"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.vencimentocnh"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_vencimentocnhs"
+			        }
+			      ]
+			    },
+			    "exame_has_ear": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.ear": {
+			          "Target": {
+			            "Entity": "exame.ear"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.ear"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_ears"
+			        }
+			      ]
+			    },
+			    "exame_has_situacao": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.situacao": {
+			          "Target": {
+			            "Entity": "exame.situacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.situacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_situacaos"
+			        }
+			      ]
+			    },
+			    "exame_has_funcao": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.funcao": {
+			          "Target": {
+			            "Entity": "exame.funcao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.funcao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_funcaos"
+			        }
+			      ]
+			    },
+			    "exame_has_dataadmissao": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.dataadmissao": {
+			          "Target": {
+			            "Entity": "exame.dataadmissao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.dataadmissao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_dataadmissaos"
+			        }
+			      ]
+			    },
+			    "exame_has_cpf": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.cpf": {
+			          "Target": {
+			            "Entity": "exame.cpf"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.cpf"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_cpfs"
+			        }
+			      ]
+			    },
+			    "exame_has_nome": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.nome": {
+			          "Target": {
+			            "Entity": "exame.nome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.nome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_nome"
+			        }
+			      ]
+			    },
+			    "exame_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.chapa": {
+			          "Target": {
+			            "Entity": "exame.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_chapa"
+			        }
+			      ]
+			    },
+			    "exame_has_codigo": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.codigo": {
+			          "Target": {
+			            "Entity": "exame.codigo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.codigo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_codigos"
+			        }
+			      ]
+			    },
+			    "exame_has_nomefantasia": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.nomefantasia": {
+			          "Target": {
+			            "Entity": "exame.nomefantasia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.nomefantasia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_nomefantasias"
+			        }
+			      ]
+			    },
+			    "exame_has_codcoligada": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "exame.codcoligada": {
+			          "Target": {
+			            "Entity": "exame.codcoligada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "exame.codcoligada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_codcoligadas"
+			        }
+			      ]
+			    },
+			    "exame_has_medida_total_de_colaboradores": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame": {
+			          "Target": {
+			            "Entity": "exame"
+			          }
+			        },
+			        "medida.total_de_colaboradores": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "exames_have_total_de_colaboradores"
+			        }
+			      ]
+			    },
+			    "exame_validademopp_date_hierarchy_has_exame_validademopp_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.validademopp.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.validademopp.date_hierarchy"
+			          }
+			        },
+			        "exame.validademopp.month": {
+			          "Target": {
+			            "Entity": "exame.validademopp.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.validademopp.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.validademopp.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "validademopp_date_hierarchies_have_validademopp_months"
+			        }
+			      ]
+			    },
+			    "exame_validademopp_date_hierarchy_has_exame_validademopp_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.validademopp.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.validademopp.date_hierarchy"
+			          }
+			        },
+			        "exame.validademopp.day": {
+			          "Target": {
+			            "Entity": "exame.validademopp.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.validademopp.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.validademopp.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "validademopp_date_hierarchies_have_validademopp_days"
+			        }
+			      ]
+			    },
+			    "exame_vencimento_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.vencimento": {
+			          "Target": {
+			            "Entity": "exame.vencimento"
+			          }
+			        },
+			        "exame.vencimento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.vencimento.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.vencimento"
+			            },
+			            "Object": {
+			              "Role": "exame.vencimento.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencimentos_have_vencimento_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "exame_vencimento_date_hierarchy_has_exame_vencimento_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.vencimento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.vencimento.date_hierarchy"
+			          }
+			        },
+			        "exame.vencimento.year": {
+			          "Target": {
+			            "Entity": "exame.vencimento.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.vencimento.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.vencimento.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencimento_date_hierarchies_have_vencimento_years"
+			        }
+			      ]
+			    },
+			    "exame_vencimento_date_hierarchy_has_exame_vencimento_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.vencimento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.vencimento.date_hierarchy"
+			          }
+			        },
+			        "exame.vencimento.quarter": {
+			          "Target": {
+			            "Entity": "exame.vencimento.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.vencimento.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.vencimento.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencimento_date_hierarchies_have_vencimento_quarters"
+			        }
+			      ]
+			    },
+			    "exame_vencimento_date_hierarchy_has_exame_vencimento_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.vencimento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.vencimento.date_hierarchy"
+			          }
+			        },
+			        "exame.vencimento.month": {
+			          "Target": {
+			            "Entity": "exame.vencimento.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.vencimento.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.vencimento.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencimento_date_hierarchies_have_vencimento_months"
+			        }
+			      ]
+			    },
+			    "exame_vencimento_date_hierarchy_has_exame_vencimento_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.vencimento.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.vencimento.date_hierarchy"
+			          }
+			        },
+			        "exame.vencimento.day": {
+			          "Target": {
+			            "Entity": "exame.vencimento.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.vencimento.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.vencimento.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencimento_date_hierarchies_have_vencimento_days"
+			        }
+			      ]
+			    },
+			    "exame_dtvenchabilit_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.dtvenchabilit": {
+			          "Target": {
+			            "Entity": "exame.dtvenchabilit"
+			          }
+			        },
+			        "exame.dtvenchabilit.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.dtvenchabilit.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.dtvenchabilit"
+			            },
+			            "Object": {
+			              "Role": "exame.dtvenchabilit.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtvenchabilits_have_dtvenchabilit_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "exame_dtvenchabilit_date_hierarchy_has_exame_dtvenchabilit_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.dtvenchabilit.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.dtvenchabilit.date_hierarchy"
+			          }
+			        },
+			        "exame.dtvenchabilit.year": {
+			          "Target": {
+			            "Entity": "exame.dtvenchabilit.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.dtvenchabilit.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.dtvenchabilit.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtvenchabilit_date_hierarchies_have_dtvenchabilit_years"
+			        }
+			      ]
+			    },
+			    "exame_dtvenchabilit_date_hierarchy_has_exame_dtvenchabilit_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.dtvenchabilit.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.dtvenchabilit.date_hierarchy"
+			          }
+			        },
+			        "exame.dtvenchabilit.quarter": {
+			          "Target": {
+			            "Entity": "exame.dtvenchabilit.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.dtvenchabilit.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.dtvenchabilit.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtvenchabilit_date_hierarchies_have_dtvenchabilit_quarters"
+			        }
+			      ]
+			    },
+			    "exame_dtvenchabilit_date_hierarchy_has_exame_dtvenchabilit_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.dtvenchabilit.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.dtvenchabilit.date_hierarchy"
+			          }
+			        },
+			        "exame.dtvenchabilit.month": {
+			          "Target": {
+			            "Entity": "exame.dtvenchabilit.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.dtvenchabilit.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.dtvenchabilit.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtvenchabilit_date_hierarchies_have_dtvenchabilit_months"
+			        }
+			      ]
+			    },
+			    "exame_dtvenchabilit_date_hierarchy_has_exame_dtvenchabilit_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Exames"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "exame.dtvenchabilit.date_hierarchy": {
+			          "Target": {
+			            "Entity": "exame.dtvenchabilit.date_hierarchy"
+			          }
+			        },
+			        "exame.dtvenchabilit.day": {
+			          "Target": {
+			            "Entity": "exame.dtvenchabilit.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "exame.dtvenchabilit.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "exame.dtvenchabilit.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtvenchabilit_date_hierarchies_have_dtvenchabilit_days"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

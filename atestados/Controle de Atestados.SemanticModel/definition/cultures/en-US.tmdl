@@ -1,0 +1,2623 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "atestado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "atestado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.coligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "COLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "coligada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.colaborador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "COLABORADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "colaborador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.secao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "SECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Seção": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Seção do Colaborador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.tipoatestado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "TIPOATESTADO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipoatestado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Atestado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.dtinicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "DTINICIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtinicio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Início": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "atestado.dtfim": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "DTFIM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtfim": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Fim": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "atestado.diasatestado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "DIASATESTADOS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "diasatestado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Dias de Atestado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.cid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "CID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cid": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "metrica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "metrica": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_atestados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TotalAtestados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total atestados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalAtestados": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate atestado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall atestado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Total de Atestados": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Atestados": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Período Analisado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "Ano": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "Mês": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.month_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "MonthNo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MonthNo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "month number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.situacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "SITUACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Situação do Colaborador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Situação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.cpf": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "CPF"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cpf": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_colaboradores": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TotalColaboradores"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total colaboradores": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalColaboradores": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate colaboradore": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall colaboradore": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Colaboradores": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.afastados_previdencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "AfastadosPrevidencia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "afastados previdencia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AfastadosPrevidencia": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Afastados por Previdência": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_CI_ds": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TotalCIDs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total CI ds": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalCIDs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ds": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "CI ds": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aggregate ci ds": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall ci ds": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "CIDs": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Ocorrências": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.codtpatestado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "CODTPATESTADO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codtpatestado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.codcid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "CODCID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codcid": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.acidentetrabalho": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "ACIDENTETRABALHO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "acidentetrabalho": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Acidente de Trabalho?": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.a_6_0dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "A60DIAS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "a 6 0dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "A60DIAS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.chapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "CHAPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.codcoligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "CODCOLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codcoligada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Col": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_afastados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TotalAfastados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total afastados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalAfastados": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate afastado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall afastado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Afastados pelo INSS": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "afastado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Afastados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "afastado": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "afastado.codcoligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Afastados",
+			          "ConceptualProperty": "CODCOLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codcoligada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "afastado.nomefantasia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Afastados",
+			          "ConceptualProperty": "NOMEFANTASIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nomefantasia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "afastado.dtinicio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Afastados",
+			          "ConceptualProperty": "DTINICIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtinicio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "atestado.codpessoa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "CODPESSOA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codpessoa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "afastado.codpessoa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Afastados",
+			          "ConceptualProperty": "CODPESSOA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "codpessoa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "afastado.chapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Afastados",
+			          "ConceptualProperty": "CHAPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "afastado.nome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Afastados",
+			          "ConceptualProperty": "NOME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Colaborador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.afastados_acidente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "AfastadosAcidente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "afastados acidente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AfastadosAcidente": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Afastados por Acidente": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "calendario_date_date_hierarchy_has_calendario_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.quarter": {
+			          "Target": {
+			            "Entity": "calendario.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.year": {
+			          "Target": {
+			            "Entity": "calendario.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "calendario_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date": {
+			          "Target": {
+			            "Entity": "calendario.date"
+			          }
+			        },
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "afastado_has_atestado": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "atestado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_atestados"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_afastados_acidente": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.afastados_acidente": {
+			          "Target": {
+			            "Entity": "metrica.afastados_acidente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.afastados_acidente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_afastados_acidente"
+			        }
+			      ]
+			    },
+			    "afastado_has_nome": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "afastado.nome": {
+			          "Target": {
+			            "Entity": "afastado.nome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "afastado.nome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_nome"
+			        }
+			      ]
+			    },
+			    "afastado_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "afastado.chapa": {
+			          "Target": {
+			            "Entity": "afastado.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "afastado.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_chapa"
+			        }
+			      ]
+			    },
+			    "atestado_has_codpessoa": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.codpessoa": {
+			          "Target": {
+			            "Entity": "atestado.codpessoa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.codpessoa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_codpessoas"
+			        }
+			      ]
+			    },
+			    "afastado_has_dtinicio": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "afastado.dtinicio": {
+			          "Target": {
+			            "Entity": "afastado.dtinicio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "afastado.dtinicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_dtinicios"
+			        }
+			      ]
+			    },
+			    "afastado_has_nomefantasia": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "afastado.nomefantasia": {
+			          "Target": {
+			            "Entity": "afastado.nomefantasia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "afastado.nomefantasia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_nomefantasias"
+			        }
+			      ]
+			    },
+			    "afastado_has_codcoligada": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "afastado.codcoligada": {
+			          "Target": {
+			            "Entity": "afastado.codcoligada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "afastado.codcoligada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_codcoligadas"
+			        }
+			      ]
+			    },
+			    "afastado_has_metrica_total_afastados": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "metrica.total_afastados": {
+			          "Target": {
+			            "Entity": "metrica.total_afastados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_afastados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_total_afastados"
+			        }
+			      ]
+			    },
+			    "atestado_has_codcoligada": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.codcoligada": {
+			          "Target": {
+			            "Entity": "atestado.codcoligada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.codcoligada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_codcoligadas"
+			        }
+			      ]
+			    },
+			    "atestado_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.chapa": {
+			          "Target": {
+			            "Entity": "atestado.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_chapa"
+			        }
+			      ]
+			    },
+			    "atestado_has_a_6_0dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.a_6_0dia": {
+			          "Target": {
+			            "Entity": "atestado.a_6_0dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.a_6_0dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_a_6_0dia"
+			        }
+			      ]
+			    },
+			    "atestado_has_acidentetrabalho": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.acidentetrabalho": {
+			          "Target": {
+			            "Entity": "atestado.acidentetrabalho"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.acidentetrabalho"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_acidentetrabalhos"
+			        }
+			      ]
+			    },
+			    "atestado_has_codcid": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.codcid": {
+			          "Target": {
+			            "Entity": "atestado.codcid"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.codcid"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_codcids"
+			        }
+			      ]
+			    },
+			    "atestado_has_codtpatestado": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.codtpatestado": {
+			          "Target": {
+			            "Entity": "atestado.codtpatestado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.codtpatestado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_codtpatestados"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_total_CI_ds": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.total_CI_ds": {
+			          "Target": {
+			            "Entity": "metrica.total_CI_ds"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_CI_ds"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_total_CI_ds"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_afastados_previdencia": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.afastados_previdencia": {
+			          "Target": {
+			            "Entity": "metrica.afastados_previdencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.afastados_previdencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_afastados_previdencia"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_total_colaboradores": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.total_colaboradores": {
+			          "Target": {
+			            "Entity": "metrica.total_colaboradores"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_colaboradores"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_total_colaboradores"
+			        }
+			      ]
+			    },
+			    "atestado_has_cpf": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.cpf": {
+			          "Target": {
+			            "Entity": "atestado.cpf"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.cpf"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_cpfs"
+			        }
+			      ]
+			    },
+			    "atestado_has_situacao": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.situacao": {
+			          "Target": {
+			            "Entity": "atestado.situacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.situacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_situacaos"
+			        }
+			      ]
+			    },
+			    "calendario_has_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.dia": {
+			          "Target": {
+			            "Entity": "calendario.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_dias"
+			        }
+			      ]
+			    },
+			    "calendario_has_month_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.month_no": {
+			          "Target": {
+			            "Entity": "calendario.month_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.month_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_month_noes"
+			        }
+			      ]
+			    },
+			    "calendario_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.month": {
+			          "Target": {
+			            "Entity": "calendario.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_months"
+			        }
+			      ]
+			    },
+			    "calendario_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.year": {
+			          "Target": {
+			            "Entity": "calendario.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_years"
+			        }
+			      ]
+			    },
+			    "calendario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.date": {
+			          "Target": {
+			            "Entity": "calendario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_dates"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_total_atestados": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.total_atestados": {
+			          "Target": {
+			            "Entity": "metrica.total_atestados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_atestados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_total_atestados"
+			        }
+			      ]
+			    },
+			    "atestado_has_cid": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.cid": {
+			          "Target": {
+			            "Entity": "atestado.cid"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.cid"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_cid"
+			        }
+			      ]
+			    },
+			    "atestado_has_diasatestado": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.diasatestado": {
+			          "Target": {
+			            "Entity": "atestado.diasatestado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.diasatestado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_diasatestados"
+			        }
+			      ]
+			    },
+			    "atestado_has_dtfim": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.dtfim": {
+			          "Target": {
+			            "Entity": "atestado.dtfim"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.dtfim"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_dtfims"
+			        }
+			      ]
+			    },
+			    "atestado_has_dtinicio": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.dtinicio": {
+			          "Target": {
+			            "Entity": "atestado.dtinicio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.dtinicio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_dtinicios"
+			        }
+			      ]
+			    },
+			    "atestado_has_tipoatestado": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.tipoatestado": {
+			          "Target": {
+			            "Entity": "atestado.tipoatestado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.tipoatestado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_tipoatestados"
+			        }
+			      ]
+			    },
+			    "atestado_has_secao": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.secao": {
+			          "Target": {
+			            "Entity": "atestado.secao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.secao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_secaos"
+			        }
+			      ]
+			    },
+			    "atestado_has_colaborador": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.colaborador": {
+			          "Target": {
+			            "Entity": "atestado.colaborador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.colaborador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_colaboradors"
+			        }
+			      ]
+			    },
+			    "atestado_has_coligada": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.coligada": {
+			          "Target": {
+			            "Entity": "atestado.coligada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.coligada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_coligadas"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.month": {
+			          "Target": {
+			            "Entity": "calendario.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.day": {
+			          "Target": {
+			            "Entity": "calendario.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

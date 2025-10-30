@@ -1,0 +1,145 @@
+table Medidas
+	lineageTag: 8f498307-b91b-443c-aeda-f750fc5fd85e
+
+	measure 'Total de Colaboradores' = ```
+			
+			    COALESCE(
+			        COUNTROWS(
+			            'Férias'
+			        ),
+			        0
+			    )
+			
+			```
+		formatString: 0
+		lineageTag: 68afde7b-0d18-4957-8172-e09e9e67c9a2
+
+	measure 'Com Férias Vencidas' = ```
+			
+			    COALESCE(
+			        CALCULATE(
+			            COUNTROWS('Férias'),
+			            'Férias'[STATUS] = "Férias Vencidas"
+			        ),
+			        0
+			    )
+			
+			```
+		formatString: 0
+		lineageTag: 2416ad5c-fe9a-4260-8da2-bf83fc0ec86c
+
+	measure 'Com Férias à Vencer' = ```
+			
+			    COALESCE(
+			        CALCULATE(
+			            COUNTROWS('Férias'),
+			            'Férias'[STATUS] = "Férias à Vencer"
+			        ),
+			        0
+			    )
+			
+			```
+		formatString: 0
+		lineageTag: 3f7019d9-85ae-4a8d-a01e-0685e2f78b0f
+
+	measure 'Com Férias Abonadas' = ```
+			
+			    COALESCE(
+			        CALCULATE(
+			            COUNTROWS('Férias'),
+			            'Férias'[STATUS] = "Férias Abonadas"
+			        ),
+			        0
+			    )
+			
+			```
+		formatString: 0
+		lineageTag: e98eaabe-a785-4720-8ff9-cc7bd2530357
+
+	measure 'Com Férias Parciais' = ```
+			
+			    COALESCE(
+			        CALCULATE(
+			            COUNTROWS('Férias'),
+			            'Férias'[STATUS] = "Férias Parciais"
+			        ),
+			        0
+			    )
+			
+			```
+		formatString: 0
+		lineageTag: d732f40d-93a2-465a-83ac-db3c1494c108
+
+	measure 'Saldo Período Futuro' = ```
+			
+			VAR DataRef =
+			    CALCULATE(
+			        MAX('Calendário'[Date]),
+			        ALLSELECTED('Calendário')
+			    )
+			VAR AvosCompletos =
+			    DATEDIFF(
+			        MIN('Férias'[INICIOPERAQUIS]),
+			        DataRef,
+			        MONTH
+			    ) 
+			    - IF(
+			        DAY(DataRef) < DAY(MIN('Férias'[INICIOPERAQUIS])),
+			        1,
+			        0
+			    )
+			VAR Saldo =
+			    IF(
+			        DataRef > MAX('Férias'[FIMPERAQUIS]),
+			        SWITCH(
+			            TRUE(),
+			            MAX('Férias'[FALTAS]) <= 5, AvosCompletos * 2.5,
+			            MAX('Férias'[FALTAS]) <= 14, AvosCompletos * 2.0,
+			            MAX('Férias'[FALTAS]) <= 23, AvosCompletos * 1.5,
+			            MAX('Férias'[FALTAS]) <= 32, AvosCompletos,
+			            0
+			        ) - MAX('Férias'[FERIASABONADAS]),
+			        SWITCH(
+			            TRUE(),
+			            MAX('Férias'[FALTAS]) <= 5, AvosCompletos * 2.5,
+			            MAX('Férias'[FALTAS]) <= 14, AvosCompletos * 2,
+			            MAX('Férias'[FALTAS]) <= 23, AvosCompletos * 1.5,
+			            MAX('Férias'[FALTAS]) <= 32, AvosCompletos,
+			            0
+			        ) - MAX('Férias'[FERIASABONADAS])
+			    )
+			RETURN
+			Saldo
+			
+			```
+		lineageTag: 61eca265-8178-44e0-afb2-6757bd29b74a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Com Férias à Vencer em 6 meses' = ```
+			
+			    COALESCE(
+			        CALCULATE(
+			            COUNTROWS('Férias'),
+			            'Férias'[STATUS] = "Férias à Vencer",
+			            TODAY() >= 'Férias'[LIMITEGOZO6MESES]
+			        ),
+			        0
+			    )
+			
+			```
+		formatString: 0
+		lineageTag: d1302dc6-112c-4947-ba6f-15f6b13a7b2e
+
+	partition Medidas = m
+		mode: import
+		source =
+				let
+				    Fonte = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Coluna 1" = _t]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"Coluna 1", type text}}),
+				    #"Colunas Removidas" = Table.RemoveColumns(#"Tipo Alterado",{"Coluna 1"})
+				in
+				    #"Colunas Removidas"
+
+	annotation PBI_ResultType = Table
+

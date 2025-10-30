@@ -1,0 +1,185 @@
+table Férias
+	lineageTag: 2801dcde-b583-483d-b0e3-2bb94ac57f0f
+
+	column COLIGADA
+		dataType: string
+		lineageTag: 2db5171e-cdeb-40f4-9ca5-4f19d522c671
+		summarizeBy: none
+		sourceColumn: COLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: 6c6f41af-2a93-4f1c-8cb8-d18f452020e7
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: bf5f73c2-1f78-4056-8fce-b43c23fe1deb
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: 4d6088ca-a28a-4a87-a594-8d53a460f071
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SITUACAO
+		dataType: string
+		lineageTag: c9fc70e6-6ec9-443e-8606-f65359943a75
+		summarizeBy: none
+		sourceColumn: SITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column HOJE
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 91343be4-671c-4385-abb4-facc65adebe9
+		summarizeBy: none
+		sourceColumn: HOJE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column DATAADMISSAO
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 7bcee91b-bcf4-4a84-a8b2-6a15ba73c5c3
+		summarizeBy: none
+		sourceColumn: DATAADMISSAO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column INICIOPERAQUIS
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 89b9c9d1-55ff-4697-8ca1-af0e2473e655
+		summarizeBy: none
+		sourceColumn: INICIOPERAQUIS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column FIMPERAQUIS
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: b2245b68-56fb-415d-85a1-75e7392c0f5c
+		summarizeBy: none
+		sourceColumn: FIMPERAQUIS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column FIMPERCONCESSIVO
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: 5aa4769d-7a53-4962-a7c4-7d1f0ae9dda0
+		summarizeBy: none
+		sourceColumn: FIMPERCONCESSIVO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column LIMITEGOZO6MESES
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: c5a52a2a-7527-4b17-b70b-1677f3fbbce6
+		summarizeBy: none
+		sourceColumn: LIMITEGOZO6MESES
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column LIMITEGOZO
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: fb48b020-7110-4d7c-b53b-d052463d5d03
+		summarizeBy: none
+		sourceColumn: LIMITEGOZO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column FERIASABONADAS
+		dataType: double
+		lineageTag: 16fb9332-cdf7-457f-80f8-09ec03f7e238
+		summarizeBy: sum
+		sourceColumn: FERIASABONADAS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column FALTAS
+		dataType: double
+		lineageTag: 959cb68c-f030-4182-b215-bc6f379cfeb7
+		summarizeBy: sum
+		sourceColumn: FALTAS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SALDOPERIODO
+		dataType: double
+		lineageTag: 80542692-3dd5-4718-b857-d5e991ed2233
+		summarizeBy: sum
+		sourceColumn: SALDOPERIODO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column STATUS
+		dataType: string
+		lineageTag: 70910aae-9b00-4ee4-855e-f5dea157629d
+		summarizeBy: none
+		sourceColumn: STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Férias = m
+		mode: import
+		source =
+				let
+				    Fonte = Sql.Database("192.168.42.153", "corpore", [Query="WITH TEMPTABLE AS (#(lf)    SELECT #(lf)#(tab)#(tab)ROW_NUMBER() OVER (PARTITION BY PFUNC.CHAPA, PFUNC.CODCOLIGADA ORDER BY PFUFERIAS.FIMPERAQUIS DESC) AS ID,#(lf)#(tab)#(tab)PFUNC.CODCOLIGADA AS COLIGADA,#(lf)#(tab)#(tab)PFUNC.CHAPA,#(lf)#(tab)#(tab)PFUNC.NOME,#(lf)#(tab)#(tab)PSECAO.DESCRICAO AS SECAO,#(lf)#(tab)#(tab)PCODSITUACAO.DESCRICAO AS SITUACAO,#(lf)#(tab)#(tab)CAST(GETDATE() AS DATE) AS HOJE,#(lf)#(tab)#(tab)PFUNC.DATAADMISSAO,#(lf)#(tab)#(tab)PFUFERIAS.INICIOPERAQUIS,#(lf)#(tab)#(tab)PFUFERIAS.FIMPERAQUIS,#(lf)#(lf)#(tab)#(tab)DATEADD(YEAR, 1, PFUFERIAS.FIMPERAQUIS) AS FIMPERCONCESSIVO,#(lf)#(lf)#(tab)#(tab)DATEADD(DAY, 185, PFUFERIAS.FIMPERAQUIS) AS LIMITEGOZO6MESES,#(lf)#(lf)#(tab)#(tab)DATEADD(DAY, 335, PFUFERIAS.FIMPERAQUIS) AS LIMITEGOZO,#(lf)#(lf)#(tab)#(tab)(DATEDIFF(MONTH, INICIOPERAQUIS, CAST(GETDATE() AS DATE)) - IIF(DAY(CAST(GETDATE() AS DATE)) < DAY(INICIOPERAQUIS), 1, 0)) AS AVOSCOMPLETOS,#(lf)#(lf)#(tab)#(tab)(SELECT ISNULL(SUM(PFP.NRODIASFERIAS),0) + ISNULL(SUM(PFP.NRODIASABONO),0) FROM PFUFERIASPER PFP WHERE PFP.CODCOLIGADA = PFUFERIAS.CODCOLIGADA AND PFP.CHAPA = PFUFERIAS.CHAPA AND PFP.FIMPERAQUIS = PFUFERIAS.FIMPERAQUIS) AS FERIASABONADAS,#(lf)#(lf)#(tab)#(tab)(SELECT ISNULL(SUM(REF),0) FROM PFMOVCC WHERE CODEVENTO = '0008' AND CODCOLIGADA = PFUNC.CODCOLIGADA AND CHAPA = PFUNC.CHAPA AND ((ANOCOMP = YEAR(PFUFERIAS.INICIOPERAQUIS) AND MESCOMP > MONTH(PFUFERIAS.INICIOPERAQUIS)) OR (ANOCOMP = YEAR(PFUFERIAS.FIMPERAQUIS) AND MESCOMP <= MONTH(PFUFERIAS.FIMPERAQUIS)))) AS FALTAS#(lf)#(tab)#(tab)#(lf)#(tab)FROM PFUNC#(lf)#(tab)#(tab)JOIN PCODSITUACAO ON PCODSITUACAO.CODCLIENTE = PFUNC.CODSITUACAO#(lf)#(tab)#(tab)JOIN PSECAO ON PSECAO.CODCOLIGADA = PFUNC.CODCOLIGADA AND PSECAO.CODIGO = PFUNC.CODSECAO#(lf)#(tab)#(tab)JOIN PFUFERIAS ON PFUFERIAS.CODCOLIGADA = PFUNC.CODCOLIGADA AND PFUFERIAS.CHAPA = PFUNC.CHAPA#(lf)#(tab)#(tab)FULL JOIN PFUFERIASPER ON PFUFERIASPER.CODCOLIGADA = PFUFERIAS.CODCOLIGADA AND PFUFERIASPER.CHAPA = PFUFERIAS.CHAPA AND PFUFERIASPER.FIMPERAQUIS = PFUFERIAS.FIMPERAQUIS#(lf)#(lf)#(tab)WHERE #(lf)#(tab)#(tab)PFUNC.CODSITUACAO <> 'D'#(lf)),#(lf)#(lf)TEMPTABLE2 AS (#(lf)#(tab)SELECT #(lf)#(tab)#(tab)*,#(lf)#(lf)#(tab)#(tab)CASE #(lf)#(tab)#(tab)#(tab)WHEN HOJE > FIMPERAQUIS THEN#(lf)#(tab)#(tab)#(tab)#(tab)(CASE #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)WHEN FALTAS <= 5 THEN 30 #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)WHEN FALTAS BETWEEN 6 AND 14 THEN 24 #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)WHEN FALTAS BETWEEN 15 AND 23 THEN 18 #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)WHEN FALTAS BETWEEN 24 AND 32 THEN 12 #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)ELSE 0 #(lf)#(tab)#(tab)#(tab)#(tab)END) - FERIASABONADAS#(lf)#(tab)#(tab)#(tab)ELSE #(lf)#(tab)#(tab)#(tab)#(tab)(CASE #(lf)#(tab)#(tab)#(tab)#(tab)#(tab)WHEN FALTAS <= 5 THEN (AVOSCOMPLETOS * 2.5)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)WHEN FALTAS BETWEEN 6 AND 14 THEN (AVOSCOMPLETOS * 2)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)WHEN FALTAS BETWEEN 15 AND 23 THEN (AVOSCOMPLETOS * 1.5)#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)WHEN FALTAS BETWEEN 24 AND 32 THEN AVOSCOMPLETOS#(lf)#(tab)#(tab)#(tab)#(tab)#(tab)ELSE 0#(lf)#(tab)#(tab)#(tab)#(tab)END) - FERIASABONADAS#(lf)#(tab)#(tab)END AS SALDOPERIODO#(lf)#(lf)#(tab)FROM TEMPTABLE WHERE ID = 1#(lf)),#(lf)#(lf)TEMPTABLE3 AS (#(lf)#(tab)SELECT #(lf)#(tab)#(tab)COLIGADA,#(lf)#(tab)#(tab)CHAPA,#(lf)#(tab)#(tab)NOME,#(lf)#(tab)#(tab)SECAO,#(lf)#(tab)#(tab)SITUACAO,#(lf)#(tab)#(tab)HOJE,#(lf)#(tab)#(tab)DATAADMISSAO,#(lf)#(tab)#(tab)INICIOPERAQUIS,#(lf)#(tab)#(tab)FIMPERAQUIS,#(lf)#(tab)#(tab)FIMPERCONCESSIVO,#(lf)#(tab)#(tab)LIMITEGOZO6MESES,#(lf)#(tab)#(tab)LIMITEGOZO,#(lf)#(tab)#(tab)FERIASABONADAS,#(lf)#(tab)#(tab)FALTAS,#(lf)#(tab)#(tab)SALDOPERIODO,#(lf)#(lf)#(tab)#(tab)CASE #(lf)#(tab)#(tab)#(tab)WHEN FIMPERAQUIS < HOJE AND SALDOPERIODO <= 0 THEN 'Férias Abonadas'#(lf)#(tab)#(tab)#(tab)WHEN LIMITEGOZO < HOJE AND SALDOPERIODO > 0 THEN 'Férias Vencidas' #(lf)#(tab)#(tab)#(tab)WHEN FIMPERAQUIS < HOJE AND SALDOPERIODO > 0 THEN 'Férias à Vencer'#(lf)#(tab)#(tab)#(tab)WHEN FIMPERAQUIS >= HOJE THEN 'Férias Parciais'#(lf)#(tab)#(tab)#(tab)ELSE 'Indeterminado'#(lf)#(tab)#(tab)END AS STATUS#(lf)#(lf)#(tab)FROM TEMPTABLE2#(lf))#(lf)#(lf)SELECT * FROM TEMPTABLE3 ORDER BY NOME#(lf)"]),
+				    #"Tipo Alterado" = Table.TransformColumnTypes(Fonte,{{"COLIGADA", type text}, {"HOJE", type date}, {"DATAADMISSAO", type date}, {"INICIOPERAQUIS", type date}, {"FIMPERAQUIS", type date}, {"FIMPERCONCESSIVO", type date}, {"LIMITEGOZO6MESES", type date}, {"LIMITEGOZO", type date}})
+				in
+				    #"Tipo Alterado"
+
+	annotation PBI_NavigationStepName = Navegação
+
+	annotation PBI_ResultType = Table
+

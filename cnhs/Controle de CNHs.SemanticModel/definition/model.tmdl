@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: pt-BR
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Medidas","Exames"]
+
+annotation PBI_ProTooling = ["WebModelingEdit","DevMode"]
+
+ref table DateTableTemplate_c7b57160-bf00-4b24-bbac-7e59b07618b5
+ref table Medidas
+ref table Exames
+ref table LocalDateTable_a07d4d92-41de-40fb-834e-e942e62e0ef9
+ref table LocalDateTable_e281f4ae-5c82-4d30-b117-34b96c70a7e6
+ref table LocalDateTable_1829082e-179e-447a-8b1c-c0a76cbf1925
+ref table LocalDateTable_3468674b-091f-49b2-b918-05d578d694ee
+ref table LocalDateTable_dda5bfbc-79b6-4f4e-9a01-87e7365413a2
+
+ref cultureInfo en-US
+

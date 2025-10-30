@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Controle de CNHs"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "97683f91-d1cf-4cd6-b082-dcb83cf7d1f0"
+  }
+}

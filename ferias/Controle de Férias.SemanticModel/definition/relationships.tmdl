@@ -1,0 +1,44 @@
+relationship 3de02902-0787-496a-8d6b-d44738335fa6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendário.Date
+	toColumn: LocalDateTable_44ddfb2f-75d5-495d-98f8-a59b88ab7201.Date
+
+relationship 3166fb6b-c7a2-19f3-e6b7-7a6ab324d702
+	fromColumn: Férias.DATAADMISSAO
+	toColumn: Calendário.Date
+
+relationship e4efdab6-243b-8c74-9db3-025f51fac325
+	isActive: false
+	fromColumn: Férias.FERIASABONADAS
+	toColumn: Calendário.Date
+
+relationship 8c3c3d85-cbcc-62f7-3452-2f9883b7ffbb
+	isActive: false
+	fromColumn: Férias.FIMPERCONCESSIVO
+	toColumn: Calendário.Date
+
+relationship 744f9a7c-0c13-3ccf-2464-6d88e767a393
+	isActive: false
+	fromColumn: Férias.FIMPERAQUIS
+	toColumn: Calendário.Date
+
+relationship 107970b6-15b6-b577-e941-65ffd2d6fdca
+	isActive: false
+	fromColumn: Férias.HOJE
+	toColumn: Calendário.Date
+
+relationship 8c2dfab3-37ba-e0b2-097c-c62d5f66104b
+	isActive: false
+	fromColumn: Férias.INICIOPERAQUIS
+	toColumn: Calendário.Date
+
+relationship 4bb0ebbc-9ed9-43c7-6041-c7eec4c2f02b
+	isActive: false
+	fromColumn: Férias.LIMITEGOZO
+	toColumn: Calendário.Date
+
+relationship 184bfb7e-0e01-4093-7b04-e12e0807682d
+	isActive: false
+	fromColumn: Férias.LIMITEGOZO6MESES
+	toColumn: Calendário.Date
+

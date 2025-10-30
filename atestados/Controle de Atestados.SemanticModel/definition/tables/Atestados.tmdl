@@ -1,0 +1,182 @@
+table Atestados
+	lineageTag: 01a7215c-de16-4843-9b74-5e7e01b236e2
+
+	column COLIGADA
+		dataType: string
+		lineageTag: d2d3d01d-a93b-43ba-80c9-5abed0fc453e
+		summarizeBy: none
+		sourceColumn: COLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLABORADOR
+		dataType: string
+		lineageTag: 5e32dbbd-57f5-4d93-a47e-cae96fcd3ee7
+		summarizeBy: none
+		sourceColumn: COLABORADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: 8f7aacff-b60b-4fcc-9b55-c038944079e4
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPOATESTADO
+		dataType: string
+		lineageTag: 9fb51ed9-d355-4f01-89c9-af38c2949273
+		summarizeBy: none
+		sourceColumn: TIPOATESTADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DTINICIO
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 6b3a5bd4-0557-4d9c-9ecb-1411d2054489
+		summarizeBy: none
+		sourceColumn: DTINICIO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DTFIM
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 7c4c24cf-cf57-4197-a9a7-3f38b4663080
+		summarizeBy: none
+		sourceColumn: DTFIM
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DIASATESTADOS
+		dataType: int64
+		formatString: 0
+		lineageTag: a10880a3-253c-41f9-a4de-ea1f8505afa2
+		summarizeBy: sum
+		sourceColumn: DIASATESTADOS
+
+		annotation SummarizationSetBy = Automatic
+
+	column CID
+		dataType: string
+		lineageTag: 1b034841-6f8c-4d72-927d-974cf2e3459c
+		summarizeBy: none
+		sourceColumn: CID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SITUACAO
+		dataType: string
+		lineageTag: ba6c8aa1-18b4-46c9-8340-c0d099c89c2d
+		summarizeBy: none
+		sourceColumn: SITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CPF
+		dataType: string
+		lineageTag: 1813e3fa-e3a0-429f-8ee8-794f5c3b35ad
+		summarizeBy: none
+		sourceColumn: CPF
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODTPATESTADO
+		dataType: string
+		lineageTag: 0339a3d6-be50-4403-95e9-32aa3e692ad8
+		summarizeBy: none
+		sourceColumn: CODTPATESTADO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODCID
+		dataType: string
+		lineageTag: c97be313-d33a-485e-bad2-3a61c1565c8c
+		summarizeBy: none
+		sourceColumn: CODCID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ACIDENTETRABALHO = ```
+			
+			IF(
+			    'Atestados'[CODTPATESTADO] = "02",
+			    "Sim",
+			    "Não"
+			)
+			
+			```
+		lineageTag: eb69cea6-e748-401f-913f-e021f7e248f1
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column A60DIAS = ```
+			
+			IF(
+			    'Atestados'[DTFIM] > TODAY() - 60,
+			    "Sim",
+			    "Não"
+			)
+			
+			```
+		lineageTag: 1e4f4e5d-0209-4aeb-b932-ece58d3c12d6
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: 26a202a6-4b04-4a9a-9a3a-619bd0f3cfbf
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 986a5a8f-4351-4b42-9949-fe15079e821c
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODPESSOA
+		dataType: string
+		lineageTag: 63977876-2ee2-4310-ad79-5b354ac46163
+		summarizeBy: none
+		sourceColumn: CODPESSOA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Atestados = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT#(tab)#(lf)#(tab)#(tab)VATESTADO.CODCOLIGADA,#(lf)#(tab)#(tab)GCOLIGADA.NOMEFANTASIA AS COLIGADA,#(lf)#(tab)#(tab)VATESTADO.CODPESSOA,#(lf)#(tab)#(tab)VCHAPAATESTADO.CHAPA,#(lf)#(tab)#(tab)PPESSOA.NOME AS COLABORADOR,#(lf)#(tab)#(tab)PPESSOA.CPF,#(lf)#(tab)#(tab)PSECAO.DESCRICAO AS SECAO,#(lf)#(tab)#(tab)PCODSITUACAO.DESCRICAO AS SITUACAO,#(lf)#(tab)#(tab)VTIPOATESTADO.CODTPATESTADO,#(lf)#(tab)#(tab)VTIPOATESTADO.NOMETPATESTADO AS TIPOATESTADO,#(lf)#(tab)#(tab)VATESTADO.DTINICIO,#(lf)#(tab)#(tab)VATESTADO.DTFINAL AS DTFIM,#(lf)#(tab)#(tab)DATEDIFF(DAY, VATESTADO.DTINICIO, VATESTADO.DTFINAL) + 1 AS DIASATESTADOS,#(lf)#(tab)#(tab)VCID.CID AS CODCID,#(lf)#(tab)#(tab)VCID.DESCRICAOCID AS CID#(lf)#(tab)#(tab)#(lf)FROM VATESTADO#(lf)#(tab)#(tab)JOIN VTIPOATESTADO ON #(lf)#(tab)#(tab)#(tab)#(tab)VTIPOATESTADO.CODTPATESTADO=VATESTADO.CODTPATESTADO#(lf)#(tab)#(tab)LEFT JOIN VCID ON #(lf)#(tab)#(tab)#(tab)#(tab)VCID.CID=VATESTADO.CID#(lf)#(tab)#(tab)LEFT JOIN VCHAPAATESTADO ON #(lf)#(tab)#(tab)#(tab)#(tab)VATESTADO.CODPESSOA=VCHAPAATESTADO.CODPESSOA #(lf)#(tab)#(tab)#(tab)#(tab)AND VATESTADO.SEQATESTADO=VCHAPAATESTADO.SEQATESTADO #(lf)#(tab)#(tab)#(tab)#(tab)AND VATESTADO.DTINICIO=VCHAPAATESTADO.DTINICIO #(lf)#(tab)#(tab)#(tab)#(tab)AND VATESTADO.CODTPATESTADO=VCHAPAATESTADO.CODTPATESTADO#(lf)#(tab)#(tab)JOIN GCOLIGADA ON #(lf)#(tab)#(tab)#(tab)#(tab)GCOLIGADA.CODCOLIGADA=VATESTADO.CODCOLIGADA#(lf)#(tab)#(tab)JOIN PPESSOA ON #(lf)#(tab)#(tab)#(tab)#(tab)PPESSOA.CODIGO=VATESTADO.CODPESSOA#(lf)#(tab)#(tab)LEFT JOIN PFUNC ON#(lf)#(tab)#(tab)#(tab)#(tab)PFUNC.CODCOLIGADA=VCHAPAATESTADO.CODCOLIGADA#(lf)#(tab)#(tab)#(tab)#(tab)AND PFUNC.CHAPA=VCHAPAATESTADO.CHAPA#(lf)#(tab)#(tab)LEFT JOIN PSECAO ON #(lf)#(tab)#(tab)#(tab)#(tab)PSECAO.CODIGO=PFUNC.CODSECAO #(lf)#(tab)#(tab)#(tab)#(tab)AND PSECAO.CODCOLIGADA=PFUNC.CODCOLIGADA#(lf)#(tab)#(tab)LEFT JOIN PCODSITUACAO ON #(lf)#(tab)#(tab)#(tab)#(tab)PCODSITUACAO.CODCLIENTE=PFUNC.CODSITUACAO#(lf)#(lf)ORDER BY #(lf)#(tab)#(tab)PPESSOA.NOME,#(lf)#(tab)#(tab)VATESTADO.DTINICIO#(lf)"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"DTINICIO", type date}, {"DTFIM", type date}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type","Placas/Corte/Pintura","Placas",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","Administracao","Administrativo",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","Metalurgica","Metalúrgica",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","Placas/Impressao","Placas",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","Placas/Serigrafia","Placas",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4","PARKING E GUARDA DE VEICULOS","Trânsito",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value6" = Table.ReplaceValue(#"Replaced Value5","Transito","Trânsito",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value7" = Table.ReplaceValue(#"Replaced Value6","Obra Conserva São José","Serviços/Obras",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value8" = Table.ReplaceValue(#"Replaced Value7","Obra Pref Vitoria Lote 02","Serviços/Obras",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value9" = Table.ReplaceValue(#"Replaced Value8","Obra Pref Vitoria Lote 01","Serviços/Obras",Replacer.ReplaceText,{"SECAO"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Replaced Value9",{{"CODCOLIGADA", type text}, {"CODPESSOA", type text}})
+				in
+				    #"Changed Type1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

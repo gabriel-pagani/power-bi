@@ -1,0 +1,55 @@
+table Metricas
+	lineageTag: 486b2cb6-4d63-4300-ae2c-a731b5e1d11c
+
+	measure TotalAtestados = COUNTROWS(Atestados)
+		formatString: 0
+		lineageTag: d5157145-8503-4865-b15c-b380f8479850
+
+	measure TotalColaboradores = DISTINCTCOUNT(Atestados[CPF])
+		formatString: 0
+		lineageTag: 05aac298-bb72-4695-a142-86ff6fbeb230
+
+	measure AfastadosPrevidencia = ```
+			
+			CALCULATE(
+			    DISTINCTCOUNT(Atestados[CPF]),
+			    Atestados[SITUACAO] = "Af.Previdencia"
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 7db22a7a-ea90-483a-99c4-8e983294483c
+
+	measure TotalCIDs = COUNT(Atestados[CID])
+		formatString: 0
+		lineageTag: a478f07f-ce16-4a00-acc9-76cb7b6e6832
+
+	measure TotalAfastados = COUNTROWS(Afastados)
+		formatString: 0
+		lineageTag: 6ac06e8f-7865-45ca-9218-9e78686fd71a
+
+	measure AfastadosAcidente = ```
+			
+			CALCULATE(
+			    DISTINCTCOUNT(Atestados[CPF]),
+			    Atestados[SITUACAO] = "Af.Ac.Trabalho"
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 9712f652-4e1c-4983-b23a-e525a99754a9
+
+	partition Metricas = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

@@ -1,0 +1,23 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Atestados","Metricas","Afastados"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Atestados
+ref table DateTableTemplate_24d3c611-59d3-4ff8-b289-cc763bc784a7
+ref table Metricas
+ref table Calendario
+ref table LocalDateTable_5f21e2c5-85d6-484f-a7d8-34e49836e48b
+ref table Afastados
+
+ref cultureInfo en-US
+

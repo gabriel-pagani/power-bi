@@ -1,0 +1,22 @@
+model Model
+	culture: pt-BR
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Férias","Medidas"]
+
+annotation PBI_ProTooling = ["DaxQueryView_Desktop","DevMode"]
+
+ref table Férias
+ref table Medidas
+ref table Calendário
+ref table DateTableTemplate_aba333b2-b2d3-485f-bbf2-20f73dd50389
+ref table LocalDateTable_44ddfb2f-75d5-495d-98f8-a59b88ab7201
+
+ref cultureInfo pt-BR
+

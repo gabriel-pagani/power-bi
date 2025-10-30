@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Controle de Atestados"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "7cb5526f-f03e-4e9d-8558-1028c8208bd0"
+  }
+}

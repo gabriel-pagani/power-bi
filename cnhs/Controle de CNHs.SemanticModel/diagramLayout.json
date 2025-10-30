@@ -1,0 +1,49 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 708,
+            "y": 195.078125
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "87e3d212-5fd2-413a-962e-1237d9bf9b44",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 458,
+            "y": 195.484375
+          },
+          "nodeIndex": "Exames",
+          "nodeLineageTag": "86b9517e-cbed-4dd6-ba94-31b9d4cdc215",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 2,
+          "expandedHeight": 300
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": true,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

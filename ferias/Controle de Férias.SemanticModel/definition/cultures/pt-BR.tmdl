@@ -1,0 +1,2318 @@
+cultureInfo pt-BR
+
+	linguisticMetadata =
+			{
+			  "Version": "3.5.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "f_féria": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "féria": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_féria.coligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "COLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "coligada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_féria.chapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "CHAPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_féria.nome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "NOME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_féria.secao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "SECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "f_féria.situacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "SITUACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Situação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "f_féria.hoje": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "HOJE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hoje": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "f_féria.dataadmissao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "DATAADMISSAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "f_féria.inicioperaquis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "INICIOPERAQUIS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "inicioperaquis": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "f_féria.fimperaquis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "FIMPERAQUIS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fimperaquis": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Fim Período": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "f_féria.fimperconcessivo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "FIMPERCONCESSIVO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fimperconcessivo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "f_féria.limitegozo_6mese": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "LIMITEGOZO6MESES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "limitegozo 6mese": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "LIMITEGOZO6MESES": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "f_féria.limitegozo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "LIMITEGOZO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "limitegozo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Limite Gozo": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "f_féria.feriasabonada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "FERIASABONADAS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "feriasabonada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Férias Abonadas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "f_féria.falta": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "FALTAS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "falta": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Faltas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "f_féria.saldoperiodo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "SALDOPERIODO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "saldoperiodo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Saldo Período": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "f_féria.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "STATUS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_de_colaboradores": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Total de Colaboradores"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de colaboradores": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de colaboradore": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall de colaboradore": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "medida.com_férias_vencidas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Com Férias Vencidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "com férias vencidas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.com_férias_à_vencer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Com Férias à Vencer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "com férias à vencer": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.com_férias_abonadas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Com Férias Abonadas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "com férias abonadas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.com_férias_parciais": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Com Férias Parciais"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "com férias parciais": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.saldo_período_futuro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Saldo Período Futuro"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "saldo período futuro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Saldo Futuro": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendário"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendário": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendário",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "d_calendario.date.variation.hierarquia_de_data": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendário",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hierarquia de data": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarquia de information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "hierarquia de document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "hierarquia de record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.date.variation.hierarquia_de_data.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendário",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date ano": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period ano": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.date.variation.hierarquia_de_data.trimestre": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendário",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Trimestre"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date trimestre": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period trimestre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.date.variation.hierarquia_de_data.mê": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendário",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Mês"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mê": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period mê": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.date.variation.hierarquia_de_data.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendário",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Hierarquia de datas",
+			          "HierarchyLevel": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendário",
+			          "ConceptualProperty": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.numero_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendário",
+			          "ConceptualProperty": "Numero_Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "numero me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Numero_Mes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendário",
+			          "ConceptualProperty": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "d_calendario.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendário",
+			          "ConceptualProperty": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "d_calendario_date_variation_hierarquia_de_data_mê_has_d_calendario_date_variation_hierarquia_de_data_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.date.variation.hierarquia_de_data.mê": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data.mê"
+			          }
+			        },
+			        "d_calendario.date.variation.hierarquia_de_data.dia": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    },
+			    "d_calendario_date_variation_hierarquia_de_data_trimestre_has_d_calendario_date_variation_hierarquia_de_data_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.date.variation.hierarquia_de_data.trimestre": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			          }
+			        },
+			        "d_calendario.date.variation.hierarquia_de_data.mê": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
+			        }
+			      ]
+			    },
+			    "d_calendario_date_variation_hierarquia_de_data_ano_has_d_calendario_date_variation_hierarquia_de_data_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.date.variation.hierarquia_de_data.ano": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data.ano"
+			          }
+			        },
+			        "d_calendario.date.variation.hierarquia_de_data.trimestre": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "anos_have_trimestres"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_anos"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_are_in_anos"
+			        }
+			      ]
+			    },
+			    "d_calendario_date_variation_hierarquia_de_data_has_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.date.variation.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data"
+			          }
+			        },
+			        "d_calendario.date.variation.hierarquia_de_data.dia": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_dias"
+			        }
+			      ]
+			    },
+			    "d_calendario_date_variation_hierarquia_de_data_has_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.date.variation.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data"
+			          }
+			        },
+			        "d_calendario.date.variation.hierarquia_de_data.mê": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_mê"
+			        }
+			      ]
+			    },
+			    "d_calendario_date_variation_hierarquia_de_data_has_trimestre": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.date.variation.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data"
+			          }
+			        },
+			        "d_calendario.date.variation.hierarquia_de_data.trimestre": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_trimestres"
+			        }
+			      ]
+			    },
+			    "d_calendario_date_variation_hierarquia_de_data_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.date.variation.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data"
+			          }
+			        },
+			        "d_calendario.date.variation.hierarquia_de_data.ano": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "hierarquia_de_data_have_anos"
+			        }
+			      ]
+			    },
+			    "d_calendario_date_has_variation_hierarquia_de_data": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario.date": {
+			          "Target": {
+			            "Entity": "d_calendario.date"
+			          }
+			        },
+			        "d_calendario.date.variation.hierarquia_de_data": {
+			          "Target": {
+			            "Entity": "d_calendario.date.variation.hierarquia_de_data"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario.date"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date.variation.hierarquia_de_data"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_hierarquia_de_data"
+			        }
+			      ]
+			    },
+			    "f_féria_has_d_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "d_calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_calendários"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "f_féria"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendários_have_férias"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.ano": {
+			          "Target": {
+			            "Entity": "d_calendario.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendários_have_anos"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.me": {
+			          "Target": {
+			            "Entity": "d_calendario.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendários_have_me"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_numero_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.numero_me": {
+			          "Target": {
+			            "Entity": "d_calendario.numero_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.numero_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendários_have_numero_me"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.dia": {
+			          "Target": {
+			            "Entity": "d_calendario.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendários_have_dias"
+			        }
+			      ]
+			    },
+			    "d_calendario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "d_calendario": {
+			          "Target": {
+			            "Entity": "d_calendario"
+			          }
+			        },
+			        "d_calendario.date": {
+			          "Target": {
+			            "Entity": "d_calendario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "d_calendario"
+			            },
+			            "Object": {
+			              "Role": "d_calendario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendários_have_dates"
+			        }
+			      ]
+			    },
+			    "medida_has_saldo_período_futuro": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.saldo_período_futuro": {
+			          "Target": {
+			            "Entity": "medida.saldo_período_futuro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.saldo_período_futuro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_saldo_período_futuro"
+			        }
+			      ]
+			    },
+			    "f_féria_has_medida_com_férias_parciais": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "medida.com_férias_parciais": {
+			          "Target": {
+			            "Entity": "medida.com_férias_parciais"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "medida.com_férias_parciais"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_com_férias_parciais"
+			        }
+			      ]
+			    },
+			    "f_féria_has_medida_com_férias_abonadas": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "medida.com_férias_abonadas": {
+			          "Target": {
+			            "Entity": "medida.com_férias_abonadas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "medida.com_férias_abonadas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_com_férias_abonadas"
+			        }
+			      ]
+			    },
+			    "f_féria_has_medida_com_férias_à_vencer": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "medida.com_férias_à_vencer": {
+			          "Target": {
+			            "Entity": "medida.com_férias_à_vencer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "medida.com_férias_à_vencer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_com_férias_à_vencer"
+			        }
+			      ]
+			    },
+			    "f_féria_has_medida_com_férias_vencidas": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "medida.com_férias_vencidas": {
+			          "Target": {
+			            "Entity": "medida.com_férias_vencidas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "medida.com_férias_vencidas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_com_férias_vencidas"
+			        }
+			      ]
+			    },
+			    "f_féria_has_medida_total_de_colaboradores": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "medida.total_de_colaboradores": {
+			          "Target": {
+			            "Entity": "medida.total_de_colaboradores"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "medida.total_de_colaboradores"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_total_de_colaboradores"
+			        }
+			      ]
+			    },
+			    "f_féria_has_status": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.status": {
+			          "Target": {
+			            "Entity": "f_féria.status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_statuses"
+			        }
+			      ]
+			    },
+			    "f_féria_has_saldoperiodo": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.saldoperiodo": {
+			          "Target": {
+			            "Entity": "f_féria.saldoperiodo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.saldoperiodo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_saldoperiodos"
+			        }
+			      ]
+			    },
+			    "f_féria_has_falta": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.falta": {
+			          "Target": {
+			            "Entity": "f_féria.falta"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.falta"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_faltas"
+			        }
+			      ]
+			    },
+			    "f_féria_has_feriasabonada": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.feriasabonada": {
+			          "Target": {
+			            "Entity": "f_féria.feriasabonada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.feriasabonada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_feriasabonadas"
+			        }
+			      ]
+			    },
+			    "f_féria_has_limitegozo": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.limitegozo": {
+			          "Target": {
+			            "Entity": "f_féria.limitegozo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.limitegozo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_limitegozos"
+			        }
+			      ]
+			    },
+			    "f_féria_has_limitegozo_6mese": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.limitegozo_6mese": {
+			          "Target": {
+			            "Entity": "f_féria.limitegozo_6mese"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.limitegozo_6mese"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_limitegozo_6meses"
+			        }
+			      ]
+			    },
+			    "f_féria_has_fimperconcessivo": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.fimperconcessivo": {
+			          "Target": {
+			            "Entity": "f_féria.fimperconcessivo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.fimperconcessivo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_fimperconcessivos"
+			        }
+			      ]
+			    },
+			    "f_féria_has_fimperaquis": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.fimperaquis": {
+			          "Target": {
+			            "Entity": "f_féria.fimperaquis"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.fimperaquis"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_fimperaquises"
+			        }
+			      ]
+			    },
+			    "f_féria_has_inicioperaquis": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.inicioperaquis": {
+			          "Target": {
+			            "Entity": "f_féria.inicioperaquis"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.inicioperaquis"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_inicioperaquises"
+			        }
+			      ]
+			    },
+			    "f_féria_has_dataadmissao": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.dataadmissao": {
+			          "Target": {
+			            "Entity": "f_féria.dataadmissao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.dataadmissao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_dataadmissaos"
+			        }
+			      ]
+			    },
+			    "f_féria_has_hoje": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.hoje": {
+			          "Target": {
+			            "Entity": "f_féria.hoje"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.hoje"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_hojes"
+			        }
+			      ]
+			    },
+			    "f_féria_has_situacao": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.situacao": {
+			          "Target": {
+			            "Entity": "f_féria.situacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.situacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_situacaos"
+			        }
+			      ]
+			    },
+			    "f_féria_has_secao": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.secao": {
+			          "Target": {
+			            "Entity": "f_féria.secao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.secao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_secaos"
+			        }
+			      ]
+			    },
+			    "f_féria_has_nome": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.nome": {
+			          "Target": {
+			            "Entity": "f_féria.nome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.nome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_nome"
+			        }
+			      ]
+			    },
+			    "f_féria_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.chapa": {
+			          "Target": {
+			            "Entity": "f_féria.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_chapa"
+			        }
+			      ]
+			    },
+			    "f_féria_has_coligada": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "f_féria": {
+			          "Target": {
+			            "Entity": "f_féria"
+			          }
+			        },
+			        "f_féria.coligada": {
+			          "Target": {
+			            "Entity": "f_féria.coligada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "f_féria"
+			            },
+			            "Object": {
+			              "Role": "f_féria.coligada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_coligadas"
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

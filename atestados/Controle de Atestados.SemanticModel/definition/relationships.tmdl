@@ -1,0 +1,38 @@
+relationship 841fb831-ac15-4e09-aad8-c7e615dc9622
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendario.Date
+	toColumn: LocalDateTable_5f21e2c5-85d6-484f-a7d8-34e49836e48b.Date
+
+relationship d394701f-b985-1c72-a1a6-ce540c66965b
+	fromColumn: Atestados.DTINICIO
+	toColumn: Calendario.Date
+
+relationship 98acb7bb-97d5-e093-e68b-df83c9f19d70
+	isActive: false
+	fromColumn: Atestados.DTFIM
+	toColumn: Calendario.Date
+
+relationship 223e83c6-818d-1305-4000-1a60bb16df15
+	fromColumn: Afastados.DTINICIO
+	toColumn: Calendario.Date
+
+relationship 66091e5a-39f1-f60d-5266-5f34811594a5
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Afastados.CODCOLIGADA
+	toColumn: Atestados.CODCOLIGADA
+
+relationship fd372729-9bf3-058d-37f2-d1d6c023062f
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Afastados.CHAPA
+	toColumn: Atestados.CHAPA
+
+relationship 573fa4e8-267d-f5b3-ad92-ec1076345f3d
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Afastados.CODPESSOA
+	toColumn: Atestados.CODPESSOA
+

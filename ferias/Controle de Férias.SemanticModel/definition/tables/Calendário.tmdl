@@ -1,0 +1,59 @@
+table Calendário
+	lineageTag: 14952161-00a5-4eb7-a457-f9d81a39f166
+
+	column Date
+		formatString: dd/mm/yyyy
+		lineageTag: 421d4ff1-8c4e-4a54-a37c-253fe4f03c30
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 3de02902-0787-496a-8d6b-d44738335fa6
+			defaultHierarchy: LocalDateTable_44ddfb2f-75d5-495d-98f8-a59b88ab7201.'Hierarquia de datas'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Dia = 'Calendário'[Date].[Dia]
+		formatString: 0
+		lineageTag: 44fbc32a-2aa7-48aa-884f-8e8ade88490c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Numero_Mes = 'Calendário'[Date].[MonthNo]
+		formatString: 0
+		lineageTag: 61a74a35-a591-45d4-ae25-32d48a8a1087
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes = FORMAT('Calendário'[Date],"mmm")
+		lineageTag: 8a4817da-ba10-42e5-ab58-6881da438d5d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano = 'Calendário'[Date].[Ano]
+		formatString: 0
+		lineageTag: c2af3f15-41d2-476b-aa5e-b2916c5c2dd3
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendário = calculated
+		mode: import
+		source = ```
+				
+				    CALENDAR(
+				            DATE(YEAR(MIN('Férias'[DATAADMISSAO])), 1, 1),
+				            DATE(YEAR(MAX('Férias'[DATAADMISSAO])) + 1, 12, 31)
+				    )
+				
+				```
+
+	annotation PBI_Id = b28c7541ea65446c837322e9d3b9409b
+

@@ -1,0 +1,240 @@
+table Exames
+	lineageTag: 86b9517e-cbed-4dd6-ba94-31b9d4cdc215
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 9a78e75d-749b-40e8-a46b-d3411534a0cd
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMEFANTASIA
+		dataType: string
+		lineageTag: 6a499441-a20d-4e04-b8b6-fbe2de510c20
+		summarizeBy: none
+		sourceColumn: NOMEFANTASIA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODIGO
+		dataType: string
+		lineageTag: 9b3f021d-e659-44e0-a4af-e1556929b8da
+		summarizeBy: none
+		sourceColumn: CODIGO
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: 1b55d8eb-dbed-4095-bcf5-03adcee2d0ff
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: d010a198-d7c3-43e4-9024-99d497804c93
+		summarizeBy: none
+		sourceColumn: NOME
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATAADMISSAO
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: acbd8115-0d17-44ab-9e37-c4cac9918c22
+		summarizeBy: none
+		sourceColumn: DATAADMISSAO
+
+		variation Variation
+			isDefault
+			relationship: 818f4ba2-c2ed-4d42-8bc6-c1722b74b9c7
+			defaultHierarchy: LocalDateTable_a07d4d92-41de-40fb-834e-e942e62e0ef9.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column FUNCAO
+		dataType: string
+		lineageTag: 0ed23f9c-78a1-43ae-bef8-0ab6169b4642
+		summarizeBy: none
+		sourceColumn: FUNCAO
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column SITUACAO
+		dataType: string
+		lineageTag: 4e45280e-2bb7-44fc-9881-38b50d318ea6
+		summarizeBy: none
+		sourceColumn: SITUACAO
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column EAR
+		dataType: string
+		lineageTag: dee28cf8-83cf-426e-adf5-305fb107ba99
+		summarizeBy: none
+		sourceColumn: EAR
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENCIMENTOCNH
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 6816d642-fdbd-4fa3-9b35-7f9167752959
+		summarizeBy: none
+		sourceColumn: VENCIMENTOCNH
+
+		variation Variation
+			isDefault
+			relationship: 0d89d725-8dab-4ccf-9c6d-2eacbc57c4da
+			defaultHierarchy: LocalDateTable_e281f4ae-5c82-4d30-b117-34b96c70a7e6.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column VALIDADEMOPP
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 6047954c-076f-4db1-934d-00344be938d7
+		summarizeBy: none
+		sourceColumn: VALIDADEMOPP
+
+		variation Variation
+			isDefault
+			relationship: 617cf25b-dd74-4952-b8d1-cea35d7c5f4b
+			defaultHierarchy: LocalDateTable_1829082e-179e-447a-8b1c-c0a76cbf1925.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column VENCIMENTO
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 1ac94209-8c26-46ed-9ba3-9542813079a1
+		summarizeBy: none
+		sourceColumn: VENCIMENTO
+
+		variation Variation
+			isDefault
+			relationship: 2ed1ab4e-250f-41c8-9f73-81e67297276e
+			defaultHierarchy: LocalDateTable_3468674b-091f-49b2-b918-05d578d694ee.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column STATUS
+		dataType: string
+		lineageTag: 4333080a-b7cb-41fc-a2d2-89903f184394
+		summarizeBy: none
+		sourceColumn: STATUS
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATUSCNH
+		dataType: string
+		lineageTag: 0601b5da-31dd-442b-9256-c3746cfc5cd9
+		summarizeBy: none
+		sourceColumn: STATUSCNH
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATUSMOPP
+		dataType: string
+		lineageTag: 38bcd6a9-8ab8-4e13-b159-aa08a4440bae
+		summarizeBy: none
+		sourceColumn: STATUSMOPP
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATUSEMP
+		dataType: string
+		lineageTag: f0b3bbb5-b7cf-482a-813e-5a4b2d9d54db
+		summarizeBy: none
+		sourceColumn: STATUSEMP
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DTVENCHABILIT
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 2a78d09b-eba9-4127-9de4-76bf1bb47a8f
+		summarizeBy: none
+		sourceColumn: DTVENCHABILIT
+
+		variation Variation
+			isDefault
+			relationship: b4a87b2a-e0a7-4dd8-beb8-e9d38d6935c5
+			defaultHierarchy: LocalDateTable_dda5bfbc-79b6-4f4e-9a01-87e7365413a2.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column STATUSHABILITCNH
+		dataType: string
+		lineageTag: d541dc10-6363-4511-a11a-5f04997c6cd3
+		summarizeBy: none
+		sourceColumn: STATUSHABILITCNH
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Exames = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="WITH COLABORADORES AS (#(lf)    SELECT#(lf)        GCOLIGADA.CODCOLIGADA,#(lf)        GCOLIGADA.NOMEFANTASIA,#(lf)        PPESSOA.CODIGO,#(lf)        PFUNC.CHAPA,#(lf)        PFUNC.NOME,#(lf)        PFUNC.DATAADMISSAO,#(lf)        PFUNCAO.NOME AS FUNCAO,#(lf)        PCODSITUACAO.DESCRICAO AS SITUACAO,#(lf)        PPESSOA.DTVENCHABILIT,#(lf)        PFCOMPL.EXAMECNH AS VENCIMENTOCNH,#(lf)        PFCOMPL.VALIDADEMOPP,#(lf)#(lf)        CASE#(lf)            WHEN PFCOMPL.EAR = 'T' THEN 1#(lf)            ELSE 0#(lf)        END AS EAR#(lf)        #(lf)    FROM PFUNC#(lf)        JOIN PPESSOA ON PPESSOA.CODIGO = PFUNC.CODPESSOA#(lf)        JOIN PFCOMPL ON PFUNC.CODCOLIGADA = PFCOMPL.CODCOLIGADA AND PFUNC.CHAPA = PFCOMPL.CHAPA#(lf)        JOIN PFUNCAO ON PFUNC.CODCOLIGADA = PFUNCAO.CODCOLIGADA AND PFUNC.CODFUNCAO = PFUNCAO.CODIGO#(lf)        JOIN PCODSITUACAO ON PFUNC.CODSITUACAO = PCODSITUACAO.CODCLIENTE#(lf)        JOIN GCOLIGADA ON PFUNC.CODCOLIGADA = GCOLIGADA.CODCOLIGADA#(lf)    #(lf)    WHERE #(lf)        PFUNC.CODFUNCAO IN ('02','02.01','05.05','22','73') AND PFUNC.CODSITUACAO <> 'D'#(lf)),#(lf)#(lf)EXAMES AS (#(lf)    SELECT #(lf)        ROW_NUMBER() OVER(PARTITION BY VEXAMESPRONT.CODPESSOA ORDER BY VEXAMESPRONT.DATAEXAME DESC) AS ID,#(lf)        VEXAMESPRONT.CODCOLIGADA,#(lf)        VEXAMESPRONT.CODPESSOA,#(lf)        VEXAMESPRONT.DATAEXAME#(lf)    FROM VEXAMESPRONT#(lf)    WHERE VEXAMESPRONT.CODEXAME = '0030'#(lf))#(lf)#(lf)SELECT#(lf)    COLABORADORES.CODCOLIGADA,#(lf)    COLABORADORES.NOMEFANTASIA,#(lf)    COLABORADORES.CODIGO,#(lf)    COLABORADORES.CHAPA,#(lf)    COLABORADORES.NOME,#(lf)    COLABORADORES.DATAADMISSAO,#(lf)    COLABORADORES.FUNCAO,#(lf)    COLABORADORES.SITUACAO,#(lf)    COLABORADORES.EAR,#(lf)    COLABORADORES.DTVENCHABILIT,#(lf)    COLABORADORES.VENCIMENTOCNH,#(lf)    COLABORADORES.VALIDADEMOPP,#(lf)    DATEADD(MONTH, 30, EXAMES.DATAEXAME) AS VENCIMENTO,#(lf)#(lf)    CASE#(lf)        WHEN COLABORADORES.DTVENCHABILIT IS NULL OR COLABORADORES.DTVENCHABILIT < GETDATE() THEN 'Vencido'#(lf)        WHEN COLABORADORES.DTVENCHABILIT BETWEEN GETDATE() AND DATEADD(MONTH, 1, GETDATE()) THEN 'A Vencer'#(lf)        ELSE 'Em Dia'#(lf)    END AS STATUSHABILITCNH,#(lf)    #(lf)    CASE#(lf)        WHEN COLABORADORES.VENCIMENTOCNH IS NULL OR COLABORADORES.VENCIMENTOCNH < GETDATE() THEN 'Vencido'#(lf)        WHEN COLABORADORES.VENCIMENTOCNH BETWEEN GETDATE() AND DATEADD(MONTH, 2, GETDATE()) THEN 'A Vencer'#(lf)        ELSE 'Em Dia'#(lf)    END AS STATUSCNH,#(lf)#(lf)    CASE#(lf)        WHEN COLABORADORES.VALIDADEMOPP IS NULL OR COLABORADORES.VALIDADEMOPP < GETDATE() THEN 'Vencido'#(lf)        WHEN COLABORADORES.VALIDADEMOPP BETWEEN GETDATE() AND DATEADD(MONTH, 2, GETDATE()) THEN 'A Vencer'#(lf)        ELSE 'Em Dia'#(lf)    END AS STATUSMOPP,#(lf)#(lf)    CASE#(lf)        WHEN EXAMES.DATAEXAME IS NULL OR DATEADD(MONTH, 30, EXAMES.DATAEXAME) < GETDATE() THEN 'Vencido'#(lf)        WHEN DATEADD(MONTH, 30, EXAMES.DATAEXAME) BETWEEN GETDATE() AND DATEADD(MONTH, 2, GETDATE()) THEN 'A Vencer'#(lf)        ELSE 'Em Dia'#(lf)    END AS STATUSEMP,#(lf)#(lf)    CASE#(lf)        WHEN #(lf)            (EXAMES.DATAEXAME IS NULL OR DATEADD(MONTH, 30, EXAMES.DATAEXAME) < GETDATE()) OR#(lf)            (COLABORADORES.VENCIMENTOCNH IS NULL OR COLABORADORES.VENCIMENTOCNH < GETDATE()) OR#(lf)            (COLABORADORES.VALIDADEMOPP IS NULL OR COLABORADORES.VALIDADEMOPP < GETDATE()) OR#(lf)            (COLABORADORES.DTVENCHABILIT IS NULL OR COLABORADORES.VENCIMENTOCNH < GETDATE()) OR#(lf)            COLABORADORES.EAR <> 1#(lf)        THEN 'Pendente'#(lf)        ELSE 'Em Dia'#(lf)    END AS STATUS#(lf)        #(lf)FROM COLABORADORES#(lf)    LEFT JOIN EXAMES ON #(lf)        EXAMES.CODCOLIGADA = COLABORADORES.CODCOLIGADA #(lf)        AND EXAMES.CODPESSOA = COLABORADORES.CODIGO #(lf)        AND EXAMES.ID = 1#(lf)#(lf)ORDER BY NOME#(lf)"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}, {"CODIGO", type text}, {"CHAPA", type text}, {"DATAADMISSAO", type date}, {"EAR", type text}, {"VENCIMENTOCNH", type date}, {"VALIDADEMOPP", type date}, {"VENCIMENTO", type date}, {"DTVENCHABILIT", type date}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type","0","Não",Replacer.ReplaceText,{"EAR"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","1","Sim",Replacer.ReplaceText,{"EAR"})
+				in
+				    #"Replaced Value1"
+
+	changedProperty = IsHidden
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

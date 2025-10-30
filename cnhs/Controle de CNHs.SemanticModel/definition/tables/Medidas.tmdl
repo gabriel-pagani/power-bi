@@ -1,0 +1,252 @@
+table Medidas
+	lineageTag: 87e3d212-5fd2-413a-962e-1237d9bf9b44
+
+	measure 'Total de Colaboradores' = ```
+			
+			COALESCE(
+			    COUNT(Exames[CHAPA]),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 6a6e390c-7f78-4b6d-902e-3719fb67c840
+
+	measure 'Total de Colaboradores com a CNH em Dia' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[STATUSCNH] = "Em Dia"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: a4ff02fa-6f4a-441c-835b-43e123278739
+
+	measure 'Total de Colaboradores com a CNH a Vencer' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[STATUSCNH] = "A Vencer"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: bfd2314d-6fe6-4d2a-971c-3b32c9d1fa7b
+
+	measure 'Total de Colaboradores com a CNH Vencida' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[STATUSCNH] = "Vencido"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 71d560c2-5bbf-418a-8e17-c2a18c33ab4b
+
+	measure 'Total de Colaboradores com da Empresa com o Toxicológico em Dia' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[STATUSEMP] = "Em Dia"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 3f2e8e8a-3529-44c0-a41c-02fc1f8ca742
+
+	measure 'Total de Colaboradores com da Empresa com o Toxicológico a Vencer' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[STATUSEMP] = "A Vencer"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: e9a78039-dddb-4278-b871-789a57128939
+
+	measure 'Total de Colaboradores com da Empresa com o Toxicológico Vencido' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[STATUSEMP] = "Vencido"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 1d3c7bdf-3254-4bfd-9b17-a4bec9ada785
+
+	measure 'Total de Colaboradores com o MOPP em Dia' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[STATUSMOPP] = "Em Dia"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: ad41d9a8-d8fd-4bbc-9e0c-cec3ca8919ff
+
+	measure 'Total de Colaboradores com o MOPP a Vencer' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[STATUSMOPP] = "A Vencer"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: a87d6b0d-2581-4dbc-8930-260c0d6ac404
+
+	measure 'Total de Colaboradores com o MOPP Vencido' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[STATUSMOPP] = "Vencido"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 2df50578-6ab0-4f3c-82d7-cfd23c7355ff
+
+	measure 'Total de Colaboradores com EAR' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[EAR] = "Sim"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 5feb0025-faf0-40db-8b9e-ca88eba62e29
+
+	measure 'Total de Colaboradores sem EAR' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[EAR] = "Não"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 8b72ebb0-fa2d-453d-a55f-7a23cf238734
+
+	measure 'Total de Colaboradores com Habilitação a Vencer' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[STATUSHABILITCNH] = "A Vencer"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: a7079a75-1682-4716-9ef6-e624c8908cd9
+
+	measure 'Total de Colaboradores com Habilitação em Dia' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[STATUSHABILITCNH] = "Em Dia"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 1e41652c-a1ee-433c-80c8-53004d7279bd
+
+	measure 'Total de Colaboradores com Habilitação Vencida' = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            Exames,
+			            Exames[STATUSHABILITCNH] = "Vencido"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 1454dfb3-6486-4242-8e6a-de8da5dda162
+
+	partition Medidas = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

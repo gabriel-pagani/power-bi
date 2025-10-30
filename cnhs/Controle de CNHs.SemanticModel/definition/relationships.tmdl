@@ -1,0 +1,25 @@
+relationship 818f4ba2-c2ed-4d42-8bc6-c1722b74b9c7
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Exames.DATAADMISSAO
+	toColumn: LocalDateTable_a07d4d92-41de-40fb-834e-e942e62e0ef9.Date
+
+relationship 0d89d725-8dab-4ccf-9c6d-2eacbc57c4da
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Exames.VENCIMENTOCNH
+	toColumn: LocalDateTable_e281f4ae-5c82-4d30-b117-34b96c70a7e6.Date
+
+relationship 617cf25b-dd74-4952-b8d1-cea35d7c5f4b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Exames.VALIDADEMOPP
+	toColumn: LocalDateTable_1829082e-179e-447a-8b1c-c0a76cbf1925.Date
+
+relationship 2ed1ab4e-250f-41c8-9f73-81e67297276e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Exames.VENCIMENTO
+	toColumn: LocalDateTable_3468674b-091f-49b2-b918-05d578d694ee.Date
+
+relationship b4a87b2a-e0a7-4dd8-beb8-e9d38d6935c5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Exames.DTVENCHABILIT
+	toColumn: LocalDateTable_dda5bfbc-79b6-4f4e-9a01-87e7365413a2.Date
+

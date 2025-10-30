@@ -1,0 +1,67 @@
+table Afastados
+	lineageTag: 114ce549-6923-46ec-9df8-e8b495e22c6f
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 1c2c8449-9237-4a99-b314-07abc753623f
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMEFANTASIA
+		dataType: string
+		lineageTag: cb258b38-4af8-46ee-95b3-c1f6be7a6f1b
+		summarizeBy: none
+		sourceColumn: NOMEFANTASIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DTINICIO
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: ee1e24ac-c270-408c-93ce-4aec1ac39a62
+		summarizeBy: none
+		sourceColumn: DTINICIO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CODPESSOA
+		dataType: string
+		lineageTag: a223fb08-e488-4ee2-8a87-af92b979ec84
+		summarizeBy: none
+		sourceColumn: CODPESSOA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: 336e029d-7db1-4ed5-b4d0-aec5179190f9
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: a4b95fd5-da12-4262-8f57-fcc9b6fe9b83
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Afastados = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)        PFHSTAFT.CODCOLIGADA, #(lf)        NOMEFANTASIA,#(lf)        PFUNC.CODPESSOA,#(lf)        PFUNC.CHAPA,#(lf)        PPESSOA.NOME,#(lf)        DTINICIO#(lf)#(lf)FROM PFHSTAFT #(lf)        JOIN GCOLIGADA ON #(lf)                GCOLIGADA.CODCOLIGADA = PFHSTAFT.CODCOLIGADA#(lf)        JOIN PFUNC ON #(lf)                PFUNC.CODCOLIGADA = PFHSTAFT.CODCOLIGADA#(lf)                AND PFUNC.CHAPA = PFHSTAFT.CHAPA#(lf)        LEFT JOIN PPESSOA ON #(lf)                PPESSOA.CODIGO=PFUNC.CODPESSOA#(lf)        #(lf)WHERE TIPO IN ('P','T')"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"DTINICIO", type date}, {"CODCOLIGADA", type text}, {"CODPESSOA", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
