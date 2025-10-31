@@ -3,10 +3,11 @@
   "name": "ee3026d9708352d4c51e",
   "position": {
     "x": 230.90909090909088,
-    "y": 145.45454545454544,
+    "y": 154.54545454545453,
     "z": 1000,
-    "height": 264.5454545454545,
-    "width": 1032.7272727272727
+    "height": 255.45454545454544,
+    "width": 1032.7272727272727,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -265,7 +266,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },
@@ -314,65 +315,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "4e55349ea2be0731d512",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendario"
-              }
-            },
-            "Property": "Year"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "7f427a244228bac71045",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendario"
-              }
-            },
-            "Property": "Month"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "aa20d780ef70d56f41f8",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "AfastadosAcidenteTotal"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "74b13d93bd56be74611f",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "AfastadosPrevidenciaTotal"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

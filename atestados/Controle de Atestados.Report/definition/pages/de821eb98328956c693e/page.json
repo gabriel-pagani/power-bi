@@ -19,7 +19,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Página Complementar.svg'"
+                    "Value": "'Página Complementar (1).svg'"
                   }
                 }
               },
@@ -28,7 +28,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "P_gina_Complementar9735539419415741.svg"
+                    "ItemName": "P_gina_Complementar_(1)6404530000444687.svg"
                   }
                 }
               },

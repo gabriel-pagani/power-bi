@@ -3,11 +3,11 @@
   "name": "039cd593a7c891039d3c",
   "position": {
     "x": 755.91022443890267,
-    "y": 141.84538653366582,
+    "y": 154.41396508728178,
     "z": 8000,
-    "height": 267.5311720698254,
+    "height": 254.96259351620947,
     "width": 508.12967581047377,
-    "tabOrder": 6000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -273,7 +273,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             },

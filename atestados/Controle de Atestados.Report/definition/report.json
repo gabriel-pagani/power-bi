@@ -66,18 +66,18 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "P_gina_Complementar9735539419415741.svg",
-          "path": "P_gina_Complementar9735539419415741.svg",
-          "type": "Image"
-        },
-        {
-          "name": "P_gina_Principal4912691745034672.svg",
-          "path": "P_gina_Principal4912691745034672.svg",
-          "type": "Image"
-        },
-        {
           "name": "Tabela_Din_mica5089004341794092.svg",
           "path": "Tabela_Din_mica5089004341794092.svg",
+          "type": "Image"
+        },
+        {
+          "name": "P_gina_Principal7555949569353599.svg",
+          "path": "P_gina_Principal7555949569353599.svg",
+          "type": "Image"
+        },
+        {
+          "name": "P_gina_Complementar_(1)6404530000444687.svg",
+          "path": "P_gina_Complementar_(1)6404530000444687.svg",
           "type": "Image"
         }
       ]
