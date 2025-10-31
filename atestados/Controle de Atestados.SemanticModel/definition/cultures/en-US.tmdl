@@ -221,7 +221,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Diagnóstico": {
+			          "Causa": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2229,6 +2229,39 @@ cultureInfo en-US
 			    }
 			  },
 			  "Relationships": {
+			    "prox_afastamento_dtfim_ultimo_date_hierarchy_has_prox_afastamento_dtfim_ultimo_day": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento.dtfim_ultimo.date_hierarchy": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtfim_ultimo.date_hierarchy"
+			          }
+			        },
+			        "prox_afastamento.dtfim_ultimo.day": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtfim_ultimo.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento.dtfim_ultimo.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.dtfim_ultimo.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtfim_ultimo_date_hierarchies_have_dtfim_ultimo_days"
+			        }
+			      ]
+			    },
 			    "prox_afastamento_dtfim_ultimo_date_hierarchy_has_prox_afastamento_dtfim_ultimo_month": {
 			      "Binding": {
 			        "ConceptualEntity": "ProxAfastamentos"
@@ -4463,39 +4496,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "atestados_have_coligadas"
-			        }
-			      ]
-			    },
-			    "prox_afastamento_dtfim_ultimo_date_hierarchy_has_prox_afastamento_dtfim_ultimo_day": {
-			      "Binding": {
-			        "ConceptualEntity": "ProxAfastamentos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "prox_afastamento.dtfim_ultimo.date_hierarchy": {
-			          "Target": {
-			            "Entity": "prox_afastamento.dtfim_ultimo.date_hierarchy"
-			          }
-			        },
-			        "prox_afastamento.dtfim_ultimo.day": {
-			          "Target": {
-			            "Entity": "prox_afastamento.dtfim_ultimo.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "prox_afastamento.dtfim_ultimo.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "prox_afastamento.dtfim_ultimo.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dtfim_ultimo_date_hierarchies_have_dtfim_ultimo_days"
 			        }
 			      ]
 			    }

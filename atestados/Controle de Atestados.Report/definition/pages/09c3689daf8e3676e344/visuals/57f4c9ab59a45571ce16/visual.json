@@ -117,7 +117,8 @@
                 }
               },
               "queryRef": "Atestados.CID",
-              "nativeQueryRef": "CID"
+              "nativeQueryRef": "Causa",
+              "displayName": "Causa"
             },
             {
               "field": {
