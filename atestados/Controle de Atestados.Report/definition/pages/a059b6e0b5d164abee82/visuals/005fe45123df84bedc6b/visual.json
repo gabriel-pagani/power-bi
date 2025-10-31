@@ -1,0 +1,219 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "005fe45123df84bedc6b",
+  "position": {
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "height": 361.81818181818181,
+    "width": 550
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Afastados"
+                    }
+                  },
+                  "Property": "NOME"
+                }
+              },
+              "queryRef": "Afastados.NOME",
+              "nativeQueryRef": "Colaborador",
+              "displayName": "Colaborador"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Afastados"
+                    }
+                  },
+                  "Property": "NOMETIPO"
+                }
+              },
+              "queryRef": "Afastados.NOMETIPO",
+              "nativeQueryRef": "Tipo do Afastamento",
+              "displayName": "Tipo do Afastamento"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Afastados"
+                    }
+                  },
+                  "Property": "DTINICIO"
+                }
+              },
+              "queryRef": "Afastados.DTINICIO",
+              "nativeQueryRef": "Data do Afastamento",
+              "displayName": "Data do Afastamento"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "303.99410031569414D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Afastados.NOME"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "108D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Afastados.DTINICIO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "114D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Afastados.NOMETIPO"
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Afastados.NOME"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Afastados.DTINICIO"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Afastados.NOMETIPO"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

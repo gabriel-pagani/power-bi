@@ -16,23 +16,13 @@ relationship 223e83c6-818d-1305-4000-1a60bb16df15
 	fromColumn: Afastados.DTINICIO
 	toColumn: Calendario.Date
 
-relationship 66091e5a-39f1-f60d-5266-5f34811594a5
-	isActive: false
-	crossFilteringBehavior: bothDirections
-	toCardinality: many
-	fromColumn: Afastados.CODCOLIGADA
-	toColumn: Atestados.CODCOLIGADA
+relationship 76e0cf71-1273-4fcf-a91c-a51d9f8e5077
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ProxAfastamentos.DTINICIO_PRIMEIRO
+	toColumn: LocalDateTable_ec098d9a-759b-433b-b34a-f45cb1e43be6.Date
 
-relationship fd372729-9bf3-058d-37f2-d1d6c023062f
-	isActive: false
-	crossFilteringBehavior: bothDirections
-	toCardinality: many
-	fromColumn: Afastados.CHAPA
-	toColumn: Atestados.CHAPA
-
-relationship 573fa4e8-267d-f5b3-ad92-ec1076345f3d
-	crossFilteringBehavior: bothDirections
-	toCardinality: many
-	fromColumn: Afastados.CODPESSOA
-	toColumn: Atestados.CODPESSOA
+relationship 9e6d27f1-f157-47b2-b833-c32c76093276
+	joinOnDateBehavior: datePartOnly
+	fromColumn: ProxAfastamentos.DTFIM_ULTIMO
+	toColumn: LocalDateTable_80dfee90-9483-42be-813d-8c8dcb805d6a.Date
 

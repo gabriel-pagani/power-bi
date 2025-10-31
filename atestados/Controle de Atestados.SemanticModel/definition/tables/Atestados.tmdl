@@ -156,6 +156,19 @@ table Atestados
 
 		annotation SummarizationSetBy = Automatic
 
+	column CATEGORIA_ATESTADO =
+			
+			SWITCH(
+			    TRUE(),
+			    LEFT(UPPER('Atestados'[TIPOATESTADO]), 10) = "DECLARAÇÃO", "Declaração",
+			    LEFT(UPPER('Atestados'[TIPOATESTADO]), 8) = "ATESTADO", "Atestado",
+			    "Outros"
+			)
+		lineageTag: cbe8913d-20c3-4e08-a154-8a15a1f5f318
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Atestados = m
 		mode: import
 		source =

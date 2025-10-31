@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "c4842d79fd8f5a2e1ab9",
+  "name": "23d81df38786fcef469e",
   "position": {
-    "x": 755.91022443890267,
-    "y": 436.30922693266831,
-    "z": 10000,
-    "height": 267.5311720698254,
-    "width": 508.12967581047377,
+    "x": 747.27272727272725,
+    "y": 436.36363636363632,
+    "z": 12000,
+    "height": 267.27272727272725,
+    "width": 525.45454545454538,
     "tabOrder": 10000
   },
   "visual": {
-    "visualType": "columnChart",
+    "visualType": "clusteredColumnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -49,6 +49,25 @@
             }
           ]
         },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Atestados"
+                    }
+                  },
+                  "Property": "CATEGORIA_ATESTADO"
+                }
+              },
+              "queryRef": "Atestados.CATEGORIA_ATESTADO",
+              "nativeQueryRef": "Categoria",
+              "displayName": "Categoria"
+            }
+          ]
+        },
         "Y": {
           "projections": [
             {
@@ -59,27 +78,12 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "AfastadosAcidente"
+                  "Property": "TotalAtestados"
                 }
               },
-              "queryRef": "Metricas.AfastadosAcidente",
-              "nativeQueryRef": "Afastado por Ac. de Trabalho",
-              "displayName": "Afastado por Ac. de Trabalho"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Metricas"
-                    }
-                  },
-                  "Property": "AfastadosPrevidencia"
-                }
-              },
-              "queryRef": "Metricas.AfastadosPrevidencia",
-              "nativeQueryRef": "Previdência",
-              "displayName": "Previdência"
+              "queryRef": "Metricas.TotalAtestados",
+              "nativeQueryRef": "Atestados",
+              "displayName": "Atestados"
             }
           ]
         }
@@ -119,6 +123,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "showTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -166,9 +177,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 0,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#000000'"
                     }
                   }
                 }
@@ -217,6 +227,162 @@
             }
           }
         }
+      ],
+      "zoom": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Atestados"
+                          }
+                        },
+                        "Property": "CATEGORIA_ATESTADO"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Atestado'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#000000'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Atestados"
+                          }
+                        },
+                        "Property": "CATEGORIA_ATESTADO"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Declaração'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": -0.2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Atestados"
+                          }
+                        },
+                        "Property": "CATEGORIA_ATESTADO"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Outros'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -259,14 +425,14 @@
             "section": {
               "expr": {
                 "Literal": {
-                  "Value": "'70e71f2adff80054cadd'"
+                  "Value": "'92b56310f687ff304e98'"
                 }
               }
             },
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }

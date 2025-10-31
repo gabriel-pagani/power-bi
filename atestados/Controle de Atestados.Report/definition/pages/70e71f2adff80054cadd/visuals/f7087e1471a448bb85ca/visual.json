@@ -19,35 +19,18 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Afastados"
+                      "Entity": "Atestados"
                     }
                   },
-                  "Property": "NOME"
+                  "Property": "COLABORADOR"
                 }
               },
-              "queryRef": "Afastados.NOME",
+              "queryRef": "Atestados.COLABORADOR",
               "nativeQueryRef": "Colaborador",
               "displayName": "Colaborador"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Afastados"
-                  }
-                },
-                "Property": "NOME"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ]
       }
     },
     "objects": {
@@ -103,13 +86,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "497D"
+                  "Value": "483.54680122351834D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Afastados.NOME"
+            "metadata": "Atestados.COLABORADOR"
           }
         }
       ]

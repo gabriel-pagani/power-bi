@@ -4,10 +4,10 @@
   "position": {
     "x": 472.21945137157104,
     "y": 16.159600997506235,
-    "z": 12000,
+    "z": 11000,
     "height": 97.855361596009971,
     "width": 198.40399002493766,
-    "tabOrder": 12000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "card",
@@ -23,7 +23,7 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "AfastadosAcidente"
+                  "Property": "AfastadosAcidenteAtualmente"
                 }
               },
               "queryRef": "Metricas.AfastadosAcidente",
@@ -43,7 +43,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "AfastadosAcidente"
+                "Property": "AfastadosAcidenteAtualmente"
               }
             },
             "direction": "Descending"

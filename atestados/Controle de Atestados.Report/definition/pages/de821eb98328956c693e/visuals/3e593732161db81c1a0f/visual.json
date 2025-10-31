@@ -1,0 +1,357 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "3e593732161db81c1a0f",
+  "position": {
+    "x": 231.15384615384613,
+    "y": 425.76923076923077,
+    "z": 0,
+    "height": 278.46153846153845,
+    "width": 1033.0769230769231,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ProxAfastamentos"
+                    }
+                  },
+                  "Property": "CODCOLIGADA"
+                }
+              },
+              "queryRef": "ProxAfastamentos.CODCOLIGADA",
+              "nativeQueryRef": "Col",
+              "displayName": "Col"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ProxAfastamentos"
+                    }
+                  },
+                  "Property": "CHAPA"
+                }
+              },
+              "queryRef": "ProxAfastamentos.CHAPA",
+              "nativeQueryRef": "Chapa",
+              "displayName": "Chapa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ProxAfastamentos"
+                    }
+                  },
+                  "Property": "SITUACAO"
+                }
+              },
+              "queryRef": "ProxAfastamentos.SITUACAO",
+              "nativeQueryRef": "Situação",
+              "displayName": "Situação"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ProxAfastamentos"
+                    }
+                  },
+                  "Property": "COLABORADOR"
+                }
+              },
+              "queryRef": "ProxAfastamentos.COLABORADOR",
+              "nativeQueryRef": "Colaborador",
+              "displayName": "Colaborador"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ProxAfastamentos"
+                    }
+                  },
+                  "Property": "CID"
+                }
+              },
+              "queryRef": "ProxAfastamentos.CID",
+              "nativeQueryRef": "CID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "ProxAfastamentos"
+                    }
+                  },
+                  "Property": "TOTAL_DIAS_ATESTADOS"
+                }
+              },
+              "queryRef": "Sum(ProxAfastamentos.TOTAL_DIAS_ATESTADOS)",
+              "nativeQueryRef": "Total de Dias",
+              "displayName": "Total de Dias"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "ProxAfastamentos"
+                  }
+                },
+                "Property": "TOTAL_DIAS_ATESTADOS"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ProxAfastamentos.CODCOLIGADA"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ProxAfastamentos.CHAPA"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(ProxAfastamentos.TOTAL_DIAS_ATESTADOS)"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ProxAfastamentos.CID"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ProxAfastamentos.SITUACAO"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "60.76060284422881D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ProxAfastamentos.CHAPA"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "45.124687732721625D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ProxAfastamentos.CODCOLIGADA"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "601.884376816266D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ProxAfastamentos.COLABORADOR"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "97.58852124734183D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(ProxAfastamentos.TOTAL_DIAS_ATESTADOS)"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "132.35103777240283D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ProxAfastamentos.SITUACAO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "69.1421814059058D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "ProxAfastamentos.CID"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

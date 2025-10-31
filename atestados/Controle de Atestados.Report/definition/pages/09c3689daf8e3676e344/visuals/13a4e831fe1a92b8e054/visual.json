@@ -7,7 +7,7 @@
     "z": 5000,
     "height": 12.413793103448276,
     "width": 12.413793103448276,
-    "tabOrder": 5000
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "slicer",
@@ -45,13 +45,6 @@
                   "Value": "'Dropdown'"
                 }
               }
-            },
-            "isInvertedSelectionMode": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
             }
           }
         }
@@ -72,32 +65,77 @@
                 "Where": [
                   {
                     "Condition": {
-                      "Not": {
-                        "Expression": {
-                          "In": {
-                            "Expressions": [
-                              {
-                                "Column": {
-                                  "Expression": {
-                                    "SourceRef": {
-                                      "Source": "a"
-                                    }
-                                  },
-                                  "Property": "SITUACAO"
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "a"
                                 }
-                              }
-                            ],
-                            "Values": [
-                              [
-                                {
-                                  "Literal": {
-                                    "Value": "'Demitido'"
-                                  }
-                                }
-                              ]
-                            ]
+                              },
+                              "Property": "SITUACAO"
+                            }
                           }
-                        }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Af.Previdencia'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Ativo'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Aviso Previo'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Ferias'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Licenca Mater.'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Outros'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Prisão / Cárcere'"
+                              }
+                            }
+                          ],
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Af.Ac.Trabalho'"
+                              }
+                            }
+                          ]
+                        ]
                       }
                     }
                   }

@@ -7,7 +7,7 @@
     "z": 8000,
     "height": 267.5311720698254,
     "width": 508.12967581047377,
-    "tabOrder": 8000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -194,110 +194,6 @@
           }
         }
       ],
-      "dataPoint": [
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "FillRule": {
-                      "Input": {
-                        "Measure": {
-                          "Expression": {
-                            "SourceRef": {
-                              "Entity": "Metricas"
-                            }
-                          },
-                          "Property": "TotalCIDs"
-                        }
-                      },
-                      "FillRule": {
-                        "linearGradient2": {
-                          "min": {
-                            "color": {
-                              "Literal": {
-                                "Value": "'minColor'"
-                              }
-                            }
-                          },
-                          "max": {
-                            "color": {
-                              "Literal": {
-                                "Value": "'maxColor'"
-                              }
-                            }
-                          },
-                          "nullColoringStrategy": {
-                            "strategy": {
-                              "Literal": {
-                                "Value": "'asZero'"
-                              }
-                            }
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "dataViewWildcard": {
-                  "matchingOption": 1
-                }
-              }
-            ]
-          }
-        },
-        {
-          "properties": {
-            "fillTransparency": {
-              "expr": {
-                "Literal": {
-                  "Value": "0D"
-                }
-              }
-            },
-            "borderShow": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          },
-          "selector": {
-            "data": [
-              {
-                "scopeId": {
-                  "Comparison": {
-                    "ComparisonKind": 0,
-                    "Left": {
-                      "Column": {
-                        "Expression": {
-                          "SourceRef": {
-                            "Entity": "Atestados"
-                          }
-                        },
-                        "Property": "SECAO"
-                      }
-                    },
-                    "Right": {
-                      "Literal": {
-                        "Value": "'Serviços/Obras'"
-                      }
-                    }
-                  }
-                }
-              }
-            ]
-          }
-        }
-      ],
       "valueAxis": [
         {
           "properties": {
@@ -332,6 +228,24 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }

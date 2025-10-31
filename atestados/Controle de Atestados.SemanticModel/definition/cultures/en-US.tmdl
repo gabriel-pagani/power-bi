@@ -219,6 +219,16 @@ cultureInfo en-US
 			          "cid": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Diagnóstico": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -279,6 +289,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "Atestados": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Total de Atestados": {
 			            "State": "Suggested",
 			            "Source": {
@@ -289,7 +309,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Atestados": {
+			          "Ocorrências": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -859,22 +879,22 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "metrica.afastados_previdencia": {
+			    "metrica.afastados_previdencia_atualmente": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Metricas",
-			          "ConceptualProperty": "AfastadosPrevidencia"
+			          "ConceptualProperty": "AfastadosPrevidenciaAtualmente"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "afastados previdencia": {
+			          "afastados previdencia atualmente": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "AfastadosPrevidencia": {
+			          "AfastadosPrevidenciaAtualmente": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
@@ -946,7 +966,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "CIDs": {
+			          "Diagnósticos": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1130,16 +1150,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.582
 			          }
-			        },
-			        {
-			          "Afastados pelo INSS": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -1187,6 +1197,16 @@ cultureInfo en-US
 			          "nomefantasia": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Coligada": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1208,6 +1228,16 @@ cultureInfo en-US
 			          "date": {
 			            "State": "Generated",
 			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Data do Afastamento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ],
@@ -1237,9 +1267,6 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "codpessoa": {
@@ -1290,22 +1317,22 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "metrica.afastados_acidente": {
+			    "metrica.afastados_acidente_atualmente": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Metricas",
-			          "ConceptualProperty": "AfastadosAcidente"
+			          "ConceptualProperty": "AfastadosAcidenteAtualmente"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "afastados acidente": {
+			          "afastados acidente atualmente": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "AfastadosAcidente": {
+			          "AfastadosAcidenteAtualmente": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
@@ -1322,9 +1349,1249 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "metrica.afastados_acidente_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "AfastadosAcidenteTotal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "afastados acidente total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AfastadosAcidenteTotal": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "afastado acidente aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "afastado acidente overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "Ac. de Trabalho": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.afastados_previdencia_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "AfastadosPrevidenciaTotal"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "afastados previdencia total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AfastadosPrevidenciaTotal": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "afastado previdencia aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "afastado previdencia overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "Previdência": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "afastado.tipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Afastados",
+			          "ConceptualProperty": "TIPO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipo": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.categoria_atestado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "CATEGORIA_ATESTADO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "categoria atestado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CATEGORIA_ATESTADO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Categoria": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "prox_afastamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prox afastamento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ProxAfastamentos": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "prox_afastamento.codcoligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "ConceptualProperty": "CODCOLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codcoligada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Col": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "prox_afastamento.cid": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "ConceptualProperty": "CID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cid": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "prox_afastamento.codpessoa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "ConceptualProperty": "CODPESSOA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codpessoa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "prox_afastamento.chapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "ConceptualProperty": "CHAPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "prox_afastamento.colaborador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "ConceptualProperty": "COLABORADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "colaborador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "prox_afastamento.situacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "ConceptualProperty": "SITUACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Situação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "prox_afastamento.dtinicio_primeiro": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "ConceptualProperty": "DTINICIO_PRIMEIRO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtinicio primeiro": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DTINICIO_PRIMEIRO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "prox_afastamento.dtinicio_primeiro.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "VariationSource": "DTINICIO_PRIMEIRO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtinicio primeiro date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "prox_afastamento.dtinicio_primeiro.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "VariationSource": "DTINICIO_PRIMEIRO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtinicio primeiro year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dtinicio primeiro yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "prox_afastamento.dtinicio_primeiro.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "VariationSource": "DTINICIO_PRIMEIRO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtinicio primeiro quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dtinicio primeiro qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "prox_afastamento.dtinicio_primeiro.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "VariationSource": "DTINICIO_PRIMEIRO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtinicio primeiro month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dtinicio primeiro mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "prox_afastamento.dtinicio_primeiro.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "VariationSource": "DTINICIO_PRIMEIRO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtinicio primeiro day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "prox_afastamento.dtfim_ultimo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "ConceptualProperty": "DTFIM_ULTIMO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtfim ultimo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DTFIM_ULTIMO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "prox_afastamento.dtfim_ultimo.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "VariationSource": "DTFIM_ULTIMO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtfim ultimo date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "prox_afastamento.dtfim_ultimo.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "VariationSource": "DTFIM_ULTIMO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtfim ultimo year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dtfim ultimo yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "prox_afastamento.dtfim_ultimo.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "VariationSource": "DTFIM_ULTIMO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtfim ultimo quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dtfim ultimo qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.846
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "prox_afastamento.dtfim_ultimo.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "VariationSource": "DTFIM_ULTIMO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtfim ultimo month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dtfim ultimo mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "prox_afastamento.dtfim_ultimo.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "VariationSource": "DTFIM_ULTIMO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dtfim ultimo day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "prox_afastamento.total_dias_atestado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "ConceptualProperty": "TOTAL_DIAS_ATESTADOS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total dias atestado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TOTAL_DIAS_ATESTADOS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate dias atestado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall dias atestado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Total de Dias": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "prox_afastamento.qtd_atestado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "ProxAfastamentos",
+			          "ConceptualProperty": "QTD_ATESTADOS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "qtd atestado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "QTD_ATESTADOS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "afastado.situacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Afastados",
+			          "ConceptualProperty": "SITUACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Situação Atual do Colaborador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "afastado.secao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Afastados",
+			          "ConceptualProperty": "SECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Seção Atual do Colaborador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "afastado.nometipo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Afastados",
+			          "ConceptualProperty": "NOMETIPO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nometipo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tipo do Afastamento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "prox_afastamento_dtfim_ultimo_date_hierarchy_has_prox_afastamento_dtfim_ultimo_month": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento.dtfim_ultimo.date_hierarchy": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtfim_ultimo.date_hierarchy"
+			          }
+			        },
+			        "prox_afastamento.dtfim_ultimo.month": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtfim_ultimo.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento.dtfim_ultimo.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.dtfim_ultimo.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtfim_ultimo_date_hierarchies_have_dtfim_ultimo_months"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_dtfim_ultimo_date_hierarchy_has_prox_afastamento_dtfim_ultimo_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento.dtfim_ultimo.date_hierarchy": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtfim_ultimo.date_hierarchy"
+			          }
+			        },
+			        "prox_afastamento.dtfim_ultimo.quarter": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtfim_ultimo.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento.dtfim_ultimo.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.dtfim_ultimo.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtfim_ultimo_date_hierarchies_have_dtfim_ultimo_quarters"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_dtfim_ultimo_date_hierarchy_has_prox_afastamento_dtfim_ultimo_year": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento.dtfim_ultimo.date_hierarchy": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtfim_ultimo.date_hierarchy"
+			          }
+			        },
+			        "prox_afastamento.dtfim_ultimo.year": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtfim_ultimo.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento.dtfim_ultimo.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.dtfim_ultimo.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtfim_ultimo_date_hierarchies_have_dtfim_ultimo_years"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_dtfim_ultimo_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento.dtfim_ultimo": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtfim_ultimo"
+			          }
+			        },
+			        "prox_afastamento.dtfim_ultimo.date_hierarchy": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtfim_ultimo.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento.dtfim_ultimo"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.dtfim_ultimo.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtfim_ultimo_have_dtfim_ultimo_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_dtinicio_primeiro_date_hierarchy_has_prox_afastamento_dtinicio_primeiro_day": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento.dtinicio_primeiro.date_hierarchy": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtinicio_primeiro.date_hierarchy"
+			          }
+			        },
+			        "prox_afastamento.dtinicio_primeiro.day": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtinicio_primeiro.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento.dtinicio_primeiro.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.dtinicio_primeiro.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtinicio_primeiro_date_hierarchies_have_dtinicio_primeiro_days"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_dtinicio_primeiro_date_hierarchy_has_prox_afastamento_dtinicio_primeiro_month": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento.dtinicio_primeiro.date_hierarchy": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtinicio_primeiro.date_hierarchy"
+			          }
+			        },
+			        "prox_afastamento.dtinicio_primeiro.month": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtinicio_primeiro.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento.dtinicio_primeiro.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.dtinicio_primeiro.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtinicio_primeiro_date_hierarchies_have_dtinicio_primeiro_months"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_dtinicio_primeiro_date_hierarchy_has_prox_afastamento_dtinicio_primeiro_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento.dtinicio_primeiro.date_hierarchy": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtinicio_primeiro.date_hierarchy"
+			          }
+			        },
+			        "prox_afastamento.dtinicio_primeiro.quarter": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtinicio_primeiro.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento.dtinicio_primeiro.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.dtinicio_primeiro.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtinicio_primeiro_date_hierarchies_have_dtinicio_primeiro_quarters"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_dtinicio_primeiro_date_hierarchy_has_prox_afastamento_dtinicio_primeiro_year": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento.dtinicio_primeiro.date_hierarchy": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtinicio_primeiro.date_hierarchy"
+			          }
+			        },
+			        "prox_afastamento.dtinicio_primeiro.year": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtinicio_primeiro.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento.dtinicio_primeiro.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.dtinicio_primeiro.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtinicio_primeiro_date_hierarchies_have_dtinicio_primeiro_years"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_dtinicio_primeiro_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento.dtinicio_primeiro": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtinicio_primeiro"
+			          }
+			        },
+			        "prox_afastamento.dtinicio_primeiro.date_hierarchy": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtinicio_primeiro.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento.dtinicio_primeiro"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.dtinicio_primeiro.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dtinicio_primeiros_have_dtinicio_primeiro_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.day": {
+			          "Target": {
+			            "Entity": "calendario.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.month": {
+			          "Target": {
+			            "Entity": "calendario.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
 			    "calendario_date_date_hierarchy_has_calendario_date_quarter": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendario"
@@ -1424,7 +2691,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "afastado_has_atestado": {
+			    "afastado_has_calendario": {
 			      "Binding": {
 			        "ConceptualEntity": "Afastados"
 			      },
@@ -1435,9 +2702,9 @@ cultureInfo en-US
 			            "Entity": "afastado"
 			          }
 			        },
-			        "atestado": {
+			        "calendario": {
 			          "Target": {
-			            "Entity": "atestado"
+			            "Entity": "calendario"
 			          }
 			        }
 			      },
@@ -1448,16 +2715,29 @@ cultureInfo en-US
 			              "Role": "afastado"
 			            },
 			            "Object": {
-			              "Role": "atestado"
+			              "Role": "calendario"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "afastados_have_atestados"
+			          "ID": "afastados_have_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "afastado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_afastados"
 			        }
 			      ]
 			    },
-			    "atestado_has_metrica_afastados_acidente": {
+			    "atestado_has_calendario": {
 			      "Binding": {
 			        "ConceptualEntity": "Atestados"
 			      },
@@ -1468,9 +2748,9 @@ cultureInfo en-US
 			            "Entity": "atestado"
 			          }
 			        },
-			        "metrica.afastados_acidente": {
+			        "calendario": {
 			          "Target": {
-			            "Entity": "metrica.afastados_acidente"
+			            "Entity": "calendario"
 			          }
 			        }
 			      },
@@ -1481,12 +2761,619 @@ cultureInfo en-US
 			              "Role": "atestado"
 			            },
 			            "Object": {
-			              "Role": "metrica.afastados_acidente"
+			              "Role": "calendario"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "atestados_have_afastados_acidente"
+			          "ID": "atestados_have_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "atestado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_atestados"
+			        }
+			      ]
+			    },
+			    "afastado_has_nometipo": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "afastado.nometipo": {
+			          "Target": {
+			            "Entity": "afastado.nometipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "afastado.nometipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_nometipos"
+			        }
+			      ]
+			    },
+			    "afastado_has_secao": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "afastado.secao": {
+			          "Target": {
+			            "Entity": "afastado.secao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "afastado.secao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_secaos"
+			        }
+			      ]
+			    },
+			    "afastado_has_situacao": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "afastado.situacao": {
+			          "Target": {
+			            "Entity": "afastado.situacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "afastado.situacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_situacaos"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_has_qtd_atestado": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento": {
+			          "Target": {
+			            "Entity": "prox_afastamento"
+			          }
+			        },
+			        "prox_afastamento.qtd_atestado": {
+			          "Target": {
+			            "Entity": "prox_afastamento.qtd_atestado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.qtd_atestado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prox_afastamentos_have_qtd_atestados"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_has_total_dias_atestado": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento": {
+			          "Target": {
+			            "Entity": "prox_afastamento"
+			          }
+			        },
+			        "prox_afastamento.total_dias_atestado": {
+			          "Target": {
+			            "Entity": "prox_afastamento.total_dias_atestado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.total_dias_atestado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prox_afastamentos_have_total_dias_atestados"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_has_dtfim_ultimo": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento": {
+			          "Target": {
+			            "Entity": "prox_afastamento"
+			          }
+			        },
+			        "prox_afastamento.dtfim_ultimo": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtfim_ultimo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.dtfim_ultimo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prox_afastamentos_have_dtfim_ultimo"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_has_dtinicio_primeiro": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento": {
+			          "Target": {
+			            "Entity": "prox_afastamento"
+			          }
+			        },
+			        "prox_afastamento.dtinicio_primeiro": {
+			          "Target": {
+			            "Entity": "prox_afastamento.dtinicio_primeiro"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.dtinicio_primeiro"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prox_afastamentos_have_dtinicio_primeiros"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_has_situacao": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento": {
+			          "Target": {
+			            "Entity": "prox_afastamento"
+			          }
+			        },
+			        "prox_afastamento.situacao": {
+			          "Target": {
+			            "Entity": "prox_afastamento.situacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.situacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prox_afastamentos_have_situacaos"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_has_colaborador": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento": {
+			          "Target": {
+			            "Entity": "prox_afastamento"
+			          }
+			        },
+			        "prox_afastamento.colaborador": {
+			          "Target": {
+			            "Entity": "prox_afastamento.colaborador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.colaborador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prox_afastamentos_have_colaboradors"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento": {
+			          "Target": {
+			            "Entity": "prox_afastamento"
+			          }
+			        },
+			        "prox_afastamento.chapa": {
+			          "Target": {
+			            "Entity": "prox_afastamento.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prox_afastamentos_have_chapa"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_has_codpessoa": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento": {
+			          "Target": {
+			            "Entity": "prox_afastamento"
+			          }
+			        },
+			        "prox_afastamento.codpessoa": {
+			          "Target": {
+			            "Entity": "prox_afastamento.codpessoa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.codpessoa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prox_afastamentos_have_codpessoas"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_has_cid": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento": {
+			          "Target": {
+			            "Entity": "prox_afastamento"
+			          }
+			        },
+			        "prox_afastamento.cid": {
+			          "Target": {
+			            "Entity": "prox_afastamento.cid"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.cid"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prox_afastamentos_have_cid"
+			        }
+			      ]
+			    },
+			    "prox_afastamento_has_codcoligada": {
+			      "Binding": {
+			        "ConceptualEntity": "ProxAfastamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "prox_afastamento": {
+			          "Target": {
+			            "Entity": "prox_afastamento"
+			          }
+			        },
+			        "prox_afastamento.codcoligada": {
+			          "Target": {
+			            "Entity": "prox_afastamento.codcoligada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "prox_afastamento"
+			            },
+			            "Object": {
+			              "Role": "prox_afastamento.codcoligada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "prox_afastamentos_have_codcoligadas"
+			        }
+			      ]
+			    },
+			    "atestado_has_categoria_atestado": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.categoria_atestado": {
+			          "Target": {
+			            "Entity": "atestado.categoria_atestado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.categoria_atestado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_categoria_atestados"
+			        }
+			      ]
+			    },
+			    "afastado_has_tipo": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "afastado.tipo": {
+			          "Target": {
+			            "Entity": "afastado.tipo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "afastado.tipo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_tipos"
+			        }
+			      ]
+			    },
+			    "afastado_has_metrica_afastados_previdencia_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "metrica.afastados_previdencia_total": {
+			          "Target": {
+			            "Entity": "metrica.afastados_previdencia_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "metrica.afastados_previdencia_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_afastados_previdencia_total"
+			        }
+			      ]
+			    },
+			    "afastado_has_metrica_afastados_acidente_total": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "metrica.afastados_acidente_total": {
+			          "Target": {
+			            "Entity": "metrica.afastados_acidente_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "metrica.afastados_acidente_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_afastados_acidente_total"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_afastados_acidente_atualmente": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.afastados_acidente_atualmente": {
+			          "Target": {
+			            "Entity": "metrica.afastados_acidente_atualmente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.afastados_acidente_atualmente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_afastados_acidente_atualmente"
 			        }
 			      ]
 			    },
@@ -1553,6 +3440,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "afastados_have_chapa"
+			        }
+			      ]
+			    },
+			    "afastado_has_codpessoa": {
+			      "Binding": {
+			        "ConceptualEntity": "Afastados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastado": {
+			          "Target": {
+			            "Entity": "afastado"
+			          }
+			        },
+			        "afastado.codpessoa": {
+			          "Target": {
+			            "Entity": "afastado.codpessoa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastado"
+			            },
+			            "Object": {
+			              "Role": "afastado.codpessoa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_have_codpessoas"
 			        }
 			      ]
 			    },
@@ -1952,7 +3872,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "atestado_has_metrica_afastados_previdencia": {
+			    "atestado_has_metrica_afastados_previdencia_atualmente": {
 			      "Binding": {
 			        "ConceptualEntity": "Atestados"
 			      },
@@ -1963,9 +3883,9 @@ cultureInfo en-US
 			            "Entity": "atestado"
 			          }
 			        },
-			        "metrica.afastados_previdencia": {
+			        "metrica.afastados_previdencia_atualmente": {
 			          "Target": {
-			            "Entity": "metrica.afastados_previdencia"
+			            "Entity": "metrica.afastados_previdencia_atualmente"
 			          }
 			        }
 			      },
@@ -1976,12 +3896,12 @@ cultureInfo en-US
 			              "Role": "atestado"
 			            },
 			            "Object": {
-			              "Role": "metrica.afastados_previdencia"
+			              "Role": "metrica.afastados_previdencia_atualmente"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "atestados_have_afastados_previdencia"
+			          "ID": "atestados_have_afastados_previdencia_atualmente"
 			        }
 			      ]
 			    },
@@ -2546,20 +4466,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "calendario_date_date_hierarchy_has_calendario_date_month": {
+			    "prox_afastamento_dtfim_ultimo_date_hierarchy_has_prox_afastamento_dtfim_ultimo_day": {
 			      "Binding": {
-			        "ConceptualEntity": "Calendario"
+			        "ConceptualEntity": "ProxAfastamentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "calendario.date.date_hierarchy": {
+			        "prox_afastamento.dtfim_ultimo.date_hierarchy": {
 			          "Target": {
-			            "Entity": "calendario.date.date_hierarchy"
+			            "Entity": "prox_afastamento.dtfim_ultimo.date_hierarchy"
 			          }
 			        },
-			        "calendario.date.month": {
+			        "prox_afastamento.dtfim_ultimo.day": {
 			          "Target": {
-			            "Entity": "calendario.date.month"
+			            "Entity": "prox_afastamento.dtfim_ultimo.day"
 			          }
 			        }
 			      },
@@ -2567,48 +4487,15 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "calendario.date.date_hierarchy"
+			              "Role": "prox_afastamento.dtfim_ultimo.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "calendario.date.month"
+			              "Role": "prox_afastamento.dtfim_ultimo.day"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
-			        }
-			      ]
-			    },
-			    "calendario_date_date_hierarchy_has_calendario_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendario.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendario.date.date_hierarchy"
-			          }
-			        },
-			        "calendario.date.day": {
-			          "Target": {
-			            "Entity": "calendario.date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendario.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendario.date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_days"
+			          "ID": "dtfim_ultimo_date_hierarchies_have_dtfim_ultimo_days"
 			        }
 			      ]
 			    }

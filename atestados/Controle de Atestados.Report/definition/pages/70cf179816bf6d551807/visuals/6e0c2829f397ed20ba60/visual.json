@@ -26,8 +26,8 @@
                 }
               },
               "queryRef": "Atestados.CID",
-              "nativeQueryRef": "Diagnósticos",
-              "displayName": "Diagnósticos"
+              "nativeQueryRef": "Diagnóstico",
+              "displayName": "Diagnóstico"
             },
             {
               "field": {

@@ -9,11 +9,14 @@ table Metricas
 		formatString: 0
 		lineageTag: 05aac298-bb72-4695-a142-86ff6fbeb230
 
-	measure AfastadosPrevidencia = ```
+	measure AfastadosPrevidenciaAtualmente = ```
 			
-			CALCULATE(
-			    DISTINCTCOUNT(Atestados[CPF]),
-			    Atestados[SITUACAO] = "Af.Previdencia"
+			COALESCE(    
+			    CALCULATE(
+			        DISTINCTCOUNT(Atestados[CPF]),
+			        Atestados[SITUACAO] = "Af.Previdencia"
+			    ),
+			    0
 			)
 			
 			```
@@ -28,16 +31,41 @@ table Metricas
 		formatString: 0
 		lineageTag: 6ac06e8f-7865-45ca-9218-9e78686fd71a
 
-	measure AfastadosAcidente = ```
+	measure AfastadosAcidenteAtualmente = ```
 			
-			CALCULATE(
-			    DISTINCTCOUNT(Atestados[CPF]),
-			    Atestados[SITUACAO] = "Af.Ac.Trabalho"
+			COALESCE(
+			    CALCULATE(
+			        DISTINCTCOUNT(Atestados[CPF]),
+			        Atestados[SITUACAO] = "Af.Ac.Trabalho"
+			    ),
+			    0
 			)
 			
 			```
 		formatString: 0
 		lineageTag: 9712f652-4e1c-4983-b23a-e525a99754a9
+
+	measure AfastadosAcidenteTotal = ```
+			
+			CALCULATE(
+			    COUNTROWS(Afastados),
+			    Afastados[TIPO] = "T"
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 32c49b68-5b47-4e58-b14d-6bf5ae271b5d
+
+	measure AfastadosPrevidenciaTotal = ```
+			
+			CALCULATE(
+			    COUNTROWS(Afastados),
+			    Afastados[TIPO] = "P"
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 6341b3fd-433c-48fe-a7a5-07b6a7f93cf5
 
 	partition Metricas = m
 		mode: import

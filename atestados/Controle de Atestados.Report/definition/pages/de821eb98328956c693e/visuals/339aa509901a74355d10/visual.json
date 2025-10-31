@@ -1,0 +1,206 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "339aa509901a74355d10",
+  "position": {
+    "x": 16.041939711664483,
+    "y": 369.90825688073392,
+    "z": 8001,
+    "height": 99.082568807339442,
+    "width": 198.16513761467888,
+    "tabOrder": 7001
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendario"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "queryRef": "Calendario.Date",
+              "nativeQueryRef": "Período Analisado",
+              "active": true,
+              "displayName": "Período Analisado"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Calendario"
+                  }
+                },
+                "Property": "Date"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "startDate": {
+              "expr": {
+                "Literal": {
+                  "Value": "datetime'2025-01-01T00:00:00'"
+                }
+              }
+            },
+            "endDate": {
+              "expr": {
+                "Literal": {
+                  "Value": "datetime'2025-12-31T00:00:00'"
+                }
+              }
+            },
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Between'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "c",
+                    "Entity": "Calendario",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "And": {
+                        "Left": {
+                          "Comparison": {
+                            "ComparisonKind": 2,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "c"
+                                  }
+                                },
+                                "Property": "Date"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "datetime'2025-01-01T00:00:00'"
+                              }
+                            }
+                          }
+                        },
+                        "Right": {
+                          "Comparison": {
+                            "ComparisonKind": 3,
+                            "Left": {
+                              "Column": {
+                                "Expression": {
+                                  "SourceRef": {
+                                    "Source": "c"
+                                  }
+                                },
+                                "Property": "Date"
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "datetime'2026-01-01T00:00:00'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "slider": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "syncGroup": {
+      "groupName": "DTINICIO",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

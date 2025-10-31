@@ -10,36 +10,36 @@
       "nodes": [
         {
           "location": {
-            "x": 681.68194946074743,
-            "y": 0
+            "x": 496.68721154847572,
+            "y": 180.3363519818798
           },
           "nodeIndex": "Atestados",
           "nodeLineageTag": "01a7215c-de16-4843-9b74-5e7e01b236e2",
           "size": {
-            "height": 200,
+            "height": 72,
             "width": 234
           },
-          "zIndex": 1,
-          "expandedHeight": 202.46045903062213
+          "zIndex": 4,
+          "expandedHeight": 419.19192496647679
         },
         {
           "location": {
-            "x": 417.63582404534316,
-            "y": 235.67345779078204
+            "x": 341.44221255302261,
+            "y": 37.386944794684695
           },
           "nodeIndex": "Calendario",
           "nodeLineageTag": "7d987b68-8001-44e7-9df5-9788523194ad",
           "size": {
-            "height": 104,
+            "height": 72,
             "width": 234
           },
-          "zIndex": 4,
+          "zIndex": 3,
           "expandedHeight": 200
         },
         {
           "location": {
-            "x": 416.731655091589,
-            "y": 356.82715436638148
+            "x": 497.56592112543251,
+            "y": 266.43453408122696
           },
           "nodeIndex": "Metricas",
           "nodeLineageTag": "486b2cb6-4d63-4300-ae2c-a731b5e1d11c",
@@ -52,24 +52,38 @@
         },
         {
           "location": {
-            "x": 171.699904876348,
-            "y": 0
+            "x": 176.89557233102616,
+            "y": 179.87651243317239
           },
           "nodeIndex": "Afastados",
           "nodeLineageTag": "114ce549-6923-46ec-9df8-e8b495e22c6f",
           "size": {
-            "height": 176,
+            "height": 72,
             "width": 234
           },
-          "zIndex": 3,
+          "zIndex": 5,
           "expandedHeight": 199.15071061688994
+        },
+        {
+          "location": {
+            "x": 176.25997674281973,
+            "y": 265.11859649265125
+          },
+          "nodeIndex": "ProxAfastamentos",
+          "nodeLineageTag": "2e2344ca-e7ae-4f6b-8049-9fbd28109d22",
+          "size": {
+            "height": 72,
+            "width": 234
+          },
+          "zIndex": 1,
+          "expandedHeight": 300
         }
       ],
       "name": "All tables",
-      "zoomValue": 113.04311487124437,
+      "zoomValue": 126.74047722066612,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
-      "hideKeyFieldsWhenCollapsed": false,
+      "hideKeyFieldsWhenCollapsed": true,
       "tablesLocked": false
     }
   ],

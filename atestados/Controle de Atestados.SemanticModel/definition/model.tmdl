@@ -8,7 +8,7 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["Atestados","Metricas","Afastados"]
+annotation PBI_QueryOrder = ["Atestados","Metricas","Afastados","ProxAfastamentos"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
@@ -18,6 +18,9 @@ ref table Metricas
 ref table Calendario
 ref table LocalDateTable_5f21e2c5-85d6-484f-a7d8-34e49836e48b
 ref table Afastados
+ref table ProxAfastamentos
+ref table LocalDateTable_ec098d9a-759b-433b-b34a-f45cb1e43be6
+ref table LocalDateTable_80dfee90-9483-42be-813d-8c8dcb805d6a
 
 ref cultureInfo en-US
 

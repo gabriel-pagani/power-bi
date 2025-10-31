@@ -7,7 +7,7 @@
     "z": 6000,
     "height": 267.5,
     "width": 508.33333333333337,
-    "tabOrder": 6000
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -201,6 +201,46 @@
                 }
               }
             }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.TotalAtestados"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.TotalColaboradores"
           }
         }
       ]

@@ -52,11 +52,49 @@ table Afastados
 
 		annotation SummarizationSetBy = Automatic
 
+	column TIPO
+		dataType: string
+		lineageTag: c6903157-7f51-46fc-86dd-114865eb8b0d
+		summarizeBy: none
+		sourceColumn: TIPO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SITUACAO
+		dataType: string
+		lineageTag: 9fda19c3-0ceb-4557-b569-54194be46dcb
+		summarizeBy: none
+		sourceColumn: SITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: 9a80e797-1dff-4926-ae56-87d31b2c98e6
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMETIPO = ```
+			
+			SWITCH(
+			    'Afastados'[TIPO],
+			    "T", "Ac. de Trabalho",
+			    "P", "Previdência"
+			)
+			
+			```
+		lineageTag: 5c627ed9-f3f2-484e-9216-16eb0a33c780
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Afastados = m
 		mode: import
 		source =
 				let
-				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)        PFHSTAFT.CODCOLIGADA, #(lf)        NOMEFANTASIA,#(lf)        PFUNC.CODPESSOA,#(lf)        PFUNC.CHAPA,#(lf)        PPESSOA.NOME,#(lf)        DTINICIO#(lf)#(lf)FROM PFHSTAFT #(lf)        JOIN GCOLIGADA ON #(lf)                GCOLIGADA.CODCOLIGADA = PFHSTAFT.CODCOLIGADA#(lf)        JOIN PFUNC ON #(lf)                PFUNC.CODCOLIGADA = PFHSTAFT.CODCOLIGADA#(lf)                AND PFUNC.CHAPA = PFHSTAFT.CHAPA#(lf)        LEFT JOIN PPESSOA ON #(lf)                PPESSOA.CODIGO=PFUNC.CODPESSOA#(lf)        #(lf)WHERE TIPO IN ('P','T')"]),
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)        PFHSTAFT.CODCOLIGADA, #(lf)        NOMEFANTASIA,#(lf)        PFUNC.CODPESSOA,#(lf)        PFUNC.CHAPA,#(lf)        PPESSOA.NOME,#(lf)        PCODSITUACAO.DESCRICAO AS SITUACAO,#(lf)        PSECAO.DESCRICAO AS SECAO,#(lf)        PFHSTAFT.TIPO,#(lf)        DTINICIO#(lf)#(lf)FROM PFHSTAFT #(lf)        JOIN GCOLIGADA ON #(lf)                GCOLIGADA.CODCOLIGADA = PFHSTAFT.CODCOLIGADA#(lf)        JOIN PFUNC ON #(lf)                PFUNC.CODCOLIGADA = PFHSTAFT.CODCOLIGADA#(lf)                AND PFUNC.CHAPA = PFHSTAFT.CHAPA#(lf)        LEFT JOIN PPESSOA ON #(lf)                PPESSOA.CODIGO=PFUNC.CODPESSOA#(lf)        JOIN PSECAO ON #(lf)#(tab)#(tab)#(tab)#(tab)PSECAO.CODIGO=PFUNC.CODSECAO #(lf)#(tab)#(tab)#(tab)#(tab)AND PSECAO.CODCOLIGADA=PFUNC.CODCOLIGADA#(lf)#(tab)#(tab)JOIN PCODSITUACAO ON #(lf)#(tab)#(tab)#(tab)#(tab)PCODSITUACAO.CODCLIENTE=PFUNC.CODSITUACAO#(lf)        #(lf)WHERE TIPO IN ('P','T')"]),
 				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"DTINICIO", type date}, {"CODCOLIGADA", type text}, {"CODPESSOA", type text}})
 				in
 				    #"Changed Type"

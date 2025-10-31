@@ -4,10 +4,10 @@
   "position": {
     "x": 230.72319201995012,
     "y": 16.159600997506235,
-    "z": 11000,
+    "z": 10000,
     "height": 97.855361596009971,
     "width": 198.40399002493766,
-    "tabOrder": 11000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "card",
@@ -23,7 +23,7 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "AfastadosPrevidencia"
+                  "Property": "AfastadosPrevidenciaAtualmente"
                 }
               },
               "queryRef": "Metricas.AfastadosPrevidencia",
@@ -43,7 +43,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "AfastadosPrevidencia"
+                "Property": "AfastadosPrevidenciaAtualmente"
               }
             },
             "direction": "Descending"

@@ -6,8 +6,7 @@
     "y": 0.34482758620689657,
     "z": 2000,
     "height": 12.068965517241379,
-    "width": 12.068965517241379,
-    "tabOrder": 2000
+    "width": 12.068965517241379
   },
   "visual": {
     "visualType": "slicer",
@@ -27,7 +26,7 @@
                 }
               },
               "queryRef": "Atestados.COLIGADA",
-              "nativeQueryRef": "Coligada",
+              "nativeQueryRef": "COLIGADA",
               "active": true,
               "displayName": "Coligada"
             }

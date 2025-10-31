@@ -1,0 +1,114 @@
+table ProxAfastamentos
+	lineageTag: 2e2344ca-e7ae-4f6b-8049-9fbd28109d22
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: a154e78e-560b-4aab-b5dc-3d17796b1ae2
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CID
+		dataType: string
+		lineageTag: 3c26707a-d682-4d8c-8ab0-47d90f0e4f9c
+		summarizeBy: none
+		sourceColumn: CID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODPESSOA
+		dataType: string
+		lineageTag: d5762cea-5849-4aee-a1fe-f625d3df2c66
+		summarizeBy: none
+		sourceColumn: CODPESSOA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: f408eb00-f21e-4261-bc56-635ba206b690
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLABORADOR
+		dataType: string
+		lineageTag: db14d2aa-a95a-4010-8634-6bec3ca3e201
+		summarizeBy: none
+		sourceColumn: COLABORADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column SITUACAO
+		dataType: string
+		lineageTag: c676118b-6f15-41cd-94dd-ef0fcba176d1
+		summarizeBy: none
+		sourceColumn: SITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DTINICIO_PRIMEIRO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4837a756-66a7-4a5e-adeb-eb82180dd61e
+		summarizeBy: none
+		sourceColumn: DTINICIO_PRIMEIRO
+
+		variation Variation
+			isDefault
+			relationship: 76e0cf71-1273-4fcf-a91c-a51d9f8e5077
+			defaultHierarchy: LocalDateTable_ec098d9a-759b-433b-b34a-f45cb1e43be6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DTFIM_ULTIMO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b3a75bee-374e-493b-9013-5c19b4f19ccf
+		summarizeBy: none
+		sourceColumn: DTFIM_ULTIMO
+
+		variation Variation
+			isDefault
+			relationship: 9e6d27f1-f157-47b2-b833-c32c76093276
+			defaultHierarchy: LocalDateTable_80dfee90-9483-42be-813d-8c8dcb805d6a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column TOTAL_DIAS_ATESTADOS
+		dataType: int64
+		formatString: 0
+		lineageTag: 1631a3c2-e22e-43fc-aa58-e7880dbb4a41
+		summarizeBy: sum
+		sourceColumn: TOTAL_DIAS_ATESTADOS
+
+		annotation SummarizationSetBy = Automatic
+
+	column QTD_ATESTADOS
+		dataType: int64
+		formatString: 0
+		lineageTag: 5289765a-d9e7-4d64-ac0f-55ced8e16747
+		summarizeBy: sum
+		sourceColumn: QTD_ATESTADOS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition ProxAfastamentos = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="WITH TEMPTABLE AS (#(lf)    SELECT#(tab)#(lf)        VATESTADO.CODCOLIGADA,#(lf)        VCID.CID,#(lf)        VATESTADO.CODPESSOA,#(lf)        VCHAPAATESTADO.CHAPA,#(lf)        PPESSOA.NOME AS COLABORADOR,#(lf)        PCODSITUACAO.DESCRICAO AS SITUACAO,#(lf)        VATESTADO.DTINICIO,#(lf)        CASE#(lf)            WHEN VATESTADO.DTFINAL IS NULL THEN CAST(GETDATE() AS DATE)#(lf)            ELSE VATESTADO.DTFINAL #(lf)        END AS DTFIM,#(lf)        DATEDIFF(#(lf)            DAY, #(lf)            VATESTADO.DTINICIO, #(lf)            CASE#(lf)                WHEN VATESTADO.DTFINAL IS NULL THEN CAST(GETDATE() AS DATE)#(lf)                ELSE VATESTADO.DTFINAL #(lf)            END#(lf)        ) + 1 AS DIASATESTADOS#(lf)        #(lf)    FROM VATESTADO#(lf)    JOIN VTIPOATESTADO ON #(lf)        VTIPOATESTADO.CODTPATESTADO=VATESTADO.CODTPATESTADO#(lf)    LEFT JOIN VCID ON #(lf)        VCID.CID=VATESTADO.CID#(lf)    LEFT JOIN VCHAPAATESTADO ON #(lf)        VATESTADO.CODPESSOA=VCHAPAATESTADO.CODPESSOA #(lf)        AND VATESTADO.SEQATESTADO=VCHAPAATESTADO.SEQATESTADO #(lf)        AND VATESTADO.DTINICIO=VCHAPAATESTADO.DTINICIO #(lf)        AND VATESTADO.CODTPATESTADO=VCHAPAATESTADO.CODTPATESTADO#(lf)    JOIN PPESSOA ON #(lf)        PPESSOA.CODIGO=VATESTADO.CODPESSOA#(lf)    LEFT JOIN PFUNC ON#(lf)        PFUNC.CODCOLIGADA=VCHAPAATESTADO.CODCOLIGADA#(lf)        AND PFUNC.CHAPA=VCHAPAATESTADO.CHAPA#(lf)    LEFT JOIN PSECAO ON #(lf)        PSECAO.CODIGO=PFUNC.CODSECAO #(lf)        AND PSECAO.CODCOLIGADA=PFUNC.CODCOLIGADA#(lf)    LEFT JOIN PCODSITUACAO ON #(lf)        PCODSITUACAO.CODCLIENTE=PFUNC.CODSITUACAO#(lf)#(lf)    WHERE CODSITUACAO NOT IN ('D','T','P','C')#(lf)),#(lf)ORDENADO AS (#(lf)    SELECT #(lf)        *,#(lf)        LAG(DTFIM) OVER (#(lf)            PARTITION BY CODCOLIGADA, CODPESSOA, CHAPA, CID #(lf)            ORDER BY DTINICIO#(lf)        ) AS DTFIM_ANTERIOR#(lf)    FROM TEMPTABLE#(lf)    WHERE DTFIM >= CAST(GETDATE() AS DATE)#(lf)),#(lf)COM_GRUPO AS (#(lf)    SELECT #(lf)        *,#(lf)        CASE #(lf)            WHEN DTFIM_ANTERIOR IS NULL THEN 1#(lf)            WHEN DATEDIFF(DAY, DTFIM_ANTERIOR, DTINICIO) <= 60 THEN 0#(lf)            ELSE 1#(lf)        END AS NOVO_GRUPO#(lf)    FROM ORDENADO#(lf)),#(lf)GRUPOS_IDENTIFICADOS AS (#(lf)    SELECT #(lf)        *,#(lf)        SUM(NOVO_GRUPO) OVER (#(lf)            PARTITION BY CODCOLIGADA, CODPESSOA, CHAPA, CID #(lf)            ORDER BY DTINICIO#(lf)            ROWS UNBOUNDED PRECEDING#(lf)        ) AS GRUPO_ID#(lf)    FROM COM_GRUPO#(lf))#(lf)SELECT #(lf)    CODCOLIGADA,#(lf)    CID,#(lf)    CODPESSOA,#(lf)    CHAPA,#(lf)    COLABORADOR,#(lf)    SITUACAO,#(lf)    MIN(DTINICIO) AS DTINICIO_PRIMEIRO,#(lf)    MAX(DTFIM) AS DTFIM_ULTIMO,#(lf)    SUM(DIASATESTADOS) AS TOTAL_DIAS_ATESTADOS,#(lf)    COUNT(*) AS QTD_ATESTADOS#(lf)FROM GRUPOS_IDENTIFICADOS#(lf)GROUP BY #(lf)    CODCOLIGADA, #(lf)    CID, #(lf)    CODPESSOA, #(lf)    CHAPA, #(lf)    COLABORADOR,#(lf)    SITUACAO,#(lf)    GRUPO_ID#(lf)ORDER BY #(lf)    TOTAL_DIAS_ATESTADOS DESC#(lf)"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}, {"CODPESSOA", type text}, {"DTINICIO_PRIMEIRO", type date}, {"DTFIM_ULTIMO", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
