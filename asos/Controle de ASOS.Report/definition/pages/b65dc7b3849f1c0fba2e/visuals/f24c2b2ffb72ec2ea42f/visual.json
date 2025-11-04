@@ -1,12 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "6e0c2829f397ed20ba60",
+  "name": "f24c2b2ffb72ec2ea42f",
   "position": {
-    "x": 0,
-    "y": 0,
-    "z": 0,
-    "height": 362.14285714285717,
-    "width": 509.28571428571433
+    "x": 864,
+    "y": 464,
+    "z": 5000,
+    "height": 222,
+    "width": 386,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "tableEx",
@@ -19,30 +20,15 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Atestados"
+                      "Entity": "Asos"
                     }
                   },
-                  "Property": "CODCID"
+                  "Property": "SECAO"
                 }
               },
-              "queryRef": "Atestados.CODCID",
-              "nativeQueryRef": "CID",
-              "displayName": "CID"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Atestados"
-                    }
-                  },
-                  "Property": "CID"
-                }
-              },
-              "queryRef": "Atestados.CID",
-              "nativeQueryRef": "Causa",
-              "displayName": "Causa"
+              "queryRef": "Asos.SECAO",
+              "nativeQueryRef": "Setor",
+              "displayName": "Setor"
             },
             {
               "field": {
@@ -52,12 +38,12 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "TotalCIDs"
+                  "Property": "Total de Exames Pendente"
                 }
               },
-              "queryRef": "Metricas.TotalCIDs",
-              "nativeQueryRef": "Ocorrências",
-              "displayName": "Ocorrências"
+              "queryRef": "Metricas.Total de Exames Pendente",
+              "nativeQueryRef": "Exames Pendente",
+              "displayName": "Exames Pendente"
             }
           ]
         }
@@ -72,7 +58,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "TotalCIDs"
+                "Property": "Total de Exames Pendente"
               }
             },
             "direction": "Descending"
@@ -81,19 +67,32 @@
       }
     },
     "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
       "columnWidth": [
         {
           "properties": {
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "114.1728747069822D"
+                  "Value": "78.24516175936024D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Metricas.TotalCIDs"
+            "metadata": "Metricas.Total de Exames Pendente"
           }
         },
         {
@@ -101,27 +100,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "316.87563440833117D"
+                  "Value": "282.8688040372556D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Atestados.CID"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "53D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Atestados.CODCID"
+            "metadata": "Asos.SECAO"
           }
         }
       ],
@@ -132,39 +117,6 @@
               "expr": {
                 "Literal": {
                   "Value": "'Center'"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "grid": [
-        {
-          "properties": {
-            "gridVertical": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "15D"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "total": [
-        {
-          "properties": {
-            "totals": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
                 }
               }
             }
@@ -183,21 +135,7 @@
             }
           },
           "selector": {
-            "metadata": "Metricas.TotalCIDs"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Atestados.CODCID"
+            "metadata": "Metricas.Total de Exames Pendente"
           }
         }
       ]

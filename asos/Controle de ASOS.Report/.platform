@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "Report",
-    "displayName": "Controle de Férias"
+    "displayName": "Controle de ASOS"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "6fa734c6-6687-4c30-b971-22495ac21e31"
+    "logicalId": "fee2d497-871f-4fb0-bd89-f8cc6f7b2511"
   }
 }

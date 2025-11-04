@@ -1,0 +1,2142 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "aso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "aso": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.codcoligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "CODCOLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codcoligada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.chapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "CHAPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.nome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "NOME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.codsecao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "CODSECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codsecao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.secao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "SECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Setor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Seção": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "aso.codfuncao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "CODFUNCAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codfuncao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.funcao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "FUNCAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "funcao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Função": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "aso.codsituacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "CODSITUACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codsituacao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.situacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "SITUACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situacao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Situação": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "aso.codperfil": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "CODPERFIL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codperfil": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.nomeperfil": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "NOMEPERFIL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nomeperfil": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.codexame": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "CODEXAME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codexame": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.nomeexame": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "NOMEEXAME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nomeexame": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.tipoexame": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "TIPOEXAME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "tipoexame": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.nometipoexame": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "NOMETIPOEXAME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nometipoexame": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Tipo de Exame": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "aso.dataexame": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "DATAEXAME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataexame": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Data do Exame": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "aso.situacaoexame": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "SITUACAOEXAME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situacaoexame": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aso.validade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "VALIDADE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "validade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "metrica": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "metrica": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_de_exames_em_dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "Total de Exames Em Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de exames em dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de exame em dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall de exame em dia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_de_exames_a_vencer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "Total de Exames A Vencer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de exames a vencer": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de exame a vencer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall de exame a vencer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_de_exames_vencido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "Total de Exames Vencido"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de exames vencido": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de exame vencido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall de exame vencido": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_de_exames_pendente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "Total de Exames Pendente"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de exames pendente": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de exame pendente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall de exame pendente": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "Exames Pendente": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.month_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "MonthNo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MonthNo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "month number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "aso.nomefantasia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Asos",
+			          "ConceptualProperty": "NOMEFANTASIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nomefantasia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Coligada": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "calendario_date_date_hierarchy_has_calendario_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.month": {
+			          "Target": {
+			            "Entity": "calendario.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.quarter": {
+			          "Target": {
+			            "Entity": "calendario.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.year": {
+			          "Target": {
+			            "Entity": "calendario.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "calendario_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date": {
+			          "Target": {
+			            "Entity": "calendario.date"
+			          }
+			        },
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "aso_has_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "aso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_asos"
+			        }
+			      ]
+			    },
+			    "aso_has_nomefantasia": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.nomefantasia": {
+			          "Target": {
+			            "Entity": "aso.nomefantasia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.nomefantasia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_nomefantasias"
+			        }
+			      ]
+			    },
+			    "calendario_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.year": {
+			          "Target": {
+			            "Entity": "calendario.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_years"
+			        }
+			      ]
+			    },
+			    "calendario_has_month_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.month_no": {
+			          "Target": {
+			            "Entity": "calendario.month_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.month_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_month_noes"
+			        }
+			      ]
+			    },
+			    "calendario_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.month": {
+			          "Target": {
+			            "Entity": "calendario.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_months"
+			        }
+			      ]
+			    },
+			    "calendario_has_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.day": {
+			          "Target": {
+			            "Entity": "calendario.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_days"
+			        }
+			      ]
+			    },
+			    "calendario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.date": {
+			          "Target": {
+			            "Entity": "calendario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_dates"
+			        }
+			      ]
+			    },
+			    "aso_has_metrica_total_de_exames_pendente": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "metrica.total_de_exames_pendente": {
+			          "Target": {
+			            "Entity": "metrica.total_de_exames_pendente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_de_exames_pendente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_total_de_exames_pendente"
+			        }
+			      ]
+			    },
+			    "aso_has_metrica_total_de_exames_vencido": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "metrica.total_de_exames_vencido": {
+			          "Target": {
+			            "Entity": "metrica.total_de_exames_vencido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_de_exames_vencido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_total_de_exames_vencido"
+			        }
+			      ]
+			    },
+			    "aso_has_metrica_total_de_exames_a_vencer": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "metrica.total_de_exames_a_vencer": {
+			          "Target": {
+			            "Entity": "metrica.total_de_exames_a_vencer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_de_exames_a_vencer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_total_de_exames_a_vencer"
+			        }
+			      ]
+			    },
+			    "aso_has_metrica_total_de_exames_em_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "metrica.total_de_exames_em_dia": {
+			          "Target": {
+			            "Entity": "metrica.total_de_exames_em_dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_de_exames_em_dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_total_de_exames_em_dia"
+			        }
+			      ]
+			    },
+			    "aso_has_validade": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.validade": {
+			          "Target": {
+			            "Entity": "aso.validade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.validade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_validades"
+			        }
+			      ]
+			    },
+			    "aso_has_situacaoexame": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.situacaoexame": {
+			          "Target": {
+			            "Entity": "aso.situacaoexame"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.situacaoexame"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_situacaoexames"
+			        }
+			      ]
+			    },
+			    "aso_has_dataexame": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.dataexame": {
+			          "Target": {
+			            "Entity": "aso.dataexame"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.dataexame"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_dataexames"
+			        }
+			      ]
+			    },
+			    "aso_has_nometipoexame": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.nometipoexame": {
+			          "Target": {
+			            "Entity": "aso.nometipoexame"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.nometipoexame"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_nometipoexames"
+			        }
+			      ]
+			    },
+			    "aso_has_tipoexame": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.tipoexame": {
+			          "Target": {
+			            "Entity": "aso.tipoexame"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.tipoexame"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_tipoexames"
+			        }
+			      ]
+			    },
+			    "aso_has_nomeexame": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.nomeexame": {
+			          "Target": {
+			            "Entity": "aso.nomeexame"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.nomeexame"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_nomeexames"
+			        }
+			      ]
+			    },
+			    "aso_has_codexame": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.codexame": {
+			          "Target": {
+			            "Entity": "aso.codexame"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.codexame"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_codexames"
+			        }
+			      ]
+			    },
+			    "aso_has_nomeperfil": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.nomeperfil": {
+			          "Target": {
+			            "Entity": "aso.nomeperfil"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.nomeperfil"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_nomeperfils"
+			        }
+			      ]
+			    },
+			    "aso_has_codperfil": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.codperfil": {
+			          "Target": {
+			            "Entity": "aso.codperfil"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.codperfil"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_codperfils"
+			        }
+			      ]
+			    },
+			    "aso_has_situacao": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.situacao": {
+			          "Target": {
+			            "Entity": "aso.situacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.situacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_situacaos"
+			        }
+			      ]
+			    },
+			    "aso_has_codsituacao": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.codsituacao": {
+			          "Target": {
+			            "Entity": "aso.codsituacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.codsituacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_codsituacaos"
+			        }
+			      ]
+			    },
+			    "aso_has_funcao": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.funcao": {
+			          "Target": {
+			            "Entity": "aso.funcao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.funcao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_funcaos"
+			        }
+			      ]
+			    },
+			    "aso_has_codfuncao": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.codfuncao": {
+			          "Target": {
+			            "Entity": "aso.codfuncao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.codfuncao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_codfuncaos"
+			        }
+			      ]
+			    },
+			    "aso_has_secao": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.secao": {
+			          "Target": {
+			            "Entity": "aso.secao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.secao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_secaos"
+			        }
+			      ]
+			    },
+			    "aso_has_codsecao": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.codsecao": {
+			          "Target": {
+			            "Entity": "aso.codsecao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.codsecao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_codsecaos"
+			        }
+			      ]
+			    },
+			    "aso_has_nome": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.nome": {
+			          "Target": {
+			            "Entity": "aso.nome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.nome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_nome"
+			        }
+			      ]
+			    },
+			    "aso_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.chapa": {
+			          "Target": {
+			            "Entity": "aso.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_chapa"
+			        }
+			      ]
+			    },
+			    "aso_has_codcoligada": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "aso.codcoligada": {
+			          "Target": {
+			            "Entity": "aso.codcoligada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "aso.codcoligada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_codcoligadas"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.day": {
+			          "Target": {
+			            "Entity": "calendario.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

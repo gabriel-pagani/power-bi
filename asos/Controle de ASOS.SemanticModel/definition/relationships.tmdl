@@ -1,0 +1,9 @@
+relationship 8f7164fc-929b-47c8-b9a7-a769ebc84a37
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendario.Date
+	toColumn: LocalDateTable_ac7dbcfa-4cc1-4f28-9234-168366e3ce02.Date
+
+relationship 13db1f41-2c8a-240b-f3e3-3a1ef7595ec5
+	fromColumn: Asos.DATAEXAME
+	toColumn: Calendario.Date
+

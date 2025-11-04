@@ -1,0 +1,64 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 243,
+            "y": 0
+          },
+          "nodeIndex": "Asos",
+          "nodeLineageTag": "f3cabdf7-bea2-4bc2-9a6b-2d5fd5737ed1",
+          "size": {
+            "height": 72,
+            "width": 234
+          },
+          "zIndex": 0,
+          "expandedHeight": 300
+        },
+        {
+          "location": {
+            "x": 419,
+            "y": 108
+          },
+          "nodeIndex": "Metricas",
+          "nodeLineageTag": "a16a904e-f54f-42b0-b0ba-74f24013478b",
+          "size": {
+            "height": 72,
+            "width": 234
+          },
+          "zIndex": 0,
+          "expandedHeight": 104
+        },
+        {
+          "location": {
+            "x": 579,
+            "y": 0
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "8e3df619-e9e6-4b37-a9c5-73fd77f84ed6",
+          "size": {
+            "height": 72,
+            "width": 234
+          },
+          "zIndex": 0,
+          "expandedHeight": 200
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": true,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

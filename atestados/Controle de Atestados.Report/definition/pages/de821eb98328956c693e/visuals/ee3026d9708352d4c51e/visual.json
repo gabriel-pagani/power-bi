@@ -78,8 +78,8 @@
                 }
               },
               "queryRef": "Metricas.AfastadosPrevidenciaTotal",
-              "nativeQueryRef": "Previdência",
-              "displayName": "Previdência"
+              "nativeQueryRef": "Aux. Doença",
+              "displayName": "Aux. Doença"
             }
           ]
         }

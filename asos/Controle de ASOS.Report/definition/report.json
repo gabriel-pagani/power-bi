@@ -31,14 +31,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "false"
-              }
-            }
-          },
-          "visible": {
-            "expr": {
-              "Literal": {
-                "Value": "false"
+                "Value": "true"
               }
             }
           }
@@ -46,9 +39,6 @@
       }
     ]
   },
-  "publicCustomVisuals": [
-    "textFilter25A4896A83E0487089E2B90C9AE57C8A"
-  ],
   "resourcePackages": [
     {
       "name": "SharedResources",
@@ -66,18 +56,8 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "P_gina_Complementar_(1)6404530000444687.svg",
-          "path": "P_gina_Complementar_(1)6404530000444687.svg",
-          "type": "Image"
-        },
-        {
-          "name": "Tabela_Din_mica5089004341794092.svg",
-          "path": "Tabela_Din_mica5089004341794092.svg",
-          "type": "Image"
-        },
-        {
-          "name": "P_gina_Principal5963232868675844.svg",
-          "path": "P_gina_Principal5963232868675844.svg",
+          "name": "P_gina_Principal6382917526527756.svg",
+          "path": "P_gina_Principal6382917526527756.svg",
           "type": "Image"
         }
       ]

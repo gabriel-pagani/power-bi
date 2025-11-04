@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "Report",
-    "displayName": "Controle de Férias"
+    "type": "SemanticModel",
+    "displayName": "Controle de ASOS"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "6fa734c6-6687-4c30-b971-22495ac21e31"
+    "logicalId": "2a11450d-857f-4c0a-92cd-02dfd7f90595"
   }
 }

@@ -1016,6 +1016,16 @@ cultureInfo en-US
 			          "codcid": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "CID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1445,7 +1455,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Previdência": {
+			          "Aux. Doença": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
