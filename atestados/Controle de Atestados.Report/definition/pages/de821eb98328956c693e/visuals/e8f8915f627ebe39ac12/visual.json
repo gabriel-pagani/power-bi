@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "e8f8915f627ebe39ac12",
   "position": {
-    "x": 16.177737474495647,
+    "x": 16.159600997506235,
     "y": 16.159600997506235,
     "z": 2000,
     "height": 97.855361596009971,
-    "width": 198.40399002493766
+    "width": 206.48379052369077
   },
   "visual": {
     "visualType": "card",
@@ -26,8 +26,8 @@
                 }
               },
               "queryRef": "Metricas.AfastadosPrevidencia",
-              "nativeQueryRef": "Afastados por Previdência",
-              "displayName": "Afastados por Previdência"
+              "nativeQueryRef": "Afastados por Aux. doença",
+              "displayName": "Afastados por Aux. doença"
             }
           ]
         }

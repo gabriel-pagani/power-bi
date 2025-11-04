@@ -81,7 +81,7 @@ table Afastados
 			SWITCH(
 			    'Afastados'[TIPO],
 			    "T", "Ac. de Trabalho",
-			    "P", "Previdência"
+			    "P", "Aux. Doença"
 			)
 			
 			```

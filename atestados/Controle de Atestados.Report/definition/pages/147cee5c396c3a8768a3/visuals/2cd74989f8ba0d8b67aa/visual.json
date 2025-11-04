@@ -27,8 +27,8 @@
                 }
               },
               "queryRef": "Metricas.TotalAtestados",
-              "nativeQueryRef": "Total de Atestados",
-              "displayName": "Total de Atestados"
+              "nativeQueryRef": "Total de Justificativas",
+              "displayName": "Total de Justificativas"
             }
           ]
         }

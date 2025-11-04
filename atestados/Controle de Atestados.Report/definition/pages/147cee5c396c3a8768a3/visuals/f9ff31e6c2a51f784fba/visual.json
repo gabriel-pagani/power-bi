@@ -6,7 +6,7 @@
     "y": 16.159600997506235,
     "z": 10000,
     "height": 97.855361596009971,
-    "width": 198.40399002493766,
+    "width": 211.87032418952617,
     "tabOrder": 7000
   },
   "visual": {
@@ -27,8 +27,8 @@
                 }
               },
               "queryRef": "Metricas.AfastadosPrevidencia",
-              "nativeQueryRef": "Afastados por Previdência",
-              "displayName": "Afastados por Previdência"
+              "nativeQueryRef": "Afastados por Aux. doença",
+              "displayName": "Afastados por Aux. doença"
             }
           ]
         }

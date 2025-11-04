@@ -103,6 +103,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "Justificativa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Atestado": {
 			            "State": "Suggested",
 			            "Source": {
@@ -299,7 +309,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Total de Atestados": {
+			          "Total de Justificativas": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -901,7 +911,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Afastados por Previdência": {
+			          "Afastados por Aux. doença": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
