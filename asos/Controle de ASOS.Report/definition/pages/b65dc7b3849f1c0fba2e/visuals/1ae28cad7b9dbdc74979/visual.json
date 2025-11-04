@@ -84,23 +84,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "6ceac69d59de3a45dc0c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Asos"
-              }
-            },
-            "Property": "NOMEFANTASIA"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
