@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
     "type": "Report",
-    "displayName": "Controle de ASOS"
+    "displayName": "Controle de ASOs"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "1405bdad-52f2-4780-91e6-e2586c839e47"
+    "logicalId": "47f8908b-c399-42d1-8f96-2e4c613db651"
   }
 }
