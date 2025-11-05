@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "8e67109d891adafdab1e",
+  "name": "0ff4bc890367c91fc8b1",
   "position": {
-    "x": 257.673996826116,
-    "y": 16.159600997506235,
-    "z": 3000,
-    "height": 97.855361596009971,
-    "width": 198.40399002493766,
-    "tabOrder": 1000
+    "x": 248.88888888888889,
+    "y": 15.555555555555555,
+    "z": 8003,
+    "height": 97.777777777777771,
+    "width": 217.77777777777777,
+    "tabOrder": 6002
   },
   "visual": {
     "visualType": "card",
@@ -113,8 +113,46 @@
             }
           }
         }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'74a188ca68773f7c8d8f'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "2837b6916df2841b372d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "AfastadosAcidenteAtualmente"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

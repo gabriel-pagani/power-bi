@@ -11,10 +11,10 @@ table Metricas
 
 	measure AfastadosPrevidenciaAtualmente = ```
 			
-			COALESCE(    
+			COALESCE(
 			    CALCULATE(
-			        DISTINCTCOUNT(Atestados[CPF]),
-			        Atestados[SITUACAO] = "Af.Previdencia"
+			        COUNTROWS(AfastadosAtuais),
+			        AfastadosAtuais[CODSITUACAO] = "P"
 			    ),
 			    0
 			)
@@ -35,8 +35,8 @@ table Metricas
 			
 			COALESCE(
 			    CALCULATE(
-			        DISTINCTCOUNT(Atestados[CPF]),
-			        Atestados[SITUACAO] = "Af.Ac.Trabalho"
+			        COUNTROWS(AfastadosAtuais),
+			        AfastadosAtuais[CODSITUACAO] = "T"
 			    ),
 			    0
 			)

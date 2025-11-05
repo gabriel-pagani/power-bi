@@ -1,13 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "3e593732161db81c1a0f",
+  "name": "325b385da6ed91da684d",
   "position": {
-    "x": 230.90909090909088,
-    "y": 457.27272727272725,
+    "x": 0,
+    "y": 0,
     "z": 0,
-    "height": 247.27272727272725,
-    "width": 1033.6363636363635,
-    "tabOrder": 4000
+    "height": 750,
+    "width": 550
   },
   "visual": {
     "visualType": "tableEx",
@@ -20,13 +19,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "ProxAfastamentos"
+                      "Entity": "AfastadosAtuais"
                     }
                   },
                   "Property": "CODCOLIGADA"
                 }
               },
-              "queryRef": "ProxAfastamentos.CODCOLIGADA",
+              "queryRef": "AfastadosAtuais.CODCOLIGADA",
               "nativeQueryRef": "Col",
               "displayName": "Col"
             },
@@ -35,13 +34,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "ProxAfastamentos"
+                      "Entity": "AfastadosAtuais"
                     }
                   },
                   "Property": "CHAPA"
                 }
               },
-              "queryRef": "ProxAfastamentos.CHAPA",
+              "queryRef": "AfastadosAtuais.CHAPA",
               "nativeQueryRef": "Chapa",
               "displayName": "Chapa"
             },
@@ -50,59 +49,30 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "ProxAfastamentos"
+                      "Entity": "AfastadosAtuais"
                     }
                   },
-                  "Property": "SITUACAO"
+                  "Property": "NOME"
                 }
               },
-              "queryRef": "ProxAfastamentos.SITUACAO",
-              "nativeQueryRef": "Situação",
-              "displayName": "Situação"
+              "queryRef": "AfastadosAtuais.NOME",
+              "nativeQueryRef": "Nome",
+              "displayName": "Nome"
             },
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "ProxAfastamentos"
+                      "Entity": "AfastadosAtuais"
                     }
                   },
-                  "Property": "COLABORADOR"
+                  "Property": "SECAO"
                 }
               },
-              "queryRef": "ProxAfastamentos.COLABORADOR",
-              "nativeQueryRef": "Colaborador",
-              "displayName": "Colaborador"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "ProxAfastamentos"
-                    }
-                  },
-                  "Property": "CID"
-                }
-              },
-              "queryRef": "ProxAfastamentos.CID",
-              "nativeQueryRef": "CID"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "ProxAfastamentos"
-                    }
-                  },
-                  "Property": "TOTAL_DIAS_ATESTADOS"
-                }
-              },
-              "queryRef": "Sum(ProxAfastamentos.TOTAL_DIAS_ATESTADOS)",
-              "nativeQueryRef": "Total de Dias",
-              "displayName": "Total de Dias"
+              "queryRef": "AfastadosAtuais.SECAO",
+              "nativeQueryRef": "Seção",
+              "displayName": "Seção"
             }
           ]
         }
@@ -114,38 +84,18 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "ProxAfastamentos"
+                    "Entity": "AfastadosAtuais"
                   }
                 },
-                "Property": "TOTAL_DIAS_ATESTADOS"
+                "Property": "NOME"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ]
       }
     },
     "objects": {
-      "grid": [
-        {
-          "properties": {
-            "gridVertical": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "outlineStyle": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          }
-        }
-      ],
       "total": [
         {
           "properties": {
@@ -184,7 +134,7 @@
             }
           },
           "selector": {
-            "metadata": "ProxAfastamentos.CODCOLIGADA"
+            "metadata": "AfastadosAtuais.CODCOLIGADA"
           }
         },
         {
@@ -198,7 +148,7 @@
             }
           },
           "selector": {
-            "metadata": "ProxAfastamentos.CHAPA"
+            "metadata": "AfastadosAtuais.CHAPA"
           }
         },
         {
@@ -212,35 +162,7 @@
             }
           },
           "selector": {
-            "metadata": "Sum(ProxAfastamentos.TOTAL_DIAS_ATESTADOS)"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "ProxAfastamentos.CID"
-          }
-        },
-        {
-          "properties": {
-            "alignment": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Center'"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "ProxAfastamentos.SITUACAO"
+            "metadata": "AfastadosAtuais.SECAO"
           }
         }
       ],
@@ -250,13 +172,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "60.76060284422881D"
+                  "Value": "292.14129544321924D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "ProxAfastamentos.CHAPA"
+            "metadata": "AfastadosAtuais.NOME"
           }
         },
         {
@@ -264,13 +186,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "45.124687732721625D"
+                  "Value": "134.00000282570088D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "ProxAfastamentos.CODCOLIGADA"
+            "metadata": "AfastadosAtuais.SECAO"
           }
         },
         {
@@ -278,13 +200,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "601.884376816266D"
+                  "Value": "35.99998546780938D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "ProxAfastamentos.COLABORADOR"
+            "metadata": "AfastadosAtuais.CODCOLIGADA"
           }
         },
         {
@@ -292,41 +214,33 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "97.58852124734183D"
+                  "Value": "62.111093189537144D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Sum(ProxAfastamentos.TOTAL_DIAS_ATESTADOS)"
+            "metadata": "AfastadosAtuais.CHAPA"
           }
-        },
+        }
+      ],
+      "grid": [
         {
           "properties": {
-            "value": {
+            "gridVertical": {
               "expr": {
                 "Literal": {
-                  "Value": "132.35103777240283D"
+                  "Value": "true"
+                }
+              }
+            },
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
                 }
               }
             }
-          },
-          "selector": {
-            "metadata": "ProxAfastamentos.SITUACAO"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "69.1421814059058D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "ProxAfastamentos.CID"
           }
         }
       ]
@@ -344,21 +258,123 @@
             }
           }
         }
-      ],
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "99cddc6063c399b1a004",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "AfastadosAtuais"
+              }
+            },
+            "Property": "CODSITUACAO"
+          }
+        },
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "AfastadosAtuais",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "a"
+                          }
+                        },
+                        "Property": "CODSITUACAO"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'P'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "howCreated": "User",
+        "isLockedInViewMode": true
+      },
+      {
+        "name": "cca1659fcf35423409a8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "AfastadosAtuais"
+              }
+            },
+            "Property": "CODCOLIGADA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "440defd2943cd0f038c8",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "AfastadosAtuais"
+              }
+            },
+            "Property": "CHAPA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "2f57d60524a539e4e595",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "AfastadosAtuais"
+              }
+            },
+            "Property": "NOME"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8c6ea2a2f224cc1dca0a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "AfastadosAtuais"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

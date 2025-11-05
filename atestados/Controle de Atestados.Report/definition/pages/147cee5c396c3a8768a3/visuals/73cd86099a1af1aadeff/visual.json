@@ -7,7 +7,7 @@
     "z": 1000,
     "height": 249.375,
     "width": 508.125,
-    "tabOrder": 10000
+    "tabOrder": 9000
   },
   "visual": {
     "visualType": "tableEx",
@@ -255,6 +255,34 @@
         },
         "type": "TopN",
         "isLockedInViewMode": true
+      },
+      {
+        "name": "3cb47afd9618eb6748e3",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atestados"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "87b7fdaf694ef68c85dd",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "TotalAtestados"
+          }
+        },
+        "type": "Advanced"
       }
     ]
   }

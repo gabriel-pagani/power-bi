@@ -1,12 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "e8f8915f627ebe39ac12",
+  "name": "734dbb3b3e6c29b63987",
   "position": {
-    "x": 16.159600997506235,
-    "y": 16.159600997506235,
-    "z": 2000,
+    "x": 16.278747575505744,
+    "y": 15.048489886395124,
+    "z": 8002,
     "height": 97.855361596009971,
-    "width": 206.48379052369077
+    "width": 211.87032418952617,
+    "tabOrder": 6001
   },
   "visual": {
     "visualType": "card",
@@ -112,8 +113,46 @@
             }
           }
         }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'28ed06d3e153e35ccebe'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "cab2cf6c8ca71f5339c2",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "AfastadosPrevidenciaAtualmente"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

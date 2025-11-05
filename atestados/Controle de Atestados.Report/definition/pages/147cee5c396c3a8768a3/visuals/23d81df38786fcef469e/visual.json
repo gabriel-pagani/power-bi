@@ -7,7 +7,7 @@
     "z": 12000,
     "height": 257.65586034912718,
     "width": 526.08478802992522,
-    "tabOrder": 9000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -441,5 +441,65 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "afb86c5c7db99b83832c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendario"
+              }
+            },
+            "Property": "Year"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "8b082eb7b944597f62e6",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendario"
+              }
+            },
+            "Property": "Month"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0442809d66d9bf43a4ad",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atestados"
+              }
+            },
+            "Property": "CATEGORIA_ATESTADO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "e5fadd058cdda753f8d8",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "TotalAtestados"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

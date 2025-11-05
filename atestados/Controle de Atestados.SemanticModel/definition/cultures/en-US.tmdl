@@ -103,7 +103,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Justificativa": {
+			          "Atestado": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -113,7 +113,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Atestado": {
+			          "Justificativa": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2246,6 +2246,135 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "afastados_atuais": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "AfastadosAtuais"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "afastados atuais": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "afastado atuais": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "AfastadosAtuais": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "afastados_atuais.codcoligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "AfastadosAtuais",
+			          "ConceptualProperty": "CODCOLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codcoligada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Col": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "afastados_atuais.chapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "AfastadosAtuais",
+			          "ConceptualProperty": "CHAPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "afastados_atuais.nome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "AfastadosAtuais",
+			          "ConceptualProperty": "NOME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "afastados_atuais.secao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "AfastadosAtuais",
+			          "ConceptualProperty": "SECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Seção": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "afastados_atuais.codsituacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "AfastadosAtuais",
+			          "ConceptualProperty": "CODSITUACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codsituacao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -2836,6 +2965,171 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "afastados_atuais_has_codsituacao": {
+			      "Binding": {
+			        "ConceptualEntity": "AfastadosAtuais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastados_atuais": {
+			          "Target": {
+			            "Entity": "afastados_atuais"
+			          }
+			        },
+			        "afastados_atuais.codsituacao": {
+			          "Target": {
+			            "Entity": "afastados_atuais.codsituacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastados_atuais"
+			            },
+			            "Object": {
+			              "Role": "afastados_atuais.codsituacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_atuaises_have_codsituacaos"
+			        }
+			      ]
+			    },
+			    "afastados_atuais_has_secao": {
+			      "Binding": {
+			        "ConceptualEntity": "AfastadosAtuais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastados_atuais": {
+			          "Target": {
+			            "Entity": "afastados_atuais"
+			          }
+			        },
+			        "afastados_atuais.secao": {
+			          "Target": {
+			            "Entity": "afastados_atuais.secao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastados_atuais"
+			            },
+			            "Object": {
+			              "Role": "afastados_atuais.secao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_atuaises_have_secaos"
+			        }
+			      ]
+			    },
+			    "afastados_atuais_has_nome": {
+			      "Binding": {
+			        "ConceptualEntity": "AfastadosAtuais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastados_atuais": {
+			          "Target": {
+			            "Entity": "afastados_atuais"
+			          }
+			        },
+			        "afastados_atuais.nome": {
+			          "Target": {
+			            "Entity": "afastados_atuais.nome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastados_atuais"
+			            },
+			            "Object": {
+			              "Role": "afastados_atuais.nome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_atuaises_have_nome"
+			        }
+			      ]
+			    },
+			    "afastados_atuais_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "AfastadosAtuais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastados_atuais": {
+			          "Target": {
+			            "Entity": "afastados_atuais"
+			          }
+			        },
+			        "afastados_atuais.chapa": {
+			          "Target": {
+			            "Entity": "afastados_atuais.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastados_atuais"
+			            },
+			            "Object": {
+			              "Role": "afastados_atuais.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_atuaises_have_chapa"
+			        }
+			      ]
+			    },
+			    "afastados_atuais_has_codcoligada": {
+			      "Binding": {
+			        "ConceptualEntity": "AfastadosAtuais"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "afastados_atuais": {
+			          "Target": {
+			            "Entity": "afastados_atuais"
+			          }
+			        },
+			        "afastados_atuais.codcoligada": {
+			          "Target": {
+			            "Entity": "afastados_atuais.codcoligada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "afastados_atuais"
+			            },
+			            "Object": {
+			              "Role": "afastados_atuais.codcoligada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "afastados_atuaises_have_codcoligadas"
+			        }
+			      ]
+			    },
 			    "afastado_has_nometipo": {
 			      "Binding": {
 			        "ConceptualEntity": "Afastados"
@@ -3397,15 +3691,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "atestado_has_metrica_afastados_acidente_atualmente": {
+			    "afastados_atuais_has_metrica_afastados_acidente_atualmente": {
 			      "Binding": {
-			        "ConceptualEntity": "Atestados"
+			        "ConceptualEntity": "AfastadosAtuais"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atestado": {
+			        "afastados_atuais": {
 			          "Target": {
-			            "Entity": "atestado"
+			            "Entity": "afastados_atuais"
 			          }
 			        },
 			        "metrica.afastados_acidente_atualmente": {
@@ -3418,7 +3712,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atestado"
+			              "Role": "afastados_atuais"
 			            },
 			            "Object": {
 			              "Role": "metrica.afastados_acidente_atualmente"
@@ -3426,7 +3720,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "atestados_have_afastados_acidente_atualmente"
+			          "ID": "afastados_atuaises_have_afastados_acidente_atualmente"
 			        }
 			      ]
 			    },
@@ -3925,15 +4219,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "atestado_has_metrica_afastados_previdencia_atualmente": {
+			    "afastados_atuais_has_metrica_afastados_previdencia_atualmente": {
 			      "Binding": {
-			        "ConceptualEntity": "Atestados"
+			        "ConceptualEntity": "AfastadosAtuais"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "atestado": {
+			        "afastados_atuais": {
 			          "Target": {
-			            "Entity": "atestado"
+			            "Entity": "afastados_atuais"
 			          }
 			        },
 			        "metrica.afastados_previdencia_atualmente": {
@@ -3946,7 +4240,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "atestado"
+			              "Role": "afastados_atuais"
 			            },
 			            "Object": {
 			              "Role": "metrica.afastados_previdencia_atualmente"
@@ -3954,7 +4248,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "atestados_have_afastados_previdencia_atualmente"
+			          "ID": "afastados_atuaises_have_afastados_previdencia_atualmente"
 			        }
 			      ]
 			    },

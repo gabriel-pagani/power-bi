@@ -1,0 +1,56 @@
+table AfastadosAtuais
+	lineageTag: f2283154-0b2f-4daf-a7e9-166236b9302c
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 8b26f78f-3823-4cc0-ae59-0bd718015e6c
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: 41466eff-a5bb-45a3-9529-cd0135e25cb8
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: 4eb6b4ce-39f7-489a-a09a-7349dba5d2b8
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: 33f521e6-ae28-4584-a414-1b649a70c2fb
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODSITUACAO
+		dataType: string
+		lineageTag: 614089da-22a9-4bec-a6d2-8e50c329167c
+		summarizeBy: none
+		sourceColumn: CODSITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition AfastadosAtuais = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab)#(tab)PFUNC.CODCOLIGADA, #(lf)#(tab)#(tab)PFUNC.CHAPA, #(lf)#(tab)#(tab)PFUNC.NOME, #(lf)#(tab)#(tab)PFUNC.CODSITUACAO,#(lf)#(tab)#(tab)PSECAO.DESCRICAO AS SECAO #(lf)#(lf)FROM PFUNC #(lf)#(tab)#(tab)JOIN PSECAO ON#(lf)#(tab)#(tab)#(tab)#(tab)PSECAO.CODCOLIGADA=PFUNC.CODCOLIGADA#(lf)#(tab)#(tab)#(tab)AND PSECAO.CODIGO=PFUNC.CODSECAO#(lf)WHERE 1=1#(lf)#(tab)AND CODSITUACAO IN ('T','P')"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

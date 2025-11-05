@@ -218,5 +218,51 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "722a6b2891879251f92e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atestados"
+              }
+            },
+            "Property": "CODCID"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d1a75cd6248fd30be476",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atestados"
+              }
+            },
+            "Property": "CID"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "5222303b3ef7487ee77b",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "TotalCIDs"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

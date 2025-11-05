@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "039cd593a7c891039d3c",
+  "name": "dde366db2c2ef8b10a89",
   "position": {
     "x": 770,
-    "y": 231.11111111111111,
-    "z": 8000,
-    "height": 178.88888888888889,
+    "y": 35.555555555555557,
+    "z": 12001,
+    "height": 177.77777777777777,
     "width": 495.55555555555554,
-    "tabOrder": 4000
+    "tabOrder": 12001
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -23,13 +23,12 @@
                       "Entity": "Atestados"
                     }
                   },
-                  "Property": "SECAO"
+                  "Property": "CODCID"
                 }
               },
-              "queryRef": "Atestados.SECAO",
-              "nativeQueryRef": "Seção",
-              "active": true,
-              "displayName": "Seção"
+              "queryRef": "Atestados.CODCID",
+              "nativeQueryRef": "CODCID",
+              "active": true
             }
           ]
         },
@@ -316,6 +315,13 @@
                   "Value": "'70cf179816bf6d551807'"
                 }
               }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }
@@ -326,21 +332,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "dca81bbaa566b1fe9c32",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Atestados"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "c992f7d5173ecafbee8d",
+        "name": "272dff73e744014ac077",
         "field": {
           "Measure": {
             "Expression": {
@@ -352,6 +344,20 @@
           }
         },
         "type": "Advanced"
+      },
+      {
+        "name": "91d0b52f4648bb3d8a39",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Atestados"
+              }
+            },
+            "Property": "CODCID"
+          }
+        },
+        "type": "Categorical"
       }
     ]
   }
