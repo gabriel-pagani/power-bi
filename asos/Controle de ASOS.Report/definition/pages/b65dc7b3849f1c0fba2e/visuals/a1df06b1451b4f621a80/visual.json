@@ -4,10 +4,10 @@
   "position": {
     "x": 16.313447151157497,
     "y": 203.61212353759987,
-    "z": 8000,
+    "z": 7000,
     "height": 70.769230769230774,
     "width": 233.46153846153845,
-    "tabOrder": 8000
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "slicer",
@@ -84,5 +84,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ae348eea6a2efb6df545",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Asos"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

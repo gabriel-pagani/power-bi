@@ -39,6 +39,9 @@
       }
     ]
   },
+  "publicCustomVisuals": [
+    "textFilter25A4896A83E0487089E2B90C9AE57C8A"
+  ],
   "resourcePackages": [
     {
       "name": "SharedResources",
@@ -56,8 +59,8 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "P_gina_Principal6382917526527756.svg",
-          "path": "P_gina_Principal6382917526527756.svg",
+          "name": "P_gina_Principal06349830737219009.svg",
+          "path": "P_gina_Principal06349830737219009.svg",
           "type": "Image"
         }
       ]

@@ -1,0 +1,416 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "17be78ccdc5eff978ad9",
+  "position": {
+    "x": 277,
+    "y": 209,
+    "z": 11000,
+    "height": 496,
+    "width": 982,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Asos"
+                    }
+                  },
+                  "Property": "NOME"
+                }
+              },
+              "queryRef": "Asos.NOME",
+              "nativeQueryRef": "Colaborador",
+              "displayName": "Colaborador"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Asos"
+                    }
+                  },
+                  "Property": "NOMEEXAME"
+                }
+              },
+              "queryRef": "Asos.NOMEEXAME",
+              "nativeQueryRef": "Exame",
+              "displayName": "Exame"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Asos"
+                    }
+                  },
+                  "Property": "NOMETIPOEXAME"
+                }
+              },
+              "queryRef": "Asos.NOMETIPOEXAME",
+              "nativeQueryRef": "ASO",
+              "displayName": "ASO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Asos"
+                    }
+                  },
+                  "Property": "DATAEXAME"
+                }
+              },
+              "queryRef": "Asos.DATAEXAME",
+              "nativeQueryRef": "Data do Exame",
+              "displayName": "Data do Exame"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Asos"
+                    }
+                  },
+                  "Property": "VALIDADE"
+                }
+              },
+              "queryRef": "Asos.VALIDADE",
+              "nativeQueryRef": "Situação",
+              "displayName": "Situação"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Asos"
+                  }
+                },
+                "Property": "NOME"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "135.66100369950695D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Asos.NOMETIPOEXAME"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "156.25D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Asos.NOMEEXAME"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "431.1454458797172D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Asos.NOME"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "121.75003574973766D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Asos.DATAEXAME"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "112.48638330692309D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Asos.VALIDADE"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Asos.DATAEXAME"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Asos.VALIDADE"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Asos.NOMETIPOEXAME"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Left'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Asos.NOMEEXAME"
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "gridVertical": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "f862233039800d35a97b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Asos"
+              }
+            },
+            "Property": "NOME"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0380bd2bf1b9856779ae",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Asos"
+              }
+            },
+            "Property": "NOMEEXAME"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d417a5a2441cefaea05a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Asos"
+              }
+            },
+            "Property": "NOMETIPOEXAME"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d51e7574c713dee10c1c",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Asos"
+              }
+            },
+            "Property": "DATAEXAME"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "8317e784ea453db71b0d",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Asos"
+              }
+            },
+            "Property": "VALIDADE"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
+}
