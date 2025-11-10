@@ -37,12 +37,12 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "TotalAtestados"
+                  "Property": "TotalJustificativas"
                 }
               },
               "queryRef": "Metricas.TotalAtestados",
-              "nativeQueryRef": "Atestados",
-              "displayName": "Atestados"
+              "nativeQueryRef": "Justificativas",
+              "displayName": "Justificativas"
             }
           ]
         }
@@ -57,7 +57,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "TotalAtestados"
+                "Property": "TotalJustificativas"
               }
             },
             "direction": "Descending"

@@ -78,7 +78,7 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "TotalAtestados"
+                  "Property": "TotalJustificativas"
                 }
               },
               "queryRef": "Metricas.TotalAtestados",
@@ -495,7 +495,7 @@
                 "Entity": "Metricas"
               }
             },
-            "Property": "TotalAtestados"
+            "Property": "TotalJustificativas"
           }
         },
         "type": "Advanced"

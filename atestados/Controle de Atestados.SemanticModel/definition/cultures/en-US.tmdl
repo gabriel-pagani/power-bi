@@ -103,16 +103,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Atestado": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Justificativa": {
 			            "State": "Suggested",
 			            "Source": {
@@ -257,29 +247,29 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "metrica.total_atestados": {
+			    "metrica.total_justificativas": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Metricas",
-			          "ConceptualProperty": "TotalAtestados"
+			          "ConceptualProperty": "TotalJustificativas"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total atestados": {
+			          "total justificativas": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "TotalAtestados": {
+			          "TotalJustificativas": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "aggregate atestado": {
+			          "aggregate justificativa": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -289,7 +279,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "overall atestado": {
+			          "overall justificativa": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -310,6 +300,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "Total de Justificativas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Justificativas": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2375,6 +2375,112 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "metrica.total_atestados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TotalAtestados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total atestados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalAtestados": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate atestado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall atestado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Atestados": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_declaracoes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TotalDeclaracoes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total declaracoes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalDeclaracoes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate declaracoe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall declaracoe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Declarações": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -2962,6 +3068,72 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_atestados"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_total_declaracoes": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.total_declaracoes": {
+			          "Target": {
+			            "Entity": "metrica.total_declaracoes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_declaracoes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_total_declaracoes"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_total_atestados": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.total_atestados": {
+			          "Target": {
+			            "Entity": "metrica.total_atestados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_atestados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_total_atestados"
 			        }
 			      ]
 			    },
@@ -4516,7 +4688,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "atestado_has_metrica_total_atestados": {
+			    "atestado_has_metrica_total_justificativas": {
 			      "Binding": {
 			        "ConceptualEntity": "Atestados"
 			      },
@@ -4527,9 +4699,9 @@ cultureInfo en-US
 			            "Entity": "atestado"
 			          }
 			        },
-			        "metrica.total_atestados": {
+			        "metrica.total_justificativas": {
 			          "Target": {
-			            "Entity": "metrica.total_atestados"
+			            "Entity": "metrica.total_justificativas"
 			          }
 			        }
 			      },
@@ -4540,12 +4712,12 @@ cultureInfo en-US
 			              "Role": "atestado"
 			            },
 			            "Object": {
-			              "Role": "metrica.total_atestados"
+			              "Role": "metrica.total_justificativas"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "atestados_have_total_atestados"
+			          "ID": "atestados_have_total_justificativas"
 			        }
 			      ]
 			    },

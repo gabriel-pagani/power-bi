@@ -59,12 +59,12 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "TotalAtestados"
+                  "Property": "TotalJustificativas"
                 }
               },
               "queryRef": "Metricas.TotalAtestados",
-              "nativeQueryRef": "Atestados",
-              "displayName": "Atestados"
+              "nativeQueryRef": "Justificativas",
+              "displayName": "Justificativas"
             },
             {
               "field": {
@@ -334,7 +334,7 @@
                 "Entity": "Metricas"
               }
             },
-            "Property": "TotalAtestados"
+            "Property": "TotalJustificativas"
           }
         },
         "type": "Advanced"

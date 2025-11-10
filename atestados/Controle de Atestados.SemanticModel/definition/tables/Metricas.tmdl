@@ -1,7 +1,7 @@
 table Metricas
 	lineageTag: 486b2cb6-4d63-4300-ae2c-a731b5e1d11c
 
-	measure TotalAtestados = COUNTROWS(Atestados)
+	measure TotalJustificativas = COUNTROWS(Atestados)
 		formatString: 0
 		lineageTag: d5157145-8503-4865-b15c-b380f8479850
 
@@ -66,6 +66,34 @@ table Metricas
 			```
 		formatString: 0
 		lineageTag: 6341b3fd-433c-48fe-a7a5-07b6a7f93cf5
+
+	measure TotalAtestados = ```
+			
+			COALESCE(
+			    CALCULATE(
+			        COUNTROWS(Atestados),
+			        Atestados[CATEGORIA_ATESTADO] = "Atestado"
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 13fec51e-27ed-4a5f-a766-5298251def57
+
+	measure TotalDeclaracoes = ```
+			
+			COALESCE(
+			    CALCULATE(
+			        COUNTROWS(Atestados),
+			        Atestados[CATEGORIA_ATESTADO] = "Declaração"
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 7c1aa9c6-424c-4511-b771-4c3e42e958e8
 
 	partition Metricas = m
 		mode: import

@@ -56,9 +56,24 @@
                   "Property": "TotalAtestados"
                 }
               },
-              "queryRef": "Metricas.Total_Atestados",
+              "queryRef": "Metricas.TotalAtestados",
               "nativeQueryRef": "Atestados",
               "displayName": "Atestados"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metricas"
+                    }
+                  },
+                  "Property": "TotalDeclaracoes"
+                }
+              },
+              "queryRef": "Metricas.TotalDeclaracoes",
+              "nativeQueryRef": "Declarações",
+              "displayName": "Declarações"
             }
           ]
         }
@@ -88,7 +103,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "283.8623559549917D"
+                  "Value": "226.1494574072711D"
                 }
               }
             }
@@ -102,13 +117,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "81.63877824600475D"
+                  "Value": "105.08702097762873D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Metricas.Total_Atestados"
+            "metadata": "Atestados.SECAO"
           }
         },
         {
@@ -116,13 +131,27 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "117.62875397149985D"
+                  "Value": "81.57476640656813D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Atestados.SECAO"
+            "metadata": "Metricas.TotalDeclaracoes"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "71.03152259033547D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.TotalAtestados"
           }
         }
       ],
@@ -184,7 +213,21 @@
             }
           },
           "selector": {
-            "metadata": "Metricas.Total_Atestados"
+            "metadata": "Metricas.TotalAtestados"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.TotalDeclaracoes"
           }
         }
       ]
@@ -269,20 +312,6 @@
           }
         },
         "type": "Categorical"
-      },
-      {
-        "name": "87b7fdaf694ef68c85dd",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "TotalAtestados"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
