@@ -69,12 +69,9 @@ table Metricas
 
 	measure TotalAtestados = ```
 			
-			COALESCE(
-			    CALCULATE(
-			        COUNTROWS(Atestados),
-			        Atestados[CATEGORIA_ATESTADO] = "Atestado"
-			    ),
-			    0
+			CALCULATE(
+			    COUNTROWS(Atestados),
+			    Atestados[CATEGORIA_ATESTADO] = "Atestado"
 			)
 			
 			```
@@ -83,17 +80,33 @@ table Metricas
 
 	measure TotalDeclaracoes = ```
 			
-			COALESCE(
-			    CALCULATE(
-			        COUNTROWS(Atestados),
-			        Atestados[CATEGORIA_ATESTADO] = "Declaração"
-			    ),
-			    0
+			CALCULATE(
+			    COUNTROWS(Atestados),
+			    Atestados[CATEGORIA_ATESTADO] = "Declaração"
 			)
 			
 			```
 		formatString: 0
 		lineageTag: 7c1aa9c6-424c-4511-b771-4c3e42e958e8
+
+	measure RazaoAtestadosPorColaboradore = ```
+			
+			VAR ColaboradoresUnicos =
+			    SUMMARIZE(
+			        Atestados,
+			        Atestados[CODCOLIGADA],
+			        Atestados[CHAPA]
+			    )
+			RETURN
+			ROUND(
+			    COUNTROWS(Atestados) / COUNTROWS(ColaboradoresUnicos),
+			    1
+			)
+			
+			```
+		lineageTag: 3194ada9-38fb-4fa7-8c09-483a71f29adf
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	partition Metricas = m
 		mode: import

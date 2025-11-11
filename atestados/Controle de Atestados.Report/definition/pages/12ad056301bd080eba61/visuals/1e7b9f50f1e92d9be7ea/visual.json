@@ -1,13 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "dde366db2c2ef8b10a89",
+  "name": "1e7b9f50f1e92d9be7ea",
   "position": {
-    "x": 770,
-    "y": 35.555555555555557,
-    "z": 12001,
-    "height": 177.77777777777777,
-    "width": 495.55555555555554,
-    "tabOrder": 12001
+    "x": 0,
+    "y": 0,
+    "z": 0,
+    "height": 320,
+    "width": 500
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -23,12 +22,13 @@
                       "Entity": "Atestados"
                     }
                   },
-                  "Property": "CODCID"
+                  "Property": "SECAO"
                 }
               },
-              "queryRef": "Atestados.CODCID",
-              "nativeQueryRef": "CODCID",
-              "active": true
+              "queryRef": "Atestados.SECAO",
+              "nativeQueryRef": "Seção",
+              "active": true,
+              "displayName": "Seção"
             }
           ]
         },
@@ -312,14 +312,7 @@
             "section": {
               "expr": {
                 "Literal": {
-                  "Value": "'12ad056301bd080eba61'"
-                }
-              }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
+                  "Value": "'70cf179816bf6d551807'"
                 }
               }
             }
@@ -328,37 +321,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "272dff73e744014ac077",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "TotalCIDs"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "91d0b52f4648bb3d8a39",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Atestados"
-              }
-            },
-            "Property": "CODCID"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

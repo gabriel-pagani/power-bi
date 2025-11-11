@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "12ad056301bd080eba61",
+  "displayName": "Setor x CIDs",
+  "displayOption": "ActualSize",
+  "height": 320,
+  "width": 500,
+  "visibility": "HiddenInViewMode",
+  "type": "Tooltip"
+}

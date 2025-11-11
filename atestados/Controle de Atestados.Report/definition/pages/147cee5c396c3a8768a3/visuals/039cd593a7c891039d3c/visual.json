@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "039cd593a7c891039d3c",
   "position": {
-    "x": 770,
-    "y": 231.11111111111111,
+    "x": 763.09226932668321,
+    "y": 230.72319201995012,
     "z": 8000,
-    "height": 178.88888888888889,
-    "width": 495.55555555555554,
+    "height": 179.55112219451371,
+    "width": 502.7431421446384,
     "tabOrder": 4000
   },
   "visual": {
@@ -43,12 +43,11 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "TotalCIDs"
+                  "Property": "RazaoAtestadosPorColaboradore"
                 }
               },
-              "queryRef": "Metricas.TotalCIDs",
-              "nativeQueryRef": "Diagnósticos",
-              "displayName": "Diagnósticos"
+              "queryRef": "Metricas.RazaoAtestadosPorColaboradore",
+              "nativeQueryRef": "RazaoAtestadosPorColaboradore"
             }
           ]
         }
@@ -63,7 +62,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "TotalCIDs"
+                "Property": "RazaoAtestadosPorColaboradore"
               }
             },
             "direction": "Descending"
@@ -316,6 +315,13 @@
                   "Value": "'70cf179816bf6d551807'"
                 }
               }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
             }
           }
         }
@@ -337,10 +343,69 @@
             "Property": "SECAO"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "Atestados",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "a"
+                              }
+                            },
+                            "Property": "SECAO"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "isLockedInViewMode": true,
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
       },
       {
-        "name": "c992f7d5173ecafbee8d",
+        "name": "da93aef0ed57701aaf87",
         "field": {
           "Measure": {
             "Expression": {
@@ -348,7 +413,7 @@
                 "Entity": "Metricas"
               }
             },
-            "Property": "TotalCIDs"
+            "Property": "RazaoAtestadosPorColaboradore"
           }
         },
         "type": "Advanced"
