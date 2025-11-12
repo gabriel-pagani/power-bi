@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "2cd74989f8ba0d8b67aa",
+  "name": "65bf7c2cc35cfd4af36d",
   "position": {
-    "x": 16,
-    "y": 16,
-    "z": 0,
-    "height": 98,
-    "width": 198,
-    "tabOrder": 10000
+    "x": 269.8176513493799,
+    "y": 15.871626549963532,
+    "z": 11004,
+    "height": 98.030634573304155,
+    "width": 236.2071480671043,
+    "tabOrder": 11004
   },
   "visual": {
     "visualType": "card",
@@ -26,9 +26,9 @@
                   "Property": "TotalJustificativas"
                 }
               },
-              "queryRef": "Metricas.TotalAtestados",
-              "nativeQueryRef": "Total de Justificativas",
-              "displayName": "Total de Justificativas"
+              "queryRef": "Metricas.TotalJustificativas",
+              "nativeQueryRef": "Total Justificativas",
+              "displayName": "Total Justificativas"
             }
           ]
         }
@@ -120,7 +120,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -129,23 +129,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f7c3c6aa66eac97cab39",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "TotalJustificativas"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

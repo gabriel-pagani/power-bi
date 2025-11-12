@@ -1,11 +1,25 @@
 table Metricas
 	lineageTag: 486b2cb6-4d63-4300-ae2c-a731b5e1d11c
 
-	measure TotalJustificativas = COUNTROWS(Atestados)
+	measure TotalJustificativas = ```
+			
+			CALCULATE(
+			    COUNTROWS(Atestados),
+			    NOT(ISBLANK(Atestados[DTINICIO]))
+			)
+			
+			```
 		formatString: 0
 		lineageTag: d5157145-8503-4865-b15c-b380f8479850
 
-	measure TotalColaboradores = DISTINCTCOUNT(Atestados[CPF])
+	measure TotalColaboradoresComAtestado = ```
+			
+			CALCULATE(
+			    DISTINCTCOUNT(Atestados[COLIGADACOLABORADOR]),
+			    NOT(ISBLANK(Atestados[DTINICIO]))
+			)
+			
+			```
 		formatString: 0
 		lineageTag: 05aac298-bb72-4695-a142-86ff6fbeb230
 
@@ -23,7 +37,14 @@ table Metricas
 		formatString: 0
 		lineageTag: 7db22a7a-ea90-483a-99c4-8e983294483c
 
-	measure TotalCIDs = COUNT(Atestados[CID])
+	measure TotalCIDs = ```
+			
+			CALCULATE(
+			    COUNT(Atestados[CID]),
+			    NOT(ISBLANK(Atestados[DTINICIO]))
+			)
+			
+			```
 		formatString: 0
 		lineageTag: a478f07f-ce16-4a00-acc9-76cb7b6e6832
 
@@ -71,7 +92,11 @@ table Metricas
 			
 			CALCULATE(
 			    COUNTROWS(Atestados),
-			    Atestados[CATEGORIA_ATESTADO] = "Atestado"
+			    FILTER(
+			        Atestados,
+			        NOT(ISBLANK(Atestados[DTINICIO])) &&
+			        Atestados[CATEGORIA_ATESTADO] = "Atestado"
+			    )
 			)
 			
 			```
@@ -82,31 +107,92 @@ table Metricas
 			
 			CALCULATE(
 			    COUNTROWS(Atestados),
-			    Atestados[CATEGORIA_ATESTADO] = "Declaração"
+			    FILTER(
+			        Atestados,
+			        NOT(ISBLANK(Atestados[DTINICIO])) &&
+			        Atestados[CATEGORIA_ATESTADO] = "Declaração"
+			    )
 			)
 			
 			```
 		formatString: 0
 		lineageTag: 7c1aa9c6-424c-4511-b771-4c3e42e958e8
 
-	measure RazaoAtestadosPorColaboradore = ```
+	measure JustificativasPorColaborador = ([TotalJustificativas] / ([TotalColaboradores]))
+		formatString: 0.0
+		lineageTag: 3194ada9-38fb-4fa7-8c09-483a71f29adf
+
+	measure TotalColaboradoresSemAtestado = ```
 			
-			VAR ColaboradoresUnicos =
-			    SUMMARIZE(
-			        Atestados,
-			        Atestados[CODCOLIGADA],
-			        Atestados[CHAPA]
-			    )
-			RETURN
-			ROUND(
-			    COUNTROWS(Atestados) / COUNTROWS(ColaboradoresUnicos),
-			    1
+			CALCULATE(
+			    DISTINCTCOUNT(Atestados[COLIGADACOLABORADOR]),
+			    ISBLANK(Atestados[DTINICIO]),
+			    REMOVEFILTERS(Calendario[Date])
 			)
 			
 			```
-		lineageTag: 3194ada9-38fb-4fa7-8c09-483a71f29adf
+		formatString: 0
+		lineageTag: 2d93d97f-2173-471e-8f17-fcd73b1cd509
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+	measure TotalDiasAtestados = ```
+			
+			CALCULATE(
+			    SUM(Atestados[DIASATESTADOS]),
+			    FILTER(
+			        Atestados,
+			        NOT(ISBLANK(Atestados[DIASATESTADOS])) &&
+			        Atestados[CATEGORIA_ATESTADO] = "Atestado"
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 98dd3d9b-47e1-46a0-90ba-4b81b8207289
+
+	measure TotalDiasDeclaracoes = ```
+			
+			CALCULATE(
+			    SUM(Atestados[DIASATESTADOS]),
+			    FILTER(
+			        Atestados,
+			        NOT(ISBLANK(Atestados[DIASATESTADOS])) &&
+			        Atestados[CATEGORIA_ATESTADO] = "Declaração"
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 39e067ba-94fe-442d-8930-da3691e05b3e
+
+	measure TotalDiasJustificativas = ```
+			
+			CALCULATE(
+			    SUM(Atestados[DIASATESTADOS]),
+			    FILTER(
+			        Atestados,
+			        NOT(ISBLANK(Atestados[DIASATESTADOS]))
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 9fcb0ff3-4113-456e-8103-845fd5a1ee6d
+
+	measure TotalColaboradores = ```
+			
+			CALCULATE(
+			    DISTINCTCOUNT(Atestados[COLIGADACOLABORADOR]),
+			    Atestados[COLIGADACOLABORADOR] <> "-",
+			    REMOVEFILTERS(Calendario[Date])
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 9afbd1ac-e15a-42ed-b099-155fcc0ec409
+
+	measure DiasAfastadosPorColaborador = ([TotalDiasJustificativas] / ([TotalColaboradores]))
+		formatString: 0.0
+		lineageTag: ad293980-5b37-44a1-aa76-7df7d7e6f3f7
 
 	partition Metricas = m
 		mode: import

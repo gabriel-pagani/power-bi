@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "73cd86099a1af1aadeff",
   "position": {
-    "x": 230.625,
-    "y": 160,
+    "x": 231,
+    "y": 161,
     "z": 1000,
-    "height": 249.375,
-    "width": 508.125,
-    "tabOrder": 9000
+    "height": 249,
+    "width": 1035,
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "tableEx",
@@ -68,12 +68,42 @@
                       "Entity": "Metricas"
                     }
                   },
+                  "Property": "TotalDiasAtestados"
+                }
+              },
+              "queryRef": "Metricas.TotalDiasAtestados",
+              "nativeQueryRef": "Dias em Atestado",
+              "displayName": "Dias em Atestado"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metricas"
+                    }
+                  },
                   "Property": "TotalDeclaracoes"
                 }
               },
               "queryRef": "Metricas.TotalDeclaracoes",
               "nativeQueryRef": "Declarações",
               "displayName": "Declarações"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metricas"
+                    }
+                  },
+                  "Property": "TotalDiasDeclaracoes"
+                }
+              },
+              "queryRef": "Metricas.TotalDiasDeclaracoes",
+              "nativeQueryRef": "Dias em Declaração",
+              "displayName": "Dias em Declaração"
             }
           ]
         }
@@ -103,7 +133,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "226.1494574072711D"
+                  "Value": "417.32044063867494D"
                 }
               }
             }
@@ -117,27 +147,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "105.08702097762873D"
+                  "Value": "162.32715761442097D"
                 }
               }
             }
           },
           "selector": {
             "metadata": "Atestados.SECAO"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "81.57476640656813D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Metricas.TotalDeclaracoes"
           }
         },
         {
@@ -152,6 +168,48 @@
           },
           "selector": {
             "metadata": "Metricas.TotalAtestados"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "127.11109822833936D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.TotalDiasAtestados"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "130.63698457493064D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.TotalDiasDeclaracoes"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "102.11111859287297D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.TotalDeclaracoes"
           }
         }
       ],
@@ -227,7 +285,35 @@
             }
           },
           "selector": {
+            "metadata": "Metricas.TotalDiasAtestados"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
             "metadata": "Metricas.TotalDeclaracoes"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.TotalDiasDeclaracoes"
           }
         }
       ]
@@ -298,20 +384,6 @@
         },
         "type": "TopN",
         "isLockedInViewMode": true
-      },
-      {
-        "name": "3cb47afd9618eb6748e3",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Atestados"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical"
       }
     ]
   }

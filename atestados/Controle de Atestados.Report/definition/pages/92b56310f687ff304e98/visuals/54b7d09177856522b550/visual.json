@@ -5,8 +5,8 @@
     "x": 0,
     "y": 0,
     "z": 0,
-    "height": 362.14285714285717,
-    "width": 509.28571428571433
+    "height": 362,
+    "width": 550
   },
   "visual": {
     "visualType": "tableEx",
@@ -43,6 +43,21 @@
               "queryRef": "Metricas.TotalAtestados",
               "nativeQueryRef": "Ocorrências",
               "displayName": "Ocorrências"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metricas"
+                    }
+                  },
+                  "Property": "TotalDiasJustificativas"
+                }
+              },
+              "queryRef": "Metricas.TotalDiasJustificativas",
+              "nativeQueryRef": "Total de Dias",
+              "displayName": "Total de Dias"
             }
           ]
         }
@@ -118,7 +133,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "382.6882480654456D"
+                  "Value": "323.6363995419759D"
                 }
               }
             }
@@ -139,6 +154,36 @@
           },
           "selector": {
             "metadata": "Metricas.TotalAtestados"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "101D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.TotalDiasJustificativas"
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.TotalDiasJustificativas"
           }
         }
       ]

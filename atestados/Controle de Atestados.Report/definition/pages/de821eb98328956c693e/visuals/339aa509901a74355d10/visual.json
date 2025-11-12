@@ -4,10 +4,10 @@
   "position": {
     "x": 16.041939711664483,
     "y": 369.90825688073392,
-    "z": 8001,
+    "z": 5000,
     "height": 99.082568807339442,
     "width": 198.16513761467888,
-    "tabOrder": 5000
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "slicer",
@@ -57,6 +57,13 @@
       "data": [
         {
           "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Between'"
+                }
+              }
+            },
             "startDate": {
               "expr": {
                 "Literal": {
@@ -68,13 +75,6 @@
               "expr": {
                 "Literal": {
                   "Value": "datetime'2025-12-31T00:00:00'"
-                }
-              }
-            },
-            "mode": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Between'"
                 }
               }
             }

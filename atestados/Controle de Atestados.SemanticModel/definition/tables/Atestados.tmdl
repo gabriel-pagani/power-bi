@@ -169,11 +169,41 @@ table Atestados
 
 		annotation SummarizationSetBy = Automatic
 
+	column CODCOLIGADAREF
+		dataType: string
+		lineageTag: c3fa64c7-999d-4b17-9696-50fa15ee070f
+		summarizeBy: none
+		sourceColumn: CODCOLIGADAREF
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODPESSOAREF
+		dataType: string
+		lineageTag: f26ec731-197a-44f9-be5f-15e773c70506
+		summarizeBy: none
+		sourceColumn: CODPESSOAREF
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPAREF
+		dataType: string
+		lineageTag: f698ff57-3175-4741-b5ca-2a78c1cec15a
+		summarizeBy: none
+		sourceColumn: CHAPAREF
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLIGADACOLABORADOR = Atestados[CODCOLIGADAREF] & "-" & Atestados[CHAPAREF]
+		lineageTag: 859de896-032c-4a0b-bb0a-906b66184039
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Atestados = m
 		mode: import
 		source =
 				let
-				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT#(tab)#(lf)#(tab)#(tab)VATESTADO.CODCOLIGADA,#(lf)#(tab)#(tab)GCOLIGADA.NOMEFANTASIA AS COLIGADA,#(lf)#(tab)#(tab)VATESTADO.CODPESSOA,#(lf)#(tab)#(tab)VCHAPAATESTADO.CHAPA,#(lf)#(tab)#(tab)PPESSOA.NOME AS COLABORADOR,#(lf)#(tab)#(tab)PPESSOA.CPF,#(lf)#(tab)#(tab)PSECAO.DESCRICAO AS SECAO,#(lf)#(tab)#(tab)PCODSITUACAO.DESCRICAO AS SITUACAO,#(lf)#(tab)#(tab)VTIPOATESTADO.CODTPATESTADO,#(lf)#(tab)#(tab)VTIPOATESTADO.NOMETPATESTADO AS TIPOATESTADO,#(lf)#(tab)#(tab)VATESTADO.DTINICIO,#(lf)#(tab)#(tab)VATESTADO.DTFINAL AS DTFIM,#(lf)#(tab)#(tab)DATEDIFF(DAY, VATESTADO.DTINICIO, VATESTADO.DTFINAL) + 1 AS DIASATESTADOS,#(lf)#(tab)#(tab)VCID.CID AS CODCID,#(lf)#(tab)#(tab)VCID.DESCRICAOCID AS CID#(lf)#(tab)#(tab)#(lf)FROM VATESTADO#(lf)#(tab)#(tab)JOIN VTIPOATESTADO ON #(lf)#(tab)#(tab)#(tab)#(tab)VTIPOATESTADO.CODTPATESTADO=VATESTADO.CODTPATESTADO#(lf)#(tab)#(tab)LEFT JOIN VCID ON #(lf)#(tab)#(tab)#(tab)#(tab)VCID.CID=VATESTADO.CID#(lf)#(tab)#(tab)LEFT JOIN VCHAPAATESTADO ON #(lf)#(tab)#(tab)#(tab)#(tab)VATESTADO.CODPESSOA=VCHAPAATESTADO.CODPESSOA #(lf)#(tab)#(tab)#(tab)#(tab)AND VATESTADO.SEQATESTADO=VCHAPAATESTADO.SEQATESTADO #(lf)#(tab)#(tab)#(tab)#(tab)AND VATESTADO.DTINICIO=VCHAPAATESTADO.DTINICIO #(lf)#(tab)#(tab)#(tab)#(tab)AND VATESTADO.CODTPATESTADO=VCHAPAATESTADO.CODTPATESTADO#(lf)#(tab)#(tab)JOIN GCOLIGADA ON #(lf)#(tab)#(tab)#(tab)#(tab)GCOLIGADA.CODCOLIGADA=VATESTADO.CODCOLIGADA#(lf)#(tab)#(tab)JOIN PPESSOA ON #(lf)#(tab)#(tab)#(tab)#(tab)PPESSOA.CODIGO=VATESTADO.CODPESSOA#(lf)#(tab)#(tab)LEFT JOIN PFUNC ON#(lf)#(tab)#(tab)#(tab)#(tab)PFUNC.CODCOLIGADA=VCHAPAATESTADO.CODCOLIGADA#(lf)#(tab)#(tab)#(tab)#(tab)AND PFUNC.CHAPA=VCHAPAATESTADO.CHAPA#(lf)#(tab)#(tab)LEFT JOIN PSECAO ON #(lf)#(tab)#(tab)#(tab)#(tab)PSECAO.CODIGO=PFUNC.CODSECAO #(lf)#(tab)#(tab)#(tab)#(tab)AND PSECAO.CODCOLIGADA=PFUNC.CODCOLIGADA#(lf)#(tab)#(tab)LEFT JOIN PCODSITUACAO ON #(lf)#(tab)#(tab)#(tab)#(tab)PCODSITUACAO.CODCLIENTE=PFUNC.CODSITUACAO#(lf)#(lf)ORDER BY #(lf)#(tab)#(tab)PPESSOA.NOME,#(lf)#(tab)#(tab)VATESTADO.DTINICIO#(lf)"]),
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT#(tab)#(lf)#(tab)#(tab)VATESTADO.CODCOLIGADA,#(lf)#(tab)#(tab)PFUNC.CODCOLIGADA AS CODCOLIGADAREF,#(lf)#(tab)#(tab)GCOLIGADA.NOMEFANTASIA AS COLIGADA,#(lf)#(tab)#(tab)VATESTADO.CODPESSOA,#(lf)#(tab)#(tab)PFUNC.CODPESSOA AS CODPESSOAREF,#(lf)#(tab)#(tab)VCHAPAATESTADO.CHAPA,#(lf)#(tab)#(tab)PFUNC.CHAPA AS CHAPAREF,#(lf)#(tab)#(tab)PPESSOA.NOME AS COLABORADOR,#(lf)#(tab)#(tab)PPESSOA.CPF,#(lf)#(tab)#(tab)PSECAO.DESCRICAO AS SECAO,#(lf)#(tab)#(tab)PCODSITUACAO.DESCRICAO AS SITUACAO,#(lf)#(tab)#(tab)VTIPOATESTADO.CODTPATESTADO,#(lf)#(tab)#(tab)VTIPOATESTADO.NOMETPATESTADO AS TIPOATESTADO,#(lf)#(tab)#(tab)VATESTADO.DTINICIO,#(lf)#(tab)#(tab)VATESTADO.DTFINAL AS DTFIM,#(lf)#(tab)#(tab)DATEDIFF(DAY, VATESTADO.DTINICIO, VATESTADO.DTFINAL) + 1 AS DIASATESTADOS,#(lf)#(tab)#(tab)VCID.CID AS CODCID,#(lf)#(tab)#(tab)VCID.DESCRICAOCID AS CID#(lf)#(tab)#(tab)#(lf)FROM VATESTADO#(lf)#(tab)#(tab)JOIN VTIPOATESTADO ON #(lf)#(tab)#(tab)#(tab)#(tab)VTIPOATESTADO.CODTPATESTADO=VATESTADO.CODTPATESTADO#(lf)#(tab)#(tab)LEFT JOIN VCID ON #(lf)#(tab)#(tab)#(tab)#(tab)VCID.CID=VATESTADO.CID#(lf)#(tab)#(tab)LEFT JOIN VCHAPAATESTADO ON #(lf)#(tab)#(tab)#(tab)#(tab)VATESTADO.CODPESSOA=VCHAPAATESTADO.CODPESSOA #(lf)#(tab)#(tab)#(tab)#(tab)AND VATESTADO.SEQATESTADO=VCHAPAATESTADO.SEQATESTADO #(lf)#(tab)#(tab)#(tab)#(tab)AND VATESTADO.DTINICIO=VCHAPAATESTADO.DTINICIO #(lf)#(tab)#(tab)#(tab)#(tab)AND VATESTADO.CODTPATESTADO=VCHAPAATESTADO.CODTPATESTADO#(lf)#(tab)#(tab)JOIN GCOLIGADA ON #(lf)#(tab)#(tab)#(tab)#(tab)GCOLIGADA.CODCOLIGADA=VATESTADO.CODCOLIGADA#(lf)#(tab)#(tab)JOIN PPESSOA ON #(lf)#(tab)#(tab)#(tab)#(tab)PPESSOA.CODIGO=VATESTADO.CODPESSOA#(lf)#(tab)#(tab)FULL JOIN PFUNC ON#(lf)#(tab)#(tab)#(tab)#(tab)PFUNC.CODCOLIGADA=VCHAPAATESTADO.CODCOLIGADA#(lf)#(tab)#(tab)#(tab)#(tab)AND PFUNC.CHAPA=VCHAPAATESTADO.CHAPA#(lf)#(tab)#(tab)LEFT JOIN PSECAO ON #(lf)#(tab)#(tab)#(tab)#(tab)PSECAO.CODIGO=PFUNC.CODSECAO #(lf)#(tab)#(tab)#(tab)#(tab)AND PSECAO.CODCOLIGADA=PFUNC.CODCOLIGADA#(lf)#(tab)#(tab)LEFT JOIN PCODSITUACAO ON #(lf)#(tab)#(tab)#(tab)#(tab)PCODSITUACAO.CODCLIENTE=PFUNC.CODSITUACAO#(lf)#(lf)ORDER BY #(lf)#(tab)#(tab)PPESSOA.NOME,#(lf)#(tab)#(tab)VATESTADO.DTINICIO#(lf)"]),
 				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"DTINICIO", type date}, {"DTFIM", type date}}),
 				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type","Placas/Corte/Pintura","Placas",Replacer.ReplaceText,{"SECAO"}),
 				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","Administracao","Administrativo",Replacer.ReplaceText,{"SECAO"}),
@@ -185,7 +215,7 @@ table Atestados
 				    #"Replaced Value7" = Table.ReplaceValue(#"Replaced Value6","Obra Conserva São José","Serviços/Obras",Replacer.ReplaceText,{"SECAO"}),
 				    #"Replaced Value8" = Table.ReplaceValue(#"Replaced Value7","Obra Pref Vitoria Lote 02","Serviços/Obras",Replacer.ReplaceText,{"SECAO"}),
 				    #"Replaced Value9" = Table.ReplaceValue(#"Replaced Value8","Obra Pref Vitoria Lote 01","Serviços/Obras",Replacer.ReplaceText,{"SECAO"}),
-				    #"Changed Type1" = Table.TransformColumnTypes(#"Replaced Value9",{{"CODCOLIGADA", type text}, {"CODPESSOA", type text}})
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Replaced Value9",{{"CODCOLIGADA", type text}, {"CODPESSOA", type text}, {"CODCOLIGADAREF", type text}, {"CODPESSOAREF", type text}, {"CHAPAREF", type text}})
 				in
 				    #"Changed Type1"
 

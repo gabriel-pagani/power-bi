@@ -265,62 +265,6 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "5e048c3d2e4cbd83d2e5",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "AfastadosAtuais"
-              }
-            },
-            "Property": "CODCOLIGADA"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "8cd78c7a7ed92138359b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "AfastadosAtuais"
-              }
-            },
-            "Property": "CHAPA"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "7f418aa565639edef257",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "AfastadosAtuais"
-              }
-            },
-            "Property": "NOME"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "b4e8fd73305e339341b9",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "AfastadosAtuais"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
         "name": "99cddc6063c399b1a004",
         "field": {
           "Column": {

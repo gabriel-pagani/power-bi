@@ -7,7 +7,7 @@
     "z": 6000,
     "height": 257.65586034912718,
     "width": 508.12967581047377,
-    "tabOrder": 2000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -74,7 +74,7 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "TotalColaboradores"
+                  "Property": "TotalColaboradoresComAtestado"
                 }
               },
               "queryRef": "Metricas.TotalColaboradores",
@@ -294,65 +294,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "5e9b606bdfd832dc2aea",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendario"
-              }
-            },
-            "Property": "Year"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "0e21369282ae18c224b2",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendario"
-              }
-            },
-            "Property": "Month"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "ecab01248b4c4f0279f1",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "TotalJustificativas"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "fba94d3786fd39692c2f",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "TotalColaboradores"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

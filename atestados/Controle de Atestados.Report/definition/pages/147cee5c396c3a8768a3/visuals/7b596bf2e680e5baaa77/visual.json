@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "f9ff31e6c2a51f784fba",
+  "name": "7b596bf2e680e5baaa77",
   "position": {
-    "x": 259.09090909090907,
-    "y": 15.909090909090908,
-    "z": 10000,
-    "height": 97.72727272727272,
-    "width": 211.81818181818181,
-    "tabOrder": 6000
+    "x": 755.30269876002922,
+    "y": 15.871626549963532,
+    "z": 12001,
+    "height": 98.030634573304155,
+    "width": 253.94602479941651,
+    "tabOrder": 9001
   },
   "visual": {
     "visualType": "card",
@@ -23,12 +23,12 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "AfastadosPrevidenciaAtualmente"
+                  "Property": "TotalDiasJustificativas"
                 }
               },
-              "queryRef": "Metricas.AfastadosPrevidencia",
-              "nativeQueryRef": "Afastados por Aux. doença",
-              "displayName": "Afastados por Aux. doença"
+              "queryRef": "Metricas.TotalDiasJustificativas",
+              "nativeQueryRef": "Total de Dias de Afastados",
+              "displayName": "Total de Dias de Afastados"
             }
           ]
         }
@@ -43,7 +43,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "AfastadosPrevidenciaAtualmente"
+                "Property": "TotalDiasJustificativas"
               }
             },
             "direction": "Descending"
@@ -120,14 +120,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "section": {
-              "expr": {
-                "Literal": {
-                  "Value": "'28ed06d3e153e35ccebe'"
+                  "Value": "false"
                 }
               }
             }
@@ -136,23 +129,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "cfbaa24703ebb826176c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "AfastadosPrevidenciaAtualmente"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "0ff4bc890367c91fc8b1",
   "position": {
-    "x": 248.88888888888889,
-    "y": 15.555555555555555,
-    "z": 8003,
-    "height": 97.777777777777771,
-    "width": 217.77777777777777,
-    "tabOrder": 6002
+    "x": 640,
+    "y": 17,
+    "z": 7000,
+    "height": 97,
+    "width": 218,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "card",
@@ -136,23 +136,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "2837b6916df2841b372d",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "AfastadosAcidenteAtualmente"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "dde366db2c2ef8b10a89",
+  "name": "b7b1c1aadde077d4d245",
   "position": {
-    "x": 770,
-    "y": 35.555555555555557,
-    "z": 12001,
-    "height": 177.77777777777777,
-    "width": 495.55555555555554,
-    "tabOrder": 12001
+    "x": 755.90909090909088,
+    "y": 464.99999999999994,
+    "z": 0,
+    "height": 239.09090909090907,
+    "width": 507.72727272727269,
+    "tabOrder": 10000
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "donutChart",
     "query": {
       "queryState": {
         "Category": {
@@ -23,12 +23,13 @@
                       "Entity": "Atestados"
                     }
                   },
-                  "Property": "CODCID"
+                  "Property": "SECAO"
                 }
               },
-              "queryRef": "Atestados.CODCID",
-              "nativeQueryRef": "CODCID",
-              "active": true
+              "queryRef": "Atestados.SECAO",
+              "nativeQueryRef": "Seção",
+              "active": true,
+              "displayName": "Seção"
             }
           ]
         },
@@ -42,12 +43,12 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "TotalCIDs"
+                  "Property": "JustificativasPorColaborador"
                 }
               },
-              "queryRef": "Metricas.TotalCIDs",
-              "nativeQueryRef": "Diagnósticos",
-              "displayName": "Diagnósticos"
+              "queryRef": "Metricas.% JustificativasPorColaborador",
+              "nativeQueryRef": "% Participação na Média de Atestados",
+              "displayName": "% Participação na Média de Atestados"
             }
           ]
         }
@@ -62,7 +63,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "TotalCIDs"
+                "Property": "JustificativasPorColaborador"
               }
             },
             "direction": "Descending"
@@ -95,13 +96,6 @@
                   "Value": "false"
                 }
               }
-            },
-            "showGradientLegend": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
             }
           }
         }
@@ -123,45 +117,10 @@
                 }
               }
             },
-            "labelPosition": {
+            "labelStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "'Auto'"
-                }
-              }
-            },
-            "optimizeLabelDisplay": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "enableValueDataLabel": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "enableDetailDataLabel": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "enableBackground": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "labelContentLayout": {
-              "expr": {
-                "Literal": {
-                  "Value": "'SingleLine'"
+                  "Value": "'Category, percent of total'"
                 }
               }
             }
@@ -193,46 +152,6 @@
           }
         }
       ],
-      "valueAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "categoryAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
       "dataPoint": [
         {
           "properties": {
@@ -245,6 +164,20 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "borderShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fillTransparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
                 }
               }
             }
@@ -305,21 +238,21 @@
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'Canvas'"
+                  "Value": "'Default'"
                 }
               }
             },
             "section": {
               "expr": {
                 "Literal": {
-                  "Value": "'12ad056301bd080eba61'"
+                  "Value": "'70cf179816bf6d551807'"
                 }
               }
             },
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
@@ -332,21 +265,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "272dff73e744014ac077",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "TotalCIDs"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "91d0b52f4648bb3d8a39",
+        "name": "dca81bbaa566b1fe9c32",
         "field": {
           "Column": {
             "Expression": {
@@ -354,10 +273,69 @@
                 "Entity": "Atestados"
               }
             },
-            "Property": "CODCID"
+            "Property": "SECAO"
           }
         },
-        "type": "Categorical"
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "Atestados",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "a"
+                              }
+                            },
+                            "Property": "SECAO"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "isLockedInViewMode": true,
+        "objects": {
+          "general": [
+            {
+              "properties": {
+                "isInvertedSelectionMode": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "true"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
       }
     ]
   }

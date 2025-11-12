@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "039cd593a7c891039d3c",
+  "name": "b1cf9268ffaf11cb6f1d",
   "position": {
-    "x": 763.09226932668321,
-    "y": 230.72319201995012,
+    "x": 230.60606060606062,
+    "y": 155.45454545454547,
     "z": 8000,
-    "height": 179.55112219451371,
-    "width": 502.7431421446384,
-    "tabOrder": 4000
+    "height": 253.93939393939397,
+    "width": 1033.6363636363637,
+    "tabOrder": 9000
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "lineClusteredColumnComboChart",
     "query": {
       "queryState": {
         "Category": {
@@ -43,11 +43,46 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "RazaoAtestadosPorColaboradore"
+                  "Property": "TotalDiasJustificativas"
                 }
               },
-              "queryRef": "Metricas.RazaoAtestadosPorColaboradore",
-              "nativeQueryRef": "RazaoAtestadosPorColaboradore"
+              "queryRef": "Metricas.TotalDiasJustificativas",
+              "nativeQueryRef": "Dias Afastados",
+              "displayName": "Dias Afastados"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metricas"
+                    }
+                  },
+                  "Property": "TotalColaboradores"
+                }
+              },
+              "queryRef": "Metricas.TotalColaboradores",
+              "nativeQueryRef": "Colaboradores",
+              "displayName": "Colaboradores"
+            }
+          ]
+        },
+        "Y2": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metricas"
+                    }
+                  },
+                  "Property": "DiasAfastadosPorColaborador"
+                }
+              },
+              "queryRef": "Metricas.DiasAfastadosPorColaborador",
+              "nativeQueryRef": "Dias Afastados Por Colaborador",
+              "displayName": "Dias Afastados Por Colaborador"
             }
           ]
         }
@@ -62,7 +97,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "RazaoAtestadosPorColaboradore"
+                "Property": "TotalDiasJustificativas"
               }
             },
             "direction": "Descending"
@@ -78,14 +113,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
             "position": {
               "expr": {
                 "Literal": {
-                  "Value": "'LeftCenter'"
+                  "Value": "'TopCenter'"
                 }
               }
             },
@@ -96,10 +131,17 @@
                 }
               }
             },
-            "showGradientLegend": {
+            "matchLineColor": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "legendMarkerRendering": {
+              "expr": {
+                "Literal": {
+                  "Value": "'markerOnly'"
                 }
               }
             }
@@ -126,14 +168,14 @@
             "labelPosition": {
               "expr": {
                 "Literal": {
-                  "Value": "'Auto'"
+                  "Value": "'Above'"
                 }
               }
             },
-            "optimizeLabelDisplay": {
+            "labelOrientation": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "1D"
                 }
               }
             },
@@ -144,24 +186,10 @@
                 }
               }
             },
-            "enableDetailDataLabel": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
             "enableBackground": {
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            },
-            "labelContentLayout": {
-              "expr": {
-                "Literal": {
-                  "Value": "'SingleLine'"
                 }
               }
             }
@@ -193,23 +221,90 @@
           }
         }
       ],
-      "valueAxis": [
+      "dataPoint": [
         {
           "properties": {
-            "showAxisTitle": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "borderShow": {
               "expr": {
                 "Literal": {
                   "Value": "false"
                 }
               }
             },
-            "show": {
+            "fillTransparency": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "0D"
                 }
               }
             }
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#d9b300'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.TotalColaboradores"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#cccccc'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.TotalDiasJustificativas"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.DiasAfastadosPorColaborador"
           }
         }
       ],
@@ -233,18 +328,110 @@
           }
         }
       ],
-      "dataPoint": [
+      "valueAxis": [
         {
           "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 8,
-                      "Percent": 0
-                    }
-                  }
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "secShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "secShowAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "secLogAxisScale": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "alignZeros": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lineStyles": [
+        {
+          "properties": {
+            "strokeShow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "strokeLineJoin": {
+              "expr": {
+                "Literal": {
+                  "Value": "'round'"
+                }
+              }
+            },
+            "lineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "'dotted'"
+                }
+              }
+            },
+            "strokeWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "4D"
+                }
+              }
+            },
+            "lineChartType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'linear'"
+                }
+              }
+            },
+            "strokeAutoScale": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "showMarker": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "markerShape": {
+              "expr": {
+                "Literal": {
+                  "Value": "'circle'"
                 }
               }
             }
@@ -305,7 +492,7 @@
             "type": {
               "expr": {
                 "Literal": {
-                  "Value": "'Canvas'"
+                  "Value": "'Default'"
                 }
               }
             },
@@ -320,6 +507,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
@@ -405,7 +605,7 @@
         }
       },
       {
-        "name": "da93aef0ed57701aaf87",
+        "name": "aa0fa1a301eedf78d32f",
         "field": {
           "Measure": {
             "Expression": {
@@ -413,7 +613,21 @@
                 "Entity": "Metricas"
               }
             },
-            "Property": "RazaoAtestadosPorColaboradore"
+            "Property": "TotalColaboradores"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "31b5a230f9c0d1713edb",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "TotalDiasJustificativas"
           }
         },
         "type": "Advanced"

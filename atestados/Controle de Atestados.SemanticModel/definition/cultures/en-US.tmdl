@@ -67,7 +67,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Seção": {
+			          "Seção do Colaborador": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -77,7 +77,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Seção do Colaborador": {
+			          "Seção": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -836,45 +836,45 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "metrica.total_colaboradores": {
+			    "metrica.total_colaboradores_com_atestado": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Metricas",
-			          "ConceptualProperty": "TotalColaboradores"
+			          "ConceptualProperty": "TotalColaboradoresComAtestado"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total colaboradores": {
+			          "total colaboradores com atestado": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "TotalColaboradores": {
+			          "TotalColaboradoresComAtestado": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
 			          }
 			        },
 			        {
-			          "aggregate colaboradore": {
+			          "aggregate colaboradore com atestado": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "overall colaboradore": {
+			          "overall colaboradore com atestado": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.582
+			            "Weight": 0.599
 			          }
 			        },
 			        {
@@ -984,16 +984,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
-			        },
-			        {
-			          "Ocorrências": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -1025,16 +1015,6 @@ cultureInfo en-US
 			        {
 			          "codcid": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "CID": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2481,6 +2461,411 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "atestado.codcoligadaref": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "CODCOLIGADAREF"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codcoligadaref": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.codpessoaref": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "CODPESSOAREF"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codpessoaref": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.chaparef": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "CHAPAREF"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chaparef": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "atestado.coligadacolaborador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Atestados",
+			          "ConceptualProperty": "COLIGADACOLABORADOR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "coligadacolaborador": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.justificativas_por_colaborador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "JustificativasPorColaborador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "justificativas por colaborador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "JustificativasPorColaborador": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "% Participação na Média de Atestados": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_colaboradores_sem_atestado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TotalColaboradoresSemAtestado"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total colaboradores sem atestado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalColaboradoresSemAtestado": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate colaboradore sem atestado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall colaboradore sem atestado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_dias_atestados": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TotalDiasAtestados"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total dias atestados": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalDiasAtestados": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate dias atestado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall dias atestado": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Dias em Atestado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_dias_declaracoes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TotalDiasDeclaracoes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total dias declaracoes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalDiasDeclaracoes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate dias declaracoe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall dias declaracoe": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Dias em Declaração": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_dias_justificativas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TotalDiasJustificativas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total dias justificativas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalDiasJustificativas": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate dias justificativa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall dias justificativa": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "Dias Afastados": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Total de Dias de Afastados": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Total de Dias": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_colaboradores": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TotalColaboradores"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total colaboradores": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TotalColaboradores": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate colaboradore": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall colaboradore": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Total de Colaboradores": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Colaboradores": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.dias_afastados_por_colaborador": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "DiasAfastadosPorColaborador"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dias afastados por colaborador": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DiasAfastadosPorColaborador": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -3068,6 +3453,369 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_atestados"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_dias_afastados_por_colaborador": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.dias_afastados_por_colaborador": {
+			          "Target": {
+			            "Entity": "metrica.dias_afastados_por_colaborador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.dias_afastados_por_colaborador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_dias_afastados_por_colaborador"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_total_colaboradores": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.total_colaboradores": {
+			          "Target": {
+			            "Entity": "metrica.total_colaboradores"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_colaboradores"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_total_colaboradores"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_total_dias_justificativas": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.total_dias_justificativas": {
+			          "Target": {
+			            "Entity": "metrica.total_dias_justificativas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_dias_justificativas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_total_dias_justificativas"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_total_dias_declaracoes": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.total_dias_declaracoes": {
+			          "Target": {
+			            "Entity": "metrica.total_dias_declaracoes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_dias_declaracoes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_total_dias_declaracoes"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_total_dias_atestados": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.total_dias_atestados": {
+			          "Target": {
+			            "Entity": "metrica.total_dias_atestados"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_dias_atestados"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_total_dias_atestados"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_total_colaboradores_sem_atestado": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.total_colaboradores_sem_atestado": {
+			          "Target": {
+			            "Entity": "metrica.total_colaboradores_sem_atestado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_colaboradores_sem_atestado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_total_colaboradores_sem_atestado"
+			        }
+			      ]
+			    },
+			    "atestado_has_metrica_justificativas_por_colaborador": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "metrica.justificativas_por_colaborador": {
+			          "Target": {
+			            "Entity": "metrica.justificativas_por_colaborador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "metrica.justificativas_por_colaborador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_justificativas_por_colaborador"
+			        }
+			      ]
+			    },
+			    "atestado_has_coligadacolaborador": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.coligadacolaborador": {
+			          "Target": {
+			            "Entity": "atestado.coligadacolaborador"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.coligadacolaborador"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_coligadacolaboradors"
+			        }
+			      ]
+			    },
+			    "atestado_has_chaparef": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.chaparef": {
+			          "Target": {
+			            "Entity": "atestado.chaparef"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.chaparef"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_chaparefs"
+			        }
+			      ]
+			    },
+			    "atestado_has_codpessoaref": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.codpessoaref": {
+			          "Target": {
+			            "Entity": "atestado.codpessoaref"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.codpessoaref"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_codpessoarefs"
+			        }
+			      ]
+			    },
+			    "atestado_has_codcoligadaref": {
+			      "Binding": {
+			        "ConceptualEntity": "Atestados"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "atestado": {
+			          "Target": {
+			            "Entity": "atestado"
+			          }
+			        },
+			        "atestado.codcoligadaref": {
+			          "Target": {
+			            "Entity": "atestado.codcoligadaref"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "atestado"
+			            },
+			            "Object": {
+			              "Role": "atestado.codcoligadaref"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "atestados_have_codcoligadarefs"
 			        }
 			      ]
 			    },
@@ -4424,7 +5172,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "atestado_has_metrica_total_colaboradores": {
+			    "atestado_has_metrica_total_colaboradores_com_atestado": {
 			      "Binding": {
 			        "ConceptualEntity": "Atestados"
 			      },
@@ -4435,9 +5183,9 @@ cultureInfo en-US
 			            "Entity": "atestado"
 			          }
 			        },
-			        "metrica.total_colaboradores": {
+			        "metrica.total_colaboradores_com_atestado": {
 			          "Target": {
-			            "Entity": "metrica.total_colaboradores"
+			            "Entity": "metrica.total_colaboradores_com_atestado"
 			          }
 			        }
 			      },
@@ -4448,12 +5196,12 @@ cultureInfo en-US
 			              "Role": "atestado"
 			            },
 			            "Object": {
-			              "Role": "metrica.total_colaboradores"
+			              "Role": "metrica.total_colaboradores_com_atestado"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "atestados_have_total_colaboradores"
+			          "ID": "atestados_have_total_colaboradores_com_atestado"
 			        }
 			      ]
 			    },

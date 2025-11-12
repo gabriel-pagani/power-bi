@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "3e988e7674e63772a2af",
+  "name": "bc7e891161c19b32d299",
   "position": {
-    "x": 521.36363636363637,
-    "y": 16.363636363636363,
-    "z": 11000,
-    "height": 97.72727272727272,
-    "width": 217.27272727272725,
-    "tabOrder": 7000
+    "x": 506.02479941648431,
+    "y": 15.871626549963532,
+    "z": 11005,
+    "height": 98.030634573304155,
+    "width": 249.27789934354487,
+    "tabOrder": 11005
   },
   "visual": {
     "visualType": "card",
@@ -23,12 +23,12 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "AfastadosAcidenteAtualmente"
+                  "Property": "JustificativasPorColaborador"
                 }
               },
-              "queryRef": "Metricas.AfastadosAcidente",
-              "nativeQueryRef": "Afastados por Acidente",
-              "displayName": "Afastados por Acidente"
+              "queryRef": "Metricas.JustificativasPorColaborador",
+              "nativeQueryRef": "JustificativasPorColaborador",
+              "displayName": "Justificativas Por Colaborador"
             }
           ]
         }
@@ -43,7 +43,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "AfastadosAcidenteAtualmente"
+                "Property": "JustificativasPorColaborador"
               }
             },
             "direction": "Descending"
@@ -120,14 +120,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "section": {
-              "expr": {
-                "Literal": {
-                  "Value": "'74a188ca68773f7c8d8f'"
+                  "Value": "false"
                 }
               }
             }
@@ -136,23 +129,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "024753426c3e90cae3f2",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "AfastadosAcidenteAtualmente"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
