@@ -69,7 +69,7 @@ table Metricas
 	measure AfastadosAcidenteTotal = ```
 			
 			CALCULATE(
-			    COUNTROWS(Afastados),
+			    DISTINCTCOUNT(Afastados[CODPESSOA]),
 			    Afastados[TIPO] = "T"
 			)
 			
@@ -80,7 +80,7 @@ table Metricas
 	measure AfastadosPrevidenciaTotal = ```
 			
 			CALCULATE(
-			    COUNTROWS(Afastados),
+			    DISTINCTCOUNT(Afastados[CODPESSOA]),
 			    Afastados[TIPO] = "P"
 			)
 			

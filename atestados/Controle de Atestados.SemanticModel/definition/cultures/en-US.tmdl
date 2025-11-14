@@ -299,16 +299,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Total de Justificativas": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        },
-			        {
 			          "Justificativas": {
 			            "State": "Suggested",
 			            "Source": {
@@ -1228,16 +1218,6 @@ cultureInfo en-US
 			          "date": {
 			            "State": "Generated",
 			            "Weight": 0.7
-			          }
-			        },
-			        {
-			          "Data do Afastamento": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
 			          }
 			        }
 			      ],
@@ -2750,7 +2730,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Dias Afastados": {
+			          "Total de Dias de Afastados": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -2760,7 +2740,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Total de Dias de Afastados": {
+			          "Dias Afastados": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

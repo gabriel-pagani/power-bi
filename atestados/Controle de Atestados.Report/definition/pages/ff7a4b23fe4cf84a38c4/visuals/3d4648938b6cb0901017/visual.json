@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "65bf7c2cc35cfd4af36d",
+  "name": "3d4648938b6cb0901017",
   "position": {
-    "x": 269.8176513493799,
+    "x": 755.30269876002922,
     "y": 15.871626549963532,
-    "z": 11004,
+    "z": 8001,
     "height": 98.030634573304155,
-    "width": 236.2071480671043,
-    "tabOrder": 11004
+    "width": 253.94602479941651,
+    "tabOrder": 10001
   },
   "visual": {
     "visualType": "card",
@@ -23,12 +23,12 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "TotalJustificativas"
+                  "Property": "TotalDiasJustificativas"
                 }
               },
-              "queryRef": "Metricas.TotalJustificativas",
-              "nativeQueryRef": "Total Justificativas",
-              "displayName": "Total Justificativas"
+              "queryRef": "Metricas.TotalDiasJustificativas",
+              "nativeQueryRef": "Total de Dias de Afastados",
+              "displayName": "Total de Dias de Afastados"
             }
           ]
         }
@@ -43,7 +43,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "TotalJustificativas"
+                "Property": "TotalDiasJustificativas"
               }
             },
             "direction": "Descending"

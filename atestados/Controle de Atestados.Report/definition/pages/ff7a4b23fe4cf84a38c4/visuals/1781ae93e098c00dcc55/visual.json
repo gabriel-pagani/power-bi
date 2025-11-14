@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
-  "name": "bc7e891161c19b32d299",
+  "name": "1781ae93e098c00dcc55",
   "position": {
-    "x": 506.02479941648431,
-    "y": 15.871626549963532,
-    "z": 11005,
-    "height": 98.030634573304155,
-    "width": 249.27789934354487,
-    "tabOrder": 11005
+    "x": 264.83790523690772,
+    "y": 16.159600997506235,
+    "z": 8002,
+    "height": 97.855361596009971,
+    "width": 254.06483790523689,
+    "tabOrder": 10002
   },
   "visual": {
     "visualType": "card",
@@ -23,12 +23,12 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "JustificativasPorColaborador"
+                  "Property": "TotalColaboradores"
                 }
               },
-              "queryRef": "Metricas.JustificativasPorColaborador",
-              "nativeQueryRef": "JustificativasPorColaborador",
-              "displayName": "Justificativas Por Colaborador"
+              "queryRef": "Metricas.TotalColaboradores",
+              "nativeQueryRef": "Total de Colaboradores",
+              "displayName": "Total de Colaboradores"
             }
           ]
         }
@@ -43,7 +43,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "JustificativasPorColaborador"
+                "Property": "TotalColaboradores"
               }
             },
             "direction": "Descending"
