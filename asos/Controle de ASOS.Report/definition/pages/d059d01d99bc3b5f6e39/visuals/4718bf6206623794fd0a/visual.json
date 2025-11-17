@@ -42,27 +42,12 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "Total de Exames Em Dia"
+                  "Property": "Total de Exames Pendente"
                 }
               },
-              "queryRef": "Metricas.Total de Exames Em Dia",
-              "nativeQueryRef": "Em Dia",
-              "displayName": "Em Dia"
-            },
-            {
-              "field": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Metricas"
-                    }
-                  },
-                  "Property": "Total de Exames A Vencer"
-                }
-              },
-              "queryRef": "Metricas.Total de Exames A Vencer",
-              "nativeQueryRef": "A Vencer",
-              "displayName": "A Vencer"
+              "queryRef": "Metricas.Total de Exames Pendente",
+              "nativeQueryRef": "Pendentes",
+              "displayName": "Pendentes"
             },
             {
               "field": {
@@ -87,12 +72,27 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "Total de Exames Pendente"
+                  "Property": "Total de Exames A Vencer"
                 }
               },
-              "queryRef": "Metricas.Total de Exames Pendente",
-              "nativeQueryRef": "Pendentes",
-              "displayName": "Pendentes"
+              "queryRef": "Metricas.Total de Exames A Vencer",
+              "nativeQueryRef": "A Vencer",
+              "displayName": "A Vencer"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metricas"
+                    }
+                  },
+                  "Property": "Total de Exames Em Dia"
+                }
+              },
+              "queryRef": "Metricas.Total de Exames Em Dia",
+              "nativeQueryRef": "Em Dia",
+              "displayName": "Em Dia"
             }
           ]
         }
@@ -107,7 +107,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "Total de Exames Em Dia"
+                "Property": "Total de Exames Pendente"
               }
             },
             "direction": "Descending"
@@ -177,7 +177,19 @@
             "labelPosition": {
               "expr": {
                 "Literal": {
-                  "Value": "'OutsideEnd'"
+                  "Value": "'InsideCenter'"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
                 }
               }
             }
@@ -413,7 +425,8 @@
               }
             }
           ]
-        }
+        },
+        "howCreated": "User"
       }
     ]
   }

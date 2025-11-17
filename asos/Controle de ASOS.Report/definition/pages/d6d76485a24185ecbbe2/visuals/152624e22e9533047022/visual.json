@@ -76,7 +76,7 @@
             "labelStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "'Data value, percent of total'"
+                  "Value": "'Percent of total'"
                 }
               }
             },
@@ -84,6 +84,13 @@
               "expr": {
                 "Literal": {
                   "Value": "1D"
+                }
+              }
+            },
+            "percentageLabelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
                 }
               }
             }
