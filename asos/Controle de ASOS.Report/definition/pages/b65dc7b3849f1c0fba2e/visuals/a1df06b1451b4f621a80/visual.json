@@ -83,6 +83,11 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "SECAO",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
   },
   "filterConfig": {

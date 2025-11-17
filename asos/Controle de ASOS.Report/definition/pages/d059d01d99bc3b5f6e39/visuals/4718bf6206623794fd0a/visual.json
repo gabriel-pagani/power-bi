@@ -3,13 +3,13 @@
   "name": "4718bf6206623794fd0a",
   "position": {
     "x": 0,
-    "y": 13.061224489795919,
+    "y": 15.000000000000002,
     "z": 0,
-    "height": 707.31554160125586,
+    "height": 705,
     "width": 1280
   },
   "visual": {
-    "visualType": "barChart",
+    "visualType": "clusteredBarChart",
     "query": {
       "queryState": {
         "Category": {
@@ -177,7 +177,7 @@
             "labelPosition": {
               "expr": {
                 "Literal": {
-                  "Value": "'InsideCenter'"
+                  "Value": "'OutsideEnd'"
                 }
               }
             },
