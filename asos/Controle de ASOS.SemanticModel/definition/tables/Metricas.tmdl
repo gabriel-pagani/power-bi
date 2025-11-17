@@ -57,6 +57,17 @@ table Metricas
 		formatString: 0
 		lineageTag: 3fe58107-6bdf-497f-ab17-129cf84907df
 
+	measure 'Total de Exames' = ```
+			
+			COALESCE(    
+			    COUNTROWS(Asos),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 7032f2c0-2b94-4c8b-a672-2571fd1df226
+
 	partition Metricas = m
 		mode: import
 		source =

@@ -2,14 +2,14 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
   "name": "4718bf6206623794fd0a",
   "position": {
-    "x": 16,
-    "y": 20,
+    "x": 0,
+    "y": 13.061224489795919,
     "z": 0,
-    "height": 360,
-    "width": 485
+    "height": 707.31554160125586,
+    "width": 1280
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "barChart",
     "query": {
       "queryState": {
         "Category": {
@@ -42,12 +42,57 @@
                       "Entity": "Metricas"
                     }
                   },
+                  "Property": "Total de Exames Em Dia"
+                }
+              },
+              "queryRef": "Metricas.Total de Exames Em Dia",
+              "nativeQueryRef": "Em Dia",
+              "displayName": "Em Dia"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metricas"
+                    }
+                  },
+                  "Property": "Total de Exames A Vencer"
+                }
+              },
+              "queryRef": "Metricas.Total de Exames A Vencer",
+              "nativeQueryRef": "A Vencer",
+              "displayName": "A Vencer"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metricas"
+                    }
+                  },
+                  "Property": "Total de Exames Vencido"
+                }
+              },
+              "queryRef": "Metricas.Total de Exames Vencido",
+              "nativeQueryRef": "Vencido",
+              "displayName": "Vencido"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Metricas"
+                    }
+                  },
                   "Property": "Total de Exames Pendente"
                 }
               },
               "queryRef": "Metricas.Total de Exames Pendente",
-              "nativeQueryRef": "Exames Pendentes",
-              "displayName": "Exames Pendentes"
+              "nativeQueryRef": "Pendentes",
+              "displayName": "Pendentes"
             }
           ]
         }
@@ -62,12 +107,13 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "Total de Exames Pendente"
+                "Property": "Total de Exames Em Dia"
               }
             },
             "direction": "Descending"
           }
-        ]
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -127,6 +173,13 @@
                   "Value": "1D"
                 }
               }
+            },
+            "labelPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "'OutsideEnd'"
+                }
+              }
             }
           }
         }
@@ -138,11 +191,96 @@
               "solid": {
                 "color": {
                   "expr": {
+                    "Literal": {
+                      "Value": "'#F86363'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#5BE65B'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.Total de Exames Em Dia"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E6E65B'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.Total de Exames A Vencer"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#E55151'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.Total de Exames Vencido"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
                     "ThemeDataColor": {
                       "ColorId": 0,
                       "Percent": -0.2
                     }
                   }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.Total de Exames Pendente"
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'TopCenter'"
                 }
               }
             }
@@ -180,6 +318,20 @@
                   "Value": "true"
                 }
               }
+            },
+            "heading": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Heading3'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Validade dos Exames x Setor'"
+                }
+              }
             }
           }
         }
@@ -196,6 +348,19 @@
             }
           }
         }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'d6d76485a24185ecbbe2'"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
@@ -203,21 +368,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "c35d91d024a961774e2e",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Asos"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "c22cdef4a0c965344fcb",
+        "name": "d28bd58a62c5903e6906",
         "field": {
           "Measure": {
             "Expression": {
@@ -225,10 +376,44 @@
                 "Entity": "Metricas"
               }
             },
-            "Property": "Total de Exames Pendente"
+            "Property": "Total de Exames Vencido"
           }
         },
-        "type": "Advanced"
+        "type": "Advanced",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "m",
+              "Entity": "Metricas",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 1,
+                  "Left": {
+                    "Measure": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "m"
+                        }
+                      },
+                      "Property": "Total de Exames Vencido"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "0L"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
       }
     ]
   }
