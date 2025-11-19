@@ -476,48 +476,24 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "metrica.total_de_exames_a_vencer": {
+			    "metrica.total_de_exames_a_vencer_COALESCE": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Metricas",
-			          "ConceptualProperty": "Total de Exames A Vencer"
+			          "ConceptualProperty": "Total de Exames A Vencer (COALESCE)"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "total de exames a vencer": {
+			          "total de exames a vencer (COALESCE)": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "aggregate de exame a vencer": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.605
-			          }
-			        },
-			        {
-			          "overall de exame a vencer": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.605
-			          }
-			        },
-			        {
-			          "A Vencer": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
+			          "total de exames a vencer": {
+			            "State": "Generated",
+			            "Weight": 0.75
 			          }
 			        }
 			      ]
@@ -1063,174 +1039,157 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "metrica.total_de_exames": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "Total de Exames"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de exames": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de exame": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall de exame": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_de_exames_a_vencer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "Total de Exames A Vencer"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de exames a vencer": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aggregate de exame a vencer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall de exame a vencer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "A Vencer": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_de_exames_em_dia_COALESCE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "Total de Exames Em Dia (COALESCE)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de exames em dia (COALESCE)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total de exames em dia": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_de_exames_pendente_COALESCE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "Total de Exames Pendente (COALESCE)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de exames pendente (COALESCE)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total de exames pendente": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_de_exames_vencido_COALESCE": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "Total de Exames Vencido (COALESCE)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de exames vencido (COALESCE)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "total de exames vencido": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "calendario_date_date_hierarchy_has_calendario_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendario.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendario.date.date_hierarchy"
-			          }
-			        },
-			        "calendario.date.day": {
-			          "Target": {
-			            "Entity": "calendario.date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendario.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendario.date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_days"
-			        }
-			      ]
-			    },
-			    "calendario_date_date_hierarchy_has_calendario_date_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendario.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendario.date.date_hierarchy"
-			          }
-			        },
-			        "calendario.date.month": {
-			          "Target": {
-			            "Entity": "calendario.date.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendario.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendario.date.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
-			        }
-			      ]
-			    },
-			    "calendario_date_date_hierarchy_has_calendario_date_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendario.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendario.date.date_hierarchy"
-			          }
-			        },
-			        "calendario.date.quarter": {
-			          "Target": {
-			            "Entity": "calendario.date.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendario.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendario.date.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_quarters"
-			        }
-			      ]
-			    },
-			    "calendario_date_date_hierarchy_has_calendario_date_year": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendario.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendario.date.date_hierarchy"
-			          }
-			        },
-			        "calendario.date.year": {
-			          "Target": {
-			            "Entity": "calendario.date.year"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendario.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendario.date.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years"
-			        }
-			      ]
-			    },
-			    "calendario_date_has_date_hierarchy": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendario.date": {
-			          "Target": {
-			            "Entity": "calendario.date"
-			          }
-			        },
-			        "calendario.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendario.date.date_hierarchy"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendario.date"
-			            },
-			            "Object": {
-			              "Role": "calendario.date.date_hierarchy"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dates_have_date_hierarchies"
-			        }
-			      ]
-			    },
 			    "aso_has_calendario": {
 			      "Binding": {
 			        "ConceptualEntity": "Asos"
@@ -1274,6 +1233,171 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_asos"
+			        }
+			      ]
+			    },
+			    "aso_has_metrica_total_de_exames_vencido_COALESCE": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "metrica.total_de_exames_vencido_COALESCE": {
+			          "Target": {
+			            "Entity": "metrica.total_de_exames_vencido_COALESCE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_de_exames_vencido_COALESCE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_total_de_exames_vencido_COALESCE"
+			        }
+			      ]
+			    },
+			    "aso_has_metrica_total_de_exames_pendente_COALESCE": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "metrica.total_de_exames_pendente_COALESCE": {
+			          "Target": {
+			            "Entity": "metrica.total_de_exames_pendente_COALESCE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_de_exames_pendente_COALESCE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_total_de_exames_pendente_COALESCE"
+			        }
+			      ]
+			    },
+			    "aso_has_metrica_total_de_exames_em_dia_COALESCE": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "metrica.total_de_exames_em_dia_COALESCE": {
+			          "Target": {
+			            "Entity": "metrica.total_de_exames_em_dia_COALESCE"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_de_exames_em_dia_COALESCE"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_total_de_exames_em_dia_COALESCE"
+			        }
+			      ]
+			    },
+			    "aso_has_metrica_total_de_exames_a_vencer": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "metrica.total_de_exames_a_vencer": {
+			          "Target": {
+			            "Entity": "metrica.total_de_exames_a_vencer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_de_exames_a_vencer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_total_de_exames_a_vencer"
+			        }
+			      ]
+			    },
+			    "aso_has_metrica_total_de_exames": {
+			      "Binding": {
+			        "ConceptualEntity": "Asos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aso": {
+			          "Target": {
+			            "Entity": "aso"
+			          }
+			        },
+			        "metrica.total_de_exames": {
+			          "Target": {
+			            "Entity": "metrica.total_de_exames"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aso"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_de_exames"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "asos_have_total_de_exames"
 			        }
 			      ]
 			    },
@@ -1541,7 +1665,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "aso_has_metrica_total_de_exames_a_vencer": {
+			    "aso_has_metrica_total_de_exames_a_vencer_COALESCE": {
 			      "Binding": {
 			        "ConceptualEntity": "Asos"
 			      },
@@ -1552,9 +1676,9 @@ cultureInfo en-US
 			            "Entity": "aso"
 			          }
 			        },
-			        "metrica.total_de_exames_a_vencer": {
+			        "metrica.total_de_exames_a_vencer_COALESCE": {
 			          "Target": {
-			            "Entity": "metrica.total_de_exames_a_vencer"
+			            "Entity": "metrica.total_de_exames_a_vencer_COALESCE"
 			          }
 			        }
 			      },
@@ -1565,12 +1689,12 @@ cultureInfo en-US
 			              "Role": "aso"
 			            },
 			            "Object": {
-			              "Role": "metrica.total_de_exames_a_vencer"
+			              "Role": "metrica.total_de_exames_a_vencer_COALESCE"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "asos_have_total_de_exames_a_vencer"
+			          "ID": "asos_have_total_de_exames_a_vencer_COALESCE"
 			        }
 			      ]
 			    },
@@ -2198,6 +2322,171 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "asos_have_codcoligadas"
+			        }
+			      ]
+			    },
+			    "calendario_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date": {
+			          "Target": {
+			            "Entity": "calendario.date"
+			          }
+			        },
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.year": {
+			          "Target": {
+			            "Entity": "calendario.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.quarter": {
+			          "Target": {
+			            "Entity": "calendario.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.month": {
+			          "Target": {
+			            "Entity": "calendario.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.day": {
+			          "Target": {
+			            "Entity": "calendario.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
 			        }
 			      ]
 			    }

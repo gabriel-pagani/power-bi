@@ -3,19 +3,16 @@ table Metricas
 
 	measure 'Total de Exames Em Dia' = ```
 			
-			COALESCE(    
-			    CALCULATE(
-			        COUNTROWS(Asos),
-			        Asos[VALIDADE] = "Em Dia"
-			    ),
-			    0
+			CALCULATE(
+			    COUNTROWS(Asos),
+			    Asos[VALIDADE] = "Em Dia"
 			)
 			
 			```
 		formatString: 0
 		lineageTag: 4b3b80a2-00c3-459c-8d61-f901c454af7a
 
-	measure 'Total de Exames A Vencer' = ```
+	measure 'Total de Exames A Vencer (COALESCE)' = ```
 			
 			COALESCE(    
 			    CALCULATE(
@@ -31,12 +28,9 @@ table Metricas
 
 	measure 'Total de Exames Vencido' = ```
 			
-			COALESCE(    
-			    CALCULATE(
-			        COUNTROWS(Asos),
-			        Asos[VALIDADE] = "Vencido"
-			    ),
-			    0
+			CALCULATE(
+			    COUNTROWS(Asos),
+			    Asos[VALIDADE] = "Vencido"
 			)
 			
 			```
@@ -44,6 +38,46 @@ table Metricas
 		lineageTag: d597186d-c63e-4ba6-873a-73e343135c41
 
 	measure 'Total de Exames Pendente' = ```
+			
+			CALCULATE(
+			    COUNTROWS(Asos),
+			    Asos[VALIDADE] = "Pendente"
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 3fe58107-6bdf-497f-ab17-129cf84907df
+
+	measure 'Total de Exames' = COUNTROWS(Asos)
+		formatString: 0
+		lineageTag: 7032f2c0-2b94-4c8b-a672-2571fd1df226
+
+	measure 'Total de Exames A Vencer' = ```
+			
+			CALCULATE(
+			    COUNTROWS(Asos),
+			    Asos[VALIDADE] = "A Vencer"
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 333c681f-68e8-43f1-bb8a-458912ea9cff
+
+	measure 'Total de Exames Em Dia (COALESCE)' = ```
+			
+			COALESCE(    
+			    CALCULATE(
+			        COUNTROWS(Asos),
+			        Asos[VALIDADE] = "Em Dia"
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 34ef6c31-27ed-40ae-af40-70d01709ca9d
+
+	measure 'Total de Exames Pendente (COALESCE)' = ```
 			
 			COALESCE(    
 			    CALCULATE(
@@ -55,9 +89,23 @@ table Metricas
 			
 			```
 		formatString: 0
-		lineageTag: 3fe58107-6bdf-497f-ab17-129cf84907df
+		lineageTag: cfa2e221-5d67-4729-b96b-7850cfb223d2
 
-	measure 'Total de Exames' = ```
+	measure 'Total de Exames Vencido (COALESCE)' = ```
+			
+			COALESCE(    
+			    CALCULATE(
+			        COUNTROWS(Asos),
+			        Asos[VALIDADE] = "Vencido"
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 2bb0f769-5676-4bf3-924d-f04521123594
+
+	measure 'Total de Exames (COALESCE)' = ```
 			
 			COALESCE(    
 			    COUNTROWS(Asos),
@@ -66,7 +114,7 @@ table Metricas
 			
 			```
 		formatString: 0
-		lineageTag: 7032f2c0-2b94-4c8b-a672-2571fd1df226
+		lineageTag: 49d7bab6-0492-48e3-bd72-2b4b7d4ccee4
 
 	partition Metricas = m
 		mode: import

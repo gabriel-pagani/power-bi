@@ -23,11 +23,11 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "Total de Exames A Vencer"
+                  "Property": "Total de Exames A Vencer (COALESCE)"
                 }
               },
-              "queryRef": "Metricas.Total de Exames A Vencer",
-              "nativeQueryRef": "Total de Exames A Vencer"
+              "queryRef": "Metricas.Total de Exames A Vencer (COALESCE)",
+              "nativeQueryRef": "Total de Exames A Vencer (COALESCE)"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "Total de Exames A Vencer"
+                "Property": "Total de Exames A Vencer (COALESCE)"
               }
             },
             "direction": "Descending"
@@ -82,5 +82,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "edd95ea7bb91d48c27d7",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "Total de Exames A Vencer (COALESCE)"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

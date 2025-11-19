@@ -31,7 +31,7 @@
           "expanded": {
             "expr": {
               "Literal": {
-                "Value": "false"
+                "Value": "true"
               }
             }
           }
@@ -59,8 +59,8 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "P_gina_Principal8836525949446704.svg",
-          "path": "P_gina_Principal8836525949446704.svg",
+          "name": "P_gina_Principal12144370330875942.svg",
+          "path": "P_gina_Principal12144370330875942.svg",
           "type": "Image"
         }
       ]

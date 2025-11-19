@@ -23,11 +23,11 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "Total de Exames Pendente"
+                  "Property": "Total de Exames Pendente (COALESCE)"
                 }
               },
-              "queryRef": "Metricas.Total de Exames Pendente",
-              "nativeQueryRef": "Total de Exames Pendente"
+              "queryRef": "Metricas.Total de Exames Pendente (COALESCE)",
+              "nativeQueryRef": "Total de Exames Pendente (COALESCE)"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "Total de Exames Pendente"
+                "Property": "Total de Exames Pendente (COALESCE)"
               }
             },
             "direction": "Descending"
@@ -82,5 +82,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "781057bf00e0170e75dc",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "Total de Exames Pendente (COALESCE)"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

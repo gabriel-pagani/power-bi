@@ -1,15 +1,15 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "4718bf6206623794fd0a",
   "position": {
     "x": 0,
-    "y": 15.000000000000002,
+    "y": 14.589665653495441,
     "z": 0,
-    "height": 705,
+    "height": 227.59878419452889,
     "width": 1280
   },
   "visual": {
-    "visualType": "clusteredBarChart",
+    "visualType": "clusteredColumnChart",
     "query": {
       "queryState": {
         "Category": {
@@ -76,7 +76,7 @@
                 }
               },
               "queryRef": "Metricas.Total de Exames A Vencer",
-              "nativeQueryRef": "A Vencer",
+              "nativeQueryRef": "Total de Exames A Vencer",
               "displayName": "A Vencer"
             },
             {
@@ -237,24 +237,6 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#E6E65B'"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Metricas.Total de Exames A Vencer"
-          }
-        },
-        {
-          "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "Literal": {
                       "Value": "'#E55151'"
                     }
                   }
@@ -283,6 +265,25 @@
           },
           "selector": {
             "metadata": "Metricas.Total de Exames Pendente"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 8,
+                      "Percent": 0.2
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Metricas.Total de Exames A Vencer"
           }
         }
       ],
@@ -380,7 +381,51 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "d28bd58a62c5903e6906",
+        "name": "fa1773601278e44b056e",
+        "ordinal": 1,
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "Total de Exames A Vencer (COALESCE)"
+          }
+        },
+        "type": "Advanced",
+        "howCreated": "User"
+      },
+      {
+        "name": "21b4f8810ce0c1991060",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Asos"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "297ac920cd9975050201",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "Total de Exames Pendente"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "2c95f8d350695667363e",
         "field": {
           "Measure": {
             "Expression": {
@@ -391,43 +436,37 @@
             "Property": "Total de Exames Vencido"
           }
         },
-        "type": "Advanced",
-        "filter": {
-          "Version": 2,
-          "From": [
-            {
-              "Name": "m",
-              "Entity": "Metricas",
-              "Type": 0
-            }
-          ],
-          "Where": [
-            {
-              "Condition": {
-                "Comparison": {
-                  "ComparisonKind": 1,
-                  "Left": {
-                    "Measure": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Source": "m"
-                        }
-                      },
-                      "Property": "Total de Exames Vencido"
-                    }
-                  },
-                  "Right": {
-                    "Literal": {
-                      "Value": "0L"
-                    }
-                  }
-                }
+        "type": "Advanced"
+      },
+      {
+        "name": "66bf92cd836445a6b172",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
               }
-            }
-          ]
+            },
+            "Property": "Total de Exames A Vencer"
+          }
         },
-        "howCreated": "User"
+        "type": "Advanced"
+      },
+      {
+        "name": "d3351cd07b092dc6c08c",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "Total de Exames Em Dia"
+          }
+        },
+        "type": "Advanced"
       }
-    ]
+    ],
+    "filterSortOrder": "Custom"
   }
 }

@@ -22,11 +22,11 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "Total de Exames Em Dia"
+                  "Property": "Total de Exames Em Dia (COALESCE)"
                 }
               },
-              "queryRef": "Metricas.Total de Exames Em Dia",
-              "nativeQueryRef": "Total de Exames Em Dia"
+              "queryRef": "Metricas.Total de Exames Em Dia (COALESCE)",
+              "nativeQueryRef": "Total de Exames Em Dia (COALESCE)"
             }
           ]
         }
@@ -41,7 +41,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "Total de Exames Em Dia"
+                "Property": "Total de Exames Em Dia (COALESCE)"
               }
             },
             "direction": "Descending"
@@ -85,7 +85,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "954afd75711fddf68215",
+        "name": "045086f55587a0b0d7b9",
         "field": {
           "Measure": {
             "Expression": {
@@ -93,7 +93,7 @@
                 "Entity": "Metricas"
               }
             },
-            "Property": "Total de Exames Em Dia"
+            "Property": "Total de Exames Em Dia (COALESCE)"
           }
         },
         "type": "Advanced"

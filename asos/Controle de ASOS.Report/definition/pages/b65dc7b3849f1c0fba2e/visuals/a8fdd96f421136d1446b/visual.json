@@ -23,11 +23,11 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "Total de Exames Vencido"
+                  "Property": "Total de Exames Vencido (COALESCE)"
                 }
               },
-              "queryRef": "Metricas.Total de Exames Vencido",
-              "nativeQueryRef": "Total de Exames Vencido"
+              "queryRef": "Metricas.Total de Exames Vencido (COALESCE)",
+              "nativeQueryRef": "Total de Exames Vencido (COALESCE)"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "Total de Exames Vencido"
+                "Property": "Total de Exames Vencido (COALESCE)"
               }
             },
             "direction": "Descending"
@@ -82,5 +82,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "7df3473e41c2660c86b5",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "Total de Exames Vencido (COALESCE)"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

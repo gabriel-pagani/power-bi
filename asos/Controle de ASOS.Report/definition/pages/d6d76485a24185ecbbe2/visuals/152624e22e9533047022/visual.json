@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "152624e22e9533047022",
   "position": {
     "x": 0,
@@ -320,5 +320,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "084fd3a744d200d345bd",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Asos"
+              }
+            },
+            "Property": "VALIDADE"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c6e70815ee63dede421d",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Metricas"
+              }
+            },
+            "Property": "Total de Exames"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
