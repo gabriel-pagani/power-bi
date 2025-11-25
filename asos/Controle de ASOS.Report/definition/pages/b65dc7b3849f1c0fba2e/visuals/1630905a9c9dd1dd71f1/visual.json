@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "1630905a9c9dd1dd71f1",
   "position": {
     "x": 15.562310030395134,
@@ -87,6 +87,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "DATAEXAME",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

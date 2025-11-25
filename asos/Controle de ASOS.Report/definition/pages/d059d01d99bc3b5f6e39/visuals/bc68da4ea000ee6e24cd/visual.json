@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "1ae28cad7b9dbdc74979",
+  "name": "bc68da4ea000ee6e24cd",
   "position": {
-    "x": 15.873886711597061,
-    "y": 275.78406923895761,
-    "z": 6000,
-    "height": 70.714285714285722,
-    "width": 233.57142857142858,
-    "tabOrder": 4000
+    "x": 16.159600997311337,
+    "y": 337.00629146118064,
+    "z": 5,
+    "height": 70.666666666666671,
+    "width": 233.33333333333334,
+    "tabOrder": 5
   },
   "visual": {
     "visualType": "slicer",
@@ -23,13 +23,13 @@
                       "Entity": "Asos"
                     }
                   },
-                  "Property": "NOMEFANTASIA"
+                  "Property": "FUNCAO"
                 }
               },
-              "queryRef": "Asos.NOMEFANTASIA",
-              "nativeQueryRef": "Coligada",
+              "queryRef": "Asos.FUNCAO",
+              "nativeQueryRef": "Função",
               "active": true,
-              "displayName": "Coligada"
+              "displayName": "Função"
             }
           ]
         }
@@ -51,7 +51,22 @@
       ],
       "general": [
         {
-          "properties": {}
+          "properties": {
+            "orientation": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "selfFilterEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
         }
       ],
       "header": [
@@ -61,6 +76,19 @@
               "expr": {
                 "Literal": {
                   "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -84,28 +112,10 @@
       ]
     },
     "syncGroup": {
-      "groupName": "NOMEFANTASIA",
+      "groupName": "FUNCAO",
       "fieldChanges": true,
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "d3a99067cd4d544515b1",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Asos"
-              }
-            },
-            "Property": "NOMEFANTASIA"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "7177b045ea0a9c9aecf8",
   "position": {
     "x": 16.159600997311337,
@@ -110,6 +110,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "FUNCAO",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }
