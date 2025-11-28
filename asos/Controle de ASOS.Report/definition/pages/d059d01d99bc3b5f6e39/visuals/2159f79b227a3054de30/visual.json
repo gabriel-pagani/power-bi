@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "4718bf6206623794fd0a",
+  "name": "2159f79b227a3054de30",
   "position": {
-    "x": 266,
-    "y": 31,
-    "z": 0,
+    "x": 266.50455927051672,
+    "y": 383.22188449848028,
+    "z": 6001,
     "height": 320,
-    "width": 998,
-    "tabOrder": 6000
+    "width": 997.93313069908822,
+    "tabOrder": 6001
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -23,13 +23,12 @@
                       "Entity": "Asos"
                     }
                   },
-                  "Property": "SECAO"
+                  "Property": "NOMEFANTASIA"
                 }
               },
-              "queryRef": "Asos.SECAO",
-              "nativeQueryRef": "Setor",
-              "active": true,
-              "displayName": "Setor"
+              "queryRef": "Asos.NOMEFANTASIA",
+              "nativeQueryRef": "NOMEFANTASIA",
+              "active": true
             }
           ]
         },
@@ -343,7 +342,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Validade dos Exames x Setor'"
+                  "Value": "'Validade dos Exames x Coligada'"
                 }
               }
             }
@@ -405,21 +404,7 @@
         "howCreated": "User"
       },
       {
-        "name": "08abbe2105210698082a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Asos"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "9a1edf3050603714db73",
+        "name": "85d4bdc543e6117eeae9",
         "field": {
           "Measure": {
             "Expression": {
@@ -433,7 +418,7 @@
         "type": "Advanced"
       },
       {
-        "name": "c87c591a1e9e7ead58c7",
+        "name": "c6ee55e1140430a1c6c7",
         "field": {
           "Measure": {
             "Expression": {
@@ -447,7 +432,7 @@
         "type": "Advanced"
       },
       {
-        "name": "3a02567957921078484c",
+        "name": "aef3b354586cd74acc65",
         "field": {
           "Measure": {
             "Expression": {
@@ -461,7 +446,7 @@
         "type": "Advanced"
       },
       {
-        "name": "97887a52c5a5202cb570",
+        "name": "1209820ed0e7c6ba1bdc",
         "field": {
           "Measure": {
             "Expression": {
@@ -473,6 +458,20 @@
           }
         },
         "type": "Advanced"
+      },
+      {
+        "name": "edd83fd6911e19975cb0",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Asos"
+              }
+            },
+            "Property": "NOMEFANTASIA"
+          }
+        },
+        "type": "Categorical"
       }
     ],
     "filterSortOrder": "Custom"

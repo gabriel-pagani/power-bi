@@ -4,10 +4,10 @@
   "position": {
     "x": 15.873886711597061,
     "y": 275.78406923895761,
-    "z": 6000,
+    "z": 5000,
     "height": 70.714285714285722,
     "width": 233.57142857142858,
-    "tabOrder": 4000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "slicer",
@@ -89,23 +89,5 @@
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "d3a99067cd4d544515b1",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Asos"
-              }
-            },
-            "Property": "NOMEFANTASIA"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

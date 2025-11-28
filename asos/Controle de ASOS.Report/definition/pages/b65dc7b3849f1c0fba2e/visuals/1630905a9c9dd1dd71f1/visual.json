@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "1630905a9c9dd1dd71f1",
   "position": {
-    "x": 15.562310030395134,
-    "y": 630.2360092973355,
-    "z": 10000,
+    "x": 16.534954407294833,
+    "y": 559.27051671732522,
+    "z": 9000,
     "height": 70.030395136778125,
     "width": 233.43465045592706,
-    "tabOrder": 8000
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "slicer",
@@ -94,5 +94,23 @@
       "filterChanges": true
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "e03f6ad3eb01264ee80a",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Asos"
+              }
+            },
+            "Property": "DATAEXAME"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

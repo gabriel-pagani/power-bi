@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "17be78ccdc5eff978ad9",
   "position": {
     "x": 277,
     "y": 209,
-    "z": 11000,
+    "z": 10000,
     "height": 496,
     "width": 982,
-    "tabOrder": 10000
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "tableEx",
@@ -338,79 +338,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "f862233039800d35a97b",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Asos"
-              }
-            },
-            "Property": "NOME"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "0380bd2bf1b9856779ae",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Asos"
-              }
-            },
-            "Property": "NOMEEXAME"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "d417a5a2441cefaea05a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Asos"
-              }
-            },
-            "Property": "NOMETIPOEXAME"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "d51e7574c713dee10c1c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Asos"
-              }
-            },
-            "Property": "DATAEXAME"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "8317e784ea453db71b0d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Asos"
-              }
-            },
-            "Property": "VALIDADE"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

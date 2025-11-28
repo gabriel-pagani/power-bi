@@ -1,12 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "47d440ec59d1c029c540",
   "position": {
     "x": 16.666666666666668,
     "y": 15.555555555555555,
-    "z": 12002,
+    "z": 13000,
     "height": 134.44444444444443,
-    "width": 232.22222222222223
+    "width": 232.22222222222223,
+    "tabOrder": 12000
   },
   "visual": {
     "visualType": "card",
@@ -81,23 +82,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "e1cb1f2cd206ca566b7e",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "Total de Exames (COALESCE)"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

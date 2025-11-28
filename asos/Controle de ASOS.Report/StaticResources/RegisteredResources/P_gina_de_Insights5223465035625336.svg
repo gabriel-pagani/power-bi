@@ -2,6 +2,8 @@
 <rect width="1280" height="720" fill="white"/>
 <rect x="265" y="15" width="1000" height="337.5" rx="10" fill="black" fill-opacity="0.02"/>
 <rect x="265.5" y="15.5" width="999" height="336.5" rx="9.5" stroke="black" stroke-opacity="0.2"/>
+<rect x="265" y="367" width="1000" height="337.5" rx="10" fill="black" fill-opacity="0.02"/>
+<rect x="265.5" y="367.5" width="999" height="336.5" rx="9.5" stroke="black" stroke-opacity="0.2"/>
 <rect x="15" y="15" width="235" height="690" rx="10" fill="black" fill-opacity="0.02"/>
 <rect x="15.5" y="15.5" width="234" height="689" rx="9.5" stroke="black" stroke-opacity="0.2"/>
 <path d="M15 25C15 19.4772 19.4772 15 25 15H240C245.523 15 250 19.4772 250 25V54H15V25Z" fill="black" fill-opacity="0.05"/>

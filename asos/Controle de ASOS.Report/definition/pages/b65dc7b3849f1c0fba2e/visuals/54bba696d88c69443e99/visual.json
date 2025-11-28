@@ -1,12 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "54bba696d88c69443e99",
   "position": {
     "x": 266,
     "y": 16,
     "z": 2000,
     "height": 134,
-    "width": 231.75
+    "width": 231.75,
+    "tabOrder": 13000
   },
   "visual": {
     "visualType": "card",
@@ -81,23 +82,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "045086f55587a0b0d7b9",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "Total de Exames Em Dia (COALESCE)"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

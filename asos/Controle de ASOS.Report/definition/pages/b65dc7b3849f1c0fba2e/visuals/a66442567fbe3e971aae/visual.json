@@ -1,13 +1,13 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "a66442567fbe3e971aae",
   "position": {
     "x": 277,
     "y": 167,
-    "z": 12001,
+    "z": 12000,
     "height": 47,
     "width": 967,
-    "tabOrder": 12001
+    "tabOrder": 11000
   },
   "visual": {
     "visualType": "textFilter25A4896A83E0487089E2B90C9AE57C8A",
@@ -82,23 +82,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "36fd536e8f1138900f5d",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Asos"
-              }
-            },
-            "Property": "NOME"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
