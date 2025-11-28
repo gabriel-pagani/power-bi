@@ -19,9 +19,9 @@ FROM TMOV (NOLOCK)
 WHERE 1=1
         AND TMOV.STATUS <> 'C' 
         AND (  
-                   (TMOV.CODTMV IN () AND TMOV.CODCOLIGADA = 1) 
-                OR (TMOV.CODTMV IN () AND TMOV.CODCOLIGADA = 5) 
-                OR (TMOV.CODTMV IN () AND TMOV.CODCOLIGADA = 6) 
+                   (TMOV.CODTMV IN ('2.2.04','2.2.05','2.2.07') AND TMOV.CODCOLIGADA = 1) 
+                OR (TMOV.CODTMV IN ('2.2.04','2.2.05','2.2.07','2.2.59') AND TMOV.CODCOLIGADA = 5) 
+                OR (TMOV.CODTMV IN ('2.2.07','2.2.59') AND TMOV.CODCOLIGADA = 6) 
                 OR (TMOV.CODTMV IN ('2.2.05') AND TMOV.CODCOLIGADA = 7)
                 OR (TMOV.CODTMV IN ('2.2.00') AND TMOV.CODCOLIGADA = 10)
         )
