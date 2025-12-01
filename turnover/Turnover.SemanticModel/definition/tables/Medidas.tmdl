@@ -1,11 +1,30 @@
 table Medidas
 	lineageTag: 733e11e8-36db-4af0-b7f6-333061c272ee
 
-	measure ADMITIDOS = COUNT(Funcionarios[DATAADMISSAO])
+	measure ADMITIDOS = ```
+			
+			COUNTROWS(
+			    FILTER(
+			        Funcionarios,
+			        NOT ISBLANK(Funcionarios[DATAADMISSAO]) &&
+			        ISBLANK(Funcionarios[DATADEMISSAO])
+			    )
+			)
+			
+			```
 		formatString: 0
 		lineageTag: 6078b883-f360-4a79-b582-871af8be38ac
 
-	measure DEMITIDOS = COUNT(Funcionarios[DATADEMISSAO])
+	measure DEMITIDOS = ```
+			
+			COUNTROWS(
+			    FILTER(
+			        Funcionarios,
+			        NOT ISBLANK(Funcionarios[DATADEMISSAO])
+			    )
+			)
+			
+			```
 		formatString: 0
 		lineageTag: 9f3a0fe8-d21a-451a-84d4-a22fd6e47dc3
 
