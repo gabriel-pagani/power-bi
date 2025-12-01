@@ -276,7 +276,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Total de Colaboradores": {
+			          "Total de Colaboradores Ativos": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

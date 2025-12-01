@@ -26,8 +26,8 @@
                 }
               },
               "queryRef": "Medidas.TOTALDECOLABORADORES",
-              "nativeQueryRef": "Total de Colaboradores",
-              "displayName": "Total de Colaboradores"
+              "nativeQueryRef": "Total de Colaboradores Ativos",
+              "displayName": "Total de Colaboradores Ativos"
             }
           ]
         }
