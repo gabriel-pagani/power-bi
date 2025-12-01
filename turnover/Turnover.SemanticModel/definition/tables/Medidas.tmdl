@@ -6,8 +6,7 @@ table Medidas
 			COUNTROWS(
 			    FILTER(
 			        Funcionarios,
-			        NOT ISBLANK(Funcionarios[DATAADMISSAO]) &&
-			        ISBLANK(Funcionarios[DATADEMISSAO])
+			        NOT ISBLANK(Funcionarios[DATAADMISSAO])
 			    )
 			)
 			

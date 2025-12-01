@@ -51,5 +51,23 @@
       }
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ba4d9c61ccb33ab6c35a",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "ADMITIDOS"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
