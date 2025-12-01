@@ -68,5 +68,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "b7a086c1071c413adb26",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "TOTALCOLABORADORES"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

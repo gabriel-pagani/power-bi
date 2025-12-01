@@ -68,5 +68,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "c2dc1ac072902670c64e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "DEMITIDOS"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

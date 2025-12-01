@@ -10,8 +10,8 @@
       "nodes": [
         {
           "location": {
-            "x": 321,
-            "y": 40
+            "x": 403,
+            "y": 39
           },
           "nodeIndex": "Funcionarios",
           "nodeLineageTag": "0ac7a579-a9ff-4ef8-b294-b1cb1d53ea55",
@@ -19,13 +19,13 @@
             "height": 128,
             "width": 234
           },
-          "zIndex": 0,
+          "zIndex": 1,
           "expandedHeight": 300
         },
         {
           "location": {
-            "x": 321,
-            "y": 196
+            "x": 405,
+            "y": 211
           },
           "nodeIndex": "Medidas",
           "nodeLineageTag": "733e11e8-36db-4af0-b7f6-333061c272ee",
@@ -33,12 +33,12 @@
             "height": 162,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
-            "x": 681,
-            "y": 52
+            "x": 758,
+            "y": 51
           },
           "nodeIndex": "Calendario",
           "nodeLineageTag": "66274ac5-aebd-4940-b78e-7f0728b1ccde",
@@ -46,7 +46,7 @@
             "height": 104,
             "width": 234
           },
-          "zIndex": 0,
+          "zIndex": 3,
           "expandedHeight": 200
         }
       ],

@@ -27,7 +27,7 @@
                 }
               },
               "queryRef": "Medidas.ADMITIDOS",
-              "nativeQueryRef": "Admissões",
+              "nativeQueryRef": "ADMITIDOS",
               "displayName": "Admissões"
             }
           ]
@@ -68,5 +68,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "edb0c6f45ea91b49d450",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "ADMITIDOS"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

@@ -3,11 +3,9 @@ table Medidas
 
 	measure ADMITIDOS = ```
 			
-			COUNTROWS(
-			    FILTER(
-			        Funcionarios,
-			        NOT ISBLANK(Funcionarios[DATAADMISSAO])
-			    )
+			CALCULATE(
+			    COUNTROWS(Funcionarios),
+			    USERELATIONSHIP(Funcionarios[DATAADMISSAO], Calendario[Date])
 			)
 			
 			```
@@ -16,11 +14,10 @@ table Medidas
 
 	measure DEMITIDOS = ```
 			
-			COUNTROWS(
-			    FILTER(
-			        Funcionarios,
-			        NOT ISBLANK(Funcionarios[DATADEMISSAO])
-			    )
+			CALCULATE(
+			    COUNTROWS(Funcionarios),
+			    NOT ISBLANK(Funcionarios[DATADEMISSAO]),
+			    USERELATIONSHIP(Funcionarios[DATADEMISSAO], Calendario[Date])
 			)
 			
 			```
