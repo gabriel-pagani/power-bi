@@ -2,7 +2,7 @@ table Calendario
 	lineageTag: 66274ac5-aebd-4940-b78e-7f0728b1ccde
 
 	column Date
-		formatString: General Date
+		formatString: Short Date
 		lineageTag: 64ae7a67-7da7-4495-a319-ac3c04b10cc8
 		summarizeBy: none
 		isNameInferred
