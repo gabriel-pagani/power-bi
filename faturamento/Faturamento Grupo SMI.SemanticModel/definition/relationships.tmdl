@@ -1,0 +1,5 @@
+relationship 302bbd92-7cbe-4d81-96c7-67340c5cb146
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Faturamento.DATAEMISSAO
+	toColumn: LocalDateTable_d972458e-9214-44fd-a62c-db4ce337174f.Date
+

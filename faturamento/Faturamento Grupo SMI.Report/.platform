@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Faturamento Grupo SMI"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "bc525f35-dd2f-45f0-a2c4-d107d4258694"
+  }
+}

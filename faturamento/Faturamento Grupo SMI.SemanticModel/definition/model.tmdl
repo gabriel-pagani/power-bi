@@ -1,0 +1,20 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Faturamento"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Faturamento
+ref table DateTableTemplate_05d8070d-4cf1-4ec4-bd69-eb8064dcdc76
+ref table LocalDateTable_d972458e-9214-44fd-a62c-db4ce337174f
+
+ref cultureInfo en-US
+

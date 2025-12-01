@@ -1,0 +1,84 @@
+table Faturamento
+	lineageTag: 04d484d8-db2d-4ee3-abdb-6e411fa82f60
+
+	column COLIGADA
+		dataType: string
+		lineageTag: 36e0a9c6-49fc-4e12-a7d5-a9aaa9855898
+		summarizeBy: none
+		sourceColumn: COLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CLIENTE
+		dataType: string
+		lineageTag: 39a79683-eda1-42c0-99e6-d57b5f0d9891
+		summarizeBy: none
+		sourceColumn: CLIENTE
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATAEMISSAO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: e8968bf4-9a01-43f3-b405-2924a16520f8
+		summarizeBy: none
+		sourceColumn: DATAEMISSAO
+
+		variation Variation
+			isDefault
+			relationship: 302bbd92-7cbe-4d81-96c7-67340c5cb146
+			defaultHierarchy: LocalDateTable_d972458e-9214-44fd-a62c-db4ce337174f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column NUMERONOTA
+		dataType: string
+		lineageTag: 5dfe9782-f077-4bb3-b444-35f1432f16cd
+		summarizeBy: none
+		sourceColumn: NUMERONOTA
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALORBRUTO
+		dataType: double
+		lineageTag: 3549fc47-eaf3-4505-a8f3-6796591cad5b
+		summarizeBy: sum
+		sourceColumn: VALORBRUTO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column VALORLIQUIDO
+		dataType: double
+		lineageTag: 5f975d08-feb7-41fd-a6c9-a6a20fd83ed4
+		summarizeBy: sum
+		sourceColumn: VALORLIQUIDO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SITUACAONOTA
+		dataType: string
+		lineageTag: d572b2ff-1a00-4e4d-852c-1741e19c06f3
+		summarizeBy: none
+		sourceColumn: SITUACAONOTA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Faturamento = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)        GCOLIGADA.NOMEFANTASIA AS COLIGADA,#(lf)        FCFO.NOMEFANTASIA AS CLIENTE,#(lf)        TMOV.DATAEMISSAO,#(lf)        TMOV.NUMEROMOV AS NUMERONOTA,#(lf)        TMOV.VALORBRUTO,#(lf)        TMOV.VALORLIQUIDO,#(lf)        TMOV.STATUS AS SITUACAONOTA /* F = Emitida | Q = Recebida | P = Parcialmente Recebida */#(lf)#(lf)FROM TMOV (NOLOCK)#(lf)        JOIN GCOLIGADA (NOLOCK) ON (#(lf)                GCOLIGADA.CODCOLIGADA=TMOV.CODCOLIGADA#(lf)        )#(lf)        JOIN FCFO (NOLOCK) ON (#(lf)                FCFO.CODCOLIGADA=TMOV.CODCOLIGADA AND #(lf)                FCFO.CODCFO=TMOV.CODCFO#(lf)        )#(lf)#(lf)WHERE 1=1#(lf)        AND TMOV.STATUS <> 'C' #(lf)        AND (  #(lf)                   (TMOV.CODTMV IN ('2.2.04','2.2.05','2.2.07') AND TMOV.CODCOLIGADA = 1) #(lf)                OR (TMOV.CODTMV IN ('2.2.04','2.2.05','2.2.07','2.2.59') AND TMOV.CODCOLIGADA = 5) #(lf)                OR (TMOV.CODTMV IN ('2.2.07','2.2.59') AND TMOV.CODCOLIGADA = 6) #(lf)                OR (TMOV.CODTMV IN ('2.2.05') AND TMOV.CODCOLIGADA = 7)#(lf)                OR (TMOV.CODTMV IN ('2.2.00','2.2.24') AND TMOV.CODCOLIGADA = 10)#(lf)        )#(lf)#(lf)ORDER BY #(lf)        COLIGADA, #(lf)        CLIENTE"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"DATAEMISSAO", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
