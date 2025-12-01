@@ -2,8 +2,1393 @@ cultureInfo en-US
 
 	linguisticMetadata =
 			{
-			  "Version": "1.0.0",
-			  "Language": "en-US"
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "funcionario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "funcionario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.coligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "COLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "coligada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.chapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "CHAPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.codsecao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "CODSECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codsecao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.secao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "SECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.codfuncao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "CODFUNCAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codfuncao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.funcao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "FUNCAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "funcao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.codsituacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "CODSITUACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codsituacao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.situacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "SITUACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situacao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.dataadmissao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "DATAADMISSAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "funcionario.datademissao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "DATADEMISSAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datademissao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.admitidos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "ADMITIDOS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "admitidos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Admissões": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.demitidos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "DEMITIDOS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "demitidos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Demissões": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.totalcolaboradores": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "TOTALCOLABORADORES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "totalcolaboradores": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Total de Colaboradores": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.turnover": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "TURNOVER"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turnover": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "income": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "revenue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "business": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "throughput": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "trade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Período Analisado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    }
+			  },
+			  "Relationships": {
+			    "calendario_date_date_hierarchy_has_calendario_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.day": {
+			          "Target": {
+			            "Entity": "calendario.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.month": {
+			          "Target": {
+			            "Entity": "calendario.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.quarter": {
+			          "Target": {
+			            "Entity": "calendario.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.year": {
+			          "Target": {
+			            "Entity": "calendario.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "calendario_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date": {
+			          "Target": {
+			            "Entity": "calendario.date"
+			          }
+			        },
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "funcionario_has_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "funcionario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_funcionarios"
+			        }
+			      ]
+			    },
+			    "calendario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.date": {
+			          "Target": {
+			            "Entity": "calendario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_dates"
+			        }
+			      ]
+			    },
+			    "funcionario_has_medida_turnover": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "medida.turnover": {
+			          "Target": {
+			            "Entity": "medida.turnover"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "medida.turnover"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_turnover"
+			        }
+			      ]
+			    },
+			    "medida_has_totalcolaboradores": {
+			      "Binding": {
+			        "ConceptualEntity": "Medidas"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "medida": {
+			          "Target": {
+			            "Entity": "medida"
+			          }
+			        },
+			        "medida.totalcolaboradores": {
+			          "Target": {
+			            "Entity": "medida.totalcolaboradores"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "medida"
+			            },
+			            "Object": {
+			              "Role": "medida.totalcolaboradores"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "medidas_have_totalcolaboradores"
+			        }
+			      ]
+			    },
+			    "funcionario_has_medida_demitidos": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "medida.demitidos": {
+			          "Target": {
+			            "Entity": "medida.demitidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "medida.demitidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_demitidos"
+			        }
+			      ]
+			    },
+			    "funcionario_has_medida_admitidos": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "medida.admitidos": {
+			          "Target": {
+			            "Entity": "medida.admitidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "medida.admitidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_admitidos"
+			        }
+			      ]
+			    },
+			    "funcionario_has_datademissao": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.datademissao": {
+			          "Target": {
+			            "Entity": "funcionario.datademissao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.datademissao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_datademissaos"
+			        }
+			      ]
+			    },
+			    "funcionario_has_dataadmissao": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.dataadmissao": {
+			          "Target": {
+			            "Entity": "funcionario.dataadmissao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.dataadmissao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_dataadmissaos"
+			        }
+			      ]
+			    },
+			    "funcionario_has_situacao": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.situacao": {
+			          "Target": {
+			            "Entity": "funcionario.situacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.situacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_situacaos"
+			        }
+			      ]
+			    },
+			    "funcionario_has_codsituacao": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.codsituacao": {
+			          "Target": {
+			            "Entity": "funcionario.codsituacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.codsituacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_codsituacaos"
+			        }
+			      ]
+			    },
+			    "funcionario_has_funcao": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.funcao": {
+			          "Target": {
+			            "Entity": "funcionario.funcao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.funcao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_funcaos"
+			        }
+			      ]
+			    },
+			    "funcionario_has_codfuncao": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.codfuncao": {
+			          "Target": {
+			            "Entity": "funcionario.codfuncao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.codfuncao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_codfuncaos"
+			        }
+			      ]
+			    },
+			    "funcionario_has_secao": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.secao": {
+			          "Target": {
+			            "Entity": "funcionario.secao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.secao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_secaos"
+			        }
+			      ]
+			    },
+			    "funcionario_has_codsecao": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.codsecao": {
+			          "Target": {
+			            "Entity": "funcionario.codsecao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.codsecao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_codsecaos"
+			        }
+			      ]
+			    },
+			    "funcionario_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.chapa": {
+			          "Target": {
+			            "Entity": "funcionario.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_chapa"
+			        }
+			      ]
+			    },
+			    "funcionario_has_coligada": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.coligada": {
+			          "Target": {
+			            "Entity": "funcionario.coligada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.coligada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_coligadas"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
 			}
 		contentType: json
 

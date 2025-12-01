@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "041393f6e667903ca15c",
   "position": {
-    "x": 369.4308943089431,
-    "y": 167.54471544715446,
+    "x": 120,
+    "y": 298.75,
     "z": 0,
-    "height": 122.79674796747967,
-    "width": 260.16260162601628
+    "height": 122.5,
+    "width": 260
   },
   "visual": {
     "visualType": "card",
@@ -26,7 +26,8 @@
                 }
               },
               "queryRef": "Medidas.ADMITIDOS",
-              "nativeQueryRef": "ADMITIDOS"
+              "nativeQueryRef": "Admissões",
+              "displayName": "Admissões"
             }
           ]
         }
@@ -49,6 +50,21 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   },

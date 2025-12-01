@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "b7307570a00790504195",
+  "name": "1638e6a208952404d887",
   "position": {
-    "x": 380,
+    "x": 900,
     "y": 298.75,
-    "z": 1000,
-    "height": 121.25,
-    "width": 260
+    "z": 1003,
+    "height": 122.5,
+    "width": 261.25
   },
   "visual": {
     "visualType": "card",
@@ -22,12 +22,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "DEMITIDOS"
+                  "Property": "TURNOVER"
                 }
               },
-              "queryRef": "Medidas.DEMITIDOS",
-              "nativeQueryRef": "Demissões",
-              "displayName": "Demissões"
+              "queryRef": "Medidas.TURNOVER",
+              "nativeQueryRef": "Turnover",
+              "displayName": "Turnover"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "DEMITIDOS"
+                "Property": "TURNOVER"
               }
             },
             "direction": "Descending"
@@ -71,7 +71,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "1b0c6ebc70b3083bee11",
+        "name": "6c9837769435b8600730",
         "field": {
           "Measure": {
             "Expression": {
@@ -79,7 +79,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "DEMITIDOS"
+            "Property": "TURNOVER"
           }
         },
         "type": "Advanced"

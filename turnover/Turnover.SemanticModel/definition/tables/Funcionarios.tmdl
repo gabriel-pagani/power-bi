@@ -67,15 +67,10 @@ table Funcionarios
 
 	column DATAADMISSAO
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 003c7653-38bd-483b-935c-3ab1e379d84a
 		summarizeBy: none
 		sourceColumn: DATAADMISSAO
-
-		variation Variation
-			isDefault
-			relationship: 1ded8cbb-cf5b-408d-bb28-44de2f23b485
-			defaultHierarchy: LocalDateTable_02b24dc5-0e65-4fab-b29d-02e4f8c7c404.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -83,15 +78,10 @@ table Funcionarios
 
 	column DATADEMISSAO
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: b0c7bdc9-67cb-42d0-bb3d-364b8789668f
 		summarizeBy: none
 		sourceColumn: DATADEMISSAO
-
-		variation Variation
-			isDefault
-			relationship: c02b000e-d6bc-4159-9487-b5a87db85d11
-			defaultHierarchy: LocalDateTable_c6af262b-7713-4090-b63f-6d5572b2743b.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 

@@ -27,6 +27,26 @@ table Medidas
 		formatString: 0
 		lineageTag: 9f3a0fe8-d21a-451a-84d4-a22fd6e47dc3
 
+	measure TOTALCOLABORADORES = ```
+			
+			COUNTROWS (
+			    FILTER (
+			        ALL (Funcionarios),
+			        Funcionarios[DATAADMISSAO] <= MAX(Calendario[Date]) &&
+			        (
+			            ISBLANK (Funcionarios[DATADEMISSAO]) || Funcionarios[DATADEMISSAO] > MAX(Calendario[Date])
+			        )
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 41cb038d-5044-4adf-9930-e51b8df15fc6
+
+	measure TURNOVER = (([ADMITIDOS] + [DEMITIDOS]) / 2) / [TOTALCOLABORADORES]
+		formatString: 0.00%;-0.00%;0.00%
+		lineageTag: 34ce0d30-39a0-4977-b89e-5a70660ae6f3
+
 	partition Medidas = m
 		mode: import
 		source =
