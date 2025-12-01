@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "7f81ac2086d0132ebc05",
   "position": {
-    "x": 525,
-    "y": 500,
-    "z": 1002,
-    "height": 68.75,
-    "width": 228.75,
-    "tabOrder": 1
+    "x": 528.145896656535,
+    "y": 650.69908814589667,
+    "z": 3000,
+    "height": 69.057750759878417,
+    "width": 223.70820668693011,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "slicer",
@@ -190,23 +190,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "9e6ee7c48d56a4963d06",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendario"
-              }
-            },
-            "Property": "Date"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }

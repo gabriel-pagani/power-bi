@@ -3,10 +3,11 @@
   "name": "72485d5e1d2398e921d7",
   "position": {
     "x": 640,
-    "y": 298.75,
-    "z": 1001,
-    "height": 121.25,
-    "width": 260
+    "y": 9.72644376899696,
+    "z": 2000,
+    "height": 121.58054711246201,
+    "width": 259.69604863221883,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "card",
@@ -67,23 +68,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "03f6e771dbc084c7b005",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "TOTALCOLABORADORES"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

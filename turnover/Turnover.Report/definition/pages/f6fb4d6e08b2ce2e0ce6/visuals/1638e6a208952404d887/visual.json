@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "1638e6a208952404d887",
   "position": {
-    "x": 900,
-    "y": 298.75,
-    "z": 1003,
-    "height": 122.5,
-    "width": 261.25
+    "x": 899.69604863221889,
+    "y": 9.72644376899696,
+    "z": 4000,
+    "height": 121.58054711246201,
+    "width": 261.64133738601822,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "card",
@@ -67,23 +68,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "6c9837769435b8600730",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "TURNOVER"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

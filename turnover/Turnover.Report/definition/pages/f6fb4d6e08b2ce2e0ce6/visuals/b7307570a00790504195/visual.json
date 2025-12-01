@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "b7307570a00790504195",
   "position": {
-    "x": 380,
-    "y": 298.75,
+    "x": 380.30395136778117,
+    "y": 9.72644376899696,
     "z": 1000,
-    "height": 121.25,
-    "width": 260
+    "height": 121.58054711246201,
+    "width": 259.69604863221883,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "card",
@@ -67,23 +68,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "1b0c6ebc70b3083bee11",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "DEMITIDOS"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

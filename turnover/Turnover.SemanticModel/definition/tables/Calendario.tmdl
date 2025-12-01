@@ -15,6 +15,34 @@ table Calendario
 
 		annotation SummarizationSetBy = Automatic
 
+	column Ano = Calendario[Date].[Year]
+		formatString: 0
+		lineageTag: 9a309292-219b-4411-8e23-c134ad5731f5
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes = FORMAT(Calendario[Date],"mmm")
+		lineageTag: 3898c32a-5766-48d5-8b61-d6b31bdc6eca
+		summarizeBy: none
+		sortByColumn: NumMes
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumMes = Calendario[Date].[MonthNo]
+		formatString: 0
+		lineageTag: e7ede204-f251-4629-9d97-d2322341784e
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dia = Calendario[Date].[Day]
+		formatString: 0
+		lineageTag: f45b5e26-121c-4d86-9764-a1c5b0116e39
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Calendario = calculated
 		mode: import
 		source = ```

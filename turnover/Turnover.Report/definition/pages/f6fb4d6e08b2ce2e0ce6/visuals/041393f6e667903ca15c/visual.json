@@ -2,11 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
   "name": "041393f6e667903ca15c",
   "position": {
-    "x": 120,
-    "y": 298.75,
+    "x": 119.63525835866263,
+    "y": 9.72644376899696,
     "z": 0,
-    "height": 122.5,
-    "width": 260
+    "height": 121.58054711246201,
+    "width": 260.66869300911856,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "card",
@@ -67,23 +68,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "ba4d9c61ccb33ab6c35a",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "ADMITIDOS"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
