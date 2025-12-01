@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Turnover"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "80ce1cb0-8817-43d8-9071-cc818080922d"
+  }
+}

@@ -1,0 +1,15 @@
+relationship 1ded8cbb-cf5b-408d-bb28-44de2f23b485
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Funcionarios.DATAADMISSAO
+	toColumn: LocalDateTable_02b24dc5-0e65-4fab-b29d-02e4f8c7c404.Date
+
+relationship c02b000e-d6bc-4159-9487-b5a87db85d11
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Funcionarios.DATADEMISSAO
+	toColumn: LocalDateTable_c6af262b-7713-4090-b63f-6d5572b2743b.Date
+
+relationship c50fe7ad-9276-4ca6-a74e-aec91298ddae
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendario.Date
+	toColumn: LocalDateTable_66d081a9-4411-4f73-9982-15a2cfd24ee4.Date
+

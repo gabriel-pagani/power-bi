@@ -1,0 +1,24 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["Funcionarios","Medidas"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table Funcionarios
+ref table DateTableTemplate_a9a706a1-2b0d-4826-af25-d11fa1019dd4
+ref table LocalDateTable_02b24dc5-0e65-4fab-b29d-02e4f8c7c404
+ref table LocalDateTable_c6af262b-7713-4090-b63f-6d5572b2743b
+ref table Medidas
+ref table Calendario
+ref table LocalDateTable_66d081a9-4411-4f73-9982-15a2cfd24ee4
+
+ref cultureInfo en-US
+

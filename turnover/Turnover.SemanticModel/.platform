@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Turnover"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a1a401f4-578f-42dd-91f1-5d9079e2b92e"
+  }
+}

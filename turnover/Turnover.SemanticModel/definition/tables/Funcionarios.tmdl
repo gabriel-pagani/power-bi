@@ -1,0 +1,114 @@
+table Funcionarios
+	lineageTag: 0ac7a579-a9ff-4ef8-b294-b1cb1d53ea55
+
+	column COLIGADA
+		dataType: string
+		lineageTag: 31ad3bbc-ff64-45f7-87fe-736cb114d182
+		summarizeBy: none
+		sourceColumn: COLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: 9dced71b-5706-473d-82cd-9cd6d08dd288
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODSECAO
+		dataType: string
+		lineageTag: 80fd7c1d-ef2a-4e7b-8f54-16c8a8721cd7
+		summarizeBy: none
+		sourceColumn: CODSECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: 3d7a697f-6399-4957-b17b-3e76341403ed
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFUNCAO
+		dataType: string
+		lineageTag: 7db8836a-5c91-4a8c-88d9-eab24a377db5
+		summarizeBy: none
+		sourceColumn: CODFUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUNCAO
+		dataType: string
+		lineageTag: 7b22538d-4dcf-4f1a-8396-f21451855e93
+		summarizeBy: none
+		sourceColumn: FUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODSITUACAO
+		dataType: string
+		lineageTag: a1cd55c9-5fb6-4079-8b5a-9894e403fb71
+		summarizeBy: none
+		sourceColumn: CODSITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SITUACAO
+		dataType: string
+		lineageTag: db798099-257d-4bc8-89e4-fce21930eb2f
+		summarizeBy: none
+		sourceColumn: SITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATAADMISSAO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 003c7653-38bd-483b-935c-3ab1e379d84a
+		summarizeBy: none
+		sourceColumn: DATAADMISSAO
+
+		variation Variation
+			isDefault
+			relationship: 1ded8cbb-cf5b-408d-bb28-44de2f23b485
+			defaultHierarchy: LocalDateTable_02b24dc5-0e65-4fab-b29d-02e4f8c7c404.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DATADEMISSAO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: b0c7bdc9-67cb-42d0-bb3d-364b8789668f
+		summarizeBy: none
+		sourceColumn: DATADEMISSAO
+
+		variation Variation
+			isDefault
+			relationship: c02b000e-d6bc-4159-9487-b5a87db85d11
+			defaultHierarchy: LocalDateTable_c6af262b-7713-4090-b63f-6d5572b2743b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition Funcionarios = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT#(lf)    PFUNC.CODCOLIGADA AS COLIGADA,#(lf)    PFUNC.CHAPA,#(lf)    PFUNC.CODSECAO,#(lf)    PSECAO.DESCRICAO AS SECAO,#(lf)    PFUNC.CODFUNCAO,#(lf)    PFUNCAO.NOME AS FUNCAO,#(lf)    PFUNC.CODSITUACAO,#(lf)    PCODSITUACAO.DESCRICAO AS SITUACAO,#(lf)    PFUNC.DATAADMISSAO,#(lf)    PFUNC.DATADEMISSAO#(lf)#(lf)FROM PFUNC (NOLOCK)#(lf)    JOIN GCOLIGADA (NOLOCK) ON ( #(lf)#(tab)    GCOLIGADA.CODCOLIGADA=PFUNC.CODCOLIGADA#(lf)    )#(lf)    JOIN PSECAO (NOLOCK) ON (#(lf)        PSECAO.CODCOLIGADA = PFUNC.CODCOLIGADA AND #(lf)        PSECAO.CODIGO = PFUNC.CODSECAO#(lf)    )#(lf)    JOIN PFUNCAO (NOLOCK) ON (#(lf)        PFUNC.CODCOLIGADA = PFUNCAO.CODCOLIGADA AND #(lf)        PFUNC.CODFUNCAO = PFUNCAO.CODIGO#(lf)    )#(lf)    JOIN PCODSITUACAO (NOLOCK) ON (#(lf)#(tab)    PCODSITUACAO.CODCLIENTE=PFUNC.CODSITUACAO#(lf)    )#(lf)"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"COLIGADA", type text}, {"DATAADMISSAO", type date}, {"DATADEMISSAO", type date}})
+				in
+				    #"Changed Type"
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

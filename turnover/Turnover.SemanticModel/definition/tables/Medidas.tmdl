@@ -1,0 +1,23 @@
+table Medidas
+	lineageTag: 733e11e8-36db-4af0-b7f6-333061c272ee
+
+	measure ADMITIDOS = COUNT(Funcionarios[DATAADMISSAO])
+		formatString: 0
+		lineageTag: 6078b883-f360-4a79-b582-871af8be38ac
+
+	measure DEMITIDOS = COUNT(Funcionarios[DATADEMISSAO])
+		formatString: 0
+		lineageTag: 9f3a0fe8-d21a-451a-84d4-a22fd6e47dc3
+
+	partition Medidas = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+
