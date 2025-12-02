@@ -5,16 +5,5 @@
   "displayOption": "FitToPage",
   "height": 720,
   "width": 1280,
-  "visualInteractions": [
-    {
-      "source": "6c456a9ab0a0e7829e9a",
-      "target": "7c137a31dd024e02b9c1",
-      "type": "HighlightFilter"
-    },
-    {
-      "source": "7c137a31dd024e02b9c1",
-      "target": "6c456a9ab0a0e7829e9a",
-      "type": "DataFilter"
-    }
-  ]
+  "visualInteractions": []
 }

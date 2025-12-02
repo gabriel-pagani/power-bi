@@ -34,14 +34,12 @@ table Medidas
 
 	measure TOTALCOLABORADORES = ```
 			
-			COUNTROWS (
-			    FILTER (
-			        ALL (Funcionarios),
-			        Funcionarios[DATAADMISSAO] <= MAX(Calendario[Date]) &&
-			        (
-			            ISBLANK (Funcionarios[DATADEMISSAO]) || Funcionarios[DATADEMISSAO] > MAX(Calendario[Date])
-			        )
-			    )
+			VAR Ref = IF(MAX(Calendario[Date]) > TODAY(), TODAY(), MAX(Calendario[Date])) RETURN
+			
+			CALCULATE(
+			    COUNTROWS(Funcionarios),
+			    Funcionarios[DATAADMISSAO] <= Ref && (ISBLANK(Funcionarios[DATADEMISSAO]) || Funcionarios[DATADEMISSAO] > Ref),
+			    REMOVEFILTERS(Calendario)
 			)
 			
 			```
