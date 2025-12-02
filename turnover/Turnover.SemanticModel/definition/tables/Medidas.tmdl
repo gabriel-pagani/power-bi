@@ -22,7 +22,7 @@ table Medidas
 			COALESCE(
 			    CALCULATE(
 			        COUNTROWS(Funcionarios),
-			        Funcionarios[DATADEMISSAO] <= Ref,
+			        NOT ISBLANK(Funcionarios[DATADEMISSAO]) && Funcionarios[DATADEMISSAO] <= Ref,
 			        USERELATIONSHIP(Funcionarios[DATADEMISSAO], Calendario[Date])
 			    ),
 			    0   
