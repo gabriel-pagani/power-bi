@@ -213,7 +213,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "ADMITIDOS"
+			          "ConceptualProperty": "ADMISSOES"
 			        }
 			      },
 			      "State": "Generated",
@@ -239,7 +239,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "DEMITIDOS"
+			          "ConceptualProperty": "DEMISSOES"
 			        }
 			      },
 			      "State": "Generated",

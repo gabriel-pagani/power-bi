@@ -23,7 +23,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "ADMITIDOS"
+                  "Property": "ADMISSOES"
                 }
               },
               "queryRef": "Medidas.ADMITIDOS",
@@ -38,7 +38,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "DEMITIDOS"
+                  "Property": "DEMISSOES"
                 }
               },
               "queryRef": "Medidas.DEMITIDOS",
@@ -207,7 +207,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "ADMITIDOS"
+            "Property": "ADMISSOES"
           }
         },
         "type": "Advanced"
@@ -221,7 +221,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "DEMITIDOS"
+            "Property": "DEMISSOES"
           }
         },
         "type": "Advanced"

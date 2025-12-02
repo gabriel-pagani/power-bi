@@ -23,7 +23,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "ADMITIDOS"
+                  "Property": "ADMISSOES"
                 }
               },
               "queryRef": "Medidas.ADMITIDOS",
@@ -43,7 +43,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "ADMITIDOS"
+                "Property": "ADMISSOES"
               }
             },
             "direction": "Descending"
@@ -80,7 +80,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "ADMITIDOS"
+            "Property": "ADMISSOES"
           }
         },
         "type": "Advanced"

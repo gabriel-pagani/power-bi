@@ -23,7 +23,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "DEMITIDOS"
+                  "Property": "DEMISSOES"
                 }
               },
               "queryRef": "Medidas.DEMITIDOS",
@@ -43,7 +43,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "DEMITIDOS"
+                "Property": "DEMISSOES"
               }
             },
             "direction": "Descending"
@@ -80,7 +80,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "DEMITIDOS"
+            "Property": "DEMISSOES"
           }
         },
         "type": "Advanced"

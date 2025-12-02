@@ -1,7 +1,7 @@
 table Medidas
 	lineageTag: 733e11e8-36db-4af0-b7f6-333061c272ee
 
-	measure ADMITIDOS = ```
+	measure ADMISSOES = ```
 			
 			COALESCE(
 			    CALCULATE(
@@ -15,7 +15,7 @@ table Medidas
 		formatString: 0
 		lineageTag: 6078b883-f360-4a79-b582-871af8be38ac
 
-	measure DEMITIDOS = ```
+	measure DEMISSOES = ```
 			
 			VAR Ref = IF(MAX(Calendario[Date]) > TODAY(), TODAY(), MAX(Calendario[Date])) RETURN
 			
@@ -48,7 +48,7 @@ table Medidas
 		formatString: 0
 		lineageTag: 41cb038d-5044-4adf-9930-e51b8df15fc6
 
-	measure TURNOVER = (([ADMITIDOS] + [DEMITIDOS]) / 2) / [TOTALCOLABORADORES]
+	measure TURNOVER = (([ADMISSOES] + [DEMISSOES]) / 2) / [TOTALCOLABORADORES]
 		formatString: 0.00%;-0.00%;0.00%
 		lineageTag: 34ce0d30-39a0-4977-b89e-5a70660ae6f3
 
