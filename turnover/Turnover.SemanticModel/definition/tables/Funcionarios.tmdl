@@ -92,9 +92,20 @@ table Funcionarios
 		source =
 				let
 				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT#(lf)    PFUNC.CODCOLIGADA AS COLIGADA,#(lf)    PFUNC.CHAPA,#(lf)    PFUNC.CODSECAO,#(lf)    PSECAO.DESCRICAO AS SECAO,#(lf)    PFUNC.CODFUNCAO,#(lf)    PFUNCAO.NOME AS FUNCAO,#(lf)    PFUNC.CODSITUACAO,#(lf)    PCODSITUACAO.DESCRICAO AS SITUACAO,#(lf)    PFUNC.DATAADMISSAO,#(lf)    PFUNC.DATADEMISSAO#(lf)#(lf)FROM PFUNC (NOLOCK)#(lf)    JOIN GCOLIGADA (NOLOCK) ON ( #(lf)#(tab)    GCOLIGADA.CODCOLIGADA=PFUNC.CODCOLIGADA#(lf)    )#(lf)    JOIN PSECAO (NOLOCK) ON (#(lf)        PSECAO.CODCOLIGADA = PFUNC.CODCOLIGADA AND #(lf)        PSECAO.CODIGO = PFUNC.CODSECAO#(lf)    )#(lf)    JOIN PFUNCAO (NOLOCK) ON (#(lf)        PFUNC.CODCOLIGADA = PFUNCAO.CODCOLIGADA AND #(lf)        PFUNC.CODFUNCAO = PFUNCAO.CODIGO#(lf)    )#(lf)    JOIN PCODSITUACAO (NOLOCK) ON (#(lf)#(tab)    PCODSITUACAO.CODCLIENTE=PFUNC.CODSITUACAO#(lf)    )#(lf)"]),
-				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"COLIGADA", type text}, {"DATAADMISSAO", type date}, {"DATADEMISSAO", type date}})
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"COLIGADA", type text}, {"DATAADMISSAO", type date}, {"DATADEMISSAO", type date}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Changed Type","Obra Pref Vitoria Lote 01","Serviços/Obras",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","Obra Pref Vitoria Lote 02","Serviços/Obras",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value2" = Table.ReplaceValue(#"Replaced Value1","Obra Conserva São José","Serviços/Obras",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","Obra Pref. Palhoça","Serviços/Obras",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3","Placas/Corte/Pintura","Placas",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4","Placas/Impressao","Placas",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value6" = Table.ReplaceValue(#"Replaced Value5","Placas/Serigrafia","Placas",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value7" = Table.ReplaceValue(#"Replaced Value6","Administracao","Administrativo",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value8" = Table.ReplaceValue(#"Replaced Value7","Metalurgica","Metalúrgica",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value9" = Table.ReplaceValue(#"Replaced Value8","Transito","Trânsito",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value10" = Table.ReplaceValue(#"Replaced Value9","PARKING E GUARDA DE VEICULOS","Trânsito",Replacer.ReplaceText,{"SECAO"})
 				in
-				    #"Changed Type"
+				    #"Replaced Value10"
 
 	annotation PBI_NavigationStepName = Navigation
 
