@@ -3,9 +3,12 @@ table Medidas
 
 	measure ADMITIDOS = ```
 			
-			CALCULATE(
-			    COUNTROWS(Funcionarios),
-			    USERELATIONSHIP(Funcionarios[DATAADMISSAO], Calendario[Date])
+			COALESCE(
+			    CALCULATE(
+			        COUNTROWS(Funcionarios),
+			        USERELATIONSHIP(Funcionarios[DATAADMISSAO], Calendario[Date])
+			    ),
+			    0   
 			)
 			
 			```
@@ -14,10 +17,15 @@ table Medidas
 
 	measure DEMITIDOS = ```
 			
-			CALCULATE(
-			    COUNTROWS(Funcionarios),
-			    NOT ISBLANK(Funcionarios[DATADEMISSAO]),
-			    USERELATIONSHIP(Funcionarios[DATADEMISSAO], Calendario[Date])
+			VAR Ref = IF(MAX(Calendario[Date]) > TODAY(), TODAY(), MAX(Calendario[Date])) RETURN
+			
+			COALESCE(
+			    CALCULATE(
+			        COUNTROWS(Funcionarios),
+			        Funcionarios[DATADEMISSAO] <= Ref,
+			        USERELATIONSHIP(Funcionarios[DATADEMISSAO], Calendario[Date])
+			    ),
+			    0   
 			)
 			
 			```
