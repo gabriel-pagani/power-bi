@@ -2,8 +2,1324 @@ cultureInfo en-US
 
 	linguisticMetadata =
 			{
-			  "Version": "1.0.0",
-			  "Language": "en-US"
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "faturamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Faturamento"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "faturamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "faturamento.coligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Faturamento",
+			          "ConceptualProperty": "COLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "coligada": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Empresa": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "faturamento.cliente": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Faturamento",
+			          "ConceptualProperty": "CLIENTE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cliente": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "faturamento.dataemissao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Faturamento",
+			          "ConceptualProperty": "DATAEMISSAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataemissao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "faturamento.numeronota": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Faturamento",
+			          "ConceptualProperty": "NUMERONOTA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "numeronota": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Nota": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "faturamento.valorbruto": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Faturamento",
+			          "ConceptualProperty": "VALORBRUTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valorbruto": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Valor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "faturamento.valorliquido": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Faturamento",
+			          "ConceptualProperty": "VALORLIQUIDO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "valorliquido": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "faturamento.situacaonota": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Faturamento",
+			          "ConceptualProperty": "SITUACAONOTA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situacaonota": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "Período em Análise": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.ano": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Ano"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ano": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Mes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Mês": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.num_me": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "NumMes"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "num me": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "NumMes": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "number me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Dia"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dia": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.faturamentoliq": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "FATURAMENTOLIQ"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "faturamentoliq": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.faturamentobrt": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "FATURAMENTOBRT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "faturamentobrt": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Faturamento": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "calendario_date_date_hierarchy_has_calendario_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.day": {
+			          "Target": {
+			            "Entity": "calendario.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.month": {
+			          "Target": {
+			            "Entity": "calendario.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.quarter": {
+			          "Target": {
+			            "Entity": "calendario.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.year": {
+			          "Target": {
+			            "Entity": "calendario.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "calendario_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date": {
+			          "Target": {
+			            "Entity": "calendario.date"
+			          }
+			        },
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "faturamento_has_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "Faturamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "faturamento": {
+			          "Target": {
+			            "Entity": "faturamento"
+			          }
+			        },
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "faturamento"
+			            },
+			            "Object": {
+			              "Role": "calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "faturamentos_have_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "faturamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_faturamentos"
+			        }
+			      ]
+			    },
+			    "faturamento_has_medida_faturamentobrt": {
+			      "Binding": {
+			        "ConceptualEntity": "Faturamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "faturamento": {
+			          "Target": {
+			            "Entity": "faturamento"
+			          }
+			        },
+			        "medida.faturamentobrt": {
+			          "Target": {
+			            "Entity": "medida.faturamentobrt"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "faturamento"
+			            },
+			            "Object": {
+			              "Role": "medida.faturamentobrt"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "faturamentos_have_faturamentobrt"
+			        }
+			      ]
+			    },
+			    "faturamento_has_medida_faturamentoliq": {
+			      "Binding": {
+			        "ConceptualEntity": "Faturamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "faturamento": {
+			          "Target": {
+			            "Entity": "faturamento"
+			          }
+			        },
+			        "medida.faturamentoliq": {
+			          "Target": {
+			            "Entity": "medida.faturamentoliq"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "faturamento"
+			            },
+			            "Object": {
+			              "Role": "medida.faturamentoliq"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "faturamentos_have_faturamentoliq"
+			        }
+			      ]
+			    },
+			    "calendario_has_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.dia": {
+			          "Target": {
+			            "Entity": "calendario.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_dias"
+			        }
+			      ]
+			    },
+			    "calendario_has_num_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.num_me": {
+			          "Target": {
+			            "Entity": "calendario.num_me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.num_me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_num_me"
+			        }
+			      ]
+			    },
+			    "calendario_has_me": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.me": {
+			          "Target": {
+			            "Entity": "calendario.me"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.me"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_me"
+			        }
+			      ]
+			    },
+			    "calendario_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.ano": {
+			          "Target": {
+			            "Entity": "calendario.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.ano"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_anos"
+			        }
+			      ]
+			    },
+			    "calendario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.date": {
+			          "Target": {
+			            "Entity": "calendario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_dates"
+			        }
+			      ]
+			    },
+			    "faturamento_has_situacaonota": {
+			      "Binding": {
+			        "ConceptualEntity": "Faturamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "faturamento": {
+			          "Target": {
+			            "Entity": "faturamento"
+			          }
+			        },
+			        "faturamento.situacaonota": {
+			          "Target": {
+			            "Entity": "faturamento.situacaonota"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "faturamento"
+			            },
+			            "Object": {
+			              "Role": "faturamento.situacaonota"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "faturamentos_have_situacaonotas"
+			        }
+			      ]
+			    },
+			    "faturamento_has_valorliquido": {
+			      "Binding": {
+			        "ConceptualEntity": "Faturamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "faturamento": {
+			          "Target": {
+			            "Entity": "faturamento"
+			          }
+			        },
+			        "faturamento.valorliquido": {
+			          "Target": {
+			            "Entity": "faturamento.valorliquido"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "faturamento"
+			            },
+			            "Object": {
+			              "Role": "faturamento.valorliquido"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "faturamentos_have_valorliquidos"
+			        }
+			      ]
+			    },
+			    "faturamento_has_valorbruto": {
+			      "Binding": {
+			        "ConceptualEntity": "Faturamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "faturamento": {
+			          "Target": {
+			            "Entity": "faturamento"
+			          }
+			        },
+			        "faturamento.valorbruto": {
+			          "Target": {
+			            "Entity": "faturamento.valorbruto"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "faturamento"
+			            },
+			            "Object": {
+			              "Role": "faturamento.valorbruto"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "faturamentos_have_valorbrutos"
+			        }
+			      ]
+			    },
+			    "faturamento_has_numeronota": {
+			      "Binding": {
+			        "ConceptualEntity": "Faturamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "faturamento": {
+			          "Target": {
+			            "Entity": "faturamento"
+			          }
+			        },
+			        "faturamento.numeronota": {
+			          "Target": {
+			            "Entity": "faturamento.numeronota"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "faturamento"
+			            },
+			            "Object": {
+			              "Role": "faturamento.numeronota"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "faturamentos_have_numeronotas"
+			        }
+			      ]
+			    },
+			    "faturamento_has_dataemissao": {
+			      "Binding": {
+			        "ConceptualEntity": "Faturamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "faturamento": {
+			          "Target": {
+			            "Entity": "faturamento"
+			          }
+			        },
+			        "faturamento.dataemissao": {
+			          "Target": {
+			            "Entity": "faturamento.dataemissao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "faturamento"
+			            },
+			            "Object": {
+			              "Role": "faturamento.dataemissao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "faturamentos_have_dataemissaos"
+			        }
+			      ]
+			    },
+			    "faturamento_has_cliente": {
+			      "Binding": {
+			        "ConceptualEntity": "Faturamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "faturamento": {
+			          "Target": {
+			            "Entity": "faturamento"
+			          }
+			        },
+			        "faturamento.cliente": {
+			          "Target": {
+			            "Entity": "faturamento.cliente"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "faturamento"
+			            },
+			            "Object": {
+			              "Role": "faturamento.cliente"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "faturamentos_have_clientes"
+			        }
+			      ]
+			    },
+			    "faturamento_has_coligada": {
+			      "Binding": {
+			        "ConceptualEntity": "Faturamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "faturamento": {
+			          "Target": {
+			            "Entity": "faturamento"
+			          }
+			        },
+			        "faturamento.coligada": {
+			          "Target": {
+			            "Entity": "faturamento.coligada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "faturamento"
+			            },
+			            "Object": {
+			              "Role": "faturamento.coligada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "faturamentos_have_coligadas"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
 			}
 		contentType: json
 
