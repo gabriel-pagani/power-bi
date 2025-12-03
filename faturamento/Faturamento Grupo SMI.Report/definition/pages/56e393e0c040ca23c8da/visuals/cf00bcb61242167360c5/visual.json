@@ -27,8 +27,8 @@
                 }
               },
               "queryRef": "Medidas.FATURAMENTOBRT",
-              "nativeQueryRef": "Faturamento",
-              "displayName": "Faturamento"
+              "nativeQueryRef": "Faturamento Bruto",
+              "displayName": "Faturamento Bruto"
             }
           ]
         },

@@ -37,7 +37,7 @@ table Faturamento
 		annotation SummarizationSetBy = Automatic
 
 	column VALORBRUTO
-		dataType: double
+		dataType: decimal
 		lineageTag: 3549fc47-eaf3-4505-a8f3-6796591cad5b
 		summarizeBy: sum
 		sourceColumn: VALORBRUTO
@@ -47,7 +47,7 @@ table Faturamento
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	column VALORLIQUIDO
-		dataType: double
+		dataType: decimal
 		lineageTag: 5f975d08-feb7-41fd-a6c9-a6a20fd83ed4
 		summarizeBy: sum
 		sourceColumn: VALORLIQUIDO
@@ -69,7 +69,7 @@ table Faturamento
 		source =
 				let
 				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)        GCOLIGADA.NOMEFANTASIA AS COLIGADA,#(lf)        FCFO.NOMEFANTASIA AS CLIENTE,#(lf)        TMOV.DATAEMISSAO,#(lf)        TMOV.NUMEROMOV AS NUMERONOTA,#(lf)        TMOV.VALORBRUTO,#(lf)        TMOV.VALORLIQUIDO,#(lf)        TMOV.STATUS AS SITUACAONOTA /* F = Emitida | Q = Recebida | P = Parcialmente Recebida */#(lf)#(lf)FROM TMOV (NOLOCK)#(lf)        JOIN GCOLIGADA (NOLOCK) ON (#(lf)                GCOLIGADA.CODCOLIGADA=TMOV.CODCOLIGADA#(lf)        )#(lf)        JOIN FCFO (NOLOCK) ON (#(lf)                FCFO.CODCOLIGADA=TMOV.CODCOLIGADA AND #(lf)                FCFO.CODCFO=TMOV.CODCFO#(lf)        )#(lf)#(lf)WHERE 1=1#(lf)        AND TMOV.STATUS <> 'C' #(lf)        AND (  #(lf)                   (TMOV.CODTMV IN ('2.2.04','2.2.05','2.2.07') AND TMOV.CODCOLIGADA = 1) #(lf)                OR (TMOV.CODTMV IN ('2.2.04','2.2.05','2.2.07','2.2.59') AND TMOV.CODCOLIGADA = 5) #(lf)                OR (TMOV.CODTMV IN ('2.2.07','2.2.59') AND TMOV.CODCOLIGADA = 6) #(lf)                OR (TMOV.CODTMV IN ('2.2.05') AND TMOV.CODCOLIGADA = 7)#(lf)                OR (TMOV.CODTMV IN ('2.2.00','2.2.24') AND TMOV.CODCOLIGADA = 10)#(lf)        )#(lf)#(lf)ORDER BY #(lf)        COLIGADA, #(lf)        CLIENTE"]),
-				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"DATAEMISSAO", type date}})
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"DATAEMISSAO", type date}, {"VALORBRUTO", Currency.Type}, {"VALORLIQUIDO", Currency.Type}})
 				in
 				    #"Changed Type"
 

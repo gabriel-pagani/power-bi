@@ -2,14 +2,16 @@ table Medidas
 	lineageTag: 4adeaf7a-45d9-428a-bbb5-bc2056efc8ef
 
 	measure FATURAMENTOLIQ = SUM(Faturamento[VALORLIQUIDO])
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
 		lineageTag: 5c4b3f01-9632-4dd6-a406-f23a9b4e29a0
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	measure FATURAMENTOBRT = SUM(Faturamento[VALORBRUTO])
+		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
 		lineageTag: f35fe1e3-e025-49fd-a8c4-bf74e95b6f32
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
 	partition Medidas = m
 		mode: import

@@ -628,7 +628,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Faturamento": {
+			          "Faturamento Bruto": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
