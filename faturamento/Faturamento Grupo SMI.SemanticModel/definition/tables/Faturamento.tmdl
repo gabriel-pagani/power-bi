@@ -24,11 +24,6 @@ table Faturamento
 		summarizeBy: none
 		sourceColumn: DATAEMISSAO
 
-		variation Variation
-			isDefault
-			relationship: 302bbd92-7cbe-4d81-96c7-67340c5cb146
-			defaultHierarchy: LocalDateTable_d972458e-9214-44fd-a62c-db4ce337174f.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date

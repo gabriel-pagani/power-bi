@@ -1,0 +1,58 @@
+table Calendario
+	lineageTag: cd0e0bb4-e960-488e-8721-44311012aeeb
+
+	column Date
+		formatString: Short Date
+		lineageTag: 4594000d-c3f3-4e2b-9da6-78defc90403b
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: 371d5a93-c3b7-4b07-a041-620bc2aae7ab
+			defaultHierarchy: LocalDateTable_9fb97e82-fee5-4d83-b70f-d0f0503033c5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ano = Calendario[Date].[Year]
+		formatString: 0
+		lineageTag: e455c987-91fd-4e69-abb1-e9db06bcf893
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Mes = FORMAT(Calendario[Date],"mmm")
+		lineageTag: 01bb52af-1119-4a8a-9076-c60783155ee3
+		summarizeBy: none
+		sortByColumn: NumMes
+
+		annotation SummarizationSetBy = Automatic
+
+	column NumMes = Calendario[Date].[MonthNo]
+		formatString: 0
+		lineageTag: c38ec977-fe32-47f8-b348-83a13dc67588
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Dia = Calendario[Date].[Day]
+		formatString: 0
+		lineageTag: 634f2fa5-64e7-4f0b-b356-7a3dca4881d4
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendario = calculated
+		mode: import
+		source = ```
+				
+				    CALENDAR(
+				            DATE(YEAR(MIN(Faturamento[DATAEMISSAO])), 1, 1),
+				            DATE(YEAR(MAX(Faturamento[DATAEMISSAO])) + 1, 12, 31)
+				    )
+				
+				```
+
+	annotation PBI_Id = 8c895c743516408c9e557fddf8da94ef
+

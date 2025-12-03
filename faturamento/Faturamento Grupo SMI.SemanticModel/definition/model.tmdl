@@ -8,13 +8,15 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["Faturamento"]
+annotation PBI_QueryOrder = ["Faturamento","Medidas"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table Faturamento
 ref table DateTableTemplate_05d8070d-4cf1-4ec4-bd69-eb8064dcdc76
-ref table LocalDateTable_d972458e-9214-44fd-a62c-db4ce337174f
+ref table Calendario
+ref table LocalDateTable_9fb97e82-fee5-4d83-b70f-d0f0503033c5
+ref table Medidas
 
 ref cultureInfo en-US
 

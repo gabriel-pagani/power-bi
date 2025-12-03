@@ -1,5 +1,9 @@
-relationship 302bbd92-7cbe-4d81-96c7-67340c5cb146
+relationship 371d5a93-c3b7-4b07-a041-620bc2aae7ab
 	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendario.Date
+	toColumn: LocalDateTable_9fb97e82-fee5-4d83-b70f-d0f0503033c5.Date
+
+relationship 37e4e6fd-039b-1492-f759-089ce18000f4
 	fromColumn: Faturamento.DATAEMISSAO
-	toColumn: LocalDateTable_d972458e-9214-44fd-a62c-db4ce337174f.Date
+	toColumn: Calendario.Date
 
