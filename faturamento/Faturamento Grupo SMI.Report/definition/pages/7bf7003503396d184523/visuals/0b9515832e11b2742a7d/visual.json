@@ -3,7 +3,7 @@
   "name": "0b9515832e11b2742a7d",
   "position": {
     "x": 0,
-    "y": 87.777777777777771,
+    "y": 116.68996960486322,
     "z": 0,
     "height": 113.33333333333333,
     "width": 298.88888888888886
@@ -26,7 +26,8 @@
                 }
               },
               "queryRef": "Medidas.FATURAMENTOBRT",
-              "nativeQueryRef": "FATURAMENTOBRT"
+              "nativeQueryRef": "Faturamento Bruto",
+              "displayName": "Faturamento Bruto"
             }
           ]
         }

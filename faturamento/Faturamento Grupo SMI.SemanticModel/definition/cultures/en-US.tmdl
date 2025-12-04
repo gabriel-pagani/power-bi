@@ -610,6 +610,16 @@ cultureInfo en-US
 			          "faturamentoliq": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Faturamento Líquido": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
