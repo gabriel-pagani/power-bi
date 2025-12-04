@@ -36,10 +36,13 @@ table Medidas
 			
 			VAR Ref = IF(MAX(Calendario[Date]) > TODAY(), TODAY(), MAX(Calendario[Date])) RETURN
 			
-			CALCULATE(
-			    COUNTROWS(Funcionarios),
-			    Funcionarios[DATAADMISSAO] <= Ref && (ISBLANK(Funcionarios[DATADEMISSAO]) || Funcionarios[DATADEMISSAO] > Ref),
-			    REMOVEFILTERS(Calendario)
+			COALESCE(
+			    CALCULATE(
+			        COUNTROWS(Funcionarios),
+			        Funcionarios[DATAADMISSAO] <= Ref && (ISBLANK(Funcionarios[DATADEMISSAO]) || Funcionarios[DATADEMISSAO] > Ref),
+			        REMOVEFILTERS(Calendario)
+			    ),
+			    0
 			)
 			
 			```

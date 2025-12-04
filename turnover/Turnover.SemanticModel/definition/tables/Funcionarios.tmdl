@@ -103,9 +103,11 @@ table Funcionarios
 				    #"Replaced Value7" = Table.ReplaceValue(#"Replaced Value6","Administracao","Administrativo",Replacer.ReplaceText,{"SECAO"}),
 				    #"Replaced Value8" = Table.ReplaceValue(#"Replaced Value7","Metalurgica","Metalúrgica",Replacer.ReplaceText,{"SECAO"}),
 				    #"Replaced Value9" = Table.ReplaceValue(#"Replaced Value8","Transito","Trânsito",Replacer.ReplaceText,{"SECAO"}),
-				    #"Replaced Value10" = Table.ReplaceValue(#"Replaced Value9","PARKING E GUARDA DE VEICULOS","Trânsito",Replacer.ReplaceText,{"SECAO"})
+				    #"Replaced Value10" = Table.ReplaceValue(#"Replaced Value9","PARKING E GUARDA DE VEICULOS","Trânsito",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value11" = Table.ReplaceValue(#"Replaced Value10","Diretoria","Administrativo",Replacer.ReplaceText,{"SECAO"}),
+				    #"Replaced Value12" = Table.ReplaceValue(#"Replaced Value11","Fábrica Guarulhos","Serviços/Obras",Replacer.ReplaceText,{"SECAO"})
 				in
-				    #"Replaced Value10"
+				    #"Replaced Value12"
 
 	annotation PBI_NavigationStepName = Navigation
 
