@@ -112,22 +112,6 @@
               "nativeQueryRef": "Nota",
               "active": false,
               "displayName": "Nota"
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Faturamento"
-                    }
-                  },
-                  "Property": "VALORBRUTO"
-                }
-              },
-              "queryRef": "Faturamento.VALORBRUTO",
-              "nativeQueryRef": "Valor",
-              "active": false,
-              "displayName": "Valor"
             }
           ]
         }
@@ -236,14 +220,6 @@
                 }
               }
             ],
-            "isPinned": true,
-            "isLocked": true
-          },
-          {
-            "queryRefs": [
-              "Faturamento.VALORBRUTO"
-            ],
-            "isCollapsed": true,
             "isPinned": true,
             "isLocked": true
           }
@@ -395,7 +371,7 @@
             "dataBarWidthPercent": {
               "expr": {
                 "Literal": {
-                  "Value": "110L"
+                  "Value": "130L"
                 }
               }
             },
@@ -553,20 +529,6 @@
           }
         },
         "type": "Categorical"
-      },
-      {
-        "name": "83ead68840770be6036c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Faturamento"
-              }
-            },
-            "Property": "VALORBRUTO"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }
