@@ -63,7 +63,7 @@
               },
               "queryRef": "Calendario.Ano",
               "nativeQueryRef": "Sum of Ano",
-              "active": true
+              "active": false
             },
             {
               "field": {
@@ -78,7 +78,7 @@
               },
               "queryRef": "Calendario.Mes",
               "nativeQueryRef": "Mês",
-              "active": true,
+              "active": false,
               "displayName": "Mês"
             },
             {
@@ -224,32 +224,7 @@
             "isLocked": true
           }
         ],
-        "root": {
-          "children": [
-            {
-              "identityValues": [
-                {
-                  "Literal": {
-                    "Value": "'SINASC CONSTRUCAO'"
-                  }
-                }
-              ],
-              "isToggled": true,
-              "children": [
-                {
-                  "identityValues": [
-                    {
-                      "Literal": {
-                        "Value": "2025L"
-                      }
-                    }
-                  ],
-                  "isToggled": true
-                }
-              ]
-            }
-          ]
-        }
+        "root": {}
       }
     ],
     "objects": {
