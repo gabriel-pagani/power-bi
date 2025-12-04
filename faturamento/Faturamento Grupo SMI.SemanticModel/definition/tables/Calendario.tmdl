@@ -22,7 +22,7 @@ table Calendario
 
 		annotation SummarizationSetBy = Automatic
 
-	column Mes = FORMAT(Calendario[Date],"mmm")
+	column Mes = FORMAT(Calendario[Date],"MMMM", "pt-BR")
 		lineageTag: 01bb52af-1119-4a8a-9076-c60783155ee3
 		summarizeBy: none
 		sortByColumn: NumMes
