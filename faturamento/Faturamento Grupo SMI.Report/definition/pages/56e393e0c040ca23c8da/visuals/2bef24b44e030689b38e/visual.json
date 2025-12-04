@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "0b9515832e11b2742a7d",
+  "name": "2bef24b44e030689b38e",
   "position": {
-    "x": 0,
-    "y": 116.68996960486322,
-    "z": 0,
-    "height": 113.33333333333333,
-    "width": 298.88888888888886
+    "x": 662.370820668693,
+    "y": 0,
+    "z": 3,
+    "height": 94.346504559270514,
+    "width": 299.57446808510639
   },
   "visual": {
     "visualType": "card",
@@ -22,12 +22,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "FATURAMENTOBRT"
+                  "Property": "FATURAMENTOLIQ"
                 }
               },
-              "queryRef": "Medidas.FATURAMENTOBRT",
-              "nativeQueryRef": "Faturamento Bruto",
-              "displayName": "Faturamento Bruto"
+              "queryRef": "Medidas.FATURAMENTOLIQ",
+              "nativeQueryRef": "Faturamento Líquido",
+              "displayName": "Faturamento Líquido"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "FATURAMENTOBRT"
+                "Property": "FATURAMENTOLIQ"
               }
             },
             "direction": "Descending"
@@ -78,7 +78,7 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "38d16b321ddda00b991e",
+        "name": "a0106ae50d34e46163a2",
         "field": {
           "Measure": {
             "Expression": {
@@ -86,7 +86,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "FATURAMENTOBRT"
+            "Property": "FATURAMENTOLIQ"
           }
         },
         "type": "Advanced"

@@ -371,7 +371,7 @@
             "dataBarWidthPercent": {
               "expr": {
                 "Literal": {
-                  "Value": "130L"
+                  "Value": "135L"
                 }
               }
             },
