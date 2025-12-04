@@ -5,7 +5,7 @@
     "x": 0,
     "y": 94.346504559270514,
     "z": 0,
-    "height": 625.41033434650456,
+    "height": 419.209726443769,
     "width": 1280,
     "tabOrder": 0
   },
@@ -63,7 +63,7 @@
               },
               "queryRef": "Calendario.Ano",
               "nativeQueryRef": "Sum of Ano",
-              "active": false
+              "active": true
             },
             {
               "field": {
@@ -78,7 +78,7 @@
               },
               "queryRef": "Calendario.Mes",
               "nativeQueryRef": "Mês",
-              "active": false,
+              "active": true,
               "displayName": "Mês"
             },
             {
@@ -224,7 +224,32 @@
             "isLocked": true
           }
         ],
-        "root": {}
+        "root": {
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'SINASC CONSTRUCAO'"
+                  }
+                }
+              ],
+              "isToggled": true,
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "2025L"
+                      }
+                    }
+                  ],
+                  "isToggled": true
+                }
+              ]
+            }
+          ]
+        }
       }
     ],
     "objects": {
@@ -234,7 +259,7 @@
             "effectiveBarsPerLevel": {
               "expr": {
                 "Literal": {
-                  "Value": "11L"
+                  "Value": "6L"
                 }
               }
             },
@@ -412,6 +437,32 @@
             }
           }
         }
+      ],
+      "categoryLabels": [
+        {
+          "properties": {
+            "categoryLabelFontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "levelHeader": [
+        {
+          "properties": {
+            "showSubtitles": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "visualContainerObjects": {
@@ -435,6 +486,19 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
                 }
               }
             }
