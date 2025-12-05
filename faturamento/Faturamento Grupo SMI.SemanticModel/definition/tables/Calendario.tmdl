@@ -43,6 +43,13 @@ table Calendario
 
 		annotation SummarizationSetBy = Automatic
 
+	column MesAbrv = FORMAT(Calendario[Date], "mmm", "pt-BR")
+		lineageTag: 5c5b6d1c-56f7-498e-96f3-2bef19b9e142
+		summarizeBy: none
+		sortByColumn: NumMes
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Calendario = calculated
 		mode: import
 		source = ```

@@ -3,9 +3,9 @@
   "name": "cf00bcb61242167360c5",
   "position": {
     "x": 0,
-    "y": 300.54711246200611,
+    "y": 0,
     "z": 0,
-    "height": 419.209726443769,
+    "height": 719.75683890577511,
     "width": 1280,
     "tabOrder": 0
   },
@@ -234,7 +234,7 @@
             "effectiveBarsPerLevel": {
               "expr": {
                 "Literal": {
-                  "Value": "6L"
+                  "Value": "12L"
                 }
               }
             },
