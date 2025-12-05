@@ -5,8 +5,8 @@
     "x": 0,
     "y": 0,
     "z": 0,
-    "height": 128.63636363636363,
-    "width": 499.99999999999994,
+    "height": 147.08333333333334,
+    "width": 500,
     "tabOrder": 0
   },
   "visual": {
@@ -73,7 +73,14 @@
             "totals": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
                 }
               }
             }
