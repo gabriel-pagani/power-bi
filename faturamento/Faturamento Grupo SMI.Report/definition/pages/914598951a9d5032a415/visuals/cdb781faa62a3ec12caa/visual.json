@@ -1,11 +1,11 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "7baf309d2dda4b390014",
+  "name": "cdb781faa62a3ec12caa",
   "position": {
     "x": 0,
-    "y": 0,
+    "y": 52.307692307692307,
     "z": 0,
-    "height": 147.08333333333334,
+    "height": 147.69230769230768,
     "width": 500,
     "tabOrder": 0
   },
@@ -38,12 +38,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "FATURAMENTOLIQ"
+                  "Property": "FATURAMENTOBRT"
                 }
               },
-              "queryRef": "Medidas.FATURAMENTOLIQ",
-              "nativeQueryRef": "Faturamento Líquido",
-              "displayName": "Faturamento Líquido"
+              "queryRef": "Medidas.FATURAMENTOBRT",
+              "nativeQueryRef": "Faturamento Bruto",
+              "displayName": "Faturamento Bruto"
             }
           ]
         }
@@ -58,7 +58,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "FATURAMENTOLIQ"
+                "Property": "FATURAMENTOBRT"
               }
             },
             "direction": "Descending"
@@ -127,19 +127,19 @@
           }
         }
       ],
-      "columnFormatting": [
+      "columnWidth": [
         {
           "properties": {
-            "alignment": {
+            "value": {
               "expr": {
                 "Literal": {
-                  "Value": "'Right'"
+                  "Value": "349.66666706210015D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Medidas.FATURAMENTOLIQ"
+            "metadata": "Faturamento.COLIGADA"
           }
         }
       ]
@@ -160,5 +160,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "ca13b9e30007a100c6d5",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Faturamento"
+              }
+            },
+            "Property": "COLIGADA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "6689763336342aab5a22",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "FATURAMENTOBRT"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

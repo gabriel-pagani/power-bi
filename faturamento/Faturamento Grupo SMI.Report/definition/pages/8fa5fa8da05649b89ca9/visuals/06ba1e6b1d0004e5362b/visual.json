@@ -3,11 +3,11 @@
   "name": "06ba1e6b1d0004e5362b",
   "position": {
     "x": 0,
-    "y": 107.96352583586626,
-    "z": 4,
-    "height": 237.32522796352583,
+    "y": 65.167173252279639,
+    "z": 4000,
+    "height": 178.96656534954408,
     "width": 980.42553191489367,
-    "tabOrder": 2002
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -158,40 +158,21 @@
             }
           }
         }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "e8563628d52d5d071d3a",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendario"
-              }
-            },
-            "Property": "MesAbrv"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "627ebfd7665339072b09",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "FATURAMENTOBRT"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
