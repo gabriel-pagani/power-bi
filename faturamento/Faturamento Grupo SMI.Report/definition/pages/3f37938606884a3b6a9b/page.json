@@ -1,0 +1,10 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "3f37938606884a3b6a9b",
+  "displayName": "Faturamento Líquido por Empresa",
+  "displayOption": "ActualSize",
+  "height": 129,
+  "width": 500,
+  "visibility": "HiddenInViewMode",
+  "type": "Tooltip"
+}

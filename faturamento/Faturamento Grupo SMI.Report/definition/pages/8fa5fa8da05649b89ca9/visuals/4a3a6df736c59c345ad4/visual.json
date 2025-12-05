@@ -3,7 +3,7 @@
   "name": "4a3a6df736c59c345ad4",
   "position": {
     "x": 0,
-    "y": 107.96352583586626,
+    "y": 401.7021276595745,
     "z": 3,
     "height": 237.32522796352583,
     "width": 980.42553191489367,
@@ -145,7 +145,14 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'3f37938606884a3b6a9b'"
                 }
               }
             }

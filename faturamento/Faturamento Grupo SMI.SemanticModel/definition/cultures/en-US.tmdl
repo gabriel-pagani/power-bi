@@ -35,6 +35,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "Empresas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Empresa": {
 			            "State": "Suggested",
 			            "Source": {
@@ -638,6 +648,36 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "calendario.mes_abrv": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "MesAbrv"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mes abrv": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "me abrv": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "MesAbrv": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -849,6 +889,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_faturamentos"
+			        }
+			      ]
+			    },
+			    "calendario_has_mes_abrv": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.mes_abrv": {
+			          "Target": {
+			            "Entity": "calendario.mes_abrv"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.mes_abrv"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_mes_abrvs"
 			        }
 			      ]
 			    },

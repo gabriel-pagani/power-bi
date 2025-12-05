@@ -1,39 +1,35 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "06ba1e6b1d0004e5362b",
+  "name": "f8ea42934a54d0a1d005",
   "position": {
     "x": 0,
-    "y": 107.96352583586626,
-    "z": 4,
-    "height": 237.32522796352583,
-    "width": 980.42553191489367,
-    "tabOrder": 2002
+    "y": 0,
+    "z": 0,
+    "height": 128.63636363636363,
+    "width": 499.99999999999994,
+    "tabOrder": 0
   },
   "visual": {
-    "visualType": "clusteredColumnChart",
+    "visualType": "tableEx",
     "query": {
       "queryState": {
-        "Category": {
+        "Values": {
           "projections": [
             {
               "field": {
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Calendario"
+                      "Entity": "Faturamento"
                     }
                   },
-                  "Property": "MesAbrv"
+                  "Property": "COLIGADA"
                 }
               },
-              "queryRef": "Calendario.MesAbrv",
-              "nativeQueryRef": "MesAbrv",
-              "active": true
-            }
-          ]
-        },
-        "Y": {
-          "projections": [
+              "queryRef": "Faturamento.COLIGADA",
+              "nativeQueryRef": "Empresa",
+              "displayName": "Empresa"
+            },
             {
               "field": {
                 "Measure": {
@@ -46,24 +42,35 @@
                 }
               },
               "queryRef": "Medidas.FATURAMENTOBRT",
-              "nativeQueryRef": "FATURAMENTOBRT"
+              "nativeQueryRef": "Faturamento Bruto",
+              "displayName": "Faturamento Bruto"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Medidas"
+                  }
+                },
+                "Property": "FATURAMENTOBRT"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     },
     "objects": {
-      "valueAxis": [
+      "total": [
         {
           "properties": {
-            "showAxisTitle": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            },
-            "show": {
+            "totals": {
               "expr": {
                 "Literal": {
                   "Value": "false"
@@ -73,86 +80,71 @@
           }
         }
       ],
-      "labels": [
+      "grid": [
         {
           "properties": {
-            "show": {
+            "gridVertical": {
               "expr": {
                 "Literal": {
                   "Value": "true"
                 }
               }
-            }
-          }
-        }
-      ],
-      "categoryAxis": [
-        {
-          "properties": {
-            "showAxisTitle": {
+            },
+            "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "15D"
                 }
               }
             }
           }
         }
       ],
-      "dataPoint": [
+      "columnHeaders": [
         {
           "properties": {
-            "fill": {
-              "solid": {
-                "color": {
-                  "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "title": [
-        {
-          "properties": {
-            "text": {
+            "outlineStyle": {
               "expr": {
                 "Literal": {
-                  "Value": "'Faturamento Bruto por Mês'"
+                  "Value": "11D"
                 }
               }
             },
             "alignment": {
               "expr": {
                 "Literal": {
-                  "Value": "'center'"
+                  "Value": "'Center'"
                 }
               }
             }
           }
         }
       ],
-      "visualTooltip": [
+      "columnWidth": [
         {
           "properties": {
-            "show": {
+            "value": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "349.66666706210015D"
                 }
               }
-            },
-            "section": {
+            }
+          },
+          "selector": {
+            "metadata": "Faturamento.COLIGADA"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
               "expr": {
                 "Literal": {
-                  "Value": "'231fc567b0766c035e55'"
+                  "Value": "'None'"
                 }
               }
             }
@@ -165,21 +157,21 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "e8563628d52d5d071d3a",
+        "name": "643369d066c9b02da867",
         "field": {
           "Column": {
             "Expression": {
               "SourceRef": {
-                "Entity": "Calendario"
+                "Entity": "Faturamento"
               }
             },
-            "Property": "MesAbrv"
+            "Property": "COLIGADA"
           }
         },
         "type": "Categorical"
       },
       {
-        "name": "627ebfd7665339072b09",
+        "name": "cfe41c70ee38100b0002",
         "field": {
           "Measure": {
             "Expression": {
