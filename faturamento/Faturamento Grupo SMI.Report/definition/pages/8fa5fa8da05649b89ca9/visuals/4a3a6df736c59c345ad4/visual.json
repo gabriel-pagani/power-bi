@@ -42,7 +42,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "FATURAMENTOLIQ"
+                  "Property": "FATURAMENTO_LIQ"
                 }
               },
               "queryRef": "Medidas.FATURAMENTOLIQ",

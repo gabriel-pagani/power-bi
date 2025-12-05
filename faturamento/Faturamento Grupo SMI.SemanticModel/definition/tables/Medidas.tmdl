@@ -1,17 +1,168 @@
 table Medidas
 	lineageTag: 4adeaf7a-45d9-428a-bbb5-bc2056efc8ef
 
-	measure FATURAMENTOLIQ = SUM(Faturamento[VALORLIQUIDO])
+	measure FATURAMENTO_LIQ = SUM(Faturamento[VALORLIQUIDO])
 		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
 		lineageTag: 5c4b3f01-9632-4dd6-a406-f23a9b4e29a0
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
 
-	measure FATURAMENTOBRT = SUM(Faturamento[VALORBRUTO])
+	measure FATURAMENTO_BRT = SUM(Faturamento[VALORBRUTO])
 		formatString: "R$"\ #,0;-"R$"\ #,0;"R$"\ #,0
 		lineageTag: f35fe1e3-e025-49fd-a8c4-bf74e95b6f32
 
 		annotation PBI_FormatHint = {"currencyCulture":"pt-BR"}
+
+	measure COMPONENTE_HTML = ```
+			
+			
+			var received_gross =1
+			var tshirt_value = 2
+			var tshir_percent = 0.35
+			var pants_value =3
+			var pants_percent = 0.50
+			
+			return 
+			"
+			<div class='card-container'>
+			    <div class=card-content>
+			        <div class=received-gross> <!-- Título recebido bruto -->
+			            <strong>Received gross</strong>
+			            <p>"&received_gross&"</p> <!-- Valor do recebido bruto -->
+			        </div>
+			        <strong class=strong-only>Received by category</strong>
+			        <div class=category-name-value>
+			            <strong>T-shirt</strong>
+			            <p>"&tshirt_value&"</p> <!-- Valor em T-Shirt -->
+			        </div>
+			        <div class=bar-progress1>
+			            <div class=back-bar>bar-back</div>
+			            <div class=front-bar>"&tshir_percent&"</div> <!-- % em T-Shirt -->
+			        </div>
+			        <div class=category-name-value>
+			            <strong>Pants</strong>
+			            <p>"&pants_value&"</p> <!-- Valor em Pants -->
+			        </div>
+			        <div class=bar-progress2>
+			            <div class=back-bar2>bar-back</div>
+			            <div class=front-bar2>"&pants_percent&"</div>  <!-- % em Pants -->
+			        </div>
+			    </div>
+			</div>
+			<style>
+			    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+			
+			    * {
+			        font-family: 'Inter', sans-serif;
+			        margin: 0;
+			        box-sizing: border-box;
+			    }
+			
+			    .card-container {
+			        display: flex;
+			        align-items: center;
+			        justify-content: center;
+			        height: auto;
+			    }
+			
+			    .card-content {
+			        display: flex;
+			        flex-direction: column;
+			        justify-content: center;
+			        align-items: flex;
+			        
+			        padding: 1rem;
+			        margin: .5rem;
+			        height: auto;
+			        width: 250px;
+			        
+			        background: white; /* Background do card principal */
+			        
+			        border-radius: 11px; /* Raio da borda */
+			        border: 1px solid rgba(136, 136, 136, 0.1);
+			        box-shadow: 1px 1px 2px 1px rgba(133, 133, 133, 0.1);
+			    }
+			
+			    .received-gross {
+			        display: flex;
+			        flex-direction: column;
+			        justify-content: flex-start;
+			    }
+			
+			    .received-gross strong {
+			        font-size: 1rem;
+			    }
+			
+			    .received-gross p {
+			        margin: .3rem 0 1rem 0;
+			    }
+			    
+			    .strong-only {
+			        font-size: .875rem;
+			        color: rgb(1, 3, 116); /* Cor do Título das categorias */
+			        margin-bottom: .5rem;
+			    } 
+			
+			    .category-name-value {
+			        display: flex;
+			        justify-content: space-between;
+			        margin-bottom: .5rem;
+			    }
+			
+			    .category-name-value p {
+			        font-size: 0.875rem;
+			    }
+			
+			    .bar-progress1, .bar-progress2 {
+			        display: flex;
+			        margin-bottom: 1rem;
+			    }
+			
+			    .back-bar, 
+			    .back-bar2 {
+			        --bar-width: 216px;
+			        color: transparent;
+			        background: rgb(255, 237, 237); /* Cor de fundo da barra */
+			        max-width: var(--bar-width);
+			        width: 100%;
+			        border-radius: 4px;
+			    }
+			
+			    .front-bar, 
+			    .front-bar2 {
+			        position: absolute;
+			        font-size: .7rem; /* Tamanho da fonte da porcentagem */
+			        margin: .2rem;
+			        text-align: center;
+			        color: white; /* Cor da porcentagem */
+			        border-radius: 4px;
+			        animation-fill-mode: forwards;
+			        animation-delay: 1s;
+			    }
+			
+			    .front-bar {
+			        animation: anim1 1.5s forwards; /* 1.5s é o tempo da animação */
+			        background: #141414; /* Cor da barra 1 */
+			    }
+			
+			    .front-bar2 {
+			        animation: anim2 1.5s forwards;
+			        background: #FF8C00; /* Cor da barra 2 */
+			    }
+			
+			    @keyframes anim1 {
+			        0% { width: 0;}
+			        100% { width: calc(0.35 * 210px); } /* Barra 1: Altere o 0.35 pela sua porcentagem */
+			    }
+			
+			    @keyframes anim2 {
+			        0% { width: 0;}
+			        100% { width: calc(0.5 * 210px); } /* Barra 2: Altere o 0.5 pela sua porcentagem */
+			    }
+			</style>
+			"
+			```
+		lineageTag: 150848f8-3136-42f0-8ceb-d5f2e24b6082
 
 	partition Medidas = m
 		mode: import

@@ -601,7 +601,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "FATURAMENTOLIQ"
+			          "ConceptualProperty": "FATURAMENTO_LIQ"
 			        }
 			      },
 			      "State": "Generated",
@@ -627,7 +627,7 @@ cultureInfo en-US
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "FATURAMENTOBRT"
+			          "ConceptualProperty": "FATURAMENTO_BRT"
 			        }
 			      },
 			      "State": "Generated",

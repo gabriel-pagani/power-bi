@@ -23,7 +23,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "FATURAMENTOBRT"
+                  "Property": "FATURAMENTO_BRT"
                 }
               },
               "queryRef": "Medidas.FATURAMENTOBRT",
@@ -43,7 +43,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "FATURAMENTOBRT"
+                "Property": "FATURAMENTO_BRT"
               }
             },
             "direction": "Descending"
