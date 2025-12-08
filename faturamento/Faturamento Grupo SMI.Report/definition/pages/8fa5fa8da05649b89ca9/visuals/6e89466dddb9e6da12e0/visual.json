@@ -90,5 +90,23 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "de9ad785b0116a870a0e",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "FATURAMENTO_BRT"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }

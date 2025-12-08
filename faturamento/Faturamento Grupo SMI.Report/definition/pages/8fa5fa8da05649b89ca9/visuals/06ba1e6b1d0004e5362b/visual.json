@@ -106,9 +106,8 @@
               "solid": {
                 "color": {
                   "expr": {
-                    "ThemeDataColor": {
-                      "ColorId": 1,
-                      "Percent": 0
+                    "Literal": {
+                      "Value": "'#EBEB00'"
                     }
                   }
                 }
@@ -174,5 +173,37 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "04c398cabc7e684c94ed",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendario"
+              }
+            },
+            "Property": "MesAbrv"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "d46fbd01a1b205d506da",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Medidas"
+              }
+            },
+            "Property": "FATURAMENTO_BRT"
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
   }
 }
