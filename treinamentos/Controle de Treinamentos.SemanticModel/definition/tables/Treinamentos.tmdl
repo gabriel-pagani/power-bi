@@ -85,7 +85,17 @@ table Treinamentos
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column VENCIMENTO = DATEADD(Treinamentos[RECCREATEDON], Treinamentos[NROVEZES] + 1, MONTH)
+	column VENCIMENTO = ```
+			
+			        VAR BaseDate = DATEVALUE ( Treinamentos[RECCREATEDON] )
+			        VAR MonthsToAdd = INT ( Treinamentos[NROVEZES] )
+			        RETURN
+			            IF (
+			                ISBLANK ( BaseDate ) || ISBLANK ( MonthsToAdd ),
+			                BLANK (),
+			                EDATE ( BaseDate, MonthsToAdd )
+			            )
+			```
 		formatString: Short Date
 		lineageTag: 8e258c06-61d1-4ced-b324-9b54670f457e
 		summarizeBy: none

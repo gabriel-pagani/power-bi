@@ -17,17 +17,54 @@
           "projections": [
             {
               "field": {
-                "Column": {
+                "HierarchyLevel": {
                   "Expression": {
-                    "SourceRef": {
-                      "Entity": "Treinamentos"
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Treinamentos"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "VENCIMENTO"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
                     }
                   },
-                  "Property": "VENCIMENTO"
+                  "Level": "Year"
                 }
               },
               "queryRef": "Treinamentos.VENCIMENTO.Variation.Date Hierarchy.Year",
               "nativeQueryRef": "VENCIMENTO Year",
+              "active": true
+            },
+            {
+              "field": {
+                "HierarchyLevel": {
+                  "Expression": {
+                    "Hierarchy": {
+                      "Expression": {
+                        "PropertyVariationSource": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Treinamentos"
+                            }
+                          },
+                          "Name": "Variation",
+                          "Property": "VENCIMENTO"
+                        }
+                      },
+                      "Hierarchy": "Date Hierarchy"
+                    }
+                  },
+                  "Level": "Month"
+                }
+              },
+              "queryRef": "Treinamentos.VENCIMENTO.Variation.Date Hierarchy.Month",
+              "nativeQueryRef": "VENCIMENTO Month",
               "active": true
             }
           ]
