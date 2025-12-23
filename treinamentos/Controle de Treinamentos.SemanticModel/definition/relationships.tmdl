@@ -1,0 +1,15 @@
+relationship f24a4598-735c-47bd-82ec-53bcff6623ca
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Treinamentos.RECCREATEDON
+	toColumn: LocalDateTable_bc687a30-d978-4f1c-90b8-7fea97af5b63.Date
+
+relationship 4a972fc7-40ff-4b1a-a037-df6610d05387
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Treinamentos.RECMODIFIEDON
+	toColumn: LocalDateTable_f6a14830-13dc-4c70-ad3d-430079c25791.Date
+
+relationship 3d66b0f6-a383-40cb-8eed-9189eba6f20e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Treinamentos.VENCIMENTO
+	toColumn: LocalDateTable_4943af6a-fd40-4361-a85a-db444ea572f6.Date
+

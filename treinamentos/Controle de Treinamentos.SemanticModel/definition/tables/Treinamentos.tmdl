@@ -1,0 +1,112 @@
+table Treinamentos
+	lineageTag: 3b054625-e0d7-4918-9850-727b308db965
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 1ca3c772-1957-4b6d-9fdd-f7f9fa7a4c5f
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: 119411b1-75d9-40ea-8147-56c1e74608a4
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODEVENTO
+		dataType: string
+		lineageTag: 4363c350-a017-49c0-8cd0-d767e6cae8ce
+		summarizeBy: none
+		sourceColumn: CODEVENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DESCRICAO
+		dataType: string
+		lineageTag: 0c301c5d-6d71-45b8-8276-afe4097392dc
+		summarizeBy: none
+		sourceColumn: DESCRICAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column VALOR
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 128b5aa9-8513-4614-90eb-f141deb7d676
+		summarizeBy: sum
+		sourceColumn: VALOR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column NROVEZES
+		dataType: int64
+		formatString: 0
+		lineageTag: 034298c9-fe63-4f1a-988e-063e0d74237c
+		summarizeBy: sum
+		sourceColumn: NROVEZES
+
+		annotation SummarizationSetBy = Automatic
+
+	column RECCREATEDON
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: dc58f6b9-6241-4b4b-bcc3-1e9d429a2577
+		summarizeBy: none
+		sourceColumn: RECCREATEDON
+
+		variation Variation
+			isDefault
+			relationship: f24a4598-735c-47bd-82ec-53bcff6623ca
+			defaultHierarchy: LocalDateTable_bc687a30-d978-4f1c-90b8-7fea97af5b63.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column RECMODIFIEDON
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 397adb84-67b9-4ec3-b059-96f49193a12c
+		summarizeBy: none
+		sourceColumn: RECMODIFIEDON
+
+		variation Variation
+			isDefault
+			relationship: 4a972fc7-40ff-4b1a-a037-df6610d05387
+			defaultHierarchy: LocalDateTable_f6a14830-13dc-4c70-ad3d-430079c25791.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column VENCIMENTO = DATEADD(Treinamentos[RECCREATEDON], Treinamentos[NROVEZES] + 1, MONTH)
+		formatString: Short Date
+		lineageTag: 8e258c06-61d1-4ced-b324-9b54670f457e
+		summarizeBy: none
+
+		variation Variation
+			isDefault
+			relationship: 3d66b0f6-a383-40cb-8eed-9189eba6f20e
+			defaultHierarchy: LocalDateTable_4943af6a-fd40-4361-a85a-db444ea572f6.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Treinamentos = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab) PFCODFIX.CODCOLIGADA,#(lf)#(tab) PFCODFIX.CHAPA,#(lf)#(tab) PFCODFIX.CODEVENTO,#(lf)#(tab) PEVENTO.DESCRICAO,#(lf)#(tab) PFCODFIX.VALOR,#(lf)#(tab) PFCODFIX.NROVEZES,#(lf)#(tab) PFCODFIX.RECCREATEDON,#(lf)#(tab) PFCODFIX.RECMODIFIEDON#(lf)#(lf)FROM PFCODFIX #(lf)#(tab)JOIN PEVENTO ON PEVENTO.CODCOLIGADA = PFCODFIX.CODCOLIGADA AND PEVENTO.CODIGO = PFCODFIX.CODEVENTO#(lf)#(tab)#(lf)WHERE 1=1#(lf)#(tab)AND PFCODFIX.CODEVENTO = '9161'#(lf)#(lf)ORDER BY#(lf)#(tab)PFCODFIX.NROVEZES DESC#(lf)"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}, {"CHAPA", type text}, {"VALOR", Currency.Type}, {"NROVEZES", Int64.Type}, {"RECCREATEDON", type date}, {"RECMODIFIEDON", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

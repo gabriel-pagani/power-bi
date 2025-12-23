@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Controle de Treinamentos"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "82f2ad37-c134-4b33-8ef7-dbf4d8929531"
+  }
+}

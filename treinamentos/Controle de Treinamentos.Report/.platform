@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Controle de Treinamentos"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "590f5b23-390c-4011-b288-5f23e8ffc624"
+  }
+}
