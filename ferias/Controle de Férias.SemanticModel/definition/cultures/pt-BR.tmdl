@@ -33,6 +33,16 @@ cultureInfo pt-BR
 			          "coligada": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Col": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -64,6 +74,16 @@ cultureInfo pt-BR
 			        {
 			          "nome": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Colaborador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -261,6 +281,16 @@ cultureInfo pt-BR
 			            "State": "Generated",
 			            "Weight": 0.7
 			          }
+			        },
+			        {
+			          "Gozo 6 Meses": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -313,7 +343,7 @@ cultureInfo pt-BR
 			          }
 			        },
 			        {
-			          "Férias Abonadas": {
+			          "Férias Lançadas": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
