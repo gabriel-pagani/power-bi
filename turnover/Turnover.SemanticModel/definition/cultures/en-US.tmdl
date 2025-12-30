@@ -209,7 +209,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "medida.admitidos": {
+			    "medida.admissoes": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
@@ -219,7 +219,7 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "admitidos": {
+			          "admissoes": {
 			            "State": "Generated"
 			          }
 			        },
@@ -235,7 +235,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "medida.demitidos": {
+			    "medida.demissoes": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
@@ -245,7 +245,7 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "demitidos": {
+			          "demissoes": {
 			            "State": "Generated"
 			          }
 			        },
@@ -276,7 +276,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Total de Colaboradores Ativos": {
+			          "Colaboradores Ativos": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -286,7 +286,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Colaboradores": {
+			          "Total de Colaboradores Ativos": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1177,15 +1177,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "medida_has_totalcolaboradores": {
+			    "funcionario_has_medida_totalcolaboradores": {
 			      "Binding": {
-			        "ConceptualEntity": "Medidas"
+			        "ConceptualEntity": "Funcionarios"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "medida": {
+			        "funcionario": {
 			          "Target": {
-			            "Entity": "medida"
+			            "Entity": "funcionario"
 			          }
 			        },
 			        "medida.totalcolaboradores": {
@@ -1198,7 +1198,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "medida"
+			              "Role": "funcionario"
 			            },
 			            "Object": {
 			              "Role": "medida.totalcolaboradores"
@@ -1206,11 +1206,11 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "medidas_have_totalcolaboradores"
+			          "ID": "funcionarios_have_totalcolaboradores"
 			        }
 			      ]
 			    },
-			    "funcionario_has_medida_demitidos": {
+			    "funcionario_has_medida_demissoes": {
 			      "Binding": {
 			        "ConceptualEntity": "Funcionarios"
 			      },
@@ -1221,9 +1221,9 @@ cultureInfo en-US
 			            "Entity": "funcionario"
 			          }
 			        },
-			        "medida.demitidos": {
+			        "medida.demissoes": {
 			          "Target": {
-			            "Entity": "medida.demitidos"
+			            "Entity": "medida.demissoes"
 			          }
 			        }
 			      },
@@ -1234,16 +1234,16 @@ cultureInfo en-US
 			              "Role": "funcionario"
 			            },
 			            "Object": {
-			              "Role": "medida.demitidos"
+			              "Role": "medida.demissoes"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "funcionarios_have_demitidos"
+			          "ID": "funcionarios_have_demissoes"
 			        }
 			      ]
 			    },
-			    "funcionario_has_medida_admitidos": {
+			    "funcionario_has_medida_admissoes": {
 			      "Binding": {
 			        "ConceptualEntity": "Funcionarios"
 			      },
@@ -1254,9 +1254,9 @@ cultureInfo en-US
 			            "Entity": "funcionario"
 			          }
 			        },
-			        "medida.admitidos": {
+			        "medida.admissoes": {
 			          "Target": {
-			            "Entity": "medida.admitidos"
+			            "Entity": "medida.admissoes"
 			          }
 			        }
 			      },
@@ -1267,12 +1267,12 @@ cultureInfo en-US
 			              "Role": "funcionario"
 			            },
 			            "Object": {
-			              "Role": "medida.admitidos"
+			              "Role": "medida.admissoes"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "funcionarios_have_admitidos"
+			          "ID": "funcionarios_have_admissoes"
 			        }
 			      ]
 			    },
