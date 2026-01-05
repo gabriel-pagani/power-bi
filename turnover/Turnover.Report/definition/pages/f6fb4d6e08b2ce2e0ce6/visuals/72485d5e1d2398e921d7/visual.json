@@ -23,7 +23,7 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "TOTALCOLABORADORES"
+                  "Property": "ATIVOS_FIM_PERIODO"
                 }
               },
               "queryRef": "Medidas.TOTALDECOLABORADORES",
@@ -43,7 +43,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "TOTALCOLABORADORES"
+                "Property": "ATIVOS_FIM_PERIODO"
               }
             },
             "direction": "Descending"
@@ -80,7 +80,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "TOTALCOLABORADORES"
+            "Property": "ATIVOS_FIM_PERIODO"
           }
         },
         "type": "Advanced"

@@ -261,18 +261,25 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "medida.totalcolaboradores": {
+			    "medida.ativos_fim_periodo": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medidas",
-			          "ConceptualProperty": "TOTALCOLABORADORES"
+			          "ConceptualProperty": "ATIVOS_FIM_PERIODO"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "totalcolaboradores": {
+			          "ativos fim periodo": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ATIVOS_FIM_PERIODO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
 			          }
 			        },
 			        {
@@ -287,6 +294,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "Total de Colaboradores Ativos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Ativos no Fim do Período": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -765,6 +782,128 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "medida.ativos_inicio_periodo": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "ATIVOS_INICIO_PERIODO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ativos inicio periodo": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "ATIVOS_INICIO_PERIODO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Ativos no Início do Período": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.turnover_v_2": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "TURNOVER_V2"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "turnover v 2": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TURNOVER_V2": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "v 2": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "income v 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "revenue v 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "business v 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "throughput v 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "trade v 2": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.468
+			          }
+			        },
+			        {
+			          "Turnover": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -979,6 +1118,72 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "funcionario_has_medida_turnover_v_2": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "medida.turnover_v_2": {
+			          "Target": {
+			            "Entity": "medida.turnover_v_2"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "medida.turnover_v_2"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_turnover_v_2"
+			        }
+			      ]
+			    },
+			    "funcionario_has_medida_ativos_inicio_periodo": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "medida.ativos_inicio_periodo": {
+			          "Target": {
+			            "Entity": "medida.ativos_inicio_periodo"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "medida.ativos_inicio_periodo"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_ativos_inicio_periodo"
+			        }
+			      ]
+			    },
 			    "calendario_has_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendario"
@@ -1177,7 +1382,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "funcionario_has_medida_totalcolaboradores": {
+			    "funcionario_has_medida_ativos_fim_periodo": {
 			      "Binding": {
 			        "ConceptualEntity": "Funcionarios"
 			      },
@@ -1188,9 +1393,9 @@ cultureInfo en-US
 			            "Entity": "funcionario"
 			          }
 			        },
-			        "medida.totalcolaboradores": {
+			        "medida.ativos_fim_periodo": {
 			          "Target": {
-			            "Entity": "medida.totalcolaboradores"
+			            "Entity": "medida.ativos_fim_periodo"
 			          }
 			        }
 			      },
@@ -1201,12 +1406,12 @@ cultureInfo en-US
 			              "Role": "funcionario"
 			            },
 			            "Object": {
-			              "Role": "medida.totalcolaboradores"
+			              "Role": "medida.ativos_fim_periodo"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "funcionarios_have_totalcolaboradores"
+			          "ID": "funcionarios_have_ativos_fim_periodo"
 			        }
 			      ]
 			    },

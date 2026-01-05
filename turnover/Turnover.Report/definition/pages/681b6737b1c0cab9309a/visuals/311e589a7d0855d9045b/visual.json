@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "68b5695a39882412309a",
+  "name": "311e589a7d0855d9045b",
   "position": {
     "x": 0,
-    "y": 120,
-    "z": 4001,
-    "height": 530,
+    "y": 128.88888888888889,
+    "z": 5000,
+    "height": 521.11111111111109,
     "width": 1280,
-    "tabOrder": 6001
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "lineClusteredColumnComboChart",
@@ -45,9 +45,9 @@
                   "Property": "ATIVOS_FIM_PERIODO"
                 }
               },
-              "queryRef": "Medidas.TOTALCOLABORADORES",
-              "nativeQueryRef": "Colaboradores Ativos",
-              "displayName": "Colaboradores Ativos"
+              "queryRef": "Medidas.ATIVOS_FIM_PERIODO",
+              "nativeQueryRef": "Ativos no Fim do Período",
+              "displayName": "Ativos no Fim do Período"
             }
           ]
         },
@@ -61,10 +61,10 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "TURNOVER"
+                  "Property": "TURNOVER_V2"
                 }
               },
-              "queryRef": "Medidas.TURNOVER",
+              "queryRef": "Medidas.TURNOVER_V2",
               "nativeQueryRef": "Turnover",
               "displayName": "Turnover"
             }
@@ -218,7 +218,21 @@
   "filterConfig": {
     "filters": [
       {
-        "name": "fa90659974580213bc15",
+        "name": "182027291e8038d000b9",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Funcionarios"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "f9a26737e0599ac02039",
         "field": {
           "Measure": {
             "Expression": {
@@ -226,7 +240,7 @@
                 "Entity": "Medidas"
               }
             },
-            "Property": "TURNOVER"
+            "Property": "TURNOVER_V2"
           }
         },
         "type": "Advanced",
@@ -251,7 +265,7 @@
                           "Source": "m"
                         }
                       },
-                      "Property": "TURNOVER"
+                      "Property": "TURNOVER_V2"
                     }
                   },
                   "Right": {
@@ -264,34 +278,6 @@
             }
           ]
         }
-      },
-      {
-        "name": "de64efa80a85340f2130",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Funcionarios"
-              }
-            },
-            "Property": "SECAO"
-          }
-        },
-        "type": "Categorical"
-      },
-      {
-        "name": "6fed096c710fb3456556",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "ATIVOS_FIM_PERIODO"
-          }
-        },
-        "type": "Advanced"
       }
     ]
   }

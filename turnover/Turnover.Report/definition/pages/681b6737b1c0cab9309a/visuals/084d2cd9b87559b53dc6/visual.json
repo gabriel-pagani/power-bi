@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
-  "name": "1638e6a208952404d887",
+  "name": "084d2cd9b87559b53dc6",
   "position": {
-    "x": 960,
+    "x": 0,
     "y": 0,
-    "z": 4000,
+    "z": 1000,
     "height": 120,
-    "width": 320,
+    "width": 425.55555555555554,
     "tabOrder": 4000
   },
   "visual": {
@@ -23,12 +23,12 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "TURNOVER"
+                  "Property": "ATIVOS_INICIO_PERIODO"
                 }
               },
-              "queryRef": "Medidas.TURNOVER",
-              "nativeQueryRef": "TURNOVER",
-              "displayName": "Turnover"
+              "queryRef": "Medidas.ATIVOS_INICIO_PERIODO",
+              "nativeQueryRef": "Ativos no Início do Período",
+              "displayName": "Ativos no Início do Período"
             }
           ]
         }
@@ -43,7 +43,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "TURNOVER"
+                "Property": "ATIVOS_INICIO_PERIODO"
               }
             },
             "direction": "Descending"
@@ -51,21 +51,6 @@
         ],
         "isDefaultSort": true
       }
-    },
-    "objects": {
-      "labels": [
-        {
-          "properties": {
-            "labelDisplayUnits": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
-              }
-            }
-          }
-        }
-      ]
     },
     "visualContainerObjects": {
       "background": [
@@ -83,23 +68,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "91a0a647971ae01e177c",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "TURNOVER"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }

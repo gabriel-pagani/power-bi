@@ -32,14 +32,24 @@ table Medidas
 		formatString: 0
 		lineageTag: 9f3a0fe8-d21a-451a-84d4-a22fd6e47dc3
 
-	measure TOTALCOLABORADORES = ```
+	measure ATIVOS_FIM_PERIODO = ```
 			
-			VAR Ref = IF(MAX(Calendario[Date]) > TODAY(), TODAY(), MAX(Calendario[Date])) RETURN
+			VAR Ref = 
+			    IF(
+			        MAX(Calendario[Date]) > TODAY(), 
+			        TODAY(), 
+			        MAX(Calendario[Date])
+			    ) 
 			
+			RETURN
 			COALESCE(
 			    CALCULATE(
 			        COUNTROWS(Funcionarios),
-			        Funcionarios[DATAADMISSAO] <= Ref && (ISBLANK(Funcionarios[DATADEMISSAO]) || Funcionarios[DATADEMISSAO] > Ref),
+			        Funcionarios[DATAADMISSAO] <= Ref && 
+			        (
+			            ISBLANK(Funcionarios[DATADEMISSAO]) || 
+			            Funcionarios[DATADEMISSAO] > Ref
+			        ),
 			        REMOVEFILTERS(Calendario)
 			    ),
 			    0
@@ -49,9 +59,40 @@ table Medidas
 		formatString: 0
 		lineageTag: 41cb038d-5044-4adf-9930-e51b8df15fc6
 
-	measure TURNOVER = (([ADMISSOES] + [DEMISSOES]) / 2) / [TOTALCOLABORADORES]
-		formatString: 0.00%;-0.00%;0.00%
+	measure TURNOVER = (([ADMISSOES] + [DEMISSOES]) / 2) / [ATIVOS_FIM_PERIODO]
+		formatString: 0.0%;-0.0%;0.0%
 		lineageTag: 34ce0d30-39a0-4977-b89e-5a70660ae6f3
+
+	measure ATIVOS_INICIO_PERIODO = ```
+			
+			VAR Ref = 
+			    IF(
+			        MIN(Calendario[Date]) > TODAY(), 
+			        TODAY(), 
+			        MIN(Calendario[Date])
+			    ) 
+			
+			RETURN
+			COALESCE(
+			    CALCULATE(
+			        COUNTROWS(Funcionarios),
+			        Funcionarios[DATAADMISSAO] <= Ref && 
+			        (
+			            ISBLANK(Funcionarios[DATADEMISSAO]) || 
+			            Funcionarios[DATADEMISSAO] > Ref
+			        ),
+			        REMOVEFILTERS(Calendario)
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 423fdf0a-692a-46a4-9a0a-3f5b164c2af0
+
+	measure TURNOVER_V2 = ([DEMISSOES] / (([ATIVOS_INICIO_PERIODO] + [ATIVOS_FIM_PERIODO]) / 2))
+		formatString: 0.0%;-0.0%;0.0%
+		lineageTag: 65553983-8cfe-46a1-a13b-3de68b73a8d3
 
 	partition Medidas = m
 		mode: import
