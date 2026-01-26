@@ -2,10 +2,10 @@ cultureInfo pt-BR
 
 	linguisticMetadata =
 			{
-			  "Version": "3.5.0",
+			  "Version": "4.1.0",
 			  "Language": "en-US",
 			  "Entities": {
-			    "f_féria": {
+			    "féria": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias"
@@ -20,7 +20,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria.coligada": {
+			    "féria.coligada": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -46,7 +46,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria.chapa": {
+			    "féria.chapa": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -62,7 +62,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria.nome": {
+			    "féria.nome": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -88,7 +88,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria.secao": {
+			    "féria.secao": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -101,10 +101,20 @@ cultureInfo pt-BR
 			          "secao": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Setor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
-			    "f_féria.situacao": {
+			    "féria.situacao": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -130,7 +140,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria.hoje": {
+			    "féria.hoje": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -153,7 +163,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "f_féria.dataadmissao": {
+			    "féria.dataadmissao": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -176,7 +186,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "f_féria.inicioperaquis": {
+			    "féria.inicioperaquis": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -199,7 +209,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "f_féria.fimperaquis": {
+			    "féria.fimperaquis": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -232,7 +242,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "f_féria.fimperconcessivo": {
+			    "féria.fimperconcessivo": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -255,7 +265,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "f_féria.limitegozo_6mese": {
+			    "féria.limitegozo_6mese": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -295,7 +305,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "f_féria.limitegozo": {
+			    "féria.limitegozo": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -328,7 +338,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "f_féria.feriasabonada": {
+			    "féria.feriasabonada": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -354,7 +364,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria.falta": {
+			    "féria.falta": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -380,7 +390,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria.saldoperiodo": {
+			    "féria.saldoperiodo": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -406,7 +416,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria.status": {
+			    "féria.status": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Férias",
@@ -653,7 +663,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario": {
+			    "calendário": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Calendário"
@@ -668,7 +678,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario.date": {
+			    "calendário.date": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Calendário",
@@ -705,7 +715,7 @@ cultureInfo pt-BR
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "d_calendario.date.variation.hierarquia_de_data": {
+			    "calendário.date.hierarquia_de_data": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Calendário",
@@ -793,7 +803,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario.date.variation.hierarquia_de_data.ano": {
+			    "calendário.date.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Calendário",
@@ -837,7 +847,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario.date.variation.hierarquia_de_data.trimestre": {
+			    "calendário.date.trimestre": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Calendário",
@@ -881,7 +891,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario.date.variation.hierarquia_de_data.mê": {
+			    "calendário.date.mê": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Calendário",
@@ -925,7 +935,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario.date.variation.hierarquia_de_data.dia": {
+			    "calendário.date.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Calendário",
@@ -969,7 +979,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario.dia": {
+			    "calendário.dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Calendário",
@@ -985,7 +995,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario.numero_me": {
+			    "calendário.numero_me": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Calendário",
@@ -1008,7 +1018,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario.me": {
+			    "calendário.me": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Calendário",
@@ -1024,7 +1034,7 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario.ano": {
+			    "calendário.ano": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Calendário",
@@ -1039,23 +1049,39 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
+			    },
+			    "medida.com_férias_à_vencer_em_6_meses": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Com Férias à Vencer em 6 meses"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "com férias à vencer em 6 meses": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "d_calendario_date_variation_hierarquia_de_data_mê_has_d_calendario_date_variation_hierarquia_de_data_dia": {
+			    "calendário_date_trimestre_has_calendário_date_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendário"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario.date.variation.hierarquia_de_data.mê": {
+			        "calendário.date.trimestre": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data.mê"
+			            "Entity": "calendário.date.trimestre"
 			          }
 			        },
-			        "d_calendario.date.variation.hierarquia_de_data.dia": {
+			        "calendário.date.mê": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data.dia"
+			            "Entity": "calendário.date.mê"
 			          }
 			        }
 			      },
@@ -1063,76 +1089,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+			              "Role": "calendário.date.trimestre"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_dias"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_have_mê"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dias_are_in_mê"
-			        }
-			      ]
-			    },
-			    "d_calendario_date_variation_hierarquia_de_data_trimestre_has_d_calendario_date_variation_hierarquia_de_data_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendário"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "d_calendario.date.variation.hierarquia_de_data.trimestre": {
-			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data.trimestre"
-			          }
-			        },
-			        "d_calendario.date.variation.hierarquia_de_data.mê": {
-			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data.mê"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
-			            },
-			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+			              "Role": "calendário.date.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -1142,10 +1102,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+			              "Role": "calendário.date.mê"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			              "Role": "calendário.date.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -1155,7 +1115,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+			              "Role": "calendário.date.mê"
 			            },
 			            "Prepositions": [
 			              {
@@ -1165,7 +1125,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			              "Role": "calendário.date.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -1174,20 +1134,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario_date_variation_hierarquia_de_data_ano_has_d_calendario_date_variation_hierarquia_de_data_trimestre": {
+			    "calendário_date_ano_has_calendário_date_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendário"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario.date.variation.hierarquia_de_data.ano": {
+			        "calendário.date.ano": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data.ano"
+			            "Entity": "calendário.date.ano"
 			          }
 			        },
-			        "d_calendario.date.variation.hierarquia_de_data.trimestre": {
+			        "calendário.date.trimestre": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			            "Entity": "calendário.date.trimestre"
 			          }
 			        }
 			      },
@@ -1195,10 +1155,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
+			              "Role": "calendário.date.ano"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			              "Role": "calendário.date.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -1208,10 +1168,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			              "Role": "calendário.date.trimestre"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
+			              "Role": "calendário.date.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -1221,7 +1181,7 @@ cultureInfo pt-BR
 			        {
 			          "Preposition": {
 			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			              "Role": "calendário.date.trimestre"
 			            },
 			            "Prepositions": [
 			              {
@@ -1231,7 +1191,7 @@ cultureInfo pt-BR
 			              }
 			            ],
 			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
+			              "Role": "calendário.date.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -1240,20 +1200,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario_date_variation_hierarquia_de_data_has_dia": {
+			    "calendário_date_hierarquia_de_data_has_calendário_date_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendário"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario.date.variation.hierarquia_de_data": {
+			        "calendário.date.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data"
+			            "Entity": "calendário.date.hierarquia_de_data"
 			          }
 			        },
-			        "d_calendario.date.variation.hierarquia_de_data.dia": {
+			        "calendário.date.dia": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data.dia"
+			            "Entity": "calendário.date.dia"
 			          }
 			        }
 			      },
@@ -1261,10 +1221,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data"
+			              "Role": "calendário.date.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.dia"
+			              "Role": "calendário.date.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -1273,20 +1233,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario_date_variation_hierarquia_de_data_has_mê": {
+			    "calendário_date_hierarquia_de_data_has_calendário_date_mê": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendário"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario.date.variation.hierarquia_de_data": {
+			        "calendário.date.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data"
+			            "Entity": "calendário.date.hierarquia_de_data"
 			          }
 			        },
-			        "d_calendario.date.variation.hierarquia_de_data.mê": {
+			        "calendário.date.mê": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data.mê"
+			            "Entity": "calendário.date.mê"
 			          }
 			        }
 			      },
@@ -1294,10 +1254,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data"
+			              "Role": "calendário.date.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.mê"
+			              "Role": "calendário.date.mê"
 			            }
 			          },
 			          "State": "Generated",
@@ -1306,20 +1266,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario_date_variation_hierarquia_de_data_has_trimestre": {
+			    "calendário_date_hierarquia_de_data_has_calendário_date_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendário"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario.date.variation.hierarquia_de_data": {
+			        "calendário.date.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data"
+			            "Entity": "calendário.date.hierarquia_de_data"
 			          }
 			        },
-			        "d_calendario.date.variation.hierarquia_de_data.trimestre": {
+			        "calendário.date.trimestre": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			            "Entity": "calendário.date.trimestre"
 			          }
 			        }
 			      },
@@ -1327,10 +1287,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data"
+			              "Role": "calendário.date.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.trimestre"
+			              "Role": "calendário.date.trimestre"
 			            }
 			          },
 			          "State": "Generated",
@@ -1339,20 +1299,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario_date_variation_hierarquia_de_data_has_ano": {
+			    "calendário_date_hierarquia_de_data_has_calendário_date_ano": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendário"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario.date.variation.hierarquia_de_data": {
+			        "calendário.date.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data"
+			            "Entity": "calendário.date.hierarquia_de_data"
 			          }
 			        },
-			        "d_calendario.date.variation.hierarquia_de_data.ano": {
+			        "calendário.date.ano": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data.ano"
+			            "Entity": "calendário.date.ano"
 			          }
 			        }
 			      },
@@ -1360,10 +1320,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data"
+			              "Role": "calendário.date.hierarquia_de_data"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data.ano"
+			              "Role": "calendário.date.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -1372,20 +1332,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario_date_has_variation_hierarquia_de_data": {
+			    "calendário_date_has_hierarquia_de_data": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendário"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario.date": {
+			        "calendário.date": {
 			          "Target": {
-			            "Entity": "d_calendario.date"
+			            "Entity": "calendário.date"
 			          }
 			        },
-			        "d_calendario.date.variation.hierarquia_de_data": {
+			        "calendário.date.hierarquia_de_data": {
 			          "Target": {
-			            "Entity": "d_calendario.date.variation.hierarquia_de_data"
+			            "Entity": "calendário.date.hierarquia_de_data"
 			          }
 			        }
 			      },
@@ -1393,10 +1353,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario.date"
+			              "Role": "calendário.date"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.date.variation.hierarquia_de_data"
+			              "Role": "calendário.date.hierarquia_de_data"
 			            }
 			          },
 			          "State": "Generated",
@@ -1405,20 +1365,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_d_calendario": {
+			    "féria_has_calendário": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "d_calendario": {
+			        "calendário": {
 			          "Target": {
-			            "Entity": "d_calendario"
+			            "Entity": "calendário"
 			          }
 			        }
 			      },
@@ -1426,10 +1386,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "d_calendario"
+			              "Role": "calendário"
 			            }
 			          },
 			          "State": "Generated",
@@ -1439,10 +1399,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario"
+			              "Role": "calendário"
 			            },
 			            "Object": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            }
 			          },
 			          "State": "Generated",
@@ -1451,20 +1411,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario_has_ano": {
+			    "féria_has_medida_com_férias_à_vencer_em_6_meses": {
 			      "Binding": {
-			        "ConceptualEntity": "Calendário"
+			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "d_calendario"
+			            "Entity": "féria"
 			          }
 			        },
-			        "d_calendario.ano": {
+			        "medida.com_férias_à_vencer_em_6_meses": {
 			          "Target": {
-			            "Entity": "d_calendario.ano"
+			            "Entity": "medida.com_férias_à_vencer_em_6_meses"
 			          }
 			        }
 			      },
@@ -1472,10 +1432,43 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.ano"
+			              "Role": "medida.com_férias_à_vencer_em_6_meses"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_com_férias_à_vencer_em_6_meses"
+			        }
+			      ]
+			    },
+			    "calendário_has_ano": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendário": {
+			          "Target": {
+			            "Entity": "calendário"
+			          }
+			        },
+			        "calendário.ano": {
+			          "Target": {
+			            "Entity": "calendário.ano"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendário"
+			            },
+			            "Object": {
+			              "Role": "calendário.ano"
 			            }
 			          },
 			          "State": "Generated",
@@ -1484,20 +1477,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario_has_me": {
+			    "calendário_has_me": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendário"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario": {
+			        "calendário": {
 			          "Target": {
-			            "Entity": "d_calendario"
+			            "Entity": "calendário"
 			          }
 			        },
-			        "d_calendario.me": {
+			        "calendário.me": {
 			          "Target": {
-			            "Entity": "d_calendario.me"
+			            "Entity": "calendário.me"
 			          }
 			        }
 			      },
@@ -1505,10 +1498,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario"
+			              "Role": "calendário"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.me"
+			              "Role": "calendário.me"
 			            }
 			          },
 			          "State": "Generated",
@@ -1517,20 +1510,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario_has_numero_me": {
+			    "calendário_has_numero_me": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendário"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario": {
+			        "calendário": {
 			          "Target": {
-			            "Entity": "d_calendario"
+			            "Entity": "calendário"
 			          }
 			        },
-			        "d_calendario.numero_me": {
+			        "calendário.numero_me": {
 			          "Target": {
-			            "Entity": "d_calendario.numero_me"
+			            "Entity": "calendário.numero_me"
 			          }
 			        }
 			      },
@@ -1538,10 +1531,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario"
+			              "Role": "calendário"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.numero_me"
+			              "Role": "calendário.numero_me"
 			            }
 			          },
 			          "State": "Generated",
@@ -1550,20 +1543,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario_has_dia": {
+			    "calendário_has_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendário"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario": {
+			        "calendário": {
 			          "Target": {
-			            "Entity": "d_calendario"
+			            "Entity": "calendário"
 			          }
 			        },
-			        "d_calendario.dia": {
+			        "calendário.dia": {
 			          "Target": {
-			            "Entity": "d_calendario.dia"
+			            "Entity": "calendário.dia"
 			          }
 			        }
 			      },
@@ -1571,10 +1564,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario"
+			              "Role": "calendário"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.dia"
+			              "Role": "calendário.dia"
 			            }
 			          },
 			          "State": "Generated",
@@ -1583,20 +1576,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "d_calendario_has_date": {
+			    "calendário_has_date": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendário"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "d_calendario": {
+			        "calendário": {
 			          "Target": {
-			            "Entity": "d_calendario"
+			            "Entity": "calendário"
 			          }
 			        },
-			        "d_calendario.date": {
+			        "calendário.date": {
 			          "Target": {
-			            "Entity": "d_calendario.date"
+			            "Entity": "calendário.date"
 			          }
 			        }
 			      },
@@ -1604,10 +1597,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "d_calendario"
+			              "Role": "calendário"
 			            },
 			            "Object": {
-			              "Role": "d_calendario.date"
+			              "Role": "calendário.date"
 			            }
 			          },
 			          "State": "Generated",
@@ -1649,15 +1642,15 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_medida_com_férias_parciais": {
+			    "féria_has_medida_com_férias_parciais": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
 			        "medida.com_férias_parciais": {
@@ -1670,7 +1663,7 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
 			              "Role": "medida.com_férias_parciais"
@@ -1682,15 +1675,15 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_medida_com_férias_abonadas": {
+			    "féria_has_medida_com_férias_abonadas": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
 			        "medida.com_férias_abonadas": {
@@ -1703,7 +1696,7 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
 			              "Role": "medida.com_férias_abonadas"
@@ -1715,15 +1708,15 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_medida_com_férias_à_vencer": {
+			    "féria_has_medida_com_férias_à_vencer": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
 			        "medida.com_férias_à_vencer": {
@@ -1736,7 +1729,7 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
 			              "Role": "medida.com_férias_à_vencer"
@@ -1748,15 +1741,15 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_medida_com_férias_vencidas": {
+			    "féria_has_medida_com_férias_vencidas": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
 			        "medida.com_férias_vencidas": {
@@ -1769,7 +1762,7 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
 			              "Role": "medida.com_férias_vencidas"
@@ -1781,15 +1774,15 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_medida_total_de_colaboradores": {
+			    "féria_has_medida_total_de_colaboradores": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
 			        "medida.total_de_colaboradores": {
@@ -1802,7 +1795,7 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
 			              "Role": "medida.total_de_colaboradores"
@@ -1814,20 +1807,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_status": {
+			    "féria_has_status": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.status": {
+			        "féria.status": {
 			          "Target": {
-			            "Entity": "f_féria.status"
+			            "Entity": "féria.status"
 			          }
 			        }
 			      },
@@ -1835,10 +1828,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.status"
+			              "Role": "féria.status"
 			            }
 			          },
 			          "State": "Generated",
@@ -1847,20 +1840,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_saldoperiodo": {
+			    "féria_has_saldoperiodo": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.saldoperiodo": {
+			        "féria.saldoperiodo": {
 			          "Target": {
-			            "Entity": "f_féria.saldoperiodo"
+			            "Entity": "féria.saldoperiodo"
 			          }
 			        }
 			      },
@@ -1868,10 +1861,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.saldoperiodo"
+			              "Role": "féria.saldoperiodo"
 			            }
 			          },
 			          "State": "Generated",
@@ -1880,20 +1873,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_falta": {
+			    "féria_has_falta": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.falta": {
+			        "féria.falta": {
 			          "Target": {
-			            "Entity": "f_féria.falta"
+			            "Entity": "féria.falta"
 			          }
 			        }
 			      },
@@ -1901,10 +1894,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.falta"
+			              "Role": "féria.falta"
 			            }
 			          },
 			          "State": "Generated",
@@ -1913,20 +1906,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_feriasabonada": {
+			    "féria_has_feriasabonada": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.feriasabonada": {
+			        "féria.feriasabonada": {
 			          "Target": {
-			            "Entity": "f_féria.feriasabonada"
+			            "Entity": "féria.feriasabonada"
 			          }
 			        }
 			      },
@@ -1934,10 +1927,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.feriasabonada"
+			              "Role": "féria.feriasabonada"
 			            }
 			          },
 			          "State": "Generated",
@@ -1946,20 +1939,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_limitegozo": {
+			    "féria_has_limitegozo": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.limitegozo": {
+			        "féria.limitegozo": {
 			          "Target": {
-			            "Entity": "f_féria.limitegozo"
+			            "Entity": "féria.limitegozo"
 			          }
 			        }
 			      },
@@ -1967,10 +1960,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.limitegozo"
+			              "Role": "féria.limitegozo"
 			            }
 			          },
 			          "State": "Generated",
@@ -1979,20 +1972,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_limitegozo_6mese": {
+			    "féria_has_limitegozo_6mese": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.limitegozo_6mese": {
+			        "féria.limitegozo_6mese": {
 			          "Target": {
-			            "Entity": "f_féria.limitegozo_6mese"
+			            "Entity": "féria.limitegozo_6mese"
 			          }
 			        }
 			      },
@@ -2000,10 +1993,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.limitegozo_6mese"
+			              "Role": "féria.limitegozo_6mese"
 			            }
 			          },
 			          "State": "Generated",
@@ -2012,20 +2005,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_fimperconcessivo": {
+			    "féria_has_fimperconcessivo": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.fimperconcessivo": {
+			        "féria.fimperconcessivo": {
 			          "Target": {
-			            "Entity": "f_féria.fimperconcessivo"
+			            "Entity": "féria.fimperconcessivo"
 			          }
 			        }
 			      },
@@ -2033,10 +2026,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.fimperconcessivo"
+			              "Role": "féria.fimperconcessivo"
 			            }
 			          },
 			          "State": "Generated",
@@ -2045,20 +2038,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_fimperaquis": {
+			    "féria_has_fimperaquis": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.fimperaquis": {
+			        "féria.fimperaquis": {
 			          "Target": {
-			            "Entity": "f_féria.fimperaquis"
+			            "Entity": "féria.fimperaquis"
 			          }
 			        }
 			      },
@@ -2066,10 +2059,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.fimperaquis"
+			              "Role": "féria.fimperaquis"
 			            }
 			          },
 			          "State": "Generated",
@@ -2078,20 +2071,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_inicioperaquis": {
+			    "féria_has_inicioperaquis": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.inicioperaquis": {
+			        "féria.inicioperaquis": {
 			          "Target": {
-			            "Entity": "f_féria.inicioperaquis"
+			            "Entity": "féria.inicioperaquis"
 			          }
 			        }
 			      },
@@ -2099,10 +2092,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.inicioperaquis"
+			              "Role": "féria.inicioperaquis"
 			            }
 			          },
 			          "State": "Generated",
@@ -2111,20 +2104,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_dataadmissao": {
+			    "féria_has_dataadmissao": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.dataadmissao": {
+			        "féria.dataadmissao": {
 			          "Target": {
-			            "Entity": "f_féria.dataadmissao"
+			            "Entity": "féria.dataadmissao"
 			          }
 			        }
 			      },
@@ -2132,10 +2125,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.dataadmissao"
+			              "Role": "féria.dataadmissao"
 			            }
 			          },
 			          "State": "Generated",
@@ -2144,20 +2137,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_hoje": {
+			    "féria_has_hoje": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.hoje": {
+			        "féria.hoje": {
 			          "Target": {
-			            "Entity": "f_féria.hoje"
+			            "Entity": "féria.hoje"
 			          }
 			        }
 			      },
@@ -2165,10 +2158,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.hoje"
+			              "Role": "féria.hoje"
 			            }
 			          },
 			          "State": "Generated",
@@ -2177,20 +2170,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_situacao": {
+			    "féria_has_situacao": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.situacao": {
+			        "féria.situacao": {
 			          "Target": {
-			            "Entity": "f_féria.situacao"
+			            "Entity": "féria.situacao"
 			          }
 			        }
 			      },
@@ -2198,10 +2191,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.situacao"
+			              "Role": "féria.situacao"
 			            }
 			          },
 			          "State": "Generated",
@@ -2210,20 +2203,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_secao": {
+			    "féria_has_secao": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.secao": {
+			        "féria.secao": {
 			          "Target": {
-			            "Entity": "f_féria.secao"
+			            "Entity": "féria.secao"
 			          }
 			        }
 			      },
@@ -2231,10 +2224,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.secao"
+			              "Role": "féria.secao"
 			            }
 			          },
 			          "State": "Generated",
@@ -2243,20 +2236,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_nome": {
+			    "féria_has_nome": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.nome": {
+			        "féria.nome": {
 			          "Target": {
-			            "Entity": "f_féria.nome"
+			            "Entity": "féria.nome"
 			          }
 			        }
 			      },
@@ -2264,10 +2257,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.nome"
+			              "Role": "féria.nome"
 			            }
 			          },
 			          "State": "Generated",
@@ -2276,20 +2269,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_chapa": {
+			    "féria_has_chapa": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.chapa": {
+			        "féria.chapa": {
 			          "Target": {
-			            "Entity": "f_féria.chapa"
+			            "Entity": "féria.chapa"
 			          }
 			        }
 			      },
@@ -2297,10 +2290,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.chapa"
+			              "Role": "féria.chapa"
 			            }
 			          },
 			          "State": "Generated",
@@ -2309,20 +2302,20 @@ cultureInfo pt-BR
 			        }
 			      ]
 			    },
-			    "f_féria_has_coligada": {
+			    "féria_has_coligada": {
 			      "Binding": {
 			        "ConceptualEntity": "Férias"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "f_féria": {
+			        "féria": {
 			          "Target": {
-			            "Entity": "f_féria"
+			            "Entity": "féria"
 			          }
 			        },
-			        "f_féria.coligada": {
+			        "féria.coligada": {
 			          "Target": {
-			            "Entity": "f_féria.coligada"
+			            "Entity": "féria.coligada"
 			          }
 			        }
 			      },
@@ -2330,10 +2323,10 @@ cultureInfo pt-BR
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "f_féria"
+			              "Role": "féria"
 			            },
 			            "Object": {
-			              "Role": "f_féria.coligada"
+			              "Role": "féria.coligada"
 			            }
 			          },
 			          "State": "Generated",
@@ -2341,6 +2334,77 @@ cultureInfo pt-BR
 			          "ID": "férias_have_coligadas"
 			        }
 			      ]
+			    },
+			    "calendário_date_mê_has_calendário_date_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendário.date.mê": {
+			          "Target": {
+			            "Entity": "calendário.date.mê"
+			          }
+			        },
+			        "calendário.date.dia": {
+			          "Target": {
+			            "Entity": "calendário.date.dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendário.date.mê"
+			            },
+			            "Object": {
+			              "Role": "calendário.date.dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_dias"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendário.date.dia"
+			            },
+			            "Object": {
+			              "Role": "calendário.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_have_mê"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "calendário.date.dia"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "calendário.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dias_are_in_mê"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
 			    }
 			  }
 			}

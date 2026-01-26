@@ -1,5 +1,5 @@
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.0.0/schema.json",
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/report/3.1.0/schema.json",
   "themeCollection": {
     "baseTheme": {
       "name": "CY24SU10",
@@ -48,8 +48,13 @@
       "type": "RegisteredResources",
       "items": [
         {
-          "name": "Tabela_de_F_rias37808847121263933.svg",
-          "path": "Tabela_de_F_rias37808847121263933.svg",
+          "name": "Indicadores001109070715077043.svg",
+          "path": "Indicadores001109070715077043.svg",
+          "type": "Image"
+        },
+        {
+          "name": "Tabela6140710458254635.svg",
+          "path": "Tabela6140710458254635.svg",
           "type": "Image"
         }
       ]
