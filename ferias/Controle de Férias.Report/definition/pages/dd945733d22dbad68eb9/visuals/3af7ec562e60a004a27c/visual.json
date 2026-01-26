@@ -60,7 +60,7 @@
             "endDate": {
               "expr": {
                 "Literal": {
-                  "Value": "datetime'2025-12-18T00:00:00'"
+                  "Value": "datetime'2026-12-31T00:00:00'"
                 }
               }
             },
@@ -77,12 +77,19 @@
       "general": [
         {
           "properties": {
+            "responsive": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
             "filter": {
               "filter": {
                 "Version": 2,
                 "From": [
                   {
-                    "Name": "d",
+                    "Name": "c",
                     "Entity": "Calendário",
                     "Type": 0
                   }
@@ -96,7 +103,7 @@
                           "Column": {
                             "Expression": {
                               "SourceRef": {
-                                "Source": "d"
+                                "Source": "c"
                               }
                             },
                             "Property": "Date"
@@ -104,20 +111,13 @@
                         },
                         "Right": {
                           "Literal": {
-                            "Value": "datetime'2025-12-19T00:00:00'"
+                            "Value": "datetime'2027-01-01T00:00:00'"
                           }
                         }
                       }
                     }
                   }
                 ]
-              }
-            },
-            "responsive": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
               }
             }
           }
