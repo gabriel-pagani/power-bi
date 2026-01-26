@@ -1065,75 +1065,51 @@ cultureInfo pt-BR
 			          }
 			        }
 			      ]
-			    }
-			  },
-			  "Relationships": {
-			    "calendário_date_trimestre_has_calendário_date_mê": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendário"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendário.date.trimestre": {
-			          "Target": {
-			            "Entity": "calendário.date.trimestre"
-			          }
-			        },
-			        "calendário.date.mê": {
-			          "Target": {
-			            "Entity": "calendário.date.mê"
-			          }
+			    },
+			    "féria.feriasmarcada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Férias",
+			          "ConceptualProperty": "FERIASMARCADAS"
 			        }
 			      },
-			      "Phrasings": [
+			      "State": "Generated",
+			      "Terms": [
 			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendário.date.trimestre"
-			            },
-			            "Object": {
-			              "Role": "calendário.date.mê"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "trimestres_have_mê"
+			          "feriasmarcada": {
+			            "State": "Generated"
+			          }
 			        },
 			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendário.date.mê"
+			          "Férias Marcadas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
 			            },
-			            "Object": {
-			              "Role": "calendário.date.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_have_trimestres"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "calendário.date.mê"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "calendário.date.trimestre"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "mê_are_in_trimestres"
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
+			    "medida.com_férias_marcadas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "Com Férias Marcadas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "com férias marcadas": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
 			    "calendário_date_ano_has_calendário_date_trimestre": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendário"
@@ -1408,6 +1384,72 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendários_have_férias"
+			        }
+			      ]
+			    },
+			    "féria_has_medida_com_férias_marcadas": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "féria": {
+			          "Target": {
+			            "Entity": "féria"
+			          }
+			        },
+			        "medida.com_férias_marcadas": {
+			          "Target": {
+			            "Entity": "medida.com_férias_marcadas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "féria"
+			            },
+			            "Object": {
+			              "Role": "medida.com_férias_marcadas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_com_férias_marcadas"
+			        }
+			      ]
+			    },
+			    "féria_has_feriasmarcada": {
+			      "Binding": {
+			        "ConceptualEntity": "Férias"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "féria": {
+			          "Target": {
+			            "Entity": "féria"
+			          }
+			        },
+			        "féria.feriasmarcada": {
+			          "Target": {
+			            "Entity": "féria.feriasmarcada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "féria"
+			            },
+			            "Object": {
+			              "Role": "féria.feriasmarcada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "férias_have_feriasmarcadas"
 			        }
 			      ]
 			    },
@@ -2332,6 +2374,72 @@ cultureInfo pt-BR
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "férias_have_coligadas"
+			        }
+			      ]
+			    },
+			    "calendário_date_trimestre_has_calendário_date_mê": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendário"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendário.date.trimestre": {
+			          "Target": {
+			            "Entity": "calendário.date.trimestre"
+			          }
+			        },
+			        "calendário.date.mê": {
+			          "Target": {
+			            "Entity": "calendário.date.mê"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendário.date.trimestre"
+			            },
+			            "Object": {
+			              "Role": "calendário.date.mê"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "trimestres_have_mê"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendário.date.mê"
+			            },
+			            "Object": {
+			              "Role": "calendário.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_have_trimestres"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "calendário.date.mê"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "calendário.date.trimestre"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "mê_are_in_trimestres"
 			        }
 			      ]
 			    },

@@ -158,6 +158,21 @@
                       "Entity": "Férias"
                     }
                   },
+                  "Property": "FERIASMARCADAS"
+                }
+              },
+              "queryRef": "Sum(Férias.FERIASMARCADAS)",
+              "nativeQueryRef": "Férias Marcadas",
+              "displayName": "Férias Marcadas"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Férias"
+                    }
+                  },
                   "Property": "FERIASABONADAS"
                 }
               },
@@ -476,6 +491,20 @@
           },
           "selector": {
             "metadata": "Férias.SITUACAO"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Férias.FERIASMARCADAS)"
           }
         }
       ],
