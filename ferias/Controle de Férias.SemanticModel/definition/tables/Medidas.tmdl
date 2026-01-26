@@ -131,6 +131,20 @@ table Medidas
 		formatString: 0
 		lineageTag: d1302dc6-112c-4947-ba6f-15f6b13a7b2e
 
+	measure 'Com Férias Marcadas' = ```
+			
+			    COALESCE(
+			        CALCULATE(
+			            COUNTROWS('Férias'),
+			            'Férias'[STATUS] = "Férias Marcadas"
+			        ),
+			        0
+			    )
+			
+			```
+		formatString: 0
+		lineageTag: b9a29c28-71bf-4846-a473-b0995816990b
+
 	partition Medidas = m
 		mode: import
 		source =

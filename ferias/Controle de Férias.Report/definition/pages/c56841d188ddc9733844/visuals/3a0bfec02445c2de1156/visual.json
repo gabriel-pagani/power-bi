@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "3e12cbe6d0367d1856da",
+  "name": "3a0bfec02445c2de1156",
   "position": {
-    "x": 16,
+    "x": 324,
     "y": 181,
-    "z": 8000,
+    "z": 9001,
     "height": 253,
     "width": 308,
-    "tabOrder": 7000
+    "tabOrder": 9001
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,11 @@
                       "Entity": "Medidas"
                     }
                   },
-                  "Property": "Com Férias Abonadas"
+                  "Property": "Com Férias Marcadas"
                 }
               },
-              "queryRef": "Medidas.Com Férias Abonadas",
-              "nativeQueryRef": "Com Férias Abonadas"
+              "queryRef": "Medidas.Com Férias Marcadas",
+              "nativeQueryRef": "Com Férias Marcadas"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Medidas"
                   }
                 },
-                "Property": "Com Férias Abonadas"
+                "Property": "Com Férias Marcadas"
               }
             },
             "direction": "Descending"
