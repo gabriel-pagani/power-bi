@@ -126,11 +126,6 @@ table CATs
 		summarizeBy: none
 		sourceColumn: DATAOCORRENCIA
 
-		variation Variation
-			isDefault
-			relationship: d5f5a690-ef45-4cd1-adac-663707db689b
-			defaultHierarchy: LocalDateTable_930a9f1a-ec46-4ef1-9749-424fcfd9ceb2.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date

@@ -5,6 +5,38 @@ table Metricas
 		formatString: 0
 		lineageTag: d9d6bb61-25b5-4c7a-8080-9be4f9d918cd
 
+	measure TOTAL_DE_ACIDENTES_COM_AFASTAMENTO = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            CATs,
+			            CATs[HOUVEAFASTAMENTO] = "Sim"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 1e392217-0eaf-4e73-b12c-0cd5f17917e5
+
+	measure TOTAL_DE_ACIDENTES_SEM_AFASTAMENTO = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            CATs,
+			            CATs[HOUVEAFASTAMENTO] = "Não"
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: d6331908-51ea-4a35-a5fb-64fc4128a618
+
 	partition Metricas = m
 		mode: import
 		source =

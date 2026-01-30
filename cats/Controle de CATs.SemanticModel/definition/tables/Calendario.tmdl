@@ -45,6 +45,20 @@ table Calendario
 
 		annotation SummarizationSetBy = Automatic
 
+	column Quarter = FORMAT( Calendario[Date], "Q" ) & "º Trim"
+		lineageTag: a6534dae-f6a6-4348-ad30-843573fda194
+		summarizeBy: none
+		sortByColumn: QuarterNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column QuarterNo = Calendario[Date].[QuarterNo]
+		formatString: 0
+		lineageTag: 40354ee8-0961-477e-a592-a089ad6ce42d
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Calendario = calculated
 		mode: import
 		source = ```

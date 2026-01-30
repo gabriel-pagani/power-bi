@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "e9ba44d47614bf44775a",
+  "name": "4c031493dfcd33fd257d",
   "position": {
-    "x": 367.94355764985994,
+    "x": 943.76219744834816,
     "y": 0,
-    "z": 0,
+    "z": 1000,
     "height": 149.62216624685138,
     "width": 244.83627204030225,
-    "tabOrder": 1000
+    "tabOrder": 2000
   },
   "visual": {
     "visualType": "card",
@@ -23,12 +23,12 @@
                       "Entity": "Metricas"
                     }
                   },
-                  "Property": "TOTAL_DE_ACIDENTES"
+                  "Property": "TOTAL_DE_ACIDENTES_SEM_AFASTAMENTO"
                 }
               },
-              "queryRef": "Metricas.TOTAL_DE_ACIDENTES",
-              "nativeQueryRef": "TOTAL_DE_ACIDENTES",
-              "displayName": "Total de Acidentes"
+              "queryRef": "Metricas.TOTAL_DE_ACIDENTES_SEM_AFASTAMENTO",
+              "nativeQueryRef": "Sem Afastamento",
+              "displayName": "Sem Afastamento"
             }
           ]
         }
@@ -43,7 +43,7 @@
                     "Entity": "Metricas"
                   }
                 },
-                "Property": "TOTAL_DE_ACIDENTES"
+                "Property": "TOTAL_DE_ACIDENTES_SEM_AFASTAMENTO"
               }
             },
             "direction": "Descending"

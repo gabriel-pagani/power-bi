@@ -16,7 +16,6 @@ ref table Calendario
 ref table CATs
 ref table DateTableTemplate_de58d493-4bd0-4980-a503-75d332536416
 ref table LocalDateTable_75fcb013-5713-4fe1-b150-301b87c1149d
-ref table LocalDateTable_930a9f1a-ec46-4ef1-9749-424fcfd9ceb2
 ref table LocalDateTable_f38acf21-9985-493b-ac8c-ce3d1e0fb405
 ref table Metricas
 
