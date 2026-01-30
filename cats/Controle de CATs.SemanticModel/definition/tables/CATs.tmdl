@@ -1,0 +1,176 @@
+table CATs
+	lineageTag: 7c382a9b-f732-4e39-8a49-de550ea25f72
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 21d59966-1336-40c4-8adf-8c09cf9cccc2
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLIGADA
+		dataType: string
+		lineageTag: 76e1dd8e-3bb2-40be-acd8-268e6447ddd1
+		summarizeBy: none
+		sourceColumn: COLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: 36aceee0-ccfe-467d-9c8d-a2f7cc35ca81
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: 9f8b4a80-79ca-4bb3-82ed-cbd25bc5004b
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFUNCAO
+		dataType: string
+		lineageTag: 461aee98-95c2-4056-84e7-212a4f1d3834
+		summarizeBy: none
+		sourceColumn: CODFUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUNCAO
+		dataType: string
+		lineageTag: 35fdb8c6-6cf0-4f49-a322-bf04acdd2820
+		summarizeBy: none
+		sourceColumn: FUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODSETOR
+		dataType: string
+		lineageTag: 7c1826ed-d664-4d9c-b24e-f398f711bf98
+		summarizeBy: none
+		sourceColumn: CODSETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column SETOR
+		dataType: string
+		lineageTag: edf54710-37e4-4c38-b989-d6d2385056b6
+		summarizeBy: none
+		sourceColumn: SETOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODTIPOOCORRENCIA
+		dataType: string
+		lineageTag: ae90da96-d5cc-44ff-9dcb-328749490d59
+		summarizeBy: none
+		sourceColumn: CODTIPOOCORRENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column TIPOOCORRENCIA
+		dataType: string
+		lineageTag: 65b98e5d-a62d-41bd-8021-01de65ecd253
+		summarizeBy: none
+		sourceColumn: TIPOOCORRENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATAHORAOCORRENCIA
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a8fa45cd-a4d1-4f4d-99aa-6fd47b539ae9
+		summarizeBy: none
+		sourceColumn: DATAHORAOCORRENCIA
+
+		variation Variation
+			isDefault
+			relationship: 0ac49834-f704-4adb-aee9-ce1b8638d75a
+			defaultHierarchy: LocalDateTable_75fcb013-5713-4fe1-b150-301b87c1149d.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODCAUSA
+		dataType: string
+		lineageTag: 36f6f949-6ca0-4bb6-97a7-19dbc1c11ad4
+		summarizeBy: none
+		sourceColumn: CODCAUSA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CAUSA
+		dataType: string
+		lineageTag: 2924c873-4c9d-403a-b22d-c96e5837aaea
+		summarizeBy: none
+		sourceColumn: CAUSA
+
+		annotation SummarizationSetBy = Automatic
+
+	column HOUVEAFASTAMENTO
+		dataType: string
+		lineageTag: 1d531219-a371-4d14-b69d-7a9e0b7f5bb8
+		summarizeBy: none
+		sourceColumn: HOUVEAFASTAMENTO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATAOCORRENCIA
+		dataType: dateTime
+		formatString: dd/mm/yyyy
+		lineageTag: a01ba594-1fa4-4b8f-ba74-d2858eb1610a
+		summarizeBy: none
+		sourceColumn: DATAOCORRENCIA
+
+		variation Variation
+			isDefault
+			relationship: d5f5a690-ef45-4cd1-adac-663707db689b
+			defaultHierarchy: LocalDateTable_930a9f1a-ec46-4ef1-9749-424fcfd9ceb2.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column HORAOCORRENCIA
+		dataType: dateTime
+		formatString: hh:nn
+		lineageTag: 63ea52c7-8cfe-4371-8a05-4409b9db7ef7
+		summarizeBy: none
+		sourceColumn: HORAOCORRENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Time
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	partition CATs = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab)GCOLIGADA.CODCOLIGADA,#(lf)#(tab)GCOLIGADA.NOMEFANTASIA AS COLIGADA, #(lf)#(tab)PFUNC.CHAPA, #(lf)#(tab)PFUNC.NOME,#(lf)#(tab)PFUNCAO.CODIGO AS CODFUNCAO,#(lf)#(tab)PFUNCAO.NOME AS FUNCAO,#(lf)#(tab)PSECAO.CODIGO AS CODSETOR,#(lf)#(tab)PSECAO.DESCRICAO AS SETOR,#(lf)#(tab)VOCORRENCIA.CODTIPOOCORRENCIA AS CODTIPOOCORRENCIA,#(lf)#(tab)VTIPOOCORRENCIA.NOME AS TIPOOCORRENCIA,#(lf)#(tab)VOCORRENCIA.DATAHORA AS DATAOCORRENCIA,#(lf)#(tab)VOCORRENCIA.CODSITUACAOGERA AS CODCAUSA,#(lf)#(tab)VPPRAFONTEGERA.NOME AS CAUSA,#(lf)#(tab)VOCORRENCIA.HOUVEAFASTAMENTO #(lf)#(lf)FROM PFUNC#(lf)#(tab)JOIN GCOLIGADA ON (#(lf)#(tab)#(tab)GCOLIGADA.CODCOLIGADA = PFUNC.CODCOLIGADA#(lf)#(tab))#(lf)#(tab)JOIN PFUNCAO ON (#(lf)#(tab)#(tab)PFUNCAO.CODCOLIGADA = PFUNC.CODCOLIGADA AND#(lf)#(tab)#(tab)PFUNCAO.CODIGO = PFUNC.CODFUNCAO#(lf)#(tab))#(lf)#(tab)JOIN PSECAO ON (#(lf)#(tab)#(tab)PSECAO.CODCOLIGADA = PFUNC.CODCOLIGADA AND#(lf)#(tab)#(tab)PSECAO.CODIGO = PFUNC.CODSECAO#(lf)#(tab))#(lf)#(tab)JOIN VOCORRENCIA ON (#(lf)#(tab)#(tab)VOCORRENCIA.CODCOLIGADA = PFUNC.CODCOLIGADA AND#(lf)#(tab)#(tab)VOCORRENCIA.CHAPA = PFUNC.CHAPA#(lf)#(tab))#(lf)#(tab)JOIN VTIPOOCORRENCIA ON (#(lf)#(tab)#(tab)VTIPOOCORRENCIA.CODCOLIGADA = VOCORRENCIA.CODCOLIGADA AND#(lf)#(tab)#(tab)VTIPOOCORRENCIA.CODTIPOOCORRENCIA = VOCORRENCIA.CODTIPOOCORRENCIA#(lf)#(tab))#(lf)#(tab)LEFT JOIN VPPRAFONTEGERA ON (#(lf)#(tab)#(tab)VPPRAFONTEGERA.CODFONTEGERA = VOCORRENCIA.CODSITUACAOGERA#(lf)#(tab))#(lf)"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}, {"DATAOCORRENCIA", type datetime}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Changed Type",{{"COLIGADA", Text.Proper, type text}, {"NOME", Text.Proper, type text}, {"FUNCAO", Text.Proper, type text}, {"TIPOOCORRENCIA", Text.Proper, type text}, {"CAUSA", Text.Proper, type text}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Capitalized Each Word","1","Sim",Replacer.ReplaceText,{"HOUVEAFASTAMENTO"}),
+				    #"Replaced Value1" = Table.ReplaceValue(#"Replaced Value","0","Não",Replacer.ReplaceText,{"HOUVEAFASTAMENTO"}),
+				    #"Duplicated Column" = Table.DuplicateColumn(#"Replaced Value1", "DATAOCORRENCIA", "DATAOCORRENCIA - Copy"),
+				    #"Reordered Columns" = Table.ReorderColumns(#"Duplicated Column",{"CODCOLIGADA", "COLIGADA", "CHAPA", "NOME", "CODFUNCAO", "FUNCAO", "CODSETOR", "SETOR", "CODTIPOOCORRENCIA", "TIPOOCORRENCIA", "DATAOCORRENCIA", "DATAOCORRENCIA - Copy", "CODCAUSA", "CAUSA", "HOUVEAFASTAMENTO"}),
+				    #"Split Column by Delimiter" = Table.SplitColumn(Table.TransformColumnTypes(#"Reordered Columns", {{"DATAOCORRENCIA - Copy", type text}}, "en-US"), "DATAOCORRENCIA - Copy", Splitter.SplitTextByDelimiter(" ", QuoteStyle.Csv), {"DATAOCORRENCIA - Copy.1", "DATAOCORRENCIA - Copy.2", "DATAOCORRENCIA - Copy.3"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Split Column by Delimiter",{{"DATAOCORRENCIA - Copy.1", type date}, {"DATAOCORRENCIA - Copy.2", type time}, {"DATAOCORRENCIA - Copy.3", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type1",{"DATAOCORRENCIA - Copy.3"}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Removed Columns",{{"DATAOCORRENCIA", "DATAHORAOCORRENCIA"}}),
+				    #"Changed Type2" = Table.TransformColumnTypes(#"Renamed Columns",{{"DATAHORAOCORRENCIA", type datetime}}),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Changed Type2",{{"DATAOCORRENCIA - Copy.1", "DATAOCORRENCIA"}, {"DATAOCORRENCIA - Copy.2", "HORAOCORRENCIA"}})
+				in
+				    #"Renamed Columns1"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Controle de CATs"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "95547496-099b-4c1c-ba15-b0bb19fdebbf"
+  }
+}

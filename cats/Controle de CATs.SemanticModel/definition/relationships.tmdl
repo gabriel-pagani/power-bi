@@ -1,0 +1,15 @@
+relationship 0ac49834-f704-4adb-aee9-ce1b8638d75a
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CATs.DATAHORAOCORRENCIA
+	toColumn: LocalDateTable_75fcb013-5713-4fe1-b150-301b87c1149d.Date
+
+relationship d5f5a690-ef45-4cd1-adac-663707db689b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: CATs.DATAOCORRENCIA
+	toColumn: LocalDateTable_930a9f1a-ec46-4ef1-9749-424fcfd9ceb2.Date
+
+relationship b5e338a1-7655-490a-8b7e-d5231fffacda
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Calendario.Date
+	toColumn: LocalDateTable_f38acf21-9985-493b-ac8c-ce3d1e0fb405.Date
+

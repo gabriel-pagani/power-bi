@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Controle de CATs"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "2bfd42a5-532e-4284-a117-54a5818be022"
+  }
+}

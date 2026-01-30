@@ -1,0 +1,60 @@
+table Calendario
+	lineageTag: 4790a696-482c-4c96-bdc9-58b599505920
+
+	column Date
+		formatString: dd/mm/yyyy
+		lineageTag: 4c17ebfb-4a8e-4cff-a971-9ea768ed094c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: b5e338a1-7655-490a-8b7e-d5231fffacda
+			defaultHierarchy: LocalDateTable_f38acf21-9985-493b-ac8c-ce3d1e0fb405.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Year = Calendario[Date].[Year]
+		formatString: 0
+		lineageTag: 7a93b272-730a-4bf7-9c2b-f8b1abbb0eae
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month = FORMAT(Calendario[Date],"mmm","pt-br")
+		lineageTag: 00375f22-2e4f-4dd6-a9a3-82b90528a8b2
+		summarizeBy: none
+		sortByColumn: MonthNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNo = Calendario[Date].[MonthNo]
+		formatString: 0
+		lineageTag: 8966e502-4447-47fa-aacc-a5a077ca41e6
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day = Calendario[Date].[Day]
+		formatString: 0
+		lineageTag: 82f8416b-427b-4ba5-849f-0cc6684044b4
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendario = calculated
+		mode: import
+		source = ```
+				
+				    CALENDAR(
+				            DATE(YEAR(MIN(CATs[DATAOCORRENCIA])), 1, 1),
+				            DATE(YEAR(MAX(CATs[DATAOCORRENCIA])) + 1, 12, 31)
+				    )
+				
+				```
+
+	annotation PBI_Id = f73d1662e11f4efebd15e4aa2de4b45d
+
