@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Folha de Pagamento"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "147e0b19-b4a5-467d-b6e1-6d01fb4b4219"
+  }
+}

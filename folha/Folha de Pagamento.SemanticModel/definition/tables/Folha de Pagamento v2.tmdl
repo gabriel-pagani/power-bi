@@ -1,0 +1,227 @@
+table 'Folha de Pagamento v2'
+	lineageTag: 06d2cc5c-17d7-4ca9-8a3c-82832e97f4fa
+
+	column nomefantasia
+		dataType: string
+		lineageTag: 4cb99c65-f21e-47d5-9715-18158ce4f0d3
+		summarizeBy: none
+		sourceColumn: nomefantasia
+
+		annotation SummarizationSetBy = Automatic
+
+	column mescomp
+		dataType: string
+		lineageTag: 152942eb-f6f0-4612-82a4-7cfe8ef693c4
+		summarizeBy: none
+		sourceColumn: mescomp
+
+		annotation SummarizationSetBy = Automatic
+
+	column anocomp
+		dataType: string
+		lineageTag: 9b8203c2-23b9-443b-80f7-47b559b3a69e
+		summarizeBy: none
+		sourceColumn: anocomp
+
+		annotation SummarizationSetBy = Automatic
+
+	column basefgts
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 0dba6ad7-7d96-4866-b08e-17ac0f0ad335
+		summarizeBy: sum
+		sourceColumn: basefgts
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column basefgts2
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 91cf6f70-c0df-4672-8873-557d50901b00
+		summarizeBy: sum
+		sourceColumn: basefgts2
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column valorfgts
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: ece01918-27b3-44a5-b038-8d19ce250070
+		summarizeBy: sum
+		sourceColumn: valorfgts
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column basefgts13
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 6b91ea7f-89fd-4c4e-bfef-116b7b31087c
+		summarizeBy: sum
+		sourceColumn: basefgts13
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column valorfgts13
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 39946ee4-275f-4f02-93cb-0839ad1f7f7c
+		summarizeBy: sum
+		sourceColumn: valorfgts13
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column basefgtsrescisorio
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: ffca22bf-2d9a-4a03-ac18-edd4611a4025
+		summarizeBy: sum
+		sourceColumn: basefgtsrescisorio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column valorfgtsrescisorio
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: c84e20fb-6656-48b3-ac7f-579d17251191
+		summarizeBy: sum
+		sourceColumn: valorfgtsrescisorio
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column basefgtsret
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 834a75ad-74cd-4e22-91c9-777693eb894d
+		summarizeBy: sum
+		sourceColumn: basefgtsret
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column valorfgtsret
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 5f75075d-a004-4654-a030-2e1fb0191d52
+		summarizeBy: sum
+		sourceColumn: valorfgtsret
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column basefgts13ret
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 06010bd8-87ed-485e-972a-688d5d88f874
+		summarizeBy: sum
+		sourceColumn: basefgts13ret
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column valorfgts13ret
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: de8ecabf-c9a7-436c-ade8-8e9e756f2a0e
+		summarizeBy: sum
+		sourceColumn: valorfgts13ret
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column basefgtsrescisorioret
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 44979307-a7e6-4d1e-b6c9-d8a871e65c37
+		summarizeBy: sum
+		sourceColumn: basefgtsrescisorioret
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column valorfgtsrescisorioret
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 70196de6-2406-49b3-a411-b87feb0bd9de
+		summarizeBy: sum
+		sourceColumn: valorfgtsrescisorioret
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column baseinssret
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: b1e5e850-1ad1-4ca9-bbe8-abe198555787
+		summarizeBy: sum
+		sourceColumn: baseinssret
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column valorinssret
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 4e661381-382e-423f-8131-0291d7e8f35a
+		summarizeBy: sum
+		sourceColumn: valorinssret
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column baseinss13ret
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 9eb65419-f2a1-4def-8ff2-0c2e08c94d0c
+		summarizeBy: sum
+		sourceColumn: baseinss13ret
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column valorinss13ret
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: bb7ba9f7-83ac-43a6-a9cd-d6abe557be80
+		summarizeBy: sum
+		sourceColumn: valorinss13ret
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	partition 'Folha de Pagamento v2' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="select #(lf)#(tab)gcoligada.nomefantasia,#(lf)    esocialtot.mescomp,#(lf)    esocialtot.anocomp,#(lf)    esocialtot.basefgts,#(lf)#(tab)esocialtot.basefgts,#(lf)    esocialtot.valorfgts,#(lf)#(tab)esocialtot.basefgts13,#(lf)#(tab)esocialtot.valorfgts13,#(lf)#(tab)esocialtot.basefgtsrescisorio,#(lf)#(tab)esocialtot.valorfgtsrescisorio,#(lf)#(tab)esocialtot.basefgtsret,#(lf)#(tab)esocialtot.valorfgtsret,#(lf)#(tab)esocialtot.basefgts13ret,#(lf)#(tab)esocialtot.valorfgts13ret,#(lf)#(tab)esocialtot.basefgtsrescisorioret,#(lf)#(tab)esocialtot.valorfgtsrescisorioret,#(lf)#(tab)esocialtot.baseinssret,#(lf)#(tab)esocialtot.valorinssret,#(lf)#(tab)esocialtot.baseinss13ret,#(lf)#(tab)esocialtot.valorinss13ret#(lf) #(lf)from pesocialtotaislotacao as esocialtot#(lf)#(tab)join gcoligada on gcoligada.codcoligada = esocialtot.codcoligada"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"mescomp", type text}, {"anocomp", type text}, {"basefgts", Currency.Type}, {"basefgts2", Currency.Type}, {"valorfgts", Currency.Type}, {"basefgts13", Currency.Type}, {"valorfgts13", Currency.Type}, {"basefgtsrescisorio", Currency.Type}, {"valorfgtsrescisorio", Currency.Type}, {"basefgtsret", Currency.Type}, {"valorfgtsret", Currency.Type}, {"basefgts13ret", Currency.Type}, {"valorfgts13ret", Currency.Type}, {"basefgtsrescisorioret", Currency.Type}, {"valorfgtsrescisorioret", Currency.Type}, {"baseinssret", Currency.Type}, {"valorinssret", Currency.Type}, {"baseinss13ret", Currency.Type}, {"valorinss13ret", Currency.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

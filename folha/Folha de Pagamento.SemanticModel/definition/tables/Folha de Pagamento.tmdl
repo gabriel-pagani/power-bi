@@ -1,0 +1,101 @@
+table 'Folha de Pagamento'
+	lineageTag: 6e5cf48a-ca50-4103-8f3b-7348a8ee7252
+
+	column NOMEFANTASIA
+		dataType: string
+		lineageTag: ff1fd601-00f4-4d08-ac85-49eee24d8ebb
+		summarizeBy: none
+		sourceColumn: NOMEFANTASIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column COMPETENCIA
+		dataType: string
+		lineageTag: bfdeb14d-f527-490c-b169-6a45b43ddd20
+		summarizeBy: none
+		sourceColumn: COMPETENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ANOCOMP
+		dataType: string
+		lineageTag: 062aea4f-b5a7-4a14-af41-515644d9b2fc
+		summarizeBy: none
+		sourceColumn: ANOCOMP
+
+		annotation SummarizationSetBy = Automatic
+
+	column MESCOMP
+		dataType: string
+		lineageTag: 868d7f65-f228-4e20-b49d-d1cbdfab677b
+		summarizeBy: none
+		sourceColumn: MESCOMP
+
+		annotation SummarizationSetBy = Automatic
+
+	column NROPERIODO
+		dataType: string
+		lineageTag: ee4dd18a-6968-4e3e-8c05-51623289f528
+		summarizeBy: none
+		sourceColumn: NROPERIODO
+
+		annotation SummarizationSetBy = Automatic
+
+	column BASEFGTS
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 48d6d60f-8c5e-4d34-8239-08496c9fc702
+		summarizeBy: sum
+		sourceColumn: BASEFGTS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column BASEFGTS13
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: e19128eb-9d5c-4c29-a110-edb89ac1f415
+		summarizeBy: sum
+		sourceColumn: BASEFGTS13
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column BASEINSS
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 73e305cd-fabc-4922-9d4e-6c2384a83741
+		summarizeBy: sum
+		sourceColumn: BASEINSS
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	column BASEINSS13
+		dataType: decimal
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
+		lineageTag: 7c326f50-e82a-4716-a7b5-7ec6c4b94e72
+		summarizeBy: sum
+		sourceColumn: BASEINSS13
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
+
+	partition 'Folha de Pagamento' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)    GCOLIGADA.NOMEFANTASIA,#(lf)    CONVERT(VARCHAR(2), PFPERFF.MESCOMP) + '/' + CONVERT(VARCHAR(4), PFPERFF.ANOCOMP) AS COMPETENCIA,#(lf)    PFPERFF.ANOCOMP,#(lf)    PFPERFF.MESCOMP,#(lf)    PFPERFF.NROPERIODO,#(lf)    PFPERFF.BASEFGTS,#(lf)    PFPERFF.BASEFGTS13,#(lf)    PFPERFF.BASEINSS,#(lf)    PFPERFF.BASEINSS13#(lf)#(lf)FROM PFPERFF #(lf)    JOIN GCOLIGADA ON GCOLIGADA.CODCOLIGADA = PFPERFF.CODCOLIGADA"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"ANOCOMP", type text}, {"MESCOMP", type text}, {"NROPERIODO", type text}, {"BASEFGTS", Currency.Type}, {"BASEFGTS13", Currency.Type}, {"BASEINSS", Currency.Type}, {"BASEINSS13", Currency.Type}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Changed Type",{{"NOMEFANTASIA", Text.Proper, type text}})
+				in
+				    #"Capitalized Each Word"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

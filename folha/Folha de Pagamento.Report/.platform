@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Folha de Pagamento"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "77ba6f35-b529-4410-870b-806cf5f90dd6"
+  }
+}
