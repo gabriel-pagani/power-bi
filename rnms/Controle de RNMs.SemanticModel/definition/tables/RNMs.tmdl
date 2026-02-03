@@ -80,11 +80,6 @@ table RNMs
 		summarizeBy: none
 		sourceColumn: VENCRNM
 
-		variation Variation
-			isDefault
-			relationship: 022ef9a6-e2db-4c72-b872-9675bc8257b4
-			defaultHierarchy: LocalDateTable_dce5733c-3d36-4224-ada0-f4cf3c335026.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date

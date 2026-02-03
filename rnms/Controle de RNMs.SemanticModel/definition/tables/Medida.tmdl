@@ -1,0 +1,19 @@
+table Medida
+	lineageTag: dc2b34c6-4f7d-44b7-9ca9-d5ad5210b499
+
+	measure RNMS_EM_DIA = 1
+		formatString: 0
+		lineageTag: 7216bab6-9e87-480b-9bdf-4f08e3834d2e
+
+	partition Medida = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

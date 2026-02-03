@@ -10,10 +10,11 @@
       "nodes": [
         {
           "location": {
-            "x": 0,
-            "y": 0
+            "x": 326,
+            "y": 133.5
           },
           "nodeIndex": "RNMs",
+          "nodeLineageTag": "6747b73f-2c90-4a6f-a24d-2689ff3838ff",
           "size": {
             "height": 300,
             "width": 234
@@ -22,12 +23,26 @@
         },
         {
           "location": {
-            "x": 284,
-            "y": 50
+            "x": 840,
+            "y": 183.5
           },
           "nodeIndex": "Calendario",
+          "nodeLineageTag": "b61c3efb-35e6-4199-8082-d6e260d5f456",
           "size": {
             "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 798,
+            "y": 142.5
+          },
+          "nodeIndex": "Medida",
+          "nodeLineageTag": "dc2b34c6-4f7d-44b7-9ca9-d5ad5210b499",
+          "size": {
+            "height": 104,
             "width": 234
           },
           "zIndex": 0

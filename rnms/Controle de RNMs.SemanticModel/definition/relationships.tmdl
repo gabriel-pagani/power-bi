@@ -1,10 +1,9 @@
-relationship 022ef9a6-e2db-4c72-b872-9675bc8257b4
-	joinOnDateBehavior: datePartOnly
-	fromColumn: RNMs.VENCRNM
-	toColumn: LocalDateTable_dce5733c-3d36-4224-ada0-f4cf3c335026.Date
-
 relationship f7caf425-5452-4515-a5dd-be9b9b15f8a6
 	joinOnDateBehavior: datePartOnly
 	fromColumn: Calendario.Date
 	toColumn: LocalDateTable_578327a8-136f-4693-ac88-5a68221b2e3a.Date
+
+relationship e852a730-a8cb-1934-3831-59ad6ea5f3ee
+	fromColumn: RNMs.VENCRNM
+	toColumn: Calendario.Date
 
