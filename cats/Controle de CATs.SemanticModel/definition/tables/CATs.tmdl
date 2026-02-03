@@ -162,11 +162,35 @@ table CATs
 
 		annotation SummarizationSetBy = Automatic
 
+	column NUMEROCAT
+		dataType: string
+		lineageTag: 2ffa9cd8-bdbe-4ec1-8c2f-b177efb267aa
+		summarizeBy: none
+		sourceColumn: NUMEROCAT
+
+		annotation SummarizationSetBy = Automatic
+
+	column NATUREZA
+		dataType: string
+		lineageTag: ddf6b83c-b29f-4408-8300-f030e512e2f3
+		summarizeBy: none
+		sourceColumn: NATUREZA
+
+		annotation SummarizationSetBy = Automatic
+
+	column MEDIDA
+		dataType: string
+		lineageTag: a4a6cfb9-6f9c-4f88-b7cf-71ae2f49b57c
+		summarizeBy: none
+		sourceColumn: MEDIDA
+
+		annotation SummarizationSetBy = Automatic
+
 	partition CATs = m
 		mode: import
 		source =
 				let
-				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab)GCOLIGADA.CODCOLIGADA,#(lf)#(tab)GCOLIGADA.NOMEFANTASIA AS COLIGADA, #(lf)#(tab)PFUNC.CHAPA, #(lf)#(tab)PFUNC.NOME,#(lf)#(tab)PFUNCAO.CODIGO AS CODFUNCAO,#(lf)#(tab)PFUNCAO.NOME AS FUNCAO,#(lf)#(tab)PSECAO.CODIGO AS CODSETOR,#(lf)#(tab)PSECAO.DESCRICAO AS SETOR,#(lf)#(tab)VOCORRENCIA.CODTIPOOCORRENCIA AS CODTIPOOCORRENCIA,#(lf)#(tab)VTIPOOCORRENCIA.NOME AS TIPOOCORRENCIA,#(lf)#(tab)VOCORRENCIA.DATAHORA AS DATAOCORRENCIA,#(lf)#(tab)VOCORRENCIA.CODSITUACAOGERA AS CODCAUSA,#(lf)#(tab)VPPRAFONTEGERA.NOME AS CAUSA,#(lf)#(tab)VOCORRENCIA.DURACAOTRATAMENTO,#(lf)#(tab)VOCORRENCIA.HOUVEAFASTAMENTO,#(lf)#(tab)VOCORRENCIA.MORTE#(lf)#(lf)FROM PFUNC#(lf)#(tab)JOIN GCOLIGADA ON (#(lf)#(tab)#(tab)GCOLIGADA.CODCOLIGADA = PFUNC.CODCOLIGADA#(lf)#(tab))#(lf)#(tab)JOIN PFUNCAO ON (#(lf)#(tab)#(tab)PFUNCAO.CODCOLIGADA = PFUNC.CODCOLIGADA AND#(lf)#(tab)#(tab)PFUNCAO.CODIGO = PFUNC.CODFUNCAO#(lf)#(tab))#(lf)#(tab)JOIN PSECAO ON (#(lf)#(tab)#(tab)PSECAO.CODCOLIGADA = PFUNC.CODCOLIGADA AND#(lf)#(tab)#(tab)PSECAO.CODIGO = PFUNC.CODSECAO#(lf)#(tab))#(lf)#(tab)JOIN VOCORRENCIA ON (#(lf)#(tab)#(tab)VOCORRENCIA.CODCOLIGADA = PFUNC.CODCOLIGADA AND#(lf)#(tab)#(tab)VOCORRENCIA.CHAPA = PFUNC.CHAPA#(lf)#(tab))#(lf)#(tab)JOIN VTIPOOCORRENCIA ON (#(lf)#(tab)#(tab)VTIPOOCORRENCIA.CODCOLIGADA = VOCORRENCIA.CODCOLIGADA AND#(lf)#(tab)#(tab)VTIPOOCORRENCIA.CODTIPOOCORRENCIA = VOCORRENCIA.CODTIPOOCORRENCIA#(lf)#(tab))#(lf)#(tab)LEFT JOIN VPPRAFONTEGERA ON (#(lf)#(tab)#(tab)VPPRAFONTEGERA.CODFONTEGERA = VOCORRENCIA.CODSITUACAOGERA#(lf)#(tab))#(lf)"]),
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab)GCOLIGADA.CODCOLIGADA,#(lf)#(tab)GCOLIGADA.NOMEFANTASIA AS COLIGADA, #(lf)#(tab)VOCORRENCIA.NUMEROCAT,#(lf)#(tab)VNATUREZACAT.NATUREZA,#(lf)#(tab)VMEDIDASPREVENTIVAS.DESCRICAO,#(lf)#(tab)PFUNC.CHAPA, #(lf)#(tab)PFUNC.NOME,#(lf)#(tab)PFUNCAO.CODIGO AS CODFUNCAO,#(lf)#(tab)PFUNCAO.NOME AS FUNCAO,#(lf)#(tab)PSECAO.CODIGO AS CODSETOR,#(lf)#(tab)PSECAO.DESCRICAO AS SETOR,#(lf)#(tab)VOCORRENCIA.CODTIPOOCORRENCIA AS CODTIPOOCORRENCIA,#(lf)#(tab)VTIPOOCORRENCIA.NOME AS TIPOOCORRENCIA,#(lf)#(tab)VOCORRENCIA.DATAHORA AS DATAOCORRENCIA,#(lf)#(tab)VOCORRENCIA.CODSITUACAOGERA AS CODCAUSA,#(lf)#(tab)VPPRAFONTEGERA.NOME AS CAUSA,#(lf)#(tab)VOCORRENCIA.DURACAOTRATAMENTO,#(lf)#(tab)VOCORRENCIA.HOUVEAFASTAMENTO,#(lf)#(tab)VOCORRENCIA.MORTE#(lf)#(lf)FROM PFUNC#(lf)#(tab)JOIN GCOLIGADA ON (#(lf)#(tab)#(tab)GCOLIGADA.CODCOLIGADA = PFUNC.CODCOLIGADA#(lf)#(tab))#(lf)#(tab)JOIN PFUNCAO ON (#(lf)#(tab)#(tab)PFUNCAO.CODCOLIGADA = PFUNC.CODCOLIGADA AND#(lf)#(tab)#(tab)PFUNCAO.CODIGO = PFUNC.CODFUNCAO#(lf)#(tab))#(lf)#(tab)JOIN PSECAO ON (#(lf)#(tab)#(tab)PSECAO.CODCOLIGADA = PFUNC.CODCOLIGADA AND#(lf)#(tab)#(tab)PSECAO.CODIGO = PFUNC.CODSECAO#(lf)#(tab))#(lf)#(tab)JOIN VOCORRENCIA ON (#(lf)#(tab)#(tab)VOCORRENCIA.CODCOLIGADA = PFUNC.CODCOLIGADA AND#(lf)#(tab)#(tab)VOCORRENCIA.CHAPA = PFUNC.CHAPA#(lf)#(tab))#(lf)#(tab)JOIN VTIPOOCORRENCIA ON (#(lf)#(tab)#(tab)VTIPOOCORRENCIA.CODCOLIGADA = VOCORRENCIA.CODCOLIGADA AND#(lf)#(tab)#(tab)VTIPOOCORRENCIA.CODTIPOOCORRENCIA = VOCORRENCIA.CODTIPOOCORRENCIA#(lf)#(tab))#(lf)#(tab)LEFT JOIN VPPRAFONTEGERA ON (#(lf)#(tab)#(tab)VPPRAFONTEGERA.CODFONTEGERA = VOCORRENCIA.CODSITUACAOGERA#(lf)#(tab))#(lf)#(tab)LEFT JOIN VOCORRENCIANATUREZAMEDICA ON (#(lf)#(tab)#(tab)VOCORRENCIANATUREZAMEDICA.CODCOLIGADA = VOCORRENCIA.CODCOLIGADA AND#(lf)#(tab)#(tab)VOCORRENCIANATUREZAMEDICA.CODOCORRENCIA = VOCORRENCIA.CODOCORRENCIA#(lf)#(tab))#(lf)#(tab)JOIN VNATUREZACAT ON (#(lf)#(tab)#(tab)VNATUREZACAT.CODNATUREZA = VOCORRENCIANATUREZAMEDICA.CODNATUREZA#(lf)#(tab))#(lf)#(tab)JOIN VMEDIDASTOMADAS ON (#(lf)#(tab)#(tab)VMEDIDASTOMADAS.CODCOLIGADA = VOCORRENCIA.CODCOLIGADA AND#(lf)#(tab)#(tab)VMEDIDASTOMADAS.CODOCORRENCIA = VOCORRENCIA.CODOCORRENCIA#(lf)#(tab))#(lf)#(tab)JOIN VMEDIDASPREVENTIVAS ON (#(lf)#(tab)#(tab)VMEDIDASPREVENTIVAS.CODCOLIGADA = VMEDIDASTOMADAS.CODCOLIGADA AND#(lf)#(tab)#(tab)VMEDIDASPREVENTIVAS.CODMEDIDAPREV = VMEDIDASTOMADAS.CODMEDIDAPREV#(lf)#(tab))"]),
 				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}, {"DATAOCORRENCIA", type datetime}}),
 				    #"Capitalized Each Word" = Table.TransformColumns(#"Changed Type",{{"COLIGADA", Text.Proper, type text}, {"NOME", Text.Proper, type text}, {"FUNCAO", Text.Proper, type text}, {"TIPOOCORRENCIA", Text.Proper, type text}, {"CAUSA", Text.Proper, type text}}),
 				    #"Replaced Value" = Table.ReplaceValue(#"Capitalized Each Word","1","Sim",Replacer.ReplaceText,{"HOUVEAFASTAMENTO"}),
@@ -183,9 +207,11 @@ table CATs
 				    #"Replaced Value2" = Table.ReplaceValue(#"Changed Type3","0","Não",Replacer.ReplaceText,{"MORTE"}),
 				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","1","Sim",Replacer.ReplaceText,{"MORTE"}),
 				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3",null,"Não",Replacer.ReplaceValue,{"MORTE"}),
-				    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4",null,"Não",Replacer.ReplaceValue,{"HOUVEAFASTAMENTO"})
+				    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4",null,"Não",Replacer.ReplaceValue,{"HOUVEAFASTAMENTO"}),
+				    #"Capitalized Each Word1" = Table.TransformColumns(#"Replaced Value5",{{"NATUREZA", Text.Proper, type text}, {"DESCRICAO", Text.Proper, type text}, {"CAUSA", Text.Proper, type text}}),
+				    #"Renamed Columns2" = Table.RenameColumns(#"Capitalized Each Word1",{{"DESCRICAO", "MEDIDA"}})
 				in
-				    #"Replaced Value5"
+				    #"Renamed Columns2"
 
 	annotation PBI_NavigationStepName = Navigation
 
