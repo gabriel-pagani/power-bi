@@ -1315,108 +1315,94 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "CA_ts.duracaotratamento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CATs",
+			          "ConceptualProperty": "DURACAOTRATAMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "duracaotratamento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "CA_ts.morte": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CATs",
+			          "ConceptualProperty": "MORTE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "morte": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_de_acidentes_com_obito": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TOTAL_DE_ACIDENTES_COM_OBITO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total de acidentes com obito": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TOTAL_DE_ACIDENTES_COM_OBITO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate de acidente com obito": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall de acidente com obito": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Com Óbito": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_day": {
-			      "Binding": {
-			        "ConceptualEntity": "CATs"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CA_ts.datahoraocorrencia.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CA_ts.datahoraocorrencia.date_hierarchy"
-			          }
-			        },
-			        "CA_ts.datahoraocorrencia.day": {
-			          "Target": {
-			            "Entity": "CA_ts.datahoraocorrencia.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CA_ts.datahoraocorrencia.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CA_ts.datahoraocorrencia.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datahoraocorrencia_date_hierarchies_have_datahoraocorrencia_days"
-			        }
-			      ]
-			    },
-			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_month": {
-			      "Binding": {
-			        "ConceptualEntity": "CATs"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CA_ts.datahoraocorrencia.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CA_ts.datahoraocorrencia.date_hierarchy"
-			          }
-			        },
-			        "CA_ts.datahoraocorrencia.month": {
-			          "Target": {
-			            "Entity": "CA_ts.datahoraocorrencia.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CA_ts.datahoraocorrencia.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CA_ts.datahoraocorrencia.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datahoraocorrencia_date_hierarchies_have_datahoraocorrencia_months"
-			        }
-			      ]
-			    },
-			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "CATs"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CA_ts.datahoraocorrencia.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CA_ts.datahoraocorrencia.date_hierarchy"
-			          }
-			        },
-			        "CA_ts.datahoraocorrencia.quarter": {
-			          "Target": {
-			            "Entity": "CA_ts.datahoraocorrencia.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CA_ts.datahoraocorrencia.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CA_ts.datahoraocorrencia.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datahoraocorrencia_date_hierarchies_have_datahoraocorrencia_quarters"
-			        }
-			      ]
-			    },
 			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_year": {
 			      "Binding": {
 			        "ConceptualEntity": "CATs"
@@ -1691,6 +1677,105 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_CA_tses"
+			        }
+			      ]
+			    },
+			    "CA_ts_has_metrica_total_de_acidentes_com_obito": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts": {
+			          "Target": {
+			            "Entity": "CA_ts"
+			          }
+			        },
+			        "metrica.total_de_acidentes_com_obito": {
+			          "Target": {
+			            "Entity": "metrica.total_de_acidentes_com_obito"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_de_acidentes_com_obito"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CA_tses_have_total_de_acidentes_com_obito"
+			        }
+			      ]
+			    },
+			    "CA_ts_has_morte": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts": {
+			          "Target": {
+			            "Entity": "CA_ts"
+			          }
+			        },
+			        "CA_ts.morte": {
+			          "Target": {
+			            "Entity": "CA_ts.morte"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts"
+			            },
+			            "Object": {
+			              "Role": "CA_ts.morte"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CA_tses_have_mortes"
+			        }
+			      ]
+			    },
+			    "CA_ts_has_duracaotratamento": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts": {
+			          "Target": {
+			            "Entity": "CA_ts"
+			          }
+			        },
+			        "CA_ts.duracaotratamento": {
+			          "Target": {
+			            "Entity": "CA_ts.duracaotratamento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts"
+			            },
+			            "Object": {
+			              "Role": "CA_ts.duracaotratamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CA_tses_have_duracaotratamentos"
 			        }
 			      ]
 			    },
@@ -2549,6 +2634,105 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_dates"
+			        }
+			      ]
+			    },
+			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts.datahoraocorrencia.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CA_ts.datahoraocorrencia.date_hierarchy"
+			          }
+			        },
+			        "CA_ts.datahoraocorrencia.quarter": {
+			          "Target": {
+			            "Entity": "CA_ts.datahoraocorrencia.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts.datahoraocorrencia.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CA_ts.datahoraocorrencia.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datahoraocorrencia_date_hierarchies_have_datahoraocorrencia_quarters"
+			        }
+			      ]
+			    },
+			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_month": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts.datahoraocorrencia.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CA_ts.datahoraocorrencia.date_hierarchy"
+			          }
+			        },
+			        "CA_ts.datahoraocorrencia.month": {
+			          "Target": {
+			            "Entity": "CA_ts.datahoraocorrencia.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts.datahoraocorrencia.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CA_ts.datahoraocorrencia.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datahoraocorrencia_date_hierarchies_have_datahoraocorrencia_months"
+			        }
+			      ]
+			    },
+			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_day": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts.datahoraocorrencia.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CA_ts.datahoraocorrencia.date_hierarchy"
+			          }
+			        },
+			        "CA_ts.datahoraocorrencia.day": {
+			          "Target": {
+			            "Entity": "CA_ts.datahoraocorrencia.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts.datahoraocorrencia.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CA_ts.datahoraocorrencia.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datahoraocorrencia_date_hierarchies_have_datahoraocorrencia_days"
 			        }
 			      ]
 			    }

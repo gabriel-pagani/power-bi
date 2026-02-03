@@ -11,7 +11,10 @@ table Metricas
 			    COUNTROWS(
 			        FILTER(
 			            CATs,
-			            CATs[HOUVEAFASTAMENTO] = "Sim"
+			            (
+			                CATs[DURACAOTRATAMENTO] > 1 &&
+			                CATs[MORTE] = "Não"
+			            )
 			        )
 			    ),
 			    0
@@ -27,7 +30,10 @@ table Metricas
 			    COUNTROWS(
 			        FILTER(
 			            CATs,
-			            CATs[HOUVEAFASTAMENTO] = "Não"
+			            (
+			                CATs[DURACAOTRATAMENTO] <= 1 &&
+			                CATs[MORTE] = "Não"
+			            )
 			        )
 			    ),
 			    0
@@ -36,6 +42,24 @@ table Metricas
 			```
 		formatString: 0
 		lineageTag: d6331908-51ea-4a35-a5fb-64fc4128a618
+
+	measure TOTAL_DE_ACIDENTES_COM_OBITO = ```
+			
+			COALESCE(
+			    COUNTROWS(
+			        FILTER(
+			            CATs,
+			            (
+			                CATs[MORTE] = "Sim"
+			            )
+			        )
+			    ),
+			    0
+			)
+			
+			```
+		formatString: 0
+		lineageTag: dde00515-bd3d-40f6-80e2-4fbed481055e
 
 	partition Metricas = m
 		mode: import

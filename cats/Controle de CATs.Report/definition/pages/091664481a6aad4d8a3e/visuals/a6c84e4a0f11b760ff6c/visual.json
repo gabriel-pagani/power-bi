@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "a6c84e4a0f11b760ff6c",
   "position": {
-    "x": 239.55590800951626,
-    "y": 420.23790642347348,
+    "x": 239.27051671732525,
+    "y": 451.306990881459,
     "z": 11000,
-    "height": 299.44488501189534,
-    "width": 1040.4440919904837,
+    "height": 268.44984802431611,
+    "width": 1040.7294832826749,
     "tabOrder": 11000
   },
   "visual": {
@@ -170,7 +170,7 @@
             "section": {
               "expr": {
                 "Literal": {
-                  "Value": "'a3e7aa0964f34d14c491'"
+                  "Value": "'884f83b0eb09e6c21762'"
                 }
               }
             }
@@ -179,51 +179,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "b5de9ab582b2786c8fa7",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Metricas"
-              }
-            },
-            "Property": "TOTAL_DE_ACIDENTES"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "5ee6dc893e4458d77f5c",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendario"
-              }
-            },
-            "Property": "Year"
-          }
-        },
-        "type": "Advanced"
-      },
-      {
-        "name": "98d44f37fc113895ffda",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Calendario"
-              }
-            },
-            "Property": "Quarter"
-          }
-        },
-        "type": "Categorical"
-      }
-    ]
   }
 }
