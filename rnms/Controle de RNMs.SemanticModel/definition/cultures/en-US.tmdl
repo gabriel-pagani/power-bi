@@ -240,81 +240,11 @@ cultureInfo en-US
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "RN_ms.vencrnm.date_hierarchy": {
+			    "calendario.date.quarter": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "RNMs",
-			          "VariationSource": "VENCRNM",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "vencrnm date hierarchy": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "date hierarchy": {
-			            "State": "Generated",
-			            "Weight": 0.97
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "RN_ms.vencrnm.year": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "RNMs",
-			          "VariationSource": "VENCRNM",
-			          "VariationSet": "Variation",
-			          "Hierarchy": "Date Hierarchy",
-			          "HierarchyLevel": "Year"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "vencrnm year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "year": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "vencrnm yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.75
-			          }
-			        },
-			        {
-			          "yr": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.736
-			          }
-			        }
-			      ],
-			      "SemanticType": "Time"
-			    },
-			    "RN_ms.vencrnm.quarter": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "RNMs",
-			          "VariationSource": "VENCRNM",
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy",
 			          "HierarchyLevel": "Quarter"
@@ -323,17 +253,17 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "vencrnm quarter": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "quarter": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "vencrnm qtr": {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -351,15 +281,172 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.818
 			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "RN_ms.vencrnm.month": {
+			    "calendario.date.year": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "RNMs",
-			          "VariationSource": "VENCRNM",
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy",
 			          "HierarchyLevel": "Month"
@@ -368,17 +455,17 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "vencrnm month": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
 			          "month": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "vencrnm mth": {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -396,15 +483,35 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.736
 			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
 			    },
-			    "RN_ms.vencrnm.day": {
+			    "calendario.date.day": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "RNMs",
-			          "VariationSource": "VENCRNM",
+			          "ConceptualEntity": "Calendario",
+			          "VariationSource": "Date",
 			          "VariationSet": "Variation",
 			          "Hierarchy": "Date Hierarchy",
 			          "HierarchyLevel": "Day"
@@ -413,34 +520,349 @@ cultureInfo en-US
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "vencrnm day": {
+			          "day": {
 			            "State": "Generated"
 			          }
 			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
 			        {
 			          "day": {
 			            "State": "Generated"
 			          }
 			        }
+			      ]
+			    },
+			    "calendario.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.month_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "MonthNo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MonthNo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "month number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
 			      ],
 			      "SemanticType": "Time"
+			    },
+			    "calendario.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ]
+			    },
+			    "calendario.quarter_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario",
+			          "ConceptualProperty": "QuarterNo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "QuarterNo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "quarter number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "qtr no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.667
+			          }
+			        }
+			      ]
+			    },
+			    "medida": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medida"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "medida": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "medida.rnms_em_dia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medida",
+			          "ConceptualProperty": "RNMS_EM_DIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rnms em dia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RNMS_EM_DIA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Em dia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.rnms_a_vencer": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medida",
+			          "ConceptualProperty": "RNMS_A_VENCER"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rnms a vencer": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RNMS_A_VENCER": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "A vencer": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.rnms_vencidos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medida",
+			          "ConceptualProperty": "RNMS_VENCIDOS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "rnms vencidos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RNMS_VENCIDOS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Vencidos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "RN_ms_vencrnm_date_hierarchy_has_RN_ms_vencrnm_day": {
+			    "calendario_date_date_hierarchy_has_calendario_date_day": {
 			      "Binding": {
-			        "ConceptualEntity": "RNMs"
+			        "ConceptualEntity": "Calendario"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "RN_ms.vencrnm.date_hierarchy": {
+			        "calendario.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "RN_ms.vencrnm.date_hierarchy"
+			            "Entity": "calendario.date.date_hierarchy"
 			          }
 			        },
-			        "RN_ms.vencrnm.day": {
+			        "calendario.date.day": {
 			          "Target": {
-			            "Entity": "RN_ms.vencrnm.day"
+			            "Entity": "calendario.date.day"
 			          }
 			        }
 			      },
@@ -448,32 +870,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "RN_ms.vencrnm.date_hierarchy"
+			              "Role": "calendario.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "RN_ms.vencrnm.day"
+			              "Role": "calendario.date.day"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "vencrnm_date_hierarchies_have_vencrnm_days"
+			          "ID": "date_hierarchies_have_days"
 			        }
 			      ]
 			    },
-			    "RN_ms_vencrnm_date_hierarchy_has_RN_ms_vencrnm_month": {
+			    "calendario_date_date_hierarchy_has_calendario_date_month": {
 			      "Binding": {
-			        "ConceptualEntity": "RNMs"
+			        "ConceptualEntity": "Calendario"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "RN_ms.vencrnm.date_hierarchy": {
+			        "calendario.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "RN_ms.vencrnm.date_hierarchy"
+			            "Entity": "calendario.date.date_hierarchy"
 			          }
 			        },
-			        "RN_ms.vencrnm.month": {
+			        "calendario.date.month": {
 			          "Target": {
-			            "Entity": "RN_ms.vencrnm.month"
+			            "Entity": "calendario.date.month"
 			          }
 			        }
 			      },
@@ -481,32 +903,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "RN_ms.vencrnm.date_hierarchy"
+			              "Role": "calendario.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "RN_ms.vencrnm.month"
+			              "Role": "calendario.date.month"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "vencrnm_date_hierarchies_have_vencrnm_months"
+			          "ID": "date_hierarchies_have_months"
 			        }
 			      ]
 			    },
-			    "RN_ms_vencrnm_date_hierarchy_has_RN_ms_vencrnm_quarter": {
+			    "calendario_date_date_hierarchy_has_calendario_date_quarter": {
 			      "Binding": {
-			        "ConceptualEntity": "RNMs"
+			        "ConceptualEntity": "Calendario"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "RN_ms.vencrnm.date_hierarchy": {
+			        "calendario.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "RN_ms.vencrnm.date_hierarchy"
+			            "Entity": "calendario.date.date_hierarchy"
 			          }
 			        },
-			        "RN_ms.vencrnm.quarter": {
+			        "calendario.date.quarter": {
 			          "Target": {
-			            "Entity": "RN_ms.vencrnm.quarter"
+			            "Entity": "calendario.date.quarter"
 			          }
 			        }
 			      },
@@ -514,32 +936,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "RN_ms.vencrnm.date_hierarchy"
+			              "Role": "calendario.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "RN_ms.vencrnm.quarter"
+			              "Role": "calendario.date.quarter"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "vencrnm_date_hierarchies_have_vencrnm_quarters"
+			          "ID": "date_hierarchies_have_quarters"
 			        }
 			      ]
 			    },
-			    "RN_ms_vencrnm_date_hierarchy_has_RN_ms_vencrnm_year": {
+			    "calendario_date_date_hierarchy_has_calendario_date_year": {
 			      "Binding": {
-			        "ConceptualEntity": "RNMs"
+			        "ConceptualEntity": "Calendario"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "RN_ms.vencrnm.date_hierarchy": {
+			        "calendario.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "RN_ms.vencrnm.date_hierarchy"
+			            "Entity": "calendario.date.date_hierarchy"
 			          }
 			        },
-			        "RN_ms.vencrnm.year": {
+			        "calendario.date.year": {
 			          "Target": {
-			            "Entity": "RN_ms.vencrnm.year"
+			            "Entity": "calendario.date.year"
 			          }
 			        }
 			      },
@@ -547,32 +969,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "RN_ms.vencrnm.date_hierarchy"
+			              "Role": "calendario.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "RN_ms.vencrnm.year"
+			              "Role": "calendario.date.year"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "vencrnm_date_hierarchies_have_vencrnm_years"
+			          "ID": "date_hierarchies_have_years"
 			        }
 			      ]
 			    },
-			    "RN_ms_vencrnm_has_date_hierarchy": {
+			    "calendario_date_has_date_hierarchy": {
 			      "Binding": {
-			        "ConceptualEntity": "RNMs"
+			        "ConceptualEntity": "Calendario"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "RN_ms.vencrnm": {
+			        "calendario.date": {
 			          "Target": {
-			            "Entity": "RN_ms.vencrnm"
+			            "Entity": "calendario.date"
 			          }
 			        },
-			        "RN_ms.vencrnm.date_hierarchy": {
+			        "calendario.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "RN_ms.vencrnm.date_hierarchy"
+			            "Entity": "calendario.date.date_hierarchy"
 			          }
 			        }
 			      },
@@ -580,15 +1002,391 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "RN_ms.vencrnm"
+			              "Role": "calendario.date"
 			            },
 			            "Object": {
-			              "Role": "RN_ms.vencrnm.date_hierarchy"
+			              "Role": "calendario.date.date_hierarchy"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "vencrnms_have_vencrnm_date_hierarchies"
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_calendario": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "calendario"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_calendarios"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "RN_ms"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_RN_ms"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_medida_rnms_vencidos": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "medida.rnms_vencidos": {
+			          "Target": {
+			            "Entity": "medida.rnms_vencidos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "medida.rnms_vencidos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_rnms_vencidos"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_medida_rnms_a_vencer": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "medida.rnms_a_vencer": {
+			          "Target": {
+			            "Entity": "medida.rnms_a_vencer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "medida.rnms_a_vencer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_rnms_a_vencer"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_medida_rnms_em_dia": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "medida.rnms_em_dia": {
+			          "Target": {
+			            "Entity": "medida.rnms_em_dia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "medida.rnms_em_dia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_rnms_em_dia"
+			        }
+			      ]
+			    },
+			    "calendario_has_quarter_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.quarter_no": {
+			          "Target": {
+			            "Entity": "calendario.quarter_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.quarter_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_quarter_noes"
+			        }
+			      ]
+			    },
+			    "calendario_has_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.quarter": {
+			          "Target": {
+			            "Entity": "calendario.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_quarters"
+			        }
+			      ]
+			    },
+			    "calendario_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.year": {
+			          "Target": {
+			            "Entity": "calendario.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_years"
+			        }
+			      ]
+			    },
+			    "calendario_has_month_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.month_no": {
+			          "Target": {
+			            "Entity": "calendario.month_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.month_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_month_noes"
+			        }
+			      ]
+			    },
+			    "calendario_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.month": {
+			          "Target": {
+			            "Entity": "calendario.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_months"
+			        }
+			      ]
+			    },
+			    "calendario_has_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.day": {
+			          "Target": {
+			            "Entity": "calendario.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_days"
+			        }
+			      ]
+			    },
+			    "calendario_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calendario.date": {
+			          "Target": {
+			            "Entity": "calendario.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calendario.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_dates"
 			        }
 			      ]
 			    },

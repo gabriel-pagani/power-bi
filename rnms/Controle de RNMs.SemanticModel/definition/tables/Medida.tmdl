@@ -1,9 +1,63 @@
 table Medida
 	lineageTag: dc2b34c6-4f7d-44b7-9ca9-d5ad5210b499
 
-	measure RNMS_EM_DIA = 1
+	measure RNMS_EM_DIA = ```
+			
+			VAR Hoje = TODAY()
+			VAR Resultado =
+			    CALCULATE(
+			        COUNTROWS(RNMs),
+			        FILTER(
+			            RNMs,
+			            NOT ISBLANK(RNMs[VENCRNM]) &&
+			            RNMs[VENCRNM] > Hoje + 30
+			        )
+			    )
+			RETURN
+			COALESCE(Resultado, 0)
+			
+			```
 		formatString: 0
 		lineageTag: 7216bab6-9e87-480b-9bdf-4f08e3834d2e
+
+	measure RNMS_A_VENCER = ```
+			
+			VAR Hoje = TODAY()
+			VAR Resultado =
+			    CALCULATE(
+			        COUNTROWS(RNMs),
+			        FILTER(
+			            RNMs,
+			            NOT ISBLANK(RNMs[VENCRNM]) &&
+			            RNMs[VENCRNM] >= Hoje &&
+			            RNMs[VENCRNM] <= Hoje + 30
+			        )
+			    )
+			RETURN
+			COALESCE(Resultado, 0)
+			
+			```
+		formatString: 0
+		lineageTag: e392b919-cda4-446a-afab-96fec6fcb392
+
+	measure RNMS_VENCIDOS = ```
+			
+			VAR Hoje = TODAY()
+			VAR Resultado =
+			    CALCULATE(
+			        COUNTROWS(RNMs),
+			        FILTER(
+			            RNMs,
+			            ISBLANK(RNMs[VENCRNM]) ||
+			            RNMs[VENCRNM] < Hoje
+			        )
+			    )
+			RETURN
+			COALESCE(Resultado, 0)
+			
+			```
+		formatString: 0
+		lineageTag: 2e50b4dc-81cf-4e02-b5bc-acbaa052c650
 
 	partition Medida = m
 		mode: import
