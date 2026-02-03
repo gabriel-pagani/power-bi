@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Controle de RNMs"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e8cd7b92-f206-45af-8408-f631d780559c"
+  }
+}

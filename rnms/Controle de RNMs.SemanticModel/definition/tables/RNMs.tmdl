@@ -1,0 +1,108 @@
+table RNMs
+	lineageTag: 6747b73f-2c90-4a6f-a24d-2689ff3838ff
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 99765843-0441-478d-b689-dc416a133ed1
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOMEFANTASIA
+		dataType: string
+		lineageTag: a8536c9a-197f-4e4c-aa8f-c87b0af42328
+		summarizeBy: none
+		sourceColumn: NOMEFANTASIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: f89ff3fa-5eab-4aca-a2ed-1a9db9744c75
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NOME
+		dataType: string
+		lineageTag: 4e6e3e05-4caf-4a9b-a7c1-de935a854d11
+		summarizeBy: none
+		sourceColumn: NOME
+
+		annotation SummarizationSetBy = Automatic
+
+	column NACIONALIDADE
+		dataType: string
+		lineageTag: 3c9a2fa3-8e14-41da-ac94-930c6fc115f7
+		summarizeBy: none
+		sourceColumn: NACIONALIDADE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODSECAO
+		dataType: string
+		lineageTag: e85c41bc-88eb-45ea-a8f9-cbcc2b058a0c
+		summarizeBy: none
+		sourceColumn: CODSECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: 86eeebd1-0cf2-40bd-a1df-5110366e66d8
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFUNCAO
+		dataType: string
+		lineageTag: 092d04be-d669-44c1-8c41-7df01c63d8e3
+		summarizeBy: none
+		sourceColumn: CODFUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUNCAO
+		dataType: string
+		lineageTag: 6f450033-b4e8-47d8-96f7-ee9d932eb103
+		summarizeBy: none
+		sourceColumn: FUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENCRNM
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 1119c365-0c3a-4a61-987b-fef194beec9d
+		summarizeBy: none
+		sourceColumn: VENCRNM
+
+		variation Variation
+			isDefault
+			relationship: 022ef9a6-e2db-4c72-b872-9675bc8257b4
+			defaultHierarchy: LocalDateTable_dce5733c-3d36-4224-ada0-f4cf3c335026.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition RNMs = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab)PFUNC.CODCOLIGADA,#(lf)#(tab)GCOLIGADA.NOMEFANTASIA,#(lf)#(tab)PFUNC.CHAPA,#(lf)#(tab)PFUNC.NOME,#(lf)#(tab)PCODNACAO.DESCRICAO AS NACIONALIDADE,#(lf)#(tab)PFUNC.CODSECAO,#(lf)#(tab)PSECAO.DESCRICAO AS SECAO,#(lf)#(tab)PFUNC.CODFUNCAO,#(lf)#(tab)PFUNCAO.NOME AS FUNCAO,#(lf)#(tab)PPESSOA.DTVENCIDENT AS VENCRNM#(lf)#(lf)FROM PFUNC#(lf)#(tab)JOIN GCOLIGADA ON (#(lf)#(tab)#(tab)GCOLIGADA.CODCOLIGADA=PFUNC.CODCOLIGADA#(lf)#(tab))#(lf)#(tab)JOIN PSECAO ON (#(lf)#(tab)#(tab)PSECAO.CODCOLIGADA=PFUNC.CODCOLIGADA AND #(lf)#(tab)#(tab)PSECAO.CODIGO=PFUNC.CODSECAO#(lf)#(tab))#(lf)#(tab)JOIN PFUNCAO ON (#(lf)#(tab)#(tab)PFUNCAO.CODCOLIGADA=PFUNC.CODCOLIGADA AND #(lf)#(tab)#(tab)PFUNCAO.CODIGO=PFUNC.CODFUNCAO#(lf)#(tab))#(lf)#(tab)LEFT JOIN PPESSOA ON (#(lf)#(tab)#(tab)PPESSOA.CODIGO=PFUNC.CODPESSOA#(lf)#(tab))#(lf)#(tab)JOIN PCODNACAO ON (#(lf)#(tab)#(tab)PCODNACAO.CODCLIENTE=PPESSOA.NACIONALIDADE#(lf)#(tab))#(lf)#(lf)WHERE 1=1#(lf)#(tab)AND PFUNC.CODSITUACAO <> 'D'#(lf)#(tab)AND PPESSOA.NACIONALIDADE <> 10#(lf)"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Changed Type",{{"NOMEFANTASIA", Text.Proper, type text}, {"NOME", Text.Proper, type text}, {"NACIONALIDADE", Text.Proper, type text}, {"FUNCAO", Text.Proper, type text}}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Capitalized Each Word",{{"VENCRNM", type date}})
+				in
+				    #"Changed Type1"
+
+	changedProperty = Name
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

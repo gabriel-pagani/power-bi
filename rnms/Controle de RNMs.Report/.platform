@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Controle de RNMs"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8334fca5-031a-42f3-bebf-37a0a6bc7c50"
+  }
+}

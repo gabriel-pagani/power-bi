@@ -1,0 +1,933 @@
+cultureInfo en-US
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "RN_ms": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "RN ms": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "RNMs": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "ms": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "RN_ms.codcoligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "ConceptualProperty": "CODCOLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codcoligada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "RN_ms.nomefantasia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "ConceptualProperty": "NOMEFANTASIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nomefantasia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Coligada": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "RN_ms.chapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "ConceptualProperty": "CHAPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "RN_ms.nome": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "ConceptualProperty": "NOME"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nome": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "RN_ms.nacionalidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "ConceptualProperty": "NACIONALIDADE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "nacionalidade": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "RN_ms.codsecao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "ConceptualProperty": "CODSECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codsecao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "RN_ms.secao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "ConceptualProperty": "SECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "secao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Setor": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "RN_ms.codfuncao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "ConceptualProperty": "CODFUNCAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codfuncao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "RN_ms.funcao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "ConceptualProperty": "FUNCAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "funcao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Função": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "RN_ms.vencrnm": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "ConceptualProperty": "VENCRNM"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencrnm": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "Vencimento da RNM": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "RN_ms.vencrnm.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "VariationSource": "VENCRNM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencrnm date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "RN_ms.vencrnm.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "VariationSource": "VENCRNM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencrnm year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vencrnm yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "RN_ms.vencrnm.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "VariationSource": "VENCRNM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencrnm quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vencrnm qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "RN_ms.vencrnm.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "VariationSource": "VENCRNM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencrnm month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "vencrnm mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "RN_ms.vencrnm.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "RNMs",
+			          "VariationSource": "VENCRNM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencrnm day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    }
+			  },
+			  "Relationships": {
+			    "RN_ms_vencrnm_date_hierarchy_has_RN_ms_vencrnm_day": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms.vencrnm.date_hierarchy": {
+			          "Target": {
+			            "Entity": "RN_ms.vencrnm.date_hierarchy"
+			          }
+			        },
+			        "RN_ms.vencrnm.day": {
+			          "Target": {
+			            "Entity": "RN_ms.vencrnm.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms.vencrnm.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.vencrnm.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencrnm_date_hierarchies_have_vencrnm_days"
+			        }
+			      ]
+			    },
+			    "RN_ms_vencrnm_date_hierarchy_has_RN_ms_vencrnm_month": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms.vencrnm.date_hierarchy": {
+			          "Target": {
+			            "Entity": "RN_ms.vencrnm.date_hierarchy"
+			          }
+			        },
+			        "RN_ms.vencrnm.month": {
+			          "Target": {
+			            "Entity": "RN_ms.vencrnm.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms.vencrnm.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.vencrnm.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencrnm_date_hierarchies_have_vencrnm_months"
+			        }
+			      ]
+			    },
+			    "RN_ms_vencrnm_date_hierarchy_has_RN_ms_vencrnm_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms.vencrnm.date_hierarchy": {
+			          "Target": {
+			            "Entity": "RN_ms.vencrnm.date_hierarchy"
+			          }
+			        },
+			        "RN_ms.vencrnm.quarter": {
+			          "Target": {
+			            "Entity": "RN_ms.vencrnm.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms.vencrnm.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.vencrnm.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencrnm_date_hierarchies_have_vencrnm_quarters"
+			        }
+			      ]
+			    },
+			    "RN_ms_vencrnm_date_hierarchy_has_RN_ms_vencrnm_year": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms.vencrnm.date_hierarchy": {
+			          "Target": {
+			            "Entity": "RN_ms.vencrnm.date_hierarchy"
+			          }
+			        },
+			        "RN_ms.vencrnm.year": {
+			          "Target": {
+			            "Entity": "RN_ms.vencrnm.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms.vencrnm.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.vencrnm.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencrnm_date_hierarchies_have_vencrnm_years"
+			        }
+			      ]
+			    },
+			    "RN_ms_vencrnm_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms.vencrnm": {
+			          "Target": {
+			            "Entity": "RN_ms.vencrnm"
+			          }
+			        },
+			        "RN_ms.vencrnm.date_hierarchy": {
+			          "Target": {
+			            "Entity": "RN_ms.vencrnm.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms.vencrnm"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.vencrnm.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "vencrnms_have_vencrnm_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_vencrnm": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "RN_ms.vencrnm": {
+			          "Target": {
+			            "Entity": "RN_ms.vencrnm"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.vencrnm"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_vencrnms"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_funcao": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "RN_ms.funcao": {
+			          "Target": {
+			            "Entity": "RN_ms.funcao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.funcao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_funcaos"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_codfuncao": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "RN_ms.codfuncao": {
+			          "Target": {
+			            "Entity": "RN_ms.codfuncao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.codfuncao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_codfuncaos"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_secao": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "RN_ms.secao": {
+			          "Target": {
+			            "Entity": "RN_ms.secao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.secao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_secaos"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_codsecao": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "RN_ms.codsecao": {
+			          "Target": {
+			            "Entity": "RN_ms.codsecao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.codsecao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_codsecaos"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_nacionalidade": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "RN_ms.nacionalidade": {
+			          "Target": {
+			            "Entity": "RN_ms.nacionalidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.nacionalidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_nacionalidades"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_nome": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "RN_ms.nome": {
+			          "Target": {
+			            "Entity": "RN_ms.nome"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.nome"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_nome"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "RN_ms.chapa": {
+			          "Target": {
+			            "Entity": "RN_ms.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_chapa"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_nomefantasia": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "RN_ms.nomefantasia": {
+			          "Target": {
+			            "Entity": "RN_ms.nomefantasia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.nomefantasia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_nomefantasias"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_codcoligada": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "RN_ms.codcoligada": {
+			          "Target": {
+			            "Entity": "RN_ms.codcoligada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "RN_ms.codcoligada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_codcoligadas"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+
