@@ -1,0 +1,271 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "974e7f815427743b5892",
+  "position": {
+    "x": 0,
+    "y": 49,
+    "z": 0,
+    "height": 671,
+    "width": 1280,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RNMs"
+                    }
+                  },
+                  "Property": "NOMEFANTASIA"
+                }
+              },
+              "queryRef": "RNMs.NOMEFANTASIA",
+              "nativeQueryRef": "Coligada",
+              "displayName": "Coligada"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RNMs"
+                    }
+                  },
+                  "Property": "CHAPA"
+                }
+              },
+              "queryRef": "RNMs.CHAPA",
+              "nativeQueryRef": "Chapa",
+              "displayName": "Chapa"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RNMs"
+                    }
+                  },
+                  "Property": "NOME"
+                }
+              },
+              "queryRef": "RNMs.NOME",
+              "nativeQueryRef": "Colaborador",
+              "displayName": "Colaborador"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RNMs"
+                    }
+                  },
+                  "Property": "SECAO"
+                }
+              },
+              "queryRef": "RNMs.SECAO",
+              "nativeQueryRef": "Setor",
+              "displayName": "Setor"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RNMs"
+                    }
+                  },
+                  "Property": "VENCRNM"
+                }
+              },
+              "queryRef": "RNMs.VENCRNM",
+              "nativeQueryRef": "Vencimento do RNM",
+              "displayName": "Vencimento do RNM"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RNMs"
+                    }
+                  },
+                  "Property": "FUNCAO"
+                }
+              },
+              "queryRef": "RNMs.FUNCAO",
+              "nativeQueryRef": "FUNCAO"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RNMs"
+                    }
+                  },
+                  "Property": "NACIONALIDADE"
+                }
+              },
+              "queryRef": "RNMs.NACIONALIDADE",
+              "nativeQueryRef": "NACIONALIDADE"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "columnHeaders": [
+        {
+          "properties": {
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "15D"
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "outlineStyle": {
+              "expr": {
+                "Literal": {
+                  "Value": "14D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "RNMs.VENCRNM"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "RNMs.CHAPA"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "360.33332399822245D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "RNMs.NOME"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "147.5280557742643D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "RNMs.VENCRNM"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "metadata": "RNMs.SECAO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "122D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "RNMs.NACIONALIDADE"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "327D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "RNMs.FUNCAO"
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

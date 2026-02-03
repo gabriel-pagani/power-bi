@@ -104,6 +104,16 @@ cultureInfo en-US
 			          "nome": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Colaborador": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -229,6 +239,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "Vencimento da RNM": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Vencimento do RNM": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",

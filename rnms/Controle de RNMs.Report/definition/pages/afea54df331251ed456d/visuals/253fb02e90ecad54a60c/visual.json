@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "253fb02e90ecad54a60c",
   "position": {
-    "x": 404,
-    "y": 210,
+    "x": 317.38035264483625,
+    "y": 156.87657430730476,
     "z": 5,
-    "height": 309,
-    "width": 755,
+    "height": 309.21914357682618,
+    "width": 963.02267002518886,
     "tabOrder": 5
   },
   "visual": {
@@ -23,27 +23,12 @@
                       "Entity": "Calendario"
                     }
                   },
-                  "Property": "Month"
-                }
-              },
-              "queryRef": "Calendario.Month",
-              "nativeQueryRef": "Month",
-              "active": true
-            },
-            {
-              "field": {
-                "Column": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "Calendario"
-                    }
-                  },
                   "Property": "Year"
                 }
               },
               "queryRef": "Calendario.Year",
               "nativeQueryRef": "Year",
-              "active": false
+              "active": true
             }
           ]
         },
@@ -96,6 +81,24 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Medida"
+                  }
+                },
+                "Property": "RNMS_A_VENCER"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     },
     "objects": {
@@ -275,7 +278,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Vencimento dos RNMs por Mês'"
+                  "Value": "'Vencimento dos RNMs por Ano'"
                 }
               }
             },
@@ -283,6 +286,26 @@
               "expr": {
                 "Literal": {
                   "Value": "'center'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ce3d2eaa7b87303f4a05'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }

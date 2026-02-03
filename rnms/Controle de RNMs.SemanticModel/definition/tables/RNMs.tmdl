@@ -75,7 +75,7 @@ table RNMs
 
 	column VENCRNM
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 1119c365-0c3a-4a61-987b-fef194beec9d
 		summarizeBy: none
 		sourceColumn: VENCRNM
@@ -94,8 +94,6 @@ table RNMs
 				    #"Changed Type1" = Table.TransformColumnTypes(#"Capitalized Each Word",{{"VENCRNM", type date}})
 				in
 				    #"Changed Type1"
-
-	changedProperty = Name
 
 	annotation PBI_NavigationStepName = Navigation
 
