@@ -1,0 +1,72 @@
+table Calendario
+	lineageTag: b61c3efb-35e6-4199-8082-d6e260d5f456
+
+	column Date
+		formatString: Short Date
+		lineageTag: 87d0b990-ed35-4b90-82ab-4e17b196fdd6
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: f7caf425-5452-4515-a5dd-be9b9b15f8a6
+			defaultHierarchy: LocalDateTable_578327a8-136f-4693-ac88-5a68221b2e3a.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day = Calendario[Date].[Day]
+		formatString: 0
+		lineageTag: abc364b7-2bef-447e-98b7-26cc48c6e6b8
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month = FORMAT(Calendario[Date],"mmm","pt-br")
+		lineageTag: 5b0a5e74-4ed8-4cb8-90a5-f8d0b6257353
+		summarizeBy: none
+		sortByColumn: MonthNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNo = Calendario[Date].[MonthNo]
+		formatString: 0
+		lineageTag: 53862ff0-3551-4789-bc47-65b9b1ff5467
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = Calendario[Date].[Year]
+		formatString: 0
+		lineageTag: 57a25f23-54ec-4cdc-ad52-d3dd228e8b4f
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter = FORMAT( Calendario[Date], "Q" ) & "º Trim"
+		lineageTag: 4b432240-a034-4301-b0d1-0d2fcea58ef2
+		summarizeBy: none
+		sortByColumn: QuarterNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column QuarterNo = Calendario[Date].[QuarterNo]
+		formatString: 0
+		lineageTag: f5e4310b-3097-414e-a127-8b30117d3337
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Calendario = calculated
+		mode: import
+		source = ```
+				
+				    CALENDAR(
+				            DATE(YEAR(MIN(RNMs[VENCRNM])), 1, 1),
+				            DATE(YEAR(MAX(RNMs[VENCRNM])) + 1, 12, 31)
+				    )
+				
+				```
+
+	annotation PBI_Id = 28d3883c47ae4b86a09293b746a10008
+
