@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "CATs"
+                      "Entity": "Calendario"
                     }
                   },
-                  "Property": "DATAOCORRENCIA"
+                  "Property": "Date"
                 }
               },
-              "queryRef": "CATs.DATAOCORRENCIA",
+              "queryRef": "Calendario.Date",
               "nativeQueryRef": "Período da Ocorrência",
               "active": true,
               "displayName": "Período da Ocorrência"
@@ -41,10 +41,10 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "CATs"
+                    "Entity": "Calendario"
                   }
                 },
-                "Property": "DATAOCORRENCIA"
+                "Property": "Date"
               }
             },
             "direction": "Ascending"
@@ -67,7 +67,7 @@
             "endDate": {
               "expr": {
                 "Literal": {
-                  "Value": "datetime'2026-12-31T00:00:00'"
+                  "Value": "datetime'2026-11-28T00:00:00'"
                 }
               }
             },
@@ -90,7 +90,7 @@
                 "From": [
                   {
                     "Name": "c",
-                    "Entity": "CATs",
+                    "Entity": "Calendario",
                     "Type": 0
                   }
                 ],
@@ -108,7 +108,7 @@
                                     "Source": "c"
                                   }
                                 },
-                                "Property": "DATAOCORRENCIA"
+                                "Property": "Date"
                               }
                             },
                             "Right": {
@@ -128,12 +128,12 @@
                                     "Source": "c"
                                   }
                                 },
-                                "Property": "DATAOCORRENCIA"
+                                "Property": "Date"
                               }
                             },
                             "Right": {
                               "Literal": {
-                                "Value": "datetime'2027-01-01T00:00:00'"
+                                "Value": "datetime'2026-11-29T00:00:00'"
                               }
                             }
                           }

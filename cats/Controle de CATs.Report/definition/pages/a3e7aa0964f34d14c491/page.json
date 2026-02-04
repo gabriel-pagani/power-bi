@@ -3,8 +3,8 @@
   "name": "a3e7aa0964f34d14c491",
   "displayName": "Top Causas Mais Recorrentes",
   "displayOption": "ActualSize",
-  "height": 400,
-  "width": 600,
+  "height": 240,
+  "width": 320,
   "visibility": "HiddenInViewMode",
   "type": "Tooltip"
 }

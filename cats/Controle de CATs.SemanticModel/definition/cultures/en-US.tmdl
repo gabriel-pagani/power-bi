@@ -53,6 +53,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.714
 			          }
+			        },
+			        {
+			          "Período da Ocorrência": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -1026,16 +1036,6 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.7
 			          }
-			        },
-			        {
-			          "Período da Ocorrência": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -1400,6 +1400,202 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "CA_ts.numerocat": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "CATs",
+			          "ConceptualProperty": "NUMEROCAT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "numerocat": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "metrica.total_dias_uteis": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "TOTAL_DIAS_UTEIS_NO_MES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total dias uteis": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TOTAL_DIAS_UTEIS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate dias uteis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "overall dias uteis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "metrica.data_ref": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Metricas",
+			          "ConceptualProperty": "DATA_REF"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data ref": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DATA_REF": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "data": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "ref": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "information ref": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact ref": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info ref": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
 			    }
 			  },
 			  "Relationships": {
@@ -1677,6 +1873,105 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_CA_tses"
+			        }
+			      ]
+			    },
+			    "CA_ts_has_metrica_data_ref": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts": {
+			          "Target": {
+			            "Entity": "CA_ts"
+			          }
+			        },
+			        "metrica.data_ref": {
+			          "Target": {
+			            "Entity": "metrica.data_ref"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts"
+			            },
+			            "Object": {
+			              "Role": "metrica.data_ref"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CA_tses_have_data_ref"
+			        }
+			      ]
+			    },
+			    "CA_ts_has_metrica_total_dias_uteis": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts": {
+			          "Target": {
+			            "Entity": "CA_ts"
+			          }
+			        },
+			        "metrica.total_dias_uteis": {
+			          "Target": {
+			            "Entity": "metrica.total_dias_uteis"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts"
+			            },
+			            "Object": {
+			              "Role": "metrica.total_dias_uteis"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CA_tses_have_total_dias_uteis"
+			        }
+			      ]
+			    },
+			    "CA_ts_has_numerocat": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts": {
+			          "Target": {
+			            "Entity": "CA_ts"
+			          }
+			        },
+			        "CA_ts.numerocat": {
+			          "Target": {
+			            "Entity": "CA_ts.numerocat"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts"
+			            },
+			            "Object": {
+			              "Role": "CA_ts.numerocat"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CA_tses_have_numerocats"
 			        }
 			      ]
 			    },

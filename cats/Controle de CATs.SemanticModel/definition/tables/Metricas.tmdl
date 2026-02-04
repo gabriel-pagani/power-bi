@@ -61,6 +61,44 @@ table Metricas
 		formatString: 0
 		lineageTag: dde00515-bd3d-40f6-80e2-4fbed481055e
 
+	measure TOTAL_DIAS_UTEIS_NO_MES = ```
+			
+			VAR DataBase  = [DATA_REF]
+			VAR InicioMes = DATE(YEAR( DataBase ), MONTH(DataBase), 1)
+			VAR FimMes    = EOMONTH (DataBase, 0)
+			RETURN
+			COUNTROWS(
+			    FILTER(
+			        CALENDAR(InicioMes, FimMes),
+			        WEEKDAY([Date], 2) <= 5
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: b7b471c8-1cd0-40c6-ad1f-ba6fee9e909a
+
+	measure DATA_REF = MAX(Calendario[Date])
+		formatString: Short Date
+		lineageTag: e08a18d4-ed98-484d-a7f0-a1f64f29acda
+
+	measure TOTAL_SABADOS_NO_MES = ```
+			
+			VAR DataBase  = [DATA_REF]
+			VAR InicioMes = DATE(YEAR( DataBase ), MONTH(DataBase), 1)
+			VAR FimMes    = EOMONTH (DataBase, 0)
+			RETURN
+			COUNTROWS(
+			    FILTER(
+			        CALENDAR(InicioMes, FimMes),
+			        WEEKDAY([Date], 2) = 6
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 187400ea-043c-4b48-9499-4c26f93abb5f
+
 	partition Metricas = m
 		mode: import
 		source =
