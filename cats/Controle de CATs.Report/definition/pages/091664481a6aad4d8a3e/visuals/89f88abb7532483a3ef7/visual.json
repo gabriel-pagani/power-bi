@@ -3,10 +3,10 @@
   "name": "89f88abb7532483a3ef7",
   "position": {
     "x": 0,
-    "y": 350.19825535289453,
+    "y": 350,
     "z": 8000,
-    "height": 70.039651070578913,
-    "width": 239.55590800951626,
+    "height": 70,
+    "width": 239,
     "tabOrder": 8000
   },
   "visual": {
@@ -64,13 +64,6 @@
                 }
               }
             },
-            "endDate": {
-              "expr": {
-                "Literal": {
-                  "Value": "datetime'2026-11-28T00:00:00'"
-                }
-              }
-            },
             "mode": {
               "expr": {
                 "Literal": {
@@ -97,45 +90,21 @@
                 "Where": [
                   {
                     "Condition": {
-                      "And": {
+                      "Comparison": {
+                        "ComparisonKind": 2,
                         "Left": {
-                          "Comparison": {
-                            "ComparisonKind": 2,
-                            "Left": {
-                              "Column": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Source": "c"
-                                  }
-                                },
-                                "Property": "Date"
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "c"
                               }
                             },
-                            "Right": {
-                              "Literal": {
-                                "Value": "datetime'2025-01-01T00:00:00'"
-                              }
-                            }
+                            "Property": "Date"
                           }
                         },
                         "Right": {
-                          "Comparison": {
-                            "ComparisonKind": 3,
-                            "Left": {
-                              "Column": {
-                                "Expression": {
-                                  "SourceRef": {
-                                    "Source": "c"
-                                  }
-                                },
-                                "Property": "Date"
-                              }
-                            },
-                            "Right": {
-                              "Literal": {
-                                "Value": "datetime'2026-11-29T00:00:00'"
-                              }
-                            }
+                          "Literal": {
+                            "Value": "datetime'2025-01-01T00:00:00'"
                           }
                         }
                       }

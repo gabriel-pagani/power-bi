@@ -10,7 +10,7 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["CATs","Metricas"]
+annotation PBI_QueryOrder = ["CATs","Metricas","Horas Extras","Calculo de Taxas"]
 
 ref table Calendario
 ref table CATs
@@ -18,6 +18,8 @@ ref table DateTableTemplate_de58d493-4bd0-4980-a503-75d332536416
 ref table LocalDateTable_75fcb013-5713-4fe1-b150-301b87c1149d
 ref table LocalDateTable_f38acf21-9985-493b-ac8c-ce3d1e0fb405
 ref table Metricas
+ref table 'Horas Extras'
+ref table 'Calculo de Taxas'
 
 ref cultureInfo en-US
 

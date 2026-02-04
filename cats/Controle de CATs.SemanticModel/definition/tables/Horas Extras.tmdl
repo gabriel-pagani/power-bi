@@ -1,0 +1,52 @@
+table 'Horas Extras'
+	lineageTag: db988b2c-bf76-4847-8653-6c78e5819012
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 16f24578-26f6-4279-80a6-2475f42b8fed
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column ANOCOMP
+		dataType: int64
+		formatString: 0
+		lineageTag: 129c03e6-8741-44b4-b039-b6ab8df505ee
+		summarizeBy: sum
+		sourceColumn: ANOCOMP
+
+		annotation SummarizationSetBy = Automatic
+
+	column MESCOMP
+		dataType: int64
+		formatString: 0
+		lineageTag: c2cb6b73-83ef-4055-ad0d-329fd7077406
+		summarizeBy: sum
+		sourceColumn: MESCOMP
+
+		annotation SummarizationSetBy = Automatic
+
+	column REF
+		dataType: double
+		lineageTag: e7244733-ef38-495f-8337-e8472f35f91e
+		summarizeBy: sum
+		sourceColumn: REF
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Horas Extras' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT CODCOLIGADA, ANOCOMP, MESCOMP, REF FROM PFMOVCC WHERE CODEVENTO = '0082'"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}, {"ANOCOMP", Int64.Type}, {"MESCOMP", Int64.Type}, {"REF", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

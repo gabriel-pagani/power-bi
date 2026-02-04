@@ -1,0 +1,70 @@
+table 'Calculo de Taxas'
+	lineageTag: b2b28476-fd1e-4be6-b9b8-e1478d28612b
+
+	measure HORASEXTRAS = ```
+			
+			VAR DataBase = [DATA_REF]
+			VAR AnoComp = YEAR(DataBase)
+			VAR MesComp = MONTH(DataBase)
+			RETURN
+			CALCULATE (
+			    SUM('Horas Extras'[REF]),
+			    'Horas Extras'[ANOCOMP] = AnoComp,
+			    'Horas Extras'[MESCOMP] = MesComp
+			)
+			
+			```
+		lineageTag: 561a2e65-dc96-4987-b699-49b1c2a69d30
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure DATA_REF = MAX(Calendario[Date])
+		formatString: General Date
+		lineageTag: 8013dfc3-bfa2-4dd7-8a42-57b5467c53c5
+
+	measure TOTAL_DIAS_UTEIS_NO_MES = ```
+			
+			VAR DataBase  = [DATA_REF]
+			VAR InicioMes = DATE(YEAR( DataBase ), MONTH(DataBase), 1)
+			VAR FimMes    = EOMONTH (DataBase, 0)
+			RETURN
+			COUNTROWS(
+			    FILTER(
+			        CALENDAR(InicioMes, FimMes),
+			        WEEKDAY([Date], 2) <= 5
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 74ec2379-0d68-40b8-95b6-f458f9e166ee
+
+	measure TOTAL_SABADOS_NO_MES = ```
+			
+			VAR DataBase  = [DATA_REF]
+			VAR InicioMes = DATE(YEAR( DataBase ), MONTH(DataBase), 1)
+			VAR FimMes    = EOMONTH (DataBase, 0)
+			RETURN
+			COUNTROWS(
+			    FILTER(
+			        CALENDAR(InicioMes, FimMes),
+			        WEEKDAY([Date], 2) = 6
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: 38392629-23d4-4b1c-a89f-16ddf2a80399
+
+	partition 'Calculo de Taxas' = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+
