@@ -90,25 +90,25 @@ table 'Folha de Pagamento'
 
 	column BASEFGTSAVPREVIO
 		dataType: decimal
-		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: 8bf803c3-bc82-4a05-a3d9-75601c810e5b
 		summarizeBy: sum
 		sourceColumn: BASEFGTSAVPREVIO
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+		annotation PBI_FormatHint = {"currencyCulture":"kgp-Latn-BR"}
 
 	column BASEFGTS13AVPREVIO
 		dataType: decimal
-		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
 		lineageTag: 5eab113f-d7b6-4821-897c-f2056543eadd
 		summarizeBy: sum
 		sourceColumn: BASEFGTS13AVPREVIO
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+		annotation PBI_FormatHint = {"currencyCulture":"kgp-Latn-BR"}
 
 	partition 'Folha de Pagamento' = m
 		mode: import
