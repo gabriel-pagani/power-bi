@@ -18,3 +18,19 @@ relationship 83b3b6d2-19a9-4ad8-aee2-565183ec482d
 	fromColumn: 'Horas Extras'.CODCOLIGADA
 	toColumn: CATs.CODCOLIGADA
 
+relationship 54dfe9d6-39a8-46db-af8e-735d44984bf6
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Funcionarios.DATAADMISSAO
+	toColumn: LocalDateTable_df501aed-744a-4813-ba39-fc83ac78790f.Date
+
+relationship aefe6f86-4445-4353-99b1-3198fb413e33
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Funcionarios.DATADEMISSAO
+	toColumn: LocalDateTable_3c288594-4b23-4446-b42c-99db886cf1a8.Date
+
+relationship c874c249-fad2-b844-16d7-b036dace83a4
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Funcionarios.CODCOLIGADA
+	toColumn: CATs.CODCOLIGADA
+

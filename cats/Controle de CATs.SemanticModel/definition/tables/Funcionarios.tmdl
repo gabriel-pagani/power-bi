@@ -1,0 +1,72 @@
+table Funcionarios
+	lineageTag: b2198300-1073-422a-bb5e-f565e273828c
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: e28b1b32-9f9f-4a47-acad-8f58fb46210e
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODSECAO
+		dataType: string
+		lineageTag: 4a83b3ee-88f1-4bf7-86f6-fe1e9afed1b1
+		summarizeBy: none
+		sourceColumn: CODSECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFUNCAO
+		dataType: string
+		lineageTag: 42c3c298-8f45-4313-aa3d-f13728348034
+		summarizeBy: none
+		sourceColumn: CODFUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATAADMISSAO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: ccc2e86e-5c26-4e42-895a-656a2f4838e6
+		summarizeBy: none
+		sourceColumn: DATAADMISSAO
+
+		variation Variation
+			isDefault
+			relationship: 54dfe9d6-39a8-46db-af8e-735d44984bf6
+			defaultHierarchy: LocalDateTable_df501aed-744a-4813-ba39-fc83ac78790f.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column DATADEMISSAO
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 6e13c984-3fe9-45ad-8b4e-6658f6b16ab1
+		summarizeBy: none
+		sourceColumn: DATADEMISSAO
+
+		variation Variation
+			isDefault
+			relationship: aefe6f86-4445-4353-99b1-3198fb413e33
+			defaultHierarchy: LocalDateTable_3c288594-4b23-4446-b42c-99db886cf1a8.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition Funcionarios = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab)CODCOLIGADA, #(lf)#(tab)CODSECAO, #(lf)#(tab)CODFUNCAO, #(lf)#(tab)DATAADMISSAO, #(lf)#(tab)DATADEMISSAO #(lf)#(lf)FROM PFUNC"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}, {"DATAADMISSAO", type date}, {"DATADEMISSAO", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
