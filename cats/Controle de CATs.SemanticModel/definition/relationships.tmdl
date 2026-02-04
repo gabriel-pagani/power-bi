@@ -12,3 +12,9 @@ relationship 90adbd37-a780-622d-c4b4-9c6144d40a35
 	fromColumn: CATs.DATAOCORRENCIA
 	toColumn: Calendario.Date
 
+relationship 83b3b6d2-19a9-4ad8-aee2-565183ec482d
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'Horas Extras'.CODCOLIGADA
+	toColumn: CATs.CODCOLIGADA
+
