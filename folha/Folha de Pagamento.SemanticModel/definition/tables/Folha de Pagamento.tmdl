@@ -18,25 +18,28 @@ table 'Folha de Pagamento'
 		annotation SummarizationSetBy = Automatic
 
 	column ANOCOMP
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 062aea4f-b5a7-4a14-af41-515644d9b2fc
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: ANOCOMP
 
 		annotation SummarizationSetBy = Automatic
 
 	column MESCOMP
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: 868d7f65-f228-4e20-b49d-d1cbdfab677b
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: MESCOMP
 
 		annotation SummarizationSetBy = Automatic
 
 	column NROPERIODO
-		dataType: string
+		dataType: int64
+		formatString: 0
 		lineageTag: ee4dd18a-6968-4e3e-8c05-51623289f528
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: NROPERIODO
 
 		annotation SummarizationSetBy = Automatic
@@ -85,15 +88,38 @@ table 'Folha de Pagamento'
 
 		annotation PBI_FormatHint = {"currencyCulture":"yrl-Latn-BR"}
 
+	column BASEFGTSAVPREVIO
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 8bf803c3-bc82-4a05-a3d9-75601c810e5b
+		summarizeBy: sum
+		sourceColumn: BASEFGTSAVPREVIO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column BASEFGTS13AVPREVIO
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 5eab113f-d7b6-4821-897c-f2056543eadd
+		summarizeBy: sum
+		sourceColumn: BASEFGTS13AVPREVIO
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
 	partition 'Folha de Pagamento' = m
 		mode: import
 		source =
 				let
-				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)    GCOLIGADA.NOMEFANTASIA,#(lf)    CONVERT(VARCHAR(2), PFPERFF.MESCOMP) + '/' + CONVERT(VARCHAR(4), PFPERFF.ANOCOMP) AS COMPETENCIA,#(lf)    PFPERFF.ANOCOMP,#(lf)    PFPERFF.MESCOMP,#(lf)    PFPERFF.NROPERIODO,#(lf)    PFPERFF.BASEFGTS,#(lf)    PFPERFF.BASEFGTS13,#(lf)    PFPERFF.BASEINSS,#(lf)    PFPERFF.BASEINSS13#(lf)#(lf)FROM PFPERFF #(lf)    JOIN GCOLIGADA ON GCOLIGADA.CODCOLIGADA = PFPERFF.CODCOLIGADA"]),
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)    GCOLIGADA.NOMEFANTASIA,#(lf)    CONVERT(VARCHAR(2), PFPERFF.MESCOMP) + '/' + CONVERT(VARCHAR(4), PFPERFF.ANOCOMP) AS COMPETENCIA,#(lf)    PFPERFF.ANOCOMP,#(lf)    PFPERFF.MESCOMP,#(lf)    PFPERFF.NROPERIODO,#(lf)    CASE WHEN ISNULL(PFPERFF.BASEFGTS, 0) < 0 THEN 0 ELSE ISNULL(PFPERFF.BASEFGTS, 0) END AS BASEFGTS,#(lf)    CASE WHEN ISNULL(PFPERFF.BASEFGTSAVPREVIO, 0) < 0 THEN 0 ELSE ISNULL(PFPERFF.BASEFGTSAVPREVIO, 0) END AS BASEFGTSAVPREVIO,#(lf)    CASE WHEN ISNULL(PFPERFF.BASEFGTS13, 0) < 0 THEN 0 ELSE ISNULL(PFPERFF.BASEFGTS13, 0) END AS BASEFGTS13,#(lf)    CASE WHEN ISNULL(PFPERFF.BASEFGTS13AVPREVIO, 0) < 0 THEN 0 ELSE ISNULL(PFPERFF.BASEFGTS13AVPREVIO, 0) END AS BASEFGTS13AVPREVIO,#(lf)    CASE WHEN ISNULL(PFPERFF.BASEINSS, 0) < 0 THEN 0 ELSE ISNULL(PFPERFF.BASEINSS, 0) END AS BASEINSS,#(lf)    CASE WHEN ISNULL(PFPERFF.BASEINSS13, 0) < 0 THEN 0 ELSE ISNULL(PFPERFF.BASEINSS13, 0) END AS BASEINSS13#(lf)#(lf)FROM PFPERFF #(lf)    JOIN GCOLIGADA ON GCOLIGADA.CODCOLIGADA = PFPERFF.CODCOLIGADA"]),
 				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"ANOCOMP", type text}, {"MESCOMP", type text}, {"NROPERIODO", type text}, {"BASEFGTS", Currency.Type}, {"BASEFGTS13", Currency.Type}, {"BASEINSS", Currency.Type}, {"BASEINSS13", Currency.Type}}),
-				    #"Capitalized Each Word" = Table.TransformColumns(#"Changed Type",{{"NOMEFANTASIA", Text.Proper, type text}})
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Changed Type",{{"NOMEFANTASIA", Text.Proper, type text}}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Capitalized Each Word",{{"ANOCOMP", Int64.Type}, {"MESCOMP", Int64.Type}, {"NROPERIODO", Int64.Type}, {"BASEFGTSAVPREVIO", Currency.Type}, {"BASEFGTS13AVPREVIO", Currency.Type}})
 				in
-				    #"Capitalized Each Word"
+				    #"Changed Type1"
 
 	annotation PBI_NavigationStepName = Navigation
 

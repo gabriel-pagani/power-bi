@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "2040cf2a8d302e66fd39",
   "position": {
-    "x": 256,
-    "y": 74,
+    "x": 255.6,
+    "y": 161.2,
     "z": 8,
-    "height": 115,
-    "width": 256,
+    "height": 115.2,
+    "width": 256.8,
     "tabOrder": 8
   },
   "visual": {
@@ -25,15 +25,15 @@
                           "Entity": "Folha de Pagamento"
                         }
                       },
-                      "Property": "BASEFGTS13"
+                      "Property": "BASEFGTSAVPREVIO"
                     }
                   },
                   "Function": 0
                 }
               },
-              "queryRef": "Sum(Folha de Pagamento.BASEFGTS13)",
-              "nativeQueryRef": "Base FGTS 13º",
-              "displayName": "Base FGTS 13º"
+              "queryRef": "Sum(Folha de Pagamento.BASEFGTSAVPREVIO)",
+              "nativeQueryRef": "Base FGTS Aviso Prévio",
+              "displayName": "Base FGTS Aviso Prévio"
             }
           ]
         }
@@ -50,7 +50,7 @@
                         "Entity": "Folha de Pagamento"
                       }
                     },
-                    "Property": "BASEFGTS13"
+                    "Property": "BASEFGTSAVPREVIO"
                   }
                 },
                 "Function": 0

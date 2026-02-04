@@ -10,9 +10,8 @@ annotation __PBI_TimeIntelligenceEnabled = 1
 
 annotation PBI_ProTooling = ["DevMode"]
 
-annotation PBI_QueryOrder = ["Folha de Pagamento v2","Folha de Pagamento"]
+annotation PBI_QueryOrder = ["Folha de Pagamento"]
 
-ref table 'Folha de Pagamento v2'
 ref table 'Folha de Pagamento'
 
 ref cultureInfo en-US

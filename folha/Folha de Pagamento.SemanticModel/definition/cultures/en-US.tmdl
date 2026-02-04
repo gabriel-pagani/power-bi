@@ -5,455 +5,6 @@ cultureInfo en-US
 			  "Version": "4.1.0",
 			  "Language": "en-US",
 			  "Entities": {
-			    "folha_de_pagamento_v2": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "folha de pagamento v2": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.nomefantasia": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "nomefantasia"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "nomefantasia": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Coligada": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.mescomp": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "mescomp"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "mescomp": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Mês de Competência": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.anocomp": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "anocomp"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "anocomp": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "Ano de Competência": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.basefgt": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "basefgts"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "basefgt": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.basefgts_2": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "basefgts2"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "basefgts 2": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "basefgt 2": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.78
-			          }
-			        },
-			        {
-			          "basefgts2": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.valorfgt": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "valorfgts"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "valorfgt": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.basefgts_13": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "basefgts13"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "basefgts 13": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "basefgt 13": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.78
-			          }
-			        },
-			        {
-			          "basefgts13": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.valorfgts_13": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "valorfgts13"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "valorfgts 13": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "valorfgt 13": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.78
-			          }
-			        },
-			        {
-			          "valorfgts13": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.basefgtsrescisorio": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "basefgtsrescisorio"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "basefgtsrescisorio": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.valorfgtsrescisorio": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "valorfgtsrescisorio"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "valorfgtsrescisorio": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.basefgtsret": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "basefgtsret"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "basefgtsret": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.valorfgtsret": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "valorfgtsret"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "valorfgtsret": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.basefgts_1_3ret": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "basefgts13ret"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "basefgts 1 3ret": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "basefgt 1 3ret": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.78
-			          }
-			        },
-			        {
-			          "basefgts13ret": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.valorfgts_1_3ret": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "valorfgts13ret"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "valorfgts 1 3ret": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "valorfgt 1 3ret": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.78
-			          }
-			        },
-			        {
-			          "valorfgts13ret": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.basefgtsrescisorioret": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "basefgtsrescisorioret"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "basefgtsrescisorioret": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.valorfgtsrescisorioret": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "valorfgtsrescisorioret"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "valorfgtsrescisorioret": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.baseinssret": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "baseinssret"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "baseinssret": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.valorinssret": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "valorinssret"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "valorinssret": {
-			            "State": "Generated"
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.baseinss_1_3ret": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "baseinss13ret"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "baseinss 1 3ret": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "baseinss13ret": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2.valorinss_1_3ret": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Folha de Pagamento v2",
-			          "ConceptualProperty": "valorinss13ret"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "valorinss 1 3ret": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "valorinss13ret": {
-			            "Type": "Noun",
-			            "State": "Generated",
-			            "Weight": 0.99
-			          }
-			        }
-			      ]
-			    },
 			    "folha_de_pagamento": {
 			      "Definition": {
 			        "Binding": {
@@ -673,23 +224,69 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "folha_de_pagamento.basefgtsavprevio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Folha de Pagamento",
+			          "ConceptualProperty": "BASEFGTSAVPREVIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "basefgtsavprevio": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "folha_de_pagamento.basefgts_1_3avprevio": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Folha de Pagamento",
+			          "ConceptualProperty": "BASEFGTS13AVPREVIO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "basefgts 1 3avprevio": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "basefgt 1 3avprevio": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "BASEFGTS13AVPREVIO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "folha_de_pagamento_v2_has_valorfgts_13": {
+			    "folha_de_pagamento_has_nroperiodo": {
 			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
+			        "ConceptualEntity": "Folha de Pagamento"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "folha_de_pagamento_v2": {
+			        "folha_de_pagamento": {
 			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
+			            "Entity": "folha_de_pagamento"
 			          }
 			        },
-			        "folha_de_pagamento_v2.valorfgts_13": {
+			        "folha_de_pagamento.nroperiodo": {
 			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.valorfgts_13"
+			            "Entity": "folha_de_pagamento.nroperiodo"
 			          }
 			        }
 			      },
@@ -697,20 +294,172 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
+			              "Role": "folha_de_pagamento"
 			            },
 			            "Object": {
-			              "Role": "folha_de_pagamento_v2.valorfgts_13"
+			              "Role": "folha_de_pagamento.nroperiodo"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_valorfgts_13"
+			          "ID": "folha_de_pagamentos_have_nroperiodos"
+			        }
+			      ]
+			    },
+			    "folha_de_pagamento_has_mescomp": {
+			      "Binding": {
+			        "ConceptualEntity": "Folha de Pagamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "folha_de_pagamento": {
+			          "Target": {
+			            "Entity": "folha_de_pagamento"
+			          }
 			        },
+			        "folha_de_pagamento.mescomp": {
+			          "Target": {
+			            "Entity": "folha_de_pagamento.mescomp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "folha_de_pagamento"
+			            },
+			            "Object": {
+			              "Role": "folha_de_pagamento.mescomp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "folha_de_pagamentos_have_mescomps"
+			        }
+			      ]
+			    },
+			    "folha_de_pagamento_has_anocomp": {
+			      "Binding": {
+			        "ConceptualEntity": "Folha de Pagamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "folha_de_pagamento": {
+			          "Target": {
+			            "Entity": "folha_de_pagamento"
+			          }
+			        },
+			        "folha_de_pagamento.anocomp": {
+			          "Target": {
+			            "Entity": "folha_de_pagamento.anocomp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "folha_de_pagamento"
+			            },
+			            "Object": {
+			              "Role": "folha_de_pagamento.anocomp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "folha_de_pagamentos_have_anocomps"
+			        }
+			      ]
+			    },
+			    "folha_de_pagamento_has_competencia": {
+			      "Binding": {
+			        "ConceptualEntity": "Folha de Pagamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "folha_de_pagamento": {
+			          "Target": {
+			            "Entity": "folha_de_pagamento"
+			          }
+			        },
+			        "folha_de_pagamento.competencia": {
+			          "Target": {
+			            "Entity": "folha_de_pagamento.competencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "folha_de_pagamento"
+			            },
+			            "Object": {
+			              "Role": "folha_de_pagamento.competencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "folha_de_pagamentos_have_competencias"
+			        }
+			      ]
+			    },
+			    "folha_de_pagamento_has_nomefantasia": {
+			      "Binding": {
+			        "ConceptualEntity": "Folha de Pagamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "folha_de_pagamento": {
+			          "Target": {
+			            "Entity": "folha_de_pagamento"
+			          }
+			        },
+			        "folha_de_pagamento.nomefantasia": {
+			          "Target": {
+			            "Entity": "folha_de_pagamento.nomefantasia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "folha_de_pagamento"
+			            },
+			            "Object": {
+			              "Role": "folha_de_pagamento.nomefantasia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "folha_de_pagamentos_have_nomefantasias"
+			        }
+			      ]
+			    },
+			    "folha_de_pagamento_is_expensive5": {
+			      "Binding": {
+			        "ConceptualEntity": "Folha de Pagamento"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "folha_de_pagamento": {
+			          "Target": {
+			            "Entity": "folha_de_pagamento"
+			          }
+			        },
+			        "folha_de_pagamento.basefgts_1_3avprevio": {
+			          "Target": {
+			            "Entity": "folha_de_pagamento.basefgts_1_3avprevio"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Adjective": {
 			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
+			              "Role": "folha_de_pagamento"
 			            },
 			            "Adjectives": [
 			              {
@@ -727,50 +476,50 @@ cultureInfo en-US
 			              }
 			            ],
 			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.valorfgts_13"
+			              "Role": "folha_de_pagamento.basefgts_1_3avprevio"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "valorfgts_13_indicates_how_expensive_folha_de_pagamento_v2_are"
+			          "ID": "basefgts_1_3avprevio_indicates_how_expensive_folha_de_pagamentos_are"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "folha_de_pagamento"
+			            },
+			            "Object": {
+			              "Role": "folha_de_pagamento.basefgts_1_3avprevio"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "folha_de_pagamentos_have_basefgts_1_3avprevios"
 			        }
 			      ]
 			    },
-			    "folha_de_pagamento_v2_has_basefgts_13": {
+			    "folha_de_pagamento_is_expensive4": {
 			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
+			        "ConceptualEntity": "Folha de Pagamento"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "folha_de_pagamento_v2": {
+			        "folha_de_pagamento": {
 			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
+			            "Entity": "folha_de_pagamento"
 			          }
 			        },
-			        "folha_de_pagamento_v2.basefgts_13": {
+			        "folha_de_pagamento.basefgtsavprevio": {
 			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.basefgts_13"
+			            "Entity": "folha_de_pagamento.basefgtsavprevio"
 			          }
 			        }
 			      },
 			      "Phrasings": [
 			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.basefgts_13"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_basefgts_13"
-			        },
-			        {
 			          "Adjective": {
 			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
+			              "Role": "folha_de_pagamento"
 			            },
 			            "Adjectives": [
 			              {
@@ -787,291 +536,25 @@ cultureInfo en-US
 			              }
 			            ],
 			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.basefgts_13"
+			              "Role": "folha_de_pagamento.basefgtsavprevio"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "basefgts_13_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_has_valorfgt": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
+			          "ID": "basefgtsavprevio_indicates_how_expensive_folha_de_pagamentos_are"
 			        },
-			        "folha_de_pagamento_v2.valorfgt": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.valorfgt"
-			          }
-			        }
-			      },
-			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
+			              "Role": "folha_de_pagamento"
 			            },
 			            "Object": {
-			              "Role": "folha_de_pagamento_v2.valorfgt"
+			              "Role": "folha_de_pagamento.basefgtsavprevio"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_valorfgts"
-			        },
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.valorfgt"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "valorfgt_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_has_basefgts_2": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.basefgts_2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.basefgts_2"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.basefgts_2"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_basefgts_2"
-			        },
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.basefgts_2"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "basefgts_2_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_has_basefgt": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.basefgt": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.basefgt"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.basefgt"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_basefgts"
-			        },
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.basefgt"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "basefgt_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_has_anocomp": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.anocomp": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.anocomp"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.anocomp"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_anocomps"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_has_mescomp": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.mescomp": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.mescomp"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.mescomp"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_mescomps"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_has_nomefantasia": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.nomefantasia": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.nomefantasia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.nomefantasia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_nomefantasias"
+			          "ID": "folha_de_pagamentos_have_basefgtsavprevios"
 			        }
 			      ]
 			    },
@@ -1312,891 +795,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "folha_de_pagamentos_have_basefgts"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_is_expensive16": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.valorinss_1_3ret": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.valorinss_1_3ret"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.valorinss_1_3ret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "valorinss_1_3ret_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.valorinss_1_3ret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_valorinss_1_3rets"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_is_expensive15": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.baseinss_1_3ret": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.baseinss_1_3ret"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.baseinss_1_3ret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "baseinss_1_3ret_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.baseinss_1_3ret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_baseinss_1_3rets"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_is_expensive14": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.valorinssret": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.valorinssret"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.valorinssret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "valorinssret_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.valorinssret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_valorinssrets"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_is_expensive13": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.baseinssret": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.baseinssret"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.baseinssret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "baseinssret_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.baseinssret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_baseinssrets"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_is_expensive12": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.valorfgtsrescisorioret": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.valorfgtsrescisorioret"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.valorfgtsrescisorioret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "valorfgtsrescisorioret_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.valorfgtsrescisorioret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_valorfgtsrescisoriorets"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_is_expensive11": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.basefgtsrescisorioret": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.basefgtsrescisorioret"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.basefgtsrescisorioret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "basefgtsrescisorioret_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.basefgtsrescisorioret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_basefgtsrescisoriorets"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_is_expensive10": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.valorfgts_1_3ret": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.valorfgts_1_3ret"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.valorfgts_1_3ret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "valorfgts_1_3ret_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.valorfgts_1_3ret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_valorfgts_1_3rets"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_is_expensive9": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.basefgts_1_3ret": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.basefgts_1_3ret"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.basefgts_1_3ret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "basefgts_1_3ret_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.basefgts_1_3ret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_basefgts_1_3rets"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_is_expensive8": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.valorfgtsret": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.valorfgtsret"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.valorfgtsret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "valorfgtsret_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.valorfgtsret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_valorfgtsrets"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_is_expensive7": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.basefgtsret": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.basefgtsret"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.basefgtsret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "basefgtsret_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.basefgtsret"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_basefgtsrets"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_is_expensive6": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.valorfgtsrescisorio": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.valorfgtsrescisorio"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.valorfgtsrescisorio"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "valorfgtsrescisorio_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.valorfgtsrescisorio"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_valorfgtsrescisorios"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_v2_is_expensive5": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento v2"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento_v2": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2"
-			          }
-			        },
-			        "folha_de_pagamento_v2.basefgtsrescisorio": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento_v2.basefgtsrescisorio"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Adjectives": [
-			              {
-			                "expensive": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Antonyms": [
-			              {
-			                "cheap": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "folha_de_pagamento_v2.basefgtsrescisorio"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "basefgtsrescisorio_indicates_how_expensive_folha_de_pagamento_v2_are"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento_v2"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento_v2.basefgtsrescisorio"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamento_v2_have_basefgtsrescisorios"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_has_nomefantasia": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento"
-			          }
-			        },
-			        "folha_de_pagamento.nomefantasia": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento.nomefantasia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento.nomefantasia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamentos_have_nomefantasias"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_has_competencia": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento"
-			          }
-			        },
-			        "folha_de_pagamento.competencia": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento.competencia"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento.competencia"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamentos_have_competencias"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_has_anocomp": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento"
-			          }
-			        },
-			        "folha_de_pagamento.anocomp": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento.anocomp"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento.anocomp"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamentos_have_anocomps"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_has_mescomp": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento"
-			          }
-			        },
-			        "folha_de_pagamento.mescomp": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento.mescomp"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento.mescomp"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamentos_have_mescomps"
-			        }
-			      ]
-			    },
-			    "folha_de_pagamento_has_nroperiodo": {
-			      "Binding": {
-			        "ConceptualEntity": "Folha de Pagamento"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "folha_de_pagamento": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento"
-			          }
-			        },
-			        "folha_de_pagamento.nroperiodo": {
-			          "Target": {
-			            "Entity": "folha_de_pagamento.nroperiodo"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "folha_de_pagamento"
-			            },
-			            "Object": {
-			              "Role": "folha_de_pagamento.nroperiodo"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "folha_de_pagamentos_have_nroperiodos"
 			        }
 			      ]
 			    }

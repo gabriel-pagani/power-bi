@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "1e413ae0910334148ac2",
+  "name": "59675a8527817f14ea83",
   "position": {
-    "x": 767,
-    "y": 412,
-    "z": 12,
-    "height": 115,
-    "width": 256,
-    "tabOrder": 12
+    "x": 513,
+    "y": 161,
+    "z": 13,
+    "height": 116,
+    "width": 257,
+    "tabOrder": 13
   },
   "visual": {
     "visualType": "card",
@@ -22,17 +22,18 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "Folha de Pagamento v2"
+                          "Entity": "Folha de Pagamento"
                         }
                       },
-                      "Property": "baseinss13ret"
+                      "Property": "BASEFGTS13"
                     }
                   },
                   "Function": 0
                 }
               },
-              "queryRef": "Sum(Folha de Pagamento v2.baseinss13ret)",
-              "nativeQueryRef": "Sum of baseinss13ret"
+              "queryRef": "Sum(Folha de Pagamento.BASEFGTS13)",
+              "nativeQueryRef": "Base FGTS 13º",
+              "displayName": "Base FGTS 13º"
             }
           ]
         }
@@ -46,10 +47,10 @@
                   "Column": {
                     "Expression": {
                       "SourceRef": {
-                        "Entity": "Folha de Pagamento v2"
+                        "Entity": "Folha de Pagamento"
                       }
                     },
-                    "Property": "baseinss13ret"
+                    "Property": "BASEFGTS13"
                   }
                 },
                 "Function": 0

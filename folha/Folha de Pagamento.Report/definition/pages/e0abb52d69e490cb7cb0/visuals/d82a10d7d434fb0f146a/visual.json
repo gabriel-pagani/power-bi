@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "c5b3fd7aa81f1514e9a2",
+  "name": "d82a10d7d434fb0f146a",
   "position": {
-    "x": 511,
-    "y": 412,
-    "z": 14,
+    "x": 770,
+    "y": 162,
+    "z": 12,
     "height": 115,
     "width": 256,
-    "tabOrder": 14
+    "tabOrder": 12
   },
   "visual": {
     "visualType": "card",
@@ -22,17 +22,18 @@
                     "Column": {
                       "Expression": {
                         "SourceRef": {
-                          "Entity": "Folha de Pagamento v2"
+                          "Entity": "Folha de Pagamento"
                         }
                       },
-                      "Property": "baseinssret"
+                      "Property": "BASEFGTS13AVPREVIO"
                     }
                   },
                   "Function": 0
                 }
               },
-              "queryRef": "Sum(Folha de Pagamento v2.baseinssret)",
-              "nativeQueryRef": "Sum of baseinssret"
+              "queryRef": "Sum(Folha de Pagamento.BASEFGTS13AVPREVIO)",
+              "nativeQueryRef": "Base FGTS 13º Aviso Prévio",
+              "displayName": "Base FGTS 13º Aviso Prévio"
             }
           ]
         }
@@ -46,10 +47,10 @@
                   "Column": {
                     "Expression": {
                       "SourceRef": {
-                        "Entity": "Folha de Pagamento v2"
+                        "Entity": "Folha de Pagamento"
                       }
                     },
-                    "Property": "baseinssret"
+                    "Property": "BASEFGTS13AVPREVIO"
                   }
                 },
                 "Function": 0
