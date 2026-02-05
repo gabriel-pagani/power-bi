@@ -3,28 +3,31 @@ table 'Calculo de Taxas'
 
 	measure HORASEXTRAS = ```
 			
-			VAR DataBase = IF([DATA_REF] > TODAY(), TODAY(), [DATA_REF])
+			VAR DataBase = [DATA_REF]
 			VAR AnoComp = YEAR(DataBase)
 			VAR MesComp = MONTH(DataBase)
+			VAR Resultado =
+			    CALCULATE (
+			        SUM('Horas Extras'[REF]),
+			        'Horas Extras'[ANOCOMP] = AnoComp,
+			        'Horas Extras'[MESCOMP] = MesComp
+			    )
+			
 			RETURN
-			CALCULATE (
-			    SUM('Horas Extras'[REF]),
-			    'Horas Extras'[ANOCOMP] = AnoComp,
-			    'Horas Extras'[MESCOMP] = MesComp
-			)
+			COALESCE(Resultado, 0)
 			
 			```
 		lineageTag: 561a2e65-dc96-4987-b699-49b1c2a69d30
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure DATA_REF = MAX(Calendario[Date])
-		formatString: General Date
+	measure DATA_REF = IF(MAX(Calendario[Date]) > TODAY(), TODAY(), MAX(Calendario[Date]))
+		formatString: Short Date
 		lineageTag: 8013dfc3-bfa2-4dd7-8a42-57b5467c53c5
 
 	measure TOTAL_DIAS_UTEIS_NO_MES = ```
 			
-			VAR DataBase  = IF([DATA_REF] > TODAY(), TODAY(), [DATA_REF])
+			VAR DataBase  = [DATA_REF]
 			VAR InicioMes = DATE(YEAR( DataBase ), MONTH(DataBase), 1)
 			VAR FimMes    = EOMONTH (DataBase, 0)
 			RETURN
@@ -41,7 +44,7 @@ table 'Calculo de Taxas'
 
 	measure TOTAL_SABADOS_NO_MES = ```
 			
-			VAR DataBase  = IF([DATA_REF] > TODAY(), TODAY(), [DATA_REF])
+			VAR DataBase  = [DATA_REF]
 			VAR InicioMes = DATE(YEAR( DataBase ), MONTH(DataBase), 1)
 			VAR FimMes    = EOMONTH (DataBase, 0)
 			RETURN
@@ -58,7 +61,7 @@ table 'Calculo de Taxas'
 
 	measure TOTAL_FUNCIONARIOS_ATIVOS_NO_MES = ```
 			
-			VAR DataBase  = IF([DATA_REF] > TODAY(), TODAY(), [DATA_REF])
+			VAR DataBase  = [DATA_REF]
 			RETURN
 			COUNTROWS(
 			    FILTER(

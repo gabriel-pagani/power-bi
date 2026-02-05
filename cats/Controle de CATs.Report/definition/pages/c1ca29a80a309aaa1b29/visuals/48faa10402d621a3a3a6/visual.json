@@ -1,0 +1,70 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
+  "name": "48faa10402d621a3a3a6",
+  "position": {
+    "x": 765,
+    "y": 0,
+    "z": 8,
+    "height": 130,
+    "width": 255
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calculo de Taxas"
+                    }
+                  },
+                  "Property": "TOTAL_FUNCIONARIOS_ATIVOS_NO_MES"
+                }
+              },
+              "queryRef": "Calculo de Taxas.TOTAL_FUNCIONARIOS_ATIVOS_NO_MES",
+              "nativeQueryRef": "TOTAL_FUNCIONARIOS_ATIVOS_NO_MES"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Calculo de Taxas"
+                  }
+                },
+                "Property": "TOTAL_FUNCIONARIOS_ATIVOS_NO_MES"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
