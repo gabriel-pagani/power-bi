@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "c6eb74f9f4924f4356c3",
+  "name": "6affeed2417857e504be",
   "position": {
-    "x": 605.29411764705878,
-    "y": 15.882352941176471,
-    "z": 7000,
-    "height": 134.11764705882354,
-    "width": 320.58823529411768,
-    "tabOrder": 7000
+    "x": 278,
+    "y": 446,
+    "z": 7003,
+    "height": 99,
+    "width": 263,
+    "tabOrder": 7003
   },
   "visual": {
     "visualType": "card",
@@ -20,15 +20,15 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Medida"
+                      "Entity": "Calculo de Taxas"
                     }
                   },
-                  "Property": "RNM_EM_DIA"
+                  "Property": "DURACAO_TRATAMENTO_TOTAL"
                 }
               },
-              "queryRef": "Medida.RNMS_EM_DIA",
-              "nativeQueryRef": "RNMs Em Dia",
-              "displayName": "RNMs Em Dia"
+              "queryRef": "Calculo de Taxas.DURACAO_TRATAMENTO_TOTAL",
+              "nativeQueryRef": "Total da Duração dos Tratamentos",
+              "displayName": "Total da Duração dos Tratamentos"
             }
           ]
         }
@@ -40,10 +40,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Medida"
+                    "Entity": "Calculo de Taxas"
                   }
                 },
-                "Property": "RNM_EM_DIA"
+                "Property": "DURACAO_TRATAMENTO_TOTAL"
               }
             },
             "direction": "Descending"
@@ -53,41 +53,13 @@
       }
     },
     "objects": {
-      "categoryLabels": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
       "labels": [
         {
           "properties": {
-            "fontSize": {
+            "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "50D"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "1D"
                 }
               }
             }

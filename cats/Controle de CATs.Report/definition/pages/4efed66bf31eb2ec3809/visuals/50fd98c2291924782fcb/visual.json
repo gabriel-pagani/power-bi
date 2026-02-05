@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "c6eb74f9f4924f4356c3",
+  "name": "50fd98c2291924782fcb",
   "position": {
-    "x": 605.29411764705878,
-    "y": 15.882352941176471,
-    "z": 7000,
-    "height": 134.11764705882354,
-    "width": 320.58823529411768,
-    "tabOrder": 7000
+    "x": 732,
+    "y": 84,
+    "z": 1000,
+    "height": 99,
+    "width": 175,
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "card",
@@ -20,15 +20,15 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Medida"
+                      "Entity": "Calculo de Taxas"
                     }
                   },
-                  "Property": "RNM_EM_DIA"
+                  "Property": "HORASEXTRAS"
                 }
               },
-              "queryRef": "Medida.RNMS_EM_DIA",
-              "nativeQueryRef": "RNMs Em Dia",
-              "displayName": "RNMs Em Dia"
+              "queryRef": "Calculo de Taxas.HORASEXTRAS",
+              "nativeQueryRef": "Horas Extras",
+              "displayName": "Horas Extras"
             }
           ]
         }
@@ -40,10 +40,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Medida"
+                    "Entity": "Calculo de Taxas"
                   }
                 },
-                "Property": "RNM_EM_DIA"
+                "Property": "HORASEXTRAS"
               }
             },
             "direction": "Descending"
@@ -53,41 +53,13 @@
       }
     },
     "objects": {
-      "categoryLabels": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
       "labels": [
         {
           "properties": {
-            "fontSize": {
+            "labelDisplayUnits": {
               "expr": {
                 "Literal": {
-                  "Value": "50D"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "visualContainerObjects": {
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
+                  "Value": "1D"
                 }
               }
             }

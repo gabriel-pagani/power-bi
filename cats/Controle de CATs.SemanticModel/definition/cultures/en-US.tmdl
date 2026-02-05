@@ -63,6 +63,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Data Referência para o HHT": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -1128,6 +1138,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "CATs Totais": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1601,6 +1621,16 @@ cultureInfo en-US
 			          "horasextras": {
 			            "State": "Generated"
 			          }
+			        },
+			        {
+			          "Horas Extras": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -1889,6 +1919,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Funcionários Ativos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -2390,9 +2430,967 @@ cultureInfo en-US
 			        }
 			      ],
 			      "SemanticType": "Time"
+			    },
+			    "calculo_de_taxa.total_funcionarios_afastados_no_mes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calculo de Taxas",
+			          "ConceptualProperty": "TOTAL_FUNCIONARIOS_AFASTADOS_NO_MES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total funcionarios afastados no mes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TOTAL_FUNCIONARIOS_AFASTADOS_NO_MES": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate funcionario afastado no me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall funcionario afastado no me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total funcionario afastado number me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "Funcionários Afastados": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calculo_de_taxa.taxa_de_frequencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calculo de Taxas",
+			          "ConceptualProperty": "TAXA_DE_FREQUENCIA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "taxa de frequencia": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TAXA_DE_FREQUENCIA": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Taxa de Frequência": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calculo_de_taxa.duracao_tratamento_total": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calculo de Taxas",
+			          "ConceptualProperty": "DURACAO_TRATAMENTO_TOTAL"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "duracao tratamento total": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DURACAO_TRATAMENTO_TOTAL": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "duracao tratamento aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "duracao tratamento overall": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "Total da Duração dos Tratamentos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "calculo_de_taxa.taxa_de_gravidade": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calculo de Taxas",
+			          "ConceptualProperty": "TAXA_DE_GRAVIDADE"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "taxa de gravidade": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TAXA_DE_GRAVIDADE": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.chapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "CHAPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situacao_funcionario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situacao Funcionarios"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "situacao funcionario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situacao_funcionario.codcoligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situacao Funcionarios",
+			          "ConceptualProperty": "CODCOLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "codcoligada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situacao_funcionario.chapa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situacao Funcionarios",
+			          "ConceptualProperty": "CHAPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situacao_funcionario.datamudanca": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situacao Funcionarios",
+			          "ConceptualProperty": "DATAMUDANCA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datamudanca": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "situacao_funcionario.datamudanca.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situacao Funcionarios",
+			          "VariationSource": "DATAMUDANCA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datamudanca date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "datamudanca moment hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "moment hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "datamudanca period hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "period hierarchy": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "datamudanca date ladder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "datamudanca date grading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "datamudanca date order": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "datamudanca date pyramid": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "date ladder": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "date grading": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "situacao_funcionario.datamudanca.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situacao Funcionarios",
+			          "VariationSource": "DATAMUDANCA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datamudanca year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "datamudanca yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "situacao_funcionario.datamudanca.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situacao Funcionarios",
+			          "VariationSource": "DATAMUDANCA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datamudanca quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "datamudanca qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ]
+			    },
+			    "situacao_funcionario.datamudanca.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situacao Funcionarios",
+			          "VariationSource": "DATAMUDANCA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datamudanca month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "datamudanca mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "situacao_funcionario.datamudanca.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situacao Funcionarios",
+			          "VariationSource": "DATAMUDANCA",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datamudanca day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "situacao_funcionario.novasituacao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Situacao Funcionarios",
+			          "ConceptualProperty": "NOVASITUACAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "novasituacao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calculo_de_taxa.horas_trabalhadas": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calculo de Taxas",
+			          "ConceptualProperty": "HORAS_TRABALHADAS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horas trabalhadas": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "HORAS_TRABALHADAS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Horas  Trabalhadas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "situacao_funcionario_datamudanca_month_has_situacao_funcionario_datamudanca_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario.datamudanca.month": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.month"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca.day": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_months_have_datamudanca_days"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.day"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_days_have_datamudanca_months"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.day"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_days_are_in_datamudanca_months"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_datamudanca_quarter_has_situacao_funcionario_datamudanca_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario.datamudanca.quarter": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.quarter"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca.month": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_quarters_have_datamudanca_months"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_months_have_datamudanca_quarters"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_months_are_in_datamudanca_quarters"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_datamudanca_year_has_situacao_funcionario_datamudanca_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario.datamudanca.year": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.year"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca.quarter": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.year"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_years_have_datamudanca_quarters"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_quarters_have_datamudanca_years"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_quarters_are_in_datamudanca_years"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_datamudanca_date_hierarchy_has_situacao_funcionario_datamudanca_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario.datamudanca.date_hierarchy": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.date_hierarchy"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca.day": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_date_hierarchies_have_datamudanca_days"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_datamudanca_date_hierarchy_has_situacao_funcionario_datamudanca_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario.datamudanca.date_hierarchy": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.date_hierarchy"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca.month": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_date_hierarchies_have_datamudanca_months"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_datamudanca_date_hierarchy_has_situacao_funcionario_datamudanca_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario.datamudanca.date_hierarchy": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.date_hierarchy"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca.quarter": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_date_hierarchies_have_datamudanca_quarters"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_datamudanca_date_hierarchy_has_situacao_funcionario_datamudanca_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario.datamudanca.date_hierarchy": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.date_hierarchy"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca.year": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_date_hierarchies_have_datamudanca_years"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_datamudanca_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario.datamudanca": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca.date_hierarchy": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudancas_have_datamudanca_date_hierarchies"
+			        }
+			      ]
+			    },
 			    "funcionario_datademissao_date_hierarchy_has_funcionario_datademissao_day": {
 			      "Binding": {
 			        "ConceptualEntity": "Funcionarios"
@@ -3053,6 +4051,39 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "situacao_funcionario_has_CA_ts": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario": {
+			          "Target": {
+			            "Entity": "situacao_funcionario"
+			          }
+			        },
+			        "CA_ts": {
+			          "Target": {
+			            "Entity": "CA_ts"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario"
+			            },
+			            "Object": {
+			              "Role": "CA_ts"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situacao_funcionarios_have_CA_tses"
+			        }
+			      ]
+			    },
 			    "funcionario_has_CA_ts": {
 			      "Binding": {
 			        "ConceptualEntity": "Funcionarios"
@@ -3162,6 +4193,567 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_CA_tses"
+			        }
+			      ]
+			    },
+			    "calendario_has_calculo_de_taxa_horas_trabalhadas": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calculo_de_taxa.horas_trabalhadas": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.horas_trabalhadas"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.horas_trabalhadas"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_horas_trabalhadas"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_has_novasituacao": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario": {
+			          "Target": {
+			            "Entity": "situacao_funcionario"
+			          }
+			        },
+			        "situacao_funcionario.novasituacao": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.novasituacao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.novasituacao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situacao_funcionarios_have_novasituacaos"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_has_datamudanca": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario": {
+			          "Target": {
+			            "Entity": "situacao_funcionario"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situacao_funcionarios_have_datamudancas"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario": {
+			          "Target": {
+			            "Entity": "situacao_funcionario"
+			          }
+			        },
+			        "situacao_funcionario.chapa": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situacao_funcionarios_have_chapa"
+			        }
+			      ]
+			    },
+			    "funcionario_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.chapa": {
+			          "Target": {
+			            "Entity": "funcionario.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_chapa"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_has_calculo_de_taxa_taxa_de_gravidade": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario": {
+			          "Target": {
+			            "Entity": "situacao_funcionario"
+			          }
+			        },
+			        "calculo_de_taxa.taxa_de_gravidade": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.taxa_de_gravidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.taxa_de_gravidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situacao_funcionarios_have_taxa_de_gravidade"
+			        }
+			      ]
+			    },
+			    "horas_extra_has_calculo_de_taxa_taxa_de_gravidade": {
+			      "Binding": {
+			        "ConceptualEntity": "Horas Extras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "horas_extra": {
+			          "Target": {
+			            "Entity": "horas_extra"
+			          }
+			        },
+			        "calculo_de_taxa.taxa_de_gravidade": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.taxa_de_gravidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "horas_extra"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.taxa_de_gravidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "horas_extras_have_taxa_de_gravidade"
+			        }
+			      ]
+			    },
+			    "funcionario_has_calculo_de_taxa_taxa_de_gravidade": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "calculo_de_taxa.taxa_de_gravidade": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.taxa_de_gravidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.taxa_de_gravidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_taxa_de_gravidade"
+			        }
+			      ]
+			    },
+			    "calendario_has_calculo_de_taxa_taxa_de_gravidade": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calculo_de_taxa.taxa_de_gravidade": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.taxa_de_gravidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.taxa_de_gravidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_taxa_de_gravidade"
+			        }
+			      ]
+			    },
+			    "CA_ts_has_calculo_de_taxa_taxa_de_gravidade": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts": {
+			          "Target": {
+			            "Entity": "CA_ts"
+			          }
+			        },
+			        "calculo_de_taxa.taxa_de_gravidade": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.taxa_de_gravidade"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.taxa_de_gravidade"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CA_tses_have_taxa_de_gravidade"
+			        }
+			      ]
+			    },
+			    "CA_ts_has_calculo_de_taxa_duracao_tratamento_total": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts": {
+			          "Target": {
+			            "Entity": "CA_ts"
+			          }
+			        },
+			        "calculo_de_taxa.duracao_tratamento_total": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.duracao_tratamento_total"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.duracao_tratamento_total"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CA_tses_have_duracao_tratamento_total"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_has_calculo_de_taxa_taxa_de_frequencia": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario": {
+			          "Target": {
+			            "Entity": "situacao_funcionario"
+			          }
+			        },
+			        "calculo_de_taxa.taxa_de_frequencia": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.taxa_de_frequencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.taxa_de_frequencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situacao_funcionarios_have_taxa_de_frequencia"
+			        }
+			      ]
+			    },
+			    "horas_extra_has_calculo_de_taxa_taxa_de_frequencia": {
+			      "Binding": {
+			        "ConceptualEntity": "Horas Extras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "horas_extra": {
+			          "Target": {
+			            "Entity": "horas_extra"
+			          }
+			        },
+			        "calculo_de_taxa.taxa_de_frequencia": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.taxa_de_frequencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "horas_extra"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.taxa_de_frequencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "horas_extras_have_taxa_de_frequencia"
+			        }
+			      ]
+			    },
+			    "funcionario_has_calculo_de_taxa_taxa_de_frequencia": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "calculo_de_taxa.taxa_de_frequencia": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.taxa_de_frequencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.taxa_de_frequencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_taxa_de_frequencia"
+			        }
+			      ]
+			    },
+			    "calendario_has_calculo_de_taxa_taxa_de_frequencia": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calculo_de_taxa.taxa_de_frequencia": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.taxa_de_frequencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.taxa_de_frequencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_taxa_de_frequencia"
+			        }
+			      ]
+			    },
+			    "CA_ts_has_calculo_de_taxa_taxa_de_frequencia": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts": {
+			          "Target": {
+			            "Entity": "CA_ts"
+			          }
+			        },
+			        "calculo_de_taxa.taxa_de_frequencia": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.taxa_de_frequencia"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.taxa_de_frequencia"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "CA_tses_have_taxa_de_frequencia"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_has_calculo_de_taxa_total_funcionarios_afastados_no_mes": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario": {
+			          "Target": {
+			            "Entity": "situacao_funcionario"
+			          }
+			        },
+			        "calculo_de_taxa.total_funcionarios_afastados_no_mes": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.total_funcionarios_afastados_no_mes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.total_funcionarios_afastados_no_mes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situacao_funcionarios_have_total_funcionarios_afastados_no_mes"
 			        }
 			      ]
 			    },
@@ -3294,6 +4886,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "funcionarios_have_codsecaos"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_has_calculo_de_taxa_hht": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario": {
+			          "Target": {
+			            "Entity": "situacao_funcionario"
+			          }
+			        },
+			        "calculo_de_taxa.hht": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.hht"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.hht"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "situacao_funcionarios_have_hht"
 			        }
 			      ]
 			    },

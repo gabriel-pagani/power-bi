@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "d44cc6e0cbdd68554689",
   "position": {
-    "x": 933,
-    "y": 26,
-    "z": 8,
-    "height": 150,
-    "width": 280,
-    "tabOrder": 8
+    "x": 942.94117647058829,
+    "y": 15.882352941176471,
+    "z": 8000,
+    "height": 134.11764705882354,
+    "width": 321.1764705882353,
+    "tabOrder": 8000
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,12 @@
                       "Entity": "Medida"
                     }
                   },
-                  "Property": "RNMS_VENCIDOS"
+                  "Property": "RNM_VENCIDOS"
                 }
               },
               "queryRef": "Medida.RNMS_VENCIDOS",
-              "nativeQueryRef": "RNMS_VENCIDOS"
+              "nativeQueryRef": "RNMs Vencidos",
+              "displayName": "RNMs Vencidos"
             }
           ]
         }
@@ -42,7 +43,7 @@
                     "Entity": "Medida"
                   }
                 },
-                "Property": "RNMS_VENCIDOS"
+                "Property": "RNM_VENCIDOS"
               }
             },
             "direction": "Descending"
@@ -50,6 +51,49 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "50D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "drillFilterOtherVisuals": true
   }

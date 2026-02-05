@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "7755c7b8435b6732b7b0",
+  "name": "5be472e99b4ae7f7c20a",
   "position": {
-    "x": 16.071428571428573,
-    "y": 477.14285714285717,
-    "z": 4000,
-    "height": 67.142857142857153,
-    "width": 232.85714285714286,
-    "tabOrder": 4000
+    "x": 0,
+    "y": 0,
+    "z": 5000,
+    "height": 70,
+    "width": 239,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "slicer",
@@ -20,16 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "RNMs"
+                      "Entity": "Calendario"
                     }
                   },
-                  "Property": "VENCRNM"
+                  "Property": "Date"
                 }
               },
-              "queryRef": "RNMs.VENCRNM",
-              "nativeQueryRef": "Vencimento da RNM",
+              "queryRef": "Calendario.Date",
+              "nativeQueryRef": "Data Referência para o HHT",
               "active": true,
-              "displayName": "Vencimento da RNM"
+              "displayName": "Data Referência para o HHT"
             }
           ]
         }
@@ -41,10 +41,10 @@
               "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "RNMs"
+                    "Entity": "Calendario"
                   }
                 },
-                "Property": "VENCRNM"
+                "Property": "Date"
               }
             },
             "direction": "Ascending"
@@ -57,6 +57,13 @@
       "data": [
         {
           "properties": {
+            "endDate": {
+              "expr": {
+                "Literal": {
+                  "Value": "datetime'2026-01-01T00:00:00'"
+                }
+              }
+            },
             "mode": {
               "expr": {
                 "Literal": {
@@ -70,11 +77,40 @@
       "general": [
         {
           "properties": {
-            "orientation": {
-              "expr": {
-                "Literal": {
-                  "Value": "1D"
-                }
+            "filter": {
+              "filter": {
+                "Version": 2,
+                "From": [
+                  {
+                    "Name": "c",
+                    "Entity": "Calendario",
+                    "Type": 0
+                  }
+                ],
+                "Where": [
+                  {
+                    "Condition": {
+                      "Comparison": {
+                        "ComparisonKind": 3,
+                        "Left": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "c"
+                              }
+                            },
+                            "Property": "Date"
+                          }
+                        },
+                        "Right": {
+                          "Literal": {
+                            "Value": "datetime'2026-01-02T00:00:00'"
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
               }
             }
           }
@@ -106,26 +142,6 @@
           }
         }
       ]
-    },
-    "visualContainerObjects": {
-      "background": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    "syncGroup": {
-      "groupName": "VENCRNM",
-      "fieldChanges": true,
-      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

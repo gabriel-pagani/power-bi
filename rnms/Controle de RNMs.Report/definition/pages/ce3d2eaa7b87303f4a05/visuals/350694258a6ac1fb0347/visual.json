@@ -1,78 +1,61 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "c6eb74f9f4924f4356c3",
+  "name": "350694258a6ac1fb0347",
   "position": {
-    "x": 605.29411764705878,
-    "y": 15.882352941176471,
-    "z": 7000,
-    "height": 134.11764705882354,
-    "width": 320.58823529411768,
-    "tabOrder": 7000
+    "x": 16.25,
+    "y": 256.875,
+    "z": 1004,
+    "height": 68.125,
+    "width": 232.5,
+    "tabOrder": 1004
   },
   "visual": {
-    "visualType": "card",
+    "visualType": "slicer",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Medida"
+                      "Entity": "RNMs"
                     }
                   },
-                  "Property": "RNM_EM_DIA"
+                  "Property": "NACIONALIDADE"
                 }
               },
-              "queryRef": "Medida.RNMS_EM_DIA",
-              "nativeQueryRef": "RNMs Em Dia",
-              "displayName": "RNMs Em Dia"
+              "queryRef": "RNMs.NACIONALIDADE",
+              "nativeQueryRef": "Nacionalidade",
+              "active": true,
+              "displayName": "Nacionalidade"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Medida"
-                  }
-                },
-                "Property": "RNM_EM_DIA"
-              }
-            },
-            "direction": "Descending"
-          }
-        ],
-        "isDefaultSort": true
       }
     },
     "objects": {
-      "categoryLabels": [
+      "data": [
         {
           "properties": {
-            "show": {
+            "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "'Dropdown'"
                 }
               }
             }
           }
         }
       ],
-      "labels": [
+      "general": [
         {
           "properties": {
-            "fontSize": {
+            "orientation": {
               "expr": {
                 "Literal": {
-                  "Value": "50D"
+                  "Value": "1D"
                 }
               }
             }
@@ -94,6 +77,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "NACIONALIDADE",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

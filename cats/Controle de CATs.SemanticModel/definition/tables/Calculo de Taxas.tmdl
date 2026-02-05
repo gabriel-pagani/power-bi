@@ -132,6 +132,10 @@ table 'Calculo de Taxas'
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure HORAS_TRABALHADAS = ([TOTAL_DIAS_UTEIS_NO_MES] * 8) + ([TOTAL_SABADOS_NO_MES] * 4)
+		formatString: 0
+		lineageTag: f920787a-0ef5-4d6d-ba98-aecaa209297b
+
 	partition 'Calculo de Taxas' = m
 		mode: import
 		source =

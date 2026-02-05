@@ -1,0 +1,65 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/page/2.0.0/schema.json",
+  "name": "4efed66bf31eb2ec3809",
+  "displayName": "Página de Conferência",
+  "displayOption": "FitToPage",
+  "height": 720,
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "5be472e99b4ae7f7c20a",
+      "target": "6ecc5b2c2e2bb9f31adf",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b25f058c4f1f3084767b",
+      "target": "abb7ecd5a0307fca8e2d",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b25f058c4f1f3084767b",
+      "target": "2e72d38907e587ee75cb",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b25f058c4f1f3084767b",
+      "target": "11fb07c19f2355984db6",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b25f058c4f1f3084767b",
+      "target": "50fd98c2291924782fcb",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b25f058c4f1f3084767b",
+      "target": "73211787e0689a26cf37",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b25f058c4f1f3084767b",
+      "target": "a4567e4b76690fa019bf",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5be472e99b4ae7f7c20a",
+      "target": "0f8fa0f2e1f3e9500595",
+      "type": "NoFilter"
+    },
+    {
+      "source": "b25f058c4f1f3084767b",
+      "target": "d446ba8529ae3ff2a532",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5be472e99b4ae7f7c20a",
+      "target": "6affeed2417857e504be",
+      "type": "NoFilter"
+    },
+    {
+      "source": "5be472e99b4ae7f7c20a",
+      "target": "0f5419140cfc7a777822",
+      "type": "NoFilter"
+    }
+  ]
+}

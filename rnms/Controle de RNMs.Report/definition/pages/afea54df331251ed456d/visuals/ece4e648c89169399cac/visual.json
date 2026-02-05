@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "ece4e648c89169399cac",
   "position": {
-    "x": 19.452887537993892,
-    "y": 13.617021276595766,
+    "x": 16,
+    "y": 205.25,
     "z": 0,
-    "height": 68.085106382978722,
-    "width": 280.1215805471125,
+    "height": 67.25,
+    "width": 233,
     "tabOrder": 0
   },
   "visual": {
@@ -63,24 +63,26 @@
         }
       ]
     },
-    "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "16c545a6b522fae14049",
-        "field": {
-          "Column": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "RNMs"
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
               }
-            },
-            "Property": "NOMEFANTASIA"
+            }
           }
-        },
-        "type": "Categorical"
-      }
-    ]
+        }
+      ]
+    },
+    "syncGroup": {
+      "groupName": "NOMEFANTASIA",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
+    "drillFilterOtherVisuals": true
   }
 }

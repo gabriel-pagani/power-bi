@@ -768,22 +768,22 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "medida.rnms_em_dia": {
+			    "medida.rnm_em_dia": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medida",
-			          "ConceptualProperty": "RNMS_EM_DIA"
+			          "ConceptualProperty": "RNM_EM_DIA"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "rnms em dia": {
+			          "rnm em dia": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "RNMS_EM_DIA": {
+			          "RNM_EM_DIA": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
@@ -798,25 +798,35 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "RNMs Em Dia": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
-			    "medida.rnms_a_vencer": {
+			    "medida.rnm_a_vencer": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medida",
-			          "ConceptualProperty": "RNMS_A_VENCER"
+			          "ConceptualProperty": "RNM_A_VENCER"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "rnms a vencer": {
+			          "rnm a vencer": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "RNMS_A_VENCER": {
+			          "RNM_A_VENCER": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
@@ -831,25 +841,35 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "RNMs A Vencer": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
-			    "medida.rnms_vencidos": {
+			    "medida.rnm_vencidos": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "Medida",
-			          "ConceptualProperty": "RNMS_VENCIDOS"
+			          "ConceptualProperty": "RNM_VENCIDOS"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "rnms vencidos": {
+			          "rnm vencidos": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "RNMS_VENCIDOS": {
+			          "RNM_VENCIDOS": {
 			            "Type": "Noun",
 			            "State": "Generated",
 			            "Weight": 0.99
@@ -857,6 +877,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "Vencidos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "RNMs Vencidos": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1080,7 +1110,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "RN_ms_has_medida_rnms_vencidos": {
+			    "RN_ms_has_medida_rnm_vencidos": {
 			      "Binding": {
 			        "ConceptualEntity": "RNMs"
 			      },
@@ -1091,9 +1121,9 @@ cultureInfo en-US
 			            "Entity": "RN_ms"
 			          }
 			        },
-			        "medida.rnms_vencidos": {
+			        "medida.rnm_vencidos": {
 			          "Target": {
-			            "Entity": "medida.rnms_vencidos"
+			            "Entity": "medida.rnm_vencidos"
 			          }
 			        }
 			      },
@@ -1104,16 +1134,16 @@ cultureInfo en-US
 			              "Role": "RN_ms"
 			            },
 			            "Object": {
-			              "Role": "medida.rnms_vencidos"
+			              "Role": "medida.rnm_vencidos"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "RN_ms_have_rnms_vencidos"
+			          "ID": "RN_ms_have_rnm_vencidos"
 			        }
 			      ]
 			    },
-			    "RN_ms_has_medida_rnms_a_vencer": {
+			    "RN_ms_has_medida_rnm_a_vencer": {
 			      "Binding": {
 			        "ConceptualEntity": "RNMs"
 			      },
@@ -1124,9 +1154,9 @@ cultureInfo en-US
 			            "Entity": "RN_ms"
 			          }
 			        },
-			        "medida.rnms_a_vencer": {
+			        "medida.rnm_a_vencer": {
 			          "Target": {
-			            "Entity": "medida.rnms_a_vencer"
+			            "Entity": "medida.rnm_a_vencer"
 			          }
 			        }
 			      },
@@ -1137,16 +1167,16 @@ cultureInfo en-US
 			              "Role": "RN_ms"
 			            },
 			            "Object": {
-			              "Role": "medida.rnms_a_vencer"
+			              "Role": "medida.rnm_a_vencer"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "RN_ms_have_rnms_a_vencer"
+			          "ID": "RN_ms_have_rnm_a_vencer"
 			        }
 			      ]
 			    },
-			    "RN_ms_has_medida_rnms_em_dia": {
+			    "RN_ms_has_medida_rnm_em_dia": {
 			      "Binding": {
 			        "ConceptualEntity": "RNMs"
 			      },
@@ -1157,9 +1187,9 @@ cultureInfo en-US
 			            "Entity": "RN_ms"
 			          }
 			        },
-			        "medida.rnms_em_dia": {
+			        "medida.rnm_em_dia": {
 			          "Target": {
-			            "Entity": "medida.rnms_em_dia"
+			            "Entity": "medida.rnm_em_dia"
 			          }
 			        }
 			      },
@@ -1170,12 +1200,12 @@ cultureInfo en-US
 			              "Role": "RN_ms"
 			            },
 			            "Object": {
-			              "Role": "medida.rnms_em_dia"
+			              "Role": "medida.rnm_em_dia"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "RN_ms_have_rnms_em_dia"
+			          "ID": "RN_ms_have_rnm_em_dia"
 			        }
 			      ]
 			    },

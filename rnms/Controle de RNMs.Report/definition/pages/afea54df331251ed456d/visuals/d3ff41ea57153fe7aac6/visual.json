@@ -1,13 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "be16e9a8a9b486c59b6c",
+  "name": "d3ff41ea57153fe7aac6",
   "position": {
-    "x": 266.95652173913044,
-    "y": 15.65217391304348,
-    "z": 6000,
-    "height": 134.34782608695653,
-    "width": 321.304347826087,
-    "tabOrder": 6000
+    "x": 16.551724137931036,
+    "y": 15.862068965517242,
+    "z": 8001,
+    "height": 134.13793103448276,
+    "width": 233.10344827586206
   },
   "visual": {
     "visualType": "card",
@@ -23,12 +22,11 @@
                       "Entity": "Medida"
                     }
                   },
-                  "Property": "RNM_A_VENCER"
+                  "Property": "TOTAL_RNMS"
                 }
               },
-              "queryRef": "Medida.RNMS_A_VENCER",
-              "nativeQueryRef": "RNMs A Vencer",
-              "displayName": "RNMs A Vencer"
+              "queryRef": "Medida.TOTAL_RNMS",
+              "nativeQueryRef": "TOTAL_RNMS"
             }
           ]
         }
@@ -43,7 +41,7 @@
                     "Entity": "Medida"
                   }
                 },
-                "Property": "RNM_A_VENCER"
+                "Property": "TOTAL_RNMS"
               }
             },
             "direction": "Descending"
@@ -94,13 +92,13 @@
           }
         }
       ],
-      "title": [
+      "visualHeader": [
         {
           "properties": {
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             }

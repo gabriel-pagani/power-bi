@@ -1,34 +1,35 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "be16e9a8a9b486c59b6c",
+  "name": "fce89ce2d203795ba107",
   "position": {
-    "x": 266.95652173913044,
-    "y": 15.65217391304348,
-    "z": 6000,
-    "height": 134.34782608695653,
-    "width": 321.304347826087,
-    "tabOrder": 6000
+    "x": 16.25,
+    "y": 325,
+    "z": 1005,
+    "height": 67.5,
+    "width": 232.5,
+    "tabOrder": 1005
   },
   "visual": {
-    "visualType": "card",
+    "visualType": "slicer",
     "query": {
       "queryState": {
         "Values": {
           "projections": [
             {
               "field": {
-                "Measure": {
+                "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Medida"
+                      "Entity": "RNMs"
                     }
                   },
-                  "Property": "RNM_A_VENCER"
+                  "Property": "VENCRNM"
                 }
               },
-              "queryRef": "Medida.RNMS_A_VENCER",
-              "nativeQueryRef": "RNMs A Vencer",
-              "displayName": "RNMs A Vencer"
+              "queryRef": "RNMs.VENCRNM",
+              "nativeQueryRef": "Vencimento da RNM",
+              "active": true,
+              "displayName": "Vencimento da RNM"
             }
           ]
         }
@@ -37,42 +38,68 @@
         "sort": [
           {
             "field": {
-              "Measure": {
+              "Column": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Medida"
+                    "Entity": "RNMs"
                   }
                 },
-                "Property": "RNM_A_VENCER"
+                "Property": "VENCRNM"
               }
             },
-            "direction": "Descending"
+            "direction": "Ascending"
           }
         ],
         "isDefaultSort": true
       }
     },
     "objects": {
-      "categoryLabels": [
+      "data": [
         {
           "properties": {
-            "show": {
+            "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "'Before'"
                 }
               }
             }
           }
         }
       ],
-      "labels": [
+      "general": [
         {
           "properties": {
-            "fontSize": {
+            "orientation": {
               "expr": {
                 "Literal": {
-                  "Value": "50D"
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "header": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "slider": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -93,20 +120,12 @@
             }
           }
         }
-      ],
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "false"
-                }
-              }
-            }
-          }
-        }
       ]
+    },
+    "syncGroup": {
+      "groupName": "VENCRNM",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
   "name": "253fb02e90ecad54a60c",
   "position": {
-    "x": 317.38035264483625,
-    "y": 156.87657430730476,
-    "z": 5,
-    "height": 309.21914357682618,
-    "width": 963.02267002518886,
-    "tabOrder": 5
+    "x": 266.15384615384613,
+    "y": 190,
+    "z": 5000,
+    "height": 513.84615384615381,
+    "width": 998.46153846153845,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "columnChart",
@@ -42,7 +42,7 @@
                       "Entity": "Medida"
                     }
                   },
-                  "Property": "RNMS_A_VENCER"
+                  "Property": "RNM_A_VENCER"
                 }
               },
               "queryRef": "Medida.RNMS_A_VENCER",
@@ -57,7 +57,7 @@
                       "Entity": "Medida"
                     }
                   },
-                  "Property": "RNMS_EM_DIA"
+                  "Property": "RNM_EM_DIA"
                 }
               },
               "queryRef": "Medida.RNMS_EM_DIA",
@@ -72,7 +72,7 @@
                       "Entity": "Medida"
                     }
                   },
-                  "Property": "RNMS_VENCIDOS"
+                  "Property": "RNM_VENCIDOS"
                 }
               },
               "queryRef": "Medida.RNMS_VENCIDOS",
@@ -92,7 +92,7 @@
                     "Entity": "Medida"
                   }
                 },
-                "Property": "RNMS_A_VENCER"
+                "Property": "RNM_A_VENCER"
               }
             },
             "direction": "Descending"
@@ -171,6 +171,18 @@
                   "Value": "true"
                 }
               }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
             }
           }
         },
@@ -202,7 +214,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#F7FF00'"
+                      "Value": "'#F1F1D3'"
                     }
                   }
                 }
@@ -220,7 +232,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#21C344'"
+                      "Value": "'#CAEECB'"
                     }
                   }
                 }
@@ -238,7 +250,7 @@
                 "color": {
                   "expr": {
                     "Literal": {
-                      "Value": "'#FF0014'"
+                      "Value": "'#FFD2D2'"
                     }
                   }
                 }
@@ -302,6 +314,19 @@
                 }
               }
             },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
             "show": {
               "expr": {
                 "Literal": {
