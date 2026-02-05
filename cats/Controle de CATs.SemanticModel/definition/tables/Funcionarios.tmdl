@@ -27,7 +27,7 @@ table Funcionarios
 
 	column DATAADMISSAO
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: ccc2e86e-5c26-4e42-895a-656a2f4838e6
 		summarizeBy: none
 		sourceColumn: DATAADMISSAO
@@ -43,7 +43,7 @@ table Funcionarios
 
 	column DATADEMISSAO
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: 6e13c984-3fe9-45ad-8b4e-6658f6b16ab1
 		summarizeBy: none
 		sourceColumn: DATADEMISSAO
