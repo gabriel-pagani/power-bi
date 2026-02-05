@@ -896,6 +896,49 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "medida.total_rnms": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medida",
+			          "ConceptualProperty": "TOTAL_RNMS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total rnms": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TOTAL_RNMS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate rnm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall rnm": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
@@ -1107,6 +1150,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_RN_ms"
+			        }
+			      ]
+			    },
+			    "RN_ms_has_medida_total_rnms": {
+			      "Binding": {
+			        "ConceptualEntity": "RNMs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "RN_ms": {
+			          "Target": {
+			            "Entity": "RN_ms"
+			          }
+			        },
+			        "medida.total_rnms": {
+			          "Target": {
+			            "Entity": "medida.total_rnms"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "RN_ms"
+			            },
+			            "Object": {
+			              "Role": "medida.total_rnms"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "RN_ms_have_total_rnms"
 			        }
 			      ]
 			    },

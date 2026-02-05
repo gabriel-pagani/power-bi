@@ -102,7 +102,8 @@
                 }
               },
               "queryRef": "RNMs.FUNCAO",
-              "nativeQueryRef": "FUNCAO"
+              "nativeQueryRef": "Função",
+              "displayName": "Função"
             },
             {
               "field": {
@@ -116,7 +117,8 @@
                 }
               },
               "queryRef": "RNMs.NACIONALIDADE",
-              "nativeQueryRef": "NACIONALIDADE"
+              "nativeQueryRef": "Nacionalidade",
+              "displayName": "Nacionalidade"
             }
           ]
         }
