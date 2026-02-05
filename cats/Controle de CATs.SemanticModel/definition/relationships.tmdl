@@ -39,16 +39,9 @@ relationship 723b1fa7-5a87-49f7-a353-93d08be9a511
 	fromColumn: 'Situacao Funcionarios'.DATAMUDANCA
 	toColumn: LocalDateTable_edcb7957-aaca-4875-a845-e442a290e758.Date
 
-relationship e3d31bd6-287a-ac93-1779-d004fbbd7dc0
+relationship 553d809b-f3d7-0108-f1ba-4a08ebba1c56
 	crossFilteringBehavior: bothDirections
 	toCardinality: many
-	fromColumn: Funcionarios.CHAPA
-	toColumn: 'Situacao Funcionarios'.CHAPA
-
-relationship e7bf05ff-bdc0-b3b8-7ba1-90c60de75693
-	isActive: false
-	crossFilteringBehavior: bothDirections
-	toCardinality: many
-	fromColumn: Funcionarios.CODCOLIGADA
-	toColumn: 'Situacao Funcionarios'.CODCOLIGADA
+	fromColumn: 'Situacao Funcionarios'.CODCOLIGADA
+	toColumn: CATs.CODCOLIGADA
 
