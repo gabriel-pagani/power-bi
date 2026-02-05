@@ -74,9 +74,49 @@ table 'Calculo de Taxas'
 		formatString: 0
 		lineageTag: db213a7b-10c2-441e-ad8d-2325babff8c9
 
-	measure HHT = ((([TOTAL_DIAS_UTEIS_NO_MES] * 8) + ([TOTAL_SABADOS_NO_MES] * 4)) * [TOTAL_FUNCIONARIOS_ATIVOS_NO_MES]) + [HORASEXTRAS]
+	measure HHT = ```
+			
+			    (
+			        ((([TOTAL_DIAS_UTEIS_NO_MES] * 8) + ([TOTAL_SABADOS_NO_MES] * 4)) * [TOTAL_FUNCIONARIOS_ATIVOS_NO_MES]) - 
+			        ((([TOTAL_DIAS_UTEIS_NO_MES] * 8) + ([TOTAL_SABADOS_NO_MES] * 4)) * [TOTAL_FUNCIONARIOS_AFASTADOS_NO_MES])
+			    ) + 
+			    [HORASEXTRAS]
+			
+			```
 		formatString: 0
 		lineageTag: 4b161347-f4e7-40d2-a74f-06bdb658c286
+
+	measure TOTAL_FUNCIONARIOS_AFASTADOS_NO_MES = ```
+			
+			VAR DataBase = [DATA_REF]
+			RETURN
+			COUNTROWS (
+			    FILTER (
+			        ADDCOLUMNS (
+			            SUMMARIZE (
+			                'Situacao Funcionarios',
+			                'Situacao Funcionarios'[CODCOLIGADA],
+			                'Situacao Funcionarios'[CHAPA]
+			            ),
+			            "UltimaSituacao",
+			                VAR UltimaData =
+			                    CALCULATE (
+			                        MAX ( 'Situacao Funcionarios'[DATAMUDANCA] ),
+			                        'Situacao Funcionarios'[DATAMUDANCA] <= DataBase
+			                    )
+			                RETURN
+			                    CALCULATE (
+			                        MAX ( 'Situacao Funcionarios'[NOVASITUACAO] ),
+			                        'Situacao Funcionarios'[DATAMUDANCA] = UltimaData
+			                    )
+			        ),
+			        [UltimaSituacao] IN { "F", "P", "T", "E" }
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: bed0bf5d-4e07-4480-a5a2-b052eb8a4123
 
 	partition 'Calculo de Taxas' = m
 		mode: import

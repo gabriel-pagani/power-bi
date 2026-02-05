@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "15ec1894cf65353ffb23",
+  "name": "737e7f4bf81ef44c7b3b",
   "position": {
-    "x": 379.9496221662468,
-    "y": 139.64735516372795,
-    "z": 6000,
+    "x": 1020.1511335012593,
+    "y": 0,
+    "z": 6001,
     "height": 129.67254408060452,
     "width": 260.25188916876573,
-    "tabOrder": 1000
+    "tabOrder": 6001
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,11 @@
                       "Entity": "Calculo de Taxas"
                     }
                   },
-                  "Property": "DATA_REF"
+                  "Property": "TOTAL_FUNCIONARIOS_AFASTADOS_NO_MES"
                 }
               },
-              "queryRef": "Calculo de Taxas.DATA_REF",
-              "nativeQueryRef": "DATA_REF"
+              "queryRef": "Calculo de Taxas.TOTAL_FUNCIONARIOS_AFASTADOS_NO_MES",
+              "nativeQueryRef": "TOTAL_FUNCIONARIOS_AFASTADOS_NO_MES"
             }
           ]
         }
@@ -42,10 +42,10 @@
                     "Entity": "Calculo de Taxas"
                   }
                 },
-                "Property": "DATA_REF"
+                "Property": "TOTAL_FUNCIONARIOS_AFASTADOS_NO_MES"
               }
             },
-            "direction": "Ascending"
+            "direction": "Descending"
           }
         ],
         "isDefaultSort": true
