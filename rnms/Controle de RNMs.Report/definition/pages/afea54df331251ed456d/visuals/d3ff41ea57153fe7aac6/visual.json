@@ -26,7 +26,8 @@
                 }
               },
               "queryRef": "Medida.TOTAL_RNMS",
-              "nativeQueryRef": "TOTAL_RNMS"
+              "nativeQueryRef": "TOTAL_RNM",
+              "displayName": "TOTAL_RNM"
             }
           ]
         }

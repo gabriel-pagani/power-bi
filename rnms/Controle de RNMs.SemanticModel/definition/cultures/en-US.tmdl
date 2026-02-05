@@ -937,6 +937,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.582
 			          }
+			        },
+			        {
+			          "TOTAL_RNM": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    }
