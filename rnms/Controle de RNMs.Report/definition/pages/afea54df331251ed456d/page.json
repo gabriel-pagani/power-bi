@@ -14,7 +14,7 @@
               "name": {
                 "expr": {
                   "Literal": {
-                    "Value": "'Página Principal.svg'"
+                    "Value": "'Página Principal (1).svg'"
                   }
                 }
               },
@@ -23,7 +23,7 @@
                   "ResourcePackageItem": {
                     "PackageName": "RegisteredResources",
                     "PackageType": 1,
-                    "ItemName": "P_gina_Principal3197364660632225.svg"
+                    "ItemName": "P_gina_Principal_(1)007836384770603444.svg"
                   }
                 }
               },
