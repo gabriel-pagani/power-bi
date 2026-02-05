@@ -27,9 +27,9 @@
                 }
               },
               "queryRef": "Calendario.Date",
-              "nativeQueryRef": "Período da Ocorrência",
+              "nativeQueryRef": "Período Analisado",
               "active": true,
-              "displayName": "Período da Ocorrência"
+              "displayName": "Período Analisado"
             }
           ]
         }

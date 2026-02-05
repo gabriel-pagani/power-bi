@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "09c7a1d6b740d597917f",
+  "name": "b7c69b06a89ba1beec98",
   "position": {
-    "x": 16,
-    "y": 276,
-    "z": 1000,
-    "height": 70,
-    "width": 239,
-    "tabOrder": 0
+    "x": 0,
+    "y": 419.84886649874051,
+    "z": 13001,
+    "height": 69.823677581863976,
+    "width": 239.39546599496219,
+    "tabOrder": 13001
   },
   "visual": {
     "visualType": "slicer",
@@ -27,9 +27,9 @@
                 }
               },
               "queryRef": "Calendario.Date",
-              "nativeQueryRef": "Período da Ocorrência",
+              "nativeQueryRef": "Data Ref HHT",
               "active": true,
-              "displayName": "Período da Ocorrência"
+              "displayName": "Data Ref HHT"
             }
           ]
         }

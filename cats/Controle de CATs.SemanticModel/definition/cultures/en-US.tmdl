@@ -55,6 +55,26 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "Período Analisado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
+			          "Data Ref HHT": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Período da Ocorrência": {
 			            "State": "Suggested",
 			            "Source": {
@@ -1406,9 +1426,1422 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "horas_extra": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Horas Extras"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horas extra": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hora extra": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "horas_extra.codcoligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Horas Extras",
+			          "ConceptualProperty": "CODCOLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "codcoligada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "horas_extra.anocomp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Horas Extras",
+			          "ConceptualProperty": "ANOCOMP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "anocomp": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "horas_extra.mescomp": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Horas Extras",
+			          "ConceptualProperty": "MESCOMP"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "mescomp": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "horas_extra.ref": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Horas Extras",
+			          "ConceptualProperty": "REF"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "ref": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "arbitrator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "adjudicator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "mediator": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "arbiter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "referee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "umpire": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "judge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "calculo_de_taxa": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calculo de Taxas"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calculo de taxa": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "calculo de taxon": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        }
+			      ]
+			    },
+			    "calculo_de_taxa.horasextras": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calculo de Taxas",
+			          "ConceptualProperty": "HORASEXTRAS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "horasextras": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calculo_de_taxa.data_ref": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calculo de Taxas",
+			          "ConceptualProperty": "DATA_REF"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "data ref": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DATA_REF": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "data": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "information": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "info": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "statistic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "document": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "figure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "record": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "information ref": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "fact ref": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "info ref": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calculo_de_taxa.total_dias_uteis_no_mes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calculo de Taxas",
+			          "ConceptualProperty": "TOTAL_DIAS_UTEIS_NO_MES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total dias uteis no mes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TOTAL_DIAS_UTEIS_NO_MES": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate dias uteis no me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall dias uteis no me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total dias uteis number me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "calculo_de_taxa.total_sabados_no_mes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calculo de Taxas",
+			          "ConceptualProperty": "TOTAL_SABADOS_NO_MES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total sabados no mes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TOTAL_SABADOS_NO_MES": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate sabado no me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "overall sabado no me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        },
+			        {
+			          "total sabado number me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.599
+			          }
+			        }
+			      ]
+			    },
+			    "calculo_de_taxa.total_funcionarios_ativos_no_mes": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calculo de Taxas",
+			          "ConceptualProperty": "TOTAL_FUNCIONARIOS_ATIVOS_NO_MES"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total funcionarios ativos no mes": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TOTAL_FUNCIONARIOS_ATIVOS_NO_MES": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate funcionario ativo no me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "overall funcionario ativo no me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "total funcionario ativo number me": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "calculo_de_taxa.hht": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calculo de Taxas",
+			          "ConceptualProperty": "HHT"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "hht": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "funcionario": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.codcoligada": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "CODCOLIGADA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "codcoligada": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.codsecao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "CODSECAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codsecao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.codfuncao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "CODFUNCAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "codfuncao": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "funcionario.dataadmissao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "DATAADMISSAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "funcionario.dataadmissao.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "VariationSource": "DATAADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "funcionario.dataadmissao.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "VariationSource": "DATAADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dataadmissao yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "funcionario.dataadmissao.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "VariationSource": "DATAADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dataadmissao qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "funcionario.dataadmissao.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "VariationSource": "DATAADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "dataadmissao mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "funcionario.dataadmissao.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "VariationSource": "DATAADMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dataadmissao day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "funcionario.datademissao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "ConceptualProperty": "DATADEMISSAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datademissao": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "funcionario.datademissao.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "VariationSource": "DATADEMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datademissao date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "funcionario.datademissao.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "VariationSource": "DATADEMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datademissao year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "datademissao yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "funcionario.datademissao.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "VariationSource": "DATADEMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datademissao quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "datademissao qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "funcionario.datademissao.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "VariationSource": "DATADEMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datademissao month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "datademissao mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "funcionario.datademissao.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Funcionarios",
+			          "VariationSource": "DATADEMISSAO",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "datademissao day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
 			    }
 			  },
 			  "Relationships": {
+			    "funcionario_datademissao_date_hierarchy_has_funcionario_datademissao_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario.datademissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "funcionario.datademissao.date_hierarchy"
+			          }
+			        },
+			        "funcionario.datademissao.day": {
+			          "Target": {
+			            "Entity": "funcionario.datademissao.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario.datademissao.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "funcionario.datademissao.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datademissao_date_hierarchies_have_datademissao_days"
+			        }
+			      ]
+			    },
+			    "funcionario_datademissao_date_hierarchy_has_funcionario_datademissao_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario.datademissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "funcionario.datademissao.date_hierarchy"
+			          }
+			        },
+			        "funcionario.datademissao.month": {
+			          "Target": {
+			            "Entity": "funcionario.datademissao.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario.datademissao.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "funcionario.datademissao.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datademissao_date_hierarchies_have_datademissao_months"
+			        }
+			      ]
+			    },
+			    "funcionario_datademissao_date_hierarchy_has_funcionario_datademissao_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario.datademissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "funcionario.datademissao.date_hierarchy"
+			          }
+			        },
+			        "funcionario.datademissao.quarter": {
+			          "Target": {
+			            "Entity": "funcionario.datademissao.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario.datademissao.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "funcionario.datademissao.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datademissao_date_hierarchies_have_datademissao_quarters"
+			        }
+			      ]
+			    },
+			    "funcionario_datademissao_date_hierarchy_has_funcionario_datademissao_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario.datademissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "funcionario.datademissao.date_hierarchy"
+			          }
+			        },
+			        "funcionario.datademissao.year": {
+			          "Target": {
+			            "Entity": "funcionario.datademissao.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario.datademissao.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "funcionario.datademissao.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datademissao_date_hierarchies_have_datademissao_years"
+			        }
+			      ]
+			    },
+			    "funcionario_datademissao_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario.datademissao": {
+			          "Target": {
+			            "Entity": "funcionario.datademissao"
+			          }
+			        },
+			        "funcionario.datademissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "funcionario.datademissao.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario.datademissao"
+			            },
+			            "Object": {
+			              "Role": "funcionario.datademissao.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datademissaos_have_datademissao_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "funcionario_dataadmissao_date_hierarchy_has_funcionario_dataadmissao_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario.dataadmissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "funcionario.dataadmissao.date_hierarchy"
+			          }
+			        },
+			        "funcionario.dataadmissao.day": {
+			          "Target": {
+			            "Entity": "funcionario.dataadmissao.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario.dataadmissao.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "funcionario.dataadmissao.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataadmissao_date_hierarchies_have_dataadmissao_days"
+			        }
+			      ]
+			    },
+			    "funcionario_dataadmissao_date_hierarchy_has_funcionario_dataadmissao_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario.dataadmissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "funcionario.dataadmissao.date_hierarchy"
+			          }
+			        },
+			        "funcionario.dataadmissao.month": {
+			          "Target": {
+			            "Entity": "funcionario.dataadmissao.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario.dataadmissao.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "funcionario.dataadmissao.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataadmissao_date_hierarchies_have_dataadmissao_months"
+			        }
+			      ]
+			    },
+			    "funcionario_dataadmissao_date_hierarchy_has_funcionario_dataadmissao_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario.dataadmissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "funcionario.dataadmissao.date_hierarchy"
+			          }
+			        },
+			        "funcionario.dataadmissao.quarter": {
+			          "Target": {
+			            "Entity": "funcionario.dataadmissao.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario.dataadmissao.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "funcionario.dataadmissao.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataadmissao_date_hierarchies_have_dataadmissao_quarters"
+			        }
+			      ]
+			    },
+			    "funcionario_dataadmissao_date_hierarchy_has_funcionario_dataadmissao_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario.dataadmissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "funcionario.dataadmissao.date_hierarchy"
+			          }
+			        },
+			        "funcionario.dataadmissao.year": {
+			          "Target": {
+			            "Entity": "funcionario.dataadmissao.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario.dataadmissao.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "funcionario.dataadmissao.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataadmissao_date_hierarchies_have_dataadmissao_years"
+			        }
+			      ]
+			    },
+			    "funcionario_dataadmissao_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario.dataadmissao": {
+			          "Target": {
+			            "Entity": "funcionario.dataadmissao"
+			          }
+			        },
+			        "funcionario.dataadmissao.date_hierarchy": {
+			          "Target": {
+			            "Entity": "funcionario.dataadmissao.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario.dataadmissao"
+			            },
+			            "Object": {
+			              "Role": "funcionario.dataadmissao.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dataadmissaos_have_dataadmissao_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_day": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts.datahoraocorrencia.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CA_ts.datahoraocorrencia.date_hierarchy"
+			          }
+			        },
+			        "CA_ts.datahoraocorrencia.day": {
+			          "Target": {
+			            "Entity": "CA_ts.datahoraocorrencia.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts.datahoraocorrencia.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CA_ts.datahoraocorrencia.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datahoraocorrencia_date_hierarchies_have_datahoraocorrencia_days"
+			        }
+			      ]
+			    },
+			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_month": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts.datahoraocorrencia.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CA_ts.datahoraocorrencia.date_hierarchy"
+			          }
+			        },
+			        "CA_ts.datahoraocorrencia.month": {
+			          "Target": {
+			            "Entity": "CA_ts.datahoraocorrencia.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts.datahoraocorrencia.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CA_ts.datahoraocorrencia.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datahoraocorrencia_date_hierarchies_have_datahoraocorrencia_months"
+			        }
+			      ]
+			    },
+			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "CATs"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "CA_ts.datahoraocorrencia.date_hierarchy": {
+			          "Target": {
+			            "Entity": "CA_ts.datahoraocorrencia.date_hierarchy"
+			          }
+			        },
+			        "CA_ts.datahoraocorrencia.quarter": {
+			          "Target": {
+			            "Entity": "CA_ts.datahoraocorrencia.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "CA_ts.datahoraocorrencia.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "CA_ts.datahoraocorrencia.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datahoraocorrencia_date_hierarchies_have_datahoraocorrencia_quarters"
+			        }
+			      ]
+			    },
 			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_year": {
 			      "Binding": {
 			        "ConceptualEntity": "CATs"
@@ -1640,6 +3073,72 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "funcionario_has_CA_ts": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "CA_ts": {
+			          "Target": {
+			            "Entity": "CA_ts"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "CA_ts"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_CA_tses"
+			        }
+			      ]
+			    },
+			    "horas_extra_has_CA_ts": {
+			      "Binding": {
+			        "ConceptualEntity": "Horas Extras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "horas_extra": {
+			          "Target": {
+			            "Entity": "horas_extra"
+			          }
+			        },
+			        "CA_ts": {
+			          "Target": {
+			            "Entity": "CA_ts"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "horas_extra"
+			            },
+			            "Object": {
+			              "Role": "CA_ts"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "horas_extras_have_CA_tses"
+			        }
+			      ]
+			    },
 			    "CA_ts_has_calendario": {
 			      "Binding": {
 			        "ConceptualEntity": "CATs"
@@ -1686,20 +3185,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "CA_ts_has_metrica_data_ref": {
+			    "funcionario_has_datademissao": {
 			      "Binding": {
-			        "ConceptualEntity": "CATs"
+			        "ConceptualEntity": "Funcionarios"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "CA_ts": {
+			        "funcionario": {
 			          "Target": {
-			            "Entity": "CA_ts"
+			            "Entity": "funcionario"
 			          }
 			        },
-			        "metrica.data_ref": {
+			        "funcionario.datademissao": {
 			          "Target": {
-			            "Entity": "metrica.data_ref"
+			            "Entity": "funcionario.datademissao"
 			          }
 			        }
 			      },
@@ -1707,32 +3206,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "CA_ts"
+			              "Role": "funcionario"
 			            },
 			            "Object": {
-			              "Role": "metrica.data_ref"
+			              "Role": "funcionario.datademissao"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "CA_tses_have_data_ref"
+			          "ID": "funcionarios_have_datademissaos"
 			        }
 			      ]
 			    },
-			    "CA_ts_has_metrica_total_dias_uteis": {
+			    "funcionario_has_dataadmissao": {
 			      "Binding": {
-			        "ConceptualEntity": "CATs"
+			        "ConceptualEntity": "Funcionarios"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "CA_ts": {
+			        "funcionario": {
 			          "Target": {
-			            "Entity": "CA_ts"
+			            "Entity": "funcionario"
 			          }
 			        },
-			        "metrica.total_dias_uteis": {
+			        "funcionario.dataadmissao": {
 			          "Target": {
-			            "Entity": "metrica.total_dias_uteis"
+			            "Entity": "funcionario.dataadmissao"
 			          }
 			        }
 			      },
@@ -1740,15 +3239,444 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "CA_ts"
+			              "Role": "funcionario"
 			            },
 			            "Object": {
-			              "Role": "metrica.total_dias_uteis"
+			              "Role": "funcionario.dataadmissao"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "CA_tses_have_total_dias_uteis"
+			          "ID": "funcionarios_have_dataadmissaos"
+			        }
+			      ]
+			    },
+			    "funcionario_has_codfuncao": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.codfuncao": {
+			          "Target": {
+			            "Entity": "funcionario.codfuncao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.codfuncao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_codfuncaos"
+			        }
+			      ]
+			    },
+			    "funcionario_has_codsecao": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "funcionario.codsecao": {
+			          "Target": {
+			            "Entity": "funcionario.codsecao"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "funcionario.codsecao"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_codsecaos"
+			        }
+			      ]
+			    },
+			    "horas_extra_has_calculo_de_taxa_hht": {
+			      "Binding": {
+			        "ConceptualEntity": "Horas Extras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "horas_extra": {
+			          "Target": {
+			            "Entity": "horas_extra"
+			          }
+			        },
+			        "calculo_de_taxa.hht": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.hht"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "horas_extra"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.hht"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "horas_extras_have_hht"
+			        }
+			      ]
+			    },
+			    "funcionario_has_calculo_de_taxa_hht": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "calculo_de_taxa.hht": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.hht"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.hht"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_hht"
+			        }
+			      ]
+			    },
+			    "calendario_has_calculo_de_taxa_hht": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calculo_de_taxa.hht": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.hht"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.hht"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_hht"
+			        }
+			      ]
+			    },
+			    "funcionario_has_calculo_de_taxa_total_funcionarios_ativos_no_mes": {
+			      "Binding": {
+			        "ConceptualEntity": "Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "funcionario": {
+			          "Target": {
+			            "Entity": "funcionario"
+			          }
+			        },
+			        "calculo_de_taxa.total_funcionarios_ativos_no_mes": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.total_funcionarios_ativos_no_mes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "funcionario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.total_funcionarios_ativos_no_mes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "funcionarios_have_total_funcionarios_ativos_no_mes"
+			        }
+			      ]
+			    },
+			    "calendario_has_calculo_de_taxa_total_sabados_no_mes": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calculo_de_taxa.total_sabados_no_mes": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.total_sabados_no_mes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.total_sabados_no_mes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_total_sabados_no_mes"
+			        }
+			      ]
+			    },
+			    "calendario_has_calculo_de_taxa_total_dias_uteis_no_mes": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calculo_de_taxa.total_dias_uteis_no_mes": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.total_dias_uteis_no_mes"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.total_dias_uteis_no_mes"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_total_dias_uteis_no_mes"
+			        }
+			      ]
+			    },
+			    "calendario_has_calculo_de_taxa_data_ref": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario": {
+			          "Target": {
+			            "Entity": "calendario"
+			          }
+			        },
+			        "calculo_de_taxa.data_ref": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.data_ref"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.data_ref"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendarios_have_data_ref"
+			        }
+			      ]
+			    },
+			    "horas_extra_has_calculo_de_taxa_horasextras": {
+			      "Binding": {
+			        "ConceptualEntity": "Horas Extras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "horas_extra": {
+			          "Target": {
+			            "Entity": "horas_extra"
+			          }
+			        },
+			        "calculo_de_taxa.horasextras": {
+			          "Target": {
+			            "Entity": "calculo_de_taxa.horasextras"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "horas_extra"
+			            },
+			            "Object": {
+			              "Role": "calculo_de_taxa.horasextras"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "horas_extras_have_horasextras"
+			        }
+			      ]
+			    },
+			    "horas_extra_has_ref": {
+			      "Binding": {
+			        "ConceptualEntity": "Horas Extras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "horas_extra": {
+			          "Target": {
+			            "Entity": "horas_extra"
+			          }
+			        },
+			        "horas_extra.ref": {
+			          "Target": {
+			            "Entity": "horas_extra.ref"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "horas_extra"
+			            },
+			            "Object": {
+			              "Role": "horas_extra.ref"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "horas_extras_have_refs"
+			        }
+			      ]
+			    },
+			    "horas_extra_has_mescomp": {
+			      "Binding": {
+			        "ConceptualEntity": "Horas Extras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "horas_extra": {
+			          "Target": {
+			            "Entity": "horas_extra"
+			          }
+			        },
+			        "horas_extra.mescomp": {
+			          "Target": {
+			            "Entity": "horas_extra.mescomp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "horas_extra"
+			            },
+			            "Object": {
+			              "Role": "horas_extra.mescomp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "horas_extras_have_mescomps"
+			        }
+			      ]
+			    },
+			    "horas_extra_has_anocomp": {
+			      "Binding": {
+			        "ConceptualEntity": "Horas Extras"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "horas_extra": {
+			          "Target": {
+			            "Entity": "horas_extra"
+			          }
+			        },
+			        "horas_extra.anocomp": {
+			          "Target": {
+			            "Entity": "horas_extra.anocomp"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "horas_extra"
+			            },
+			            "Object": {
+			              "Role": "horas_extra.anocomp"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "horas_extras_have_anocomps"
 			        }
 			      ]
 			    },
@@ -2739,105 +4667,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_dates"
-			        }
-			      ]
-			    },
-			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "CATs"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CA_ts.datahoraocorrencia.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CA_ts.datahoraocorrencia.date_hierarchy"
-			          }
-			        },
-			        "CA_ts.datahoraocorrencia.quarter": {
-			          "Target": {
-			            "Entity": "CA_ts.datahoraocorrencia.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CA_ts.datahoraocorrencia.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CA_ts.datahoraocorrencia.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datahoraocorrencia_date_hierarchies_have_datahoraocorrencia_quarters"
-			        }
-			      ]
-			    },
-			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_month": {
-			      "Binding": {
-			        "ConceptualEntity": "CATs"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CA_ts.datahoraocorrencia.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CA_ts.datahoraocorrencia.date_hierarchy"
-			          }
-			        },
-			        "CA_ts.datahoraocorrencia.month": {
-			          "Target": {
-			            "Entity": "CA_ts.datahoraocorrencia.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CA_ts.datahoraocorrencia.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CA_ts.datahoraocorrencia.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datahoraocorrencia_date_hierarchies_have_datahoraocorrencia_months"
-			        }
-			      ]
-			    },
-			    "CA_ts_datahoraocorrencia_date_hierarchy_has_CA_ts_datahoraocorrencia_day": {
-			      "Binding": {
-			        "ConceptualEntity": "CATs"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "CA_ts.datahoraocorrencia.date_hierarchy": {
-			          "Target": {
-			            "Entity": "CA_ts.datahoraocorrencia.date_hierarchy"
-			          }
-			        },
-			        "CA_ts.datahoraocorrencia.day": {
-			          "Target": {
-			            "Entity": "CA_ts.datahoraocorrencia.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "CA_ts.datahoraocorrencia.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "CA_ts.datahoraocorrencia.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datahoraocorrencia_date_hierarchies_have_datahoraocorrencia_days"
 			        }
 			      ]
 			    }
