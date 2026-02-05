@@ -118,6 +118,20 @@ table 'Calculo de Taxas'
 		formatString: 0
 		lineageTag: bed0bf5d-4e07-4480-a5a2-b052eb8a4123
 
+	measure TAXA_DE_FREQUENCIA = COUNTROWS(CATs) * 1000000 / [HHT]
+		lineageTag: 40a0051b-103b-4935-b8e7-4d831c23dbca
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure DURACAO_TRATAMENTO_TOTAL = SUM(CATs[DURACAOTRATAMENTO])
+		formatString: 0
+		lineageTag: e59772e5-6daa-445f-8dae-2769c98c2d07
+
+	measure TAXA_DE_GRAVIDADE = ([DURACAO_TRATAMENTO_TOTAL] + 0) * 1000000 / [HHT]
+		lineageTag: 00d59f10-30cf-4d9c-b179-0da9d80acf18
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	partition 'Calculo de Taxas' = m
 		mode: import
 		source =

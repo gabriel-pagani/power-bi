@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "e99d131a0fe7e408b069",
+  "name": "e6b5486e207b56af1cd8",
   "position": {
     "x": 0,
-    "y": 419.84886649874051,
-    "z": 13000,
+    "y": 525.94458438287154,
+    "z": 13001,
     "height": 96.12090680100755,
     "width": 238.48866498740551,
-    "tabOrder": 13000
+    "tabOrder": 13001
   },
   "visual": {
     "visualType": "card",
@@ -23,11 +23,11 @@
                       "Entity": "Calculo de Taxas"
                     }
                   },
-                  "Property": "TAXA_DE_FREQUENCIA"
+                  "Property": "TAXA_DE_GRAVIDADE"
                 }
               },
-              "queryRef": "Calculo de Taxas.TAXA_DE_FREQUENCIA",
-              "nativeQueryRef": "TAXA_DE_FREQUENCIA"
+              "queryRef": "Calculo de Taxas.TAXA_DE_GRAVIDADE",
+              "nativeQueryRef": "TAXA_DE_GRAVIDADE"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "Calculo de Taxas"
                   }
                 },
-                "Property": "TAXA_DE_FREQUENCIA"
+                "Property": "TAXA_DE_GRAVIDADE"
               }
             },
             "direction": "Descending"
