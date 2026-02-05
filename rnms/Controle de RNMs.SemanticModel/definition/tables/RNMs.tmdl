@@ -84,6 +84,24 @@ table RNMs
 
 		annotation UnderlyingDateTimeDataType = Date
 
+	column STATUS_RNM = ```
+			
+			VAR Hoje = TODAY()
+			VAR Vencimento = RNMs[VENCRNM]
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    ISBLANK(Vencimento) || Vencimento < Hoje, "Vencido",
+			    Vencimento >= Hoje && Vencimento <= Hoje + 30, "A vencer",
+			    Vencimento > Hoje + 30, "Em dia"
+			)
+			
+			```
+		lineageTag: 23bace69-a70d-4b3b-9c9f-67a3e2289e9c
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition RNMs = m
 		mode: import
 		source =
