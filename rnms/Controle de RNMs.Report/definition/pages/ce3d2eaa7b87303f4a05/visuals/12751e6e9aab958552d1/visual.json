@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "0c7180357688cfaef584",
+  "name": "12751e6e9aab958552d1",
   "position": {
-    "x": 16,
-    "y": 137,
-    "z": 2000,
-    "height": 67,
-    "width": 232.75,
-    "tabOrder": 2000
+    "x": 16.159600997506235,
+    "y": 408.47880299251869,
+    "z": 6001,
+    "height": 68.229426433915208,
+    "width": 232.51870324189525,
+    "tabOrder": 6001
   },
   "visual": {
     "visualType": "slicer",
@@ -23,13 +23,13 @@
                       "Entity": "RNMs"
                     }
                   },
-                  "Property": "NOMEFANTASIA"
+                  "Property": "STATUS_RNM"
                 }
               },
-              "queryRef": "RNMs.NOMEFANTASIA",
-              "nativeQueryRef": "Coligada",
+              "queryRef": "RNMs.STATUS_RNM",
+              "nativeQueryRef": "Situação",
               "active": true,
-              "displayName": "Coligada"
+              "displayName": "Situação"
             }
           ]
         }
@@ -77,11 +77,6 @@
           }
         }
       ]
-    },
-    "syncGroup": {
-      "groupName": "NOMEFANTASIA",
-      "fieldChanges": true,
-      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

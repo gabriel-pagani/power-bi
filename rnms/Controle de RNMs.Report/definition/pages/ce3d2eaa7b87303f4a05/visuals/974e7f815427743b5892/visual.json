@@ -98,6 +98,21 @@
                       "Entity": "RNMs"
                     }
                   },
+                  "Property": "STATUS_RNM"
+                }
+              },
+              "queryRef": "RNMs.STATUS_RNM",
+              "nativeQueryRef": "Situação",
+              "displayName": "Situação"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "RNMs"
+                    }
+                  },
                   "Property": "FUNCAO"
                 }
               },
@@ -202,6 +217,20 @@
           },
           "selector": {
             "metadata": "RNMs.CHAPA"
+          }
+        },
+        {
+          "properties": {
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "RNMs.STATUS_RNM"
           }
         }
       ],

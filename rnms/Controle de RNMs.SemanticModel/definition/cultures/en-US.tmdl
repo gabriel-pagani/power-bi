@@ -1082,7 +1082,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Status": {
+			          "Situação": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -1095,6 +1095,39 @@ cultureInfo en-US
 			    }
 			  },
 			  "Relationships": {
+			    "calendario_date_date_hierarchy_has_calendario_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.day": {
+			          "Target": {
+			            "Entity": "calendario.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    },
 			    "calendario_date_date_hierarchy_has_calendario_date_month": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendario"
@@ -1996,39 +2029,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "RN_ms_have_codcoligadas"
-			        }
-			      ]
-			    },
-			    "calendario_date_date_hierarchy_has_calendario_date_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Calendario"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "calendario.date.date_hierarchy": {
-			          "Target": {
-			            "Entity": "calendario.date.date_hierarchy"
-			          }
-			        },
-			        "calendario.date.day": {
-			          "Target": {
-			            "Entity": "calendario.date.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "calendario.date.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "calendario.date.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_days"
 			        }
 			      ]
 			    }

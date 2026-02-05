@@ -87,8 +87,8 @@
                 }
               },
               "queryRef": "RNMs.STATUS_RNM",
-              "nativeQueryRef": "Status",
-              "displayName": "Status"
+              "nativeQueryRef": "Situação",
+              "displayName": "Situação"
             }
           ]
         }
