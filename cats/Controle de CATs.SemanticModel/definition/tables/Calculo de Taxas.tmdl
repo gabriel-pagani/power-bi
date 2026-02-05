@@ -3,7 +3,7 @@ table 'Calculo de Taxas'
 
 	measure HORASEXTRAS = ```
 			
-			VAR DataBase = [DATA_REF]
+			VAR DataBase = IF([DATA_REF] > TODAY(), TODAY(), [DATA_REF])
 			VAR AnoComp = YEAR(DataBase)
 			VAR MesComp = MONTH(DataBase)
 			RETURN
@@ -24,7 +24,7 @@ table 'Calculo de Taxas'
 
 	measure TOTAL_DIAS_UTEIS_NO_MES = ```
 			
-			VAR DataBase  = [DATA_REF]
+			VAR DataBase  = IF([DATA_REF] > TODAY(), TODAY(), [DATA_REF])
 			VAR InicioMes = DATE(YEAR( DataBase ), MONTH(DataBase), 1)
 			VAR FimMes    = EOMONTH (DataBase, 0)
 			RETURN
@@ -41,7 +41,7 @@ table 'Calculo de Taxas'
 
 	measure TOTAL_SABADOS_NO_MES = ```
 			
-			VAR DataBase  = [DATA_REF]
+			VAR DataBase  = IF([DATA_REF] > TODAY(), TODAY(), [DATA_REF])
 			VAR InicioMes = DATE(YEAR( DataBase ), MONTH(DataBase), 1)
 			VAR FimMes    = EOMONTH (DataBase, 0)
 			RETURN
@@ -70,6 +70,10 @@ table 'Calculo de Taxas'
 			```
 		formatString: 0
 		lineageTag: db213a7b-10c2-441e-ad8d-2325babff8c9
+
+	measure HHT = ((([TOTAL_DIAS_UTEIS_NO_MES] * 8) + ([TOTAL_SABADOS_NO_MES] * 4)) * [TOTAL_FUNCIONARIOS_ATIVOS_NO_MES])
+		formatString: 0
+		lineageTag: 4b161347-f4e7-40d2-a74f-06bdb658c286
 
 	partition 'Calculo de Taxas' = m
 		mode: import
