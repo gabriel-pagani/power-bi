@@ -4,9 +4,10 @@
   "position": {
     "x": 510,
     "y": 0,
-    "z": 7,
+    "z": 3000,
     "height": 130,
-    "width": 255
+    "width": 255,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "card",
@@ -49,6 +50,21 @@
         ],
         "isDefaultSort": true
       }
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ]
     },
     "visualContainerObjects": {
       "background": [

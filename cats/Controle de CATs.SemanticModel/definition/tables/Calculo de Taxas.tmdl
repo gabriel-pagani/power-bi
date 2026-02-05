@@ -74,7 +74,7 @@ table 'Calculo de Taxas'
 		formatString: 0
 		lineageTag: db213a7b-10c2-441e-ad8d-2325babff8c9
 
-	measure HHT = ((([TOTAL_DIAS_UTEIS_NO_MES] * 8) + ([TOTAL_SABADOS_NO_MES] * 4)) * [TOTAL_FUNCIONARIOS_ATIVOS_NO_MES])
+	measure HHT = ((([TOTAL_DIAS_UTEIS_NO_MES] * 8) + ([TOTAL_SABADOS_NO_MES] * 4)) * [TOTAL_FUNCIONARIOS_ATIVOS_NO_MES]) + [HORASEXTRAS]
 		formatString: 0
 		lineageTag: 4b161347-f4e7-40d2-a74f-06bdb658c286
 
