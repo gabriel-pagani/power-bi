@@ -1,0 +1,56 @@
+table 'Situacao Funcionarios'
+	lineageTag: 0ab69f1c-44aa-40d5-8f5e-23c28bb1bc23
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: d9dd4c45-cc84-4bb1-8960-947e09172f35
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: ea16383d-0af5-4914-8a75-7fdde1ee800e
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATAMUDANCA
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: f0942198-7773-48d4-93d2-41ac1cf33ad3
+		summarizeBy: none
+		sourceColumn: DATAMUDANCA
+
+		variation Variation
+			isDefault
+			relationship: 723b1fa7-5a87-49f7-a353-93d08be9a511
+			defaultHierarchy: LocalDateTable_edcb7957-aaca-4875-a845-e442a290e758.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column NOVASITUACAO
+		dataType: string
+		lineageTag: 081e6622-a193-47d5-a4e4-f27d7c0ebcf3
+		summarizeBy: none
+		sourceColumn: NOVASITUACAO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Situacao Funcionarios' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab)CODCOLIGADA, #(lf)#(tab)CHAPA, #(lf)#(tab)DATAMUDANCA, #(lf)#(tab)NOVASITUACAO #(lf)#(tab)#(lf)FROM PFHSTSIT"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}, {"DATAMUDANCA", type date}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

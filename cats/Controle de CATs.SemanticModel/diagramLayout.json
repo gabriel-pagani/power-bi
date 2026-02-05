@@ -11,7 +11,7 @@
         {
           "location": {
             "x": 504.70451332945692,
-            "y": 29.332875541475346
+            "y": 43.999313312213019
           },
           "nodeIndex": "Calendario",
           "nodeLineageTag": "4790a696-482c-4c96-bdc9-58b599505920",
@@ -25,7 +25,7 @@
         {
           "location": {
             "x": 504.22893777073762,
-            "y": 269.74129815090339
+            "y": 284.40773592164106
           },
           "nodeIndex": "CATs",
           "nodeLineageTag": "7c382a9b-f732-4e39-8a49-de550ea25f72",
@@ -38,8 +38,8 @@
         },
         {
           "location": {
-            "x": 895,
-            "y": 106.875
+            "x": 123.18926374431021,
+            "y": 277.41200991358056
           },
           "nodeIndex": "Metricas",
           "nodeLineageTag": "b20bf460-b2d3-4a99-a0b2-cd44443f7e25",
@@ -53,7 +53,7 @@
         {
           "location": {
             "x": 271.22038978685868,
-            "y": 608.71870868084943
+            "y": 623.38514645158716
           },
           "nodeIndex": "Horas Extras",
           "nodeLineageTag": "db988b2c-bf76-4847-8653-6c78e5819012",
@@ -66,8 +66,8 @@
         },
         {
           "location": {
-            "x": 894.30463870390793,
-            "y": 210.03953157259437
+            "x": 123.75092319130547,
+            "y": 179.45322259218412
           },
           "nodeIndex": "Calculo de Taxas",
           "nodeLineageTag": "b2b28476-fd1e-4be6-b9b8-e1478d28612b",
@@ -81,16 +81,28 @@
         {
           "location": {
             "x": 773.41636654382125,
-            "y": 585.52334738475724
+            "y": 600.189785155495
           },
           "nodeIndex": "Funcionarios",
           "nodeLineageTag": "b2198300-1073-422a-bb5e-f565e273828c",
           "size": {
-            "height": 152,
+            "height": 200,
             "width": 234
           },
-          "zIndex": 6,
-          "expandedHeight": 200
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 907.77961021314127,
+            "y": 280.76167369237862
+          },
+          "nodeIndex": "Situacao Funcionarios",
+          "nodeLineageTag": "0ab69f1c-44aa-40d5-8f5e-23c28bb1bc23",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",

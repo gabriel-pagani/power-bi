@@ -57,11 +57,19 @@ table Funcionarios
 
 		annotation UnderlyingDateTimeDataType = Date
 
+	column CHAPA
+		dataType: string
+		lineageTag: 45131d49-1acf-43c4-9ebb-077ab37d09db
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Funcionarios = m
 		mode: import
 		source =
 				let
-				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab)CODCOLIGADA, #(lf)#(tab)CODSECAO, #(lf)#(tab)CODFUNCAO, #(lf)#(tab)DATAADMISSAO, #(lf)#(tab)DATADEMISSAO #(lf)#(lf)FROM PFUNC"]),
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab)CODCOLIGADA,#(lf)        CHAPA,#(lf)#(tab)CODSECAO, #(lf)#(tab)CODFUNCAO, #(lf)#(tab)DATAADMISSAO, #(lf)#(tab)DATADEMISSAO #(lf)#(lf)FROM PFUNC"]),
 				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}, {"DATAADMISSAO", type date}, {"DATADEMISSAO", type date}})
 				in
 				    #"Changed Type"
