@@ -1,19 +1,19 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "f78feed5f3f83353b5e9",
+  "name": "f4e00110deb5ca8f2f38",
   "position": {
-    "x": 0,
-    "y": 69.823677581863976,
-    "z": 1000,
-    "height": 48.967254408060448,
-    "width": 1280.4030226700252,
-    "tabOrder": 1000
+    "x": 15.644554766983067,
+    "y": 263.98131219369776,
+    "z": 5,
+    "height": 70,
+    "width": 233.23529411764707,
+    "tabOrder": 5
   },
   "visual": {
-    "visualType": "textFilter25A4896A83E0487089E2B90C9AE57C8A",
+    "visualType": "slicer",
     "query": {
       "queryState": {
-        "field": {
+        "Values": {
           "projections": [
             {
               "field": {
@@ -23,24 +23,26 @@
                       "Entity": "CATs"
                     }
                   },
-                  "Property": "NOME"
+                  "Property": "TIPOOCORRENCIA"
                 }
               },
-              "queryRef": "CATs.NOME",
-              "nativeQueryRef": "NOME"
+              "queryRef": "CATs.TIPOOCORRENCIA",
+              "nativeQueryRef": "Tipo de Ocorrência",
+              "active": true,
+              "displayName": "Tipo de Ocorrência"
             }
           ]
         }
       }
     },
     "objects": {
-      "textBox": [
+      "data": [
         {
           "properties": {
-            "border": {
+            "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "'Dropdown'"
                 }
               }
             }
@@ -54,7 +56,7 @@
       ]
     },
     "visualContainerObjects": {
-      "title": [
+      "background": [
         {
           "properties": {
             "show": {
@@ -67,6 +69,11 @@
           }
         }
       ]
+    },
+    "syncGroup": {
+      "groupName": "TIPOOCORRENCIA",
+      "fieldChanges": true,
+      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

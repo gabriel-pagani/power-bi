@@ -1,19 +1,19 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "6ddf53a4eb943c5bfc89",
+  "name": "a269a537e02295e9c8fa",
   "position": {
-    "x": 0,
-    "y": 0,
-    "z": 1002,
-    "height": 69.823677581863976,
-    "width": 239.39546599496219,
-    "tabOrder": 1002
+    "x": 265.625,
+    "y": 15.9375,
+    "z": 1,
+    "height": 50.9375,
+    "width": 998.4375,
+    "tabOrder": 1
   },
   "visual": {
-    "visualType": "slicer",
+    "visualType": "textFilter25A4896A83E0487089E2B90C9AE57C8A",
     "query": {
       "queryState": {
-        "Values": {
+        "field": {
           "projections": [
             {
               "field": {
@@ -23,35 +23,28 @@
                       "Entity": "CATs"
                     }
                   },
-                  "Property": "COLIGADA"
+                  "Property": "NOME"
                 }
               },
-              "queryRef": "CATs.COLIGADA",
-              "nativeQueryRef": "Empresa",
-              "active": true,
-              "displayName": "Empresa"
+              "queryRef": "CATs.NOME",
+              "nativeQueryRef": "NOME"
             }
           ]
         }
       }
     },
     "objects": {
-      "data": [
+      "textBox": [
         {
           "properties": {
-            "mode": {
+            "border": {
               "expr": {
                 "Literal": {
-                  "Value": "'Dropdown'"
+                  "Value": "false"
                 }
               }
             }
           }
-        }
-      ],
-      "general": [
-        {
-          "properties": {}
         }
       ]
     },
@@ -68,12 +61,20 @@
             }
           }
         }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
       ]
-    },
-    "syncGroup": {
-      "groupName": "COLIGADA",
-      "fieldChanges": true,
-      "filterChanges": true
     },
     "drillFilterOtherVisuals": true
   }

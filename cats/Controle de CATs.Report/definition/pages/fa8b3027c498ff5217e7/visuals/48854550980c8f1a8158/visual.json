@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "6b7d8a649f967333bbe8",
+  "name": "48854550980c8f1a8158",
   "position": {
-    "x": 478.79093198992439,
-    "y": 0,
-    "z": 1003,
-    "height": 70.730478589420656,
-    "width": 239.39546599496219,
-    "tabOrder": 1003
+    "x": 15.644554766983067,
+    "y": 54.275429840756686,
+    "z": 3,
+    "height": 69.705882352941174,
+    "width": 233.23529411764707,
+    "tabOrder": 3
   },
   "visual": {
     "visualType": "slicer",
@@ -23,13 +23,13 @@
                       "Entity": "CATs"
                     }
                   },
-                  "Property": "FUNCAO"
+                  "Property": "COLIGADA"
                 }
               },
-              "queryRef": "CATs.FUNCAO",
-              "nativeQueryRef": "Função",
+              "queryRef": "CATs.COLIGADA",
+              "nativeQueryRef": "Empresa",
               "active": true,
-              "displayName": "Função"
+              "displayName": "Empresa"
             }
           ]
         }
@@ -71,7 +71,7 @@
       ]
     },
     "syncGroup": {
-      "groupName": "FUNCAO",
+      "groupName": "COLIGADA",
       "fieldChanges": true,
       "filterChanges": true
     },
