@@ -191,9 +191,12 @@ table CATs
 				    #"Replaced Value2" = Table.ReplaceValue(#"Changed Type3","0","Não",Replacer.ReplaceText,{"MORTE"}),
 				    #"Replaced Value3" = Table.ReplaceValue(#"Replaced Value2","1","Sim",Replacer.ReplaceText,{"MORTE"}),
 				    #"Replaced Value4" = Table.ReplaceValue(#"Replaced Value3",null,"Não",Replacer.ReplaceValue,{"MORTE"}),
-				    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4",null,"Não",Replacer.ReplaceValue,{"HOUVEAFASTAMENTO"})
+				    #"Replaced Value5" = Table.ReplaceValue(#"Replaced Value4",null,"Não",Replacer.ReplaceValue,{"HOUVEAFASTAMENTO"}),
+				    #"Changed Type4" = Table.TransformColumnTypes(#"Replaced Value5",{{"DURACAOTRATAMENTO", Int64.Type}}),
+				    #"Replaced Value6" = Table.ReplaceValue(#"Changed Type4","Acidente Trabalho","Típico",Replacer.ReplaceText,{"TIPOOCORRENCIA"}),
+				    #"Replaced Value7" = Table.ReplaceValue(#"Replaced Value6","Acidente Trajeto","Trajeto",Replacer.ReplaceText,{"TIPOOCORRENCIA"})
 				in
-				    #"Replaced Value5"
+				    #"Replaced Value7"
 
 	annotation PBI_NavigationStepName = Navigation
 
