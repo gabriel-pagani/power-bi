@@ -1,0 +1,72 @@
+table 'Calendario Vencimentos'
+	lineageTag: a8e209d0-f925-4345-a55f-9f65321fb311
+
+	column Date
+		formatString: Short Date
+		lineageTag: a96b6e66-2856-4c17-9e98-0726c40ba5b4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		variation Variation
+			isDefault
+			relationship: e3249dc9-6e2f-444b-b7a6-f707be9d6d44
+			defaultHierarchy: LocalDateTable_10d04613-9614-4a9e-ad99-e83cf838951b.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day = 'Calendario Vencimentos'[Date].[Day]
+		formatString: 0
+		lineageTag: 5eced4d5-3f0f-4fc0-be5f-cbc3839ff4a8
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month = FORMAT('Calendario Vencimentos'[Date],"mmm","pt-br")
+		lineageTag: 137876a3-d3aa-4c11-bad2-1a4db4d85516
+		summarizeBy: none
+		sortByColumn: MonthNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNo = 'Calendario Vencimentos'[Date].[MonthNo]
+		formatString: 0
+		lineageTag: d8d2e044-027a-4c78-824d-b2b3181a71e5
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter = FORMAT( 'Calendario Vencimentos'[Date], "Q" ) & "º Trim"
+		lineageTag: 57b7f7d2-96e6-4271-a588-6f18b4c9d1ef
+		summarizeBy: none
+		sortByColumn: QuarterNo
+
+		annotation SummarizationSetBy = Automatic
+
+	column QuarterNo = 'Calendario Vencimentos'[Date].[QuarterNo]
+		formatString: 0
+		lineageTag: fadffeaf-ef10-45ec-9703-a51dd8917dc7
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year = 'Calendario Vencimentos'[Date].[Year]
+		formatString: 0
+		lineageTag: 915a29b5-7cfd-4213-825a-90442887c1b3
+		summarizeBy: sum
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Calendario Vencimentos' = calculated
+		mode: import
+		source = ```
+				
+				    CALENDAR(
+				            DATE(YEAR(MIN(Treinamentos[INICIO])), 1, 1),
+				            DATE(YEAR(MAX(Treinamentos[FIM])) + 1, 12, 31)
+				    )
+				
+				```
+
+	annotation PBI_Id = 6be1ad6df7df446db197a8707f53a109
+

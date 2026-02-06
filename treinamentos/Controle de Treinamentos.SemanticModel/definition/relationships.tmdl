@@ -1,15 +1,23 @@
-relationship f24a4598-735c-47bd-82ec-53bcff6623ca
+relationship e959075e-b8a3-4436-989f-dc58440dc6ba
 	joinOnDateBehavior: datePartOnly
-	fromColumn: Treinamentos.RECCREATEDON
-	toColumn: LocalDateTable_bc687a30-d978-4f1c-90b8-7fea97af5b63.Date
+	fromColumn: Calendario.Date
+	toColumn: LocalDateTable_86cd1c52-d086-4259-bed2-d26a9b5e1c66.Date
 
-relationship 4a972fc7-40ff-4b1a-a037-df6610d05387
-	joinOnDateBehavior: datePartOnly
-	fromColumn: Treinamentos.RECMODIFIEDON
-	toColumn: LocalDateTable_f6a14830-13dc-4c70-ad3d-430079c25791.Date
+relationship 01762f89-cc48-b89f-6a57-ce55ca22fe84
+	fromColumn: Treinamentos.INICIO
+	toColumn: Calendario.Date
 
-relationship 3d66b0f6-a383-40cb-8eed-9189eba6f20e
+relationship e3249dc9-6e2f-444b-b7a6-f707be9d6d44
 	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Calendario Vencimentos'.Date
+	toColumn: LocalDateTable_10d04613-9614-4a9e-ad99-e83cf838951b.Date
+
+relationship cd0c47a1-c377-446a-f0f6-5d91c73e076a
+	isActive: false
+	fromColumn: Treinamentos.FIM
+	toColumn: Calendario.Date
+
+relationship 596433d1-e8f5-0f3e-9308-8cc1e93745ee
 	fromColumn: Treinamentos.VENCIMENTO
-	toColumn: LocalDateTable_4943af6a-fd40-4361-a85a-db444ea572f6.Date
+	toColumn: 'Calendario Vencimentos'.Date
 

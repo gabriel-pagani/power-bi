@@ -17,22 +17,6 @@ table Treinamentos
 
 		annotation SummarizationSetBy = Automatic
 
-	column CODEVENTO
-		dataType: string
-		lineageTag: 4363c350-a017-49c0-8cd0-d767e6cae8ce
-		summarizeBy: none
-		sourceColumn: CODEVENTO
-
-		annotation SummarizationSetBy = Automatic
-
-	column DESCRICAO
-		dataType: string
-		lineageTag: 0c301c5d-6d71-45b8-8276-afe4097392dc
-		summarizeBy: none
-		sourceColumn: DESCRICAO
-
-		annotation SummarizationSetBy = Automatic
-
 	column VALOR
 		dataType: decimal
 		formatString: "R$"\ #,0.00;-"R$"\ #,0.00;"R$"\ #,0.00
@@ -53,57 +37,80 @@ table Treinamentos
 
 		annotation SummarizationSetBy = Automatic
 
-	column RECCREATEDON
+	column COLIGADA
+		dataType: string
+		lineageTag: 7e2ab49c-ff10-49ec-9e95-1652c391baae
+		summarizeBy: none
+		sourceColumn: COLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column COLABORADOR
+		dataType: string
+		lineageTag: 0820cb8e-6c24-4c09-8edd-01eae06a3e69
+		summarizeBy: none
+		sourceColumn: COLABORADOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODSECAO
+		dataType: string
+		lineageTag: f28933c5-a65b-4268-b1d2-3c5be0685338
+		summarizeBy: none
+		sourceColumn: CODSECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column SECAO
+		dataType: string
+		lineageTag: 1227724b-b32c-4b50-a174-b47a541aad14
+		summarizeBy: none
+		sourceColumn: SECAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODFUNCAO
+		dataType: string
+		lineageTag: 4c34a097-2fe1-4b63-ba8c-3cbe3f045b25
+		summarizeBy: none
+		sourceColumn: CODFUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column FUNCAO
+		dataType: string
+		lineageTag: ca3133e3-298c-438f-b07a-6785783ac4ad
+		summarizeBy: none
+		sourceColumn: FUNCAO
+
+		annotation SummarizationSetBy = Automatic
+
+	column INICIO
 		dataType: dateTime
 		formatString: Short Date
-		lineageTag: dc58f6b9-6241-4b4b-bcc3-1e9d429a2577
+		lineageTag: 1c0a5f60-183a-4e36-af85-0efe5a0a9653
 		summarizeBy: none
-		sourceColumn: RECCREATEDON
-
-		variation Variation
-			isDefault
-			relationship: f24a4598-735c-47bd-82ec-53bcff6623ca
-			defaultHierarchy: LocalDateTable_bc687a30-d978-4f1c-90b8-7fea97af5b63.'Date Hierarchy'
+		sourceColumn: INICIO
 
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column RECMODIFIEDON
+	column FIM
 		dataType: dateTime
 		formatString: Short Date
-		lineageTag: 397adb84-67b9-4ec3-b059-96f49193a12c
+		lineageTag: 4b23576c-e1d7-4b87-851b-f5355000d29a
 		summarizeBy: none
-		sourceColumn: RECMODIFIEDON
-
-		variation Variation
-			isDefault
-			relationship: 4a972fc7-40ff-4b1a-a037-df6610d05387
-			defaultHierarchy: LocalDateTable_f6a14830-13dc-4c70-ad3d-430079c25791.'Date Hierarchy'
+		sourceColumn: FIM
 
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date
 
-	column VENCIMENTO = ```
-			
-			        VAR BaseDate = DATEVALUE ( Treinamentos[RECCREATEDON] )
-			        VAR MonthsToAdd = INT ( Treinamentos[NROVEZES] )
-			        RETURN
-			            IF (
-			                ISBLANK ( BaseDate ) || ISBLANK ( MonthsToAdd ),
-			                BLANK (),
-			                EDATE ( BaseDate, MonthsToAdd )
-			            )
-			```
+	column VENCIMENTO = Treinamentos[FIM] + 1
 		formatString: Short Date
-		lineageTag: 8e258c06-61d1-4ced-b324-9b54670f457e
+		lineageTag: e222d57f-a1b8-4e6f-8102-2c263c3e72ac
 		summarizeBy: none
-
-		variation Variation
-			isDefault
-			relationship: 3d66b0f6-a383-40cb-8eed-9189eba6f20e
-			defaultHierarchy: LocalDateTable_4943af6a-fd40-4361-a85a-db444ea572f6.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -111,10 +118,14 @@ table Treinamentos
 		mode: import
 		source =
 				let
-				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab) PFCODFIX.CODCOLIGADA,#(lf)#(tab) PFCODFIX.CHAPA,#(lf)#(tab) PFCODFIX.CODEVENTO,#(lf)#(tab) PEVENTO.DESCRICAO,#(lf)#(tab) PFCODFIX.VALOR,#(lf)#(tab) PFCODFIX.NROVEZES,#(lf)#(tab) PFCODFIX.RECCREATEDON,#(lf)#(tab) PFCODFIX.RECMODIFIEDON#(lf)#(lf)FROM PFCODFIX #(lf)#(tab)JOIN PEVENTO ON PEVENTO.CODCOLIGADA = PFCODFIX.CODCOLIGADA AND PEVENTO.CODIGO = PFCODFIX.CODEVENTO#(lf)#(tab)#(lf)WHERE 1=1#(lf)#(tab)AND PFCODFIX.CODEVENTO = '9161'#(lf)#(lf)ORDER BY#(lf)#(tab)PFCODFIX.NROVEZES DESC#(lf)"]),
-				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}, {"CHAPA", type text}, {"VALOR", Currency.Type}, {"NROVEZES", Int64.Type}, {"RECCREATEDON", type date}, {"RECMODIFIEDON", type date}})
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab)PFCODFIX.CODCOLIGADA,#(lf)#(tab)GCOLIGADA.NOMEFANTASIA AS COLIGADA,#(lf)#(tab)PFCODFIX.CHAPA,#(lf)#(tab)PFUNC.NOME AS COLABORADOR,#(lf)#(tab)PFUNC.CODSECAO,#(lf)#(tab)PSECAO.DESCRICAO AS SECAO,#(lf)#(tab)PFUNC.CODFUNCAO,#(lf)#(tab)PFUNCAO.NOME AS FUNCAO,#(lf)#(tab)PFCODFIX.VALOR,#(lf)#(tab)PFCODFIX.NROVEZES,#(lf)#(tab)DATEFROMPARTS(#(lf)#(tab)#(tab)YEAR(PFCODFIX.RECCREATEDON),#(lf)#(tab)#(tab)MONTH(PFCODFIX.RECCREATEDON),#(lf)#(tab)#(tab)1#(lf)#(tab)) AS INICIO,#(lf)#(tab)EOMONTH(DATEADD(MONTH, 2, PFCODFIX.RECCREATEDON)) AS FIM#(lf)#(lf)FROM PFCODFIX #(lf)#(tab)JOIN GCOLIGADA ON (#(lf)#(tab)#(tab)GCOLIGADA.CODCOLIGADA=PFCODFIX.CODCOLIGADA#(lf)#(tab))#(lf)#(tab)JOIN PFUNC ON (#(lf)#(tab)#(tab)PFUNC.CODCOLIGADA=PFCODFIX.CODCOLIGADA AND#(lf)#(tab)#(tab)PFUNC.CHAPA=PFCODFIX.CHAPA#(lf)#(tab))#(lf)#(tab)JOIN PSECAO ON (#(lf)#(tab)#(tab)PSECAO.CODCOLIGADA=PFUNC.CODCOLIGADA AND#(lf)#(tab)#(tab)PSECAO.CODIGO=PFUNC.CODSECAO#(lf)#(tab))#(lf)#(tab)JOIN PFUNCAO ON (#(lf)#(tab)#(tab)PFUNCAO.CODCOLIGADA=PFUNC.CODCOLIGADA AND#(lf)#(tab)#(tab)PFUNCAO.CODIGO=PFUNC.CODFUNCAO#(lf)#(tab))#(lf)#(lf)WHERE 1=1#(lf)#(tab)AND PFCODFIX.CODEVENTO = '9161'#(lf)#(lf)ORDER BY#(lf)#(tab)PFCODFIX.NROVEZES DESC,#(lf)#(tab)PFCODFIX.RECCREATEDON DESC#(lf)"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Changed Type",{{"COLIGADA", Text.Proper, type text}}),
+				    #"Replaced Value" = Table.ReplaceValue(#"Capitalized Each Word","Sinasc Construcao","Sinasc Construção",Replacer.ReplaceText,{"COLIGADA"}),
+				    #"Capitalized Each Word1" = Table.TransformColumns(#"Replaced Value",{{"COLABORADOR", Text.Proper, type text}, {"FUNCAO", Text.Proper, type text}}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Capitalized Each Word1",{{"VALOR", Currency.Type}, {"NROVEZES", Int64.Type}, {"INICIO", type date}, {"FIM", type date}})
 				in
-				    #"Changed Type"
+				    #"Changed Type1"
 
 	annotation PBI_NavigationStepName = Navigation
 

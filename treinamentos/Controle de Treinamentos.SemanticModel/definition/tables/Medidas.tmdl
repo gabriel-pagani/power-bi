@@ -1,0 +1,19 @@
+table Medidas
+	lineageTag: e9bc7b24-d6e6-431d-8b93-c19f58ea12ec
+
+	measure TOTAL_TREINAMENTOS = COUNTROWS(Treinamentos)
+		formatString: 0
+		lineageTag: 6b6c0463-39c9-435d-9954-94ebc2b16b04
+
+	partition Medidas = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i44FAA==", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column1"})
+				in
+				    #"Removed Columns"
+
+	annotation PBI_ResultType = Table
+

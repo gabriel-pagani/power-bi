@@ -1,0 +1,77 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 483,
+            "y": 199
+          },
+          "nodeIndex": "Treinamentos",
+          "nodeLineageTag": "3b054625-e0d7-4918-9850-727b308db965",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1,
+          "expandedHeight": 296
+        },
+        {
+          "location": {
+            "x": 483,
+            "y": 0
+          },
+          "nodeIndex": "Medidas",
+          "nodeLineageTag": "e9bc7b24-d6e6-431d-8b93-c19f58ea12ec",
+          "size": {
+            "height": 145,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 738,
+            "y": 342
+          },
+          "nodeIndex": "Calendario",
+          "nodeLineageTag": "1656cee9-0a68-4694-9ab5-7331aa5cdfea",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 3,
+          "expandedHeight": 200
+        },
+        {
+          "location": {
+            "x": 224,
+            "y": 346.5
+          },
+          "nodeIndex": "Calendario Vencimentos",
+          "nodeLineageTag": "a8e209d0-f925-4345-a55f-9f65321fb311",
+          "size": {
+            "height": 104,
+            "width": 234
+          },
+          "zIndex": 0,
+          "expandedHeight": 200
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

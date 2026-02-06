@@ -8,15 +8,17 @@ model Model
 
 annotation __PBI_TimeIntelligenceEnabled = 1
 
-annotation PBI_QueryOrder = ["Treinamentos"]
+annotation PBI_QueryOrder = ["Treinamentos","Medidas"]
 
 annotation PBI_ProTooling = ["DevMode"]
 
 ref table Treinamentos
 ref table DateTableTemplate_b1274232-a067-466c-ae25-e719888f5242
-ref table LocalDateTable_bc687a30-d978-4f1c-90b8-7fea97af5b63
-ref table LocalDateTable_f6a14830-13dc-4c70-ad3d-430079c25791
-ref table LocalDateTable_4943af6a-fd40-4361-a85a-db444ea572f6
+ref table Medidas
+ref table Calendario
+ref table LocalDateTable_86cd1c52-d086-4259-bed2-d26a9b5e1c66
+ref table 'Calendario Vencimentos'
+ref table LocalDateTable_10d04613-9614-4a9e-ad99-e83cf838951b
 
 ref cultureInfo en-US
 
