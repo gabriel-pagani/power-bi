@@ -103,6 +103,11 @@ table Treinamentos
 		summarizeBy: none
 		sourceColumn: FIM
 
+		variation Variation
+			isDefault
+			relationship: e4449c19-7161-407d-923b-d2050b16f4c2
+			defaultHierarchy: LocalDateTable_50cf8f75-85bd-49fc-8ec6-580c153370de.'Date Hierarchy'
+
 		annotation SummarizationSetBy = Automatic
 
 		annotation UnderlyingDateTimeDataType = Date

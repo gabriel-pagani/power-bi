@@ -19,6 +19,7 @@ ref table Calendario
 ref table LocalDateTable_86cd1c52-d086-4259-bed2-d26a9b5e1c66
 ref table 'Calendario Vencimentos'
 ref table LocalDateTable_10d04613-9614-4a9e-ad99-e83cf838951b
+ref table LocalDateTable_50cf8f75-85bd-49fc-8ec6-580c153370de
 
 ref cultureInfo en-US
 

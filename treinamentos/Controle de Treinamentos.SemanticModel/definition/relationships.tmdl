@@ -12,12 +12,12 @@ relationship e3249dc9-6e2f-444b-b7a6-f707be9d6d44
 	fromColumn: 'Calendario Vencimentos'.Date
 	toColumn: LocalDateTable_10d04613-9614-4a9e-ad99-e83cf838951b.Date
 
-relationship cd0c47a1-c377-446a-f0f6-5d91c73e076a
-	isActive: false
-	fromColumn: Treinamentos.FIM
-	toColumn: Calendario.Date
-
 relationship 596433d1-e8f5-0f3e-9308-8cc1e93745ee
 	fromColumn: Treinamentos.VENCIMENTO
 	toColumn: 'Calendario Vencimentos'.Date
+
+relationship e4449c19-7161-407d-923b-d2050b16f4c2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Treinamentos.FIM
+	toColumn: LocalDateTable_50cf8f75-85bd-49fc-8ec6-580c153370de.Date
 

@@ -724,6 +724,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.714
 			          }
+			        },
+			        {
+			          "Período Analisado": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -982,6 +992,16 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "Total de Treinamentos": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -1474,6 +1494,191 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "treinamento.fim.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Treinamentos",
+			          "VariationSource": "FIM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fim date hierarchy": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "treinamento.fim.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Treinamentos",
+			          "VariationSource": "FIM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fim year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fim yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "treinamento.fim.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Treinamentos",
+			          "VariationSource": "FIM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fim quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fim qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "treinamento.fim.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Treinamentos",
+			          "VariationSource": "FIM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fim month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "fim mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "treinamento.fim.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Treinamentos",
+			          "VariationSource": "FIM",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fim day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "day": {
+			            "State": "Generated"
 			          }
 			        }
 			      ],
@@ -2917,6 +3122,171 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "date_hierarchies_have_days1"
+			        }
+			      ]
+			    },
+			    "treinamento_fim_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Treinamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "treinamento.fim": {
+			          "Target": {
+			            "Entity": "treinamento.fim"
+			          }
+			        },
+			        "treinamento.fim.date_hierarchy": {
+			          "Target": {
+			            "Entity": "treinamento.fim.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "treinamento.fim"
+			            },
+			            "Object": {
+			              "Role": "treinamento.fim.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fims_have_fim_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "treinamento_fim_date_hierarchy_has_treinamento_fim_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Treinamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "treinamento.fim.date_hierarchy": {
+			          "Target": {
+			            "Entity": "treinamento.fim.date_hierarchy"
+			          }
+			        },
+			        "treinamento.fim.year": {
+			          "Target": {
+			            "Entity": "treinamento.fim.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "treinamento.fim.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "treinamento.fim.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fim_date_hierarchies_have_fim_years"
+			        }
+			      ]
+			    },
+			    "treinamento_fim_date_hierarchy_has_treinamento_fim_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Treinamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "treinamento.fim.date_hierarchy": {
+			          "Target": {
+			            "Entity": "treinamento.fim.date_hierarchy"
+			          }
+			        },
+			        "treinamento.fim.quarter": {
+			          "Target": {
+			            "Entity": "treinamento.fim.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "treinamento.fim.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "treinamento.fim.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fim_date_hierarchies_have_fim_quarters"
+			        }
+			      ]
+			    },
+			    "treinamento_fim_date_hierarchy_has_treinamento_fim_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Treinamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "treinamento.fim.date_hierarchy": {
+			          "Target": {
+			            "Entity": "treinamento.fim.date_hierarchy"
+			          }
+			        },
+			        "treinamento.fim.month": {
+			          "Target": {
+			            "Entity": "treinamento.fim.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "treinamento.fim.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "treinamento.fim.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fim_date_hierarchies_have_fim_months"
+			        }
+			      ]
+			    },
+			    "treinamento_fim_date_hierarchy_has_treinamento_fim_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Treinamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "treinamento.fim.date_hierarchy": {
+			          "Target": {
+			            "Entity": "treinamento.fim.date_hierarchy"
+			          }
+			        },
+			        "treinamento.fim.day": {
+			          "Target": {
+			            "Entity": "treinamento.fim.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "treinamento.fim.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "treinamento.fim.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fim_date_hierarchies_have_fim_days"
 			        }
 			      ]
 			    }
