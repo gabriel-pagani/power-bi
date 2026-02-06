@@ -171,23 +171,5 @@
       ]
     },
     "drillFilterOtherVisuals": true
-  },
-  "filterConfig": {
-    "filters": [
-      {
-        "name": "579e7ec08a8a8a420bf6",
-        "field": {
-          "Measure": {
-            "Expression": {
-              "SourceRef": {
-                "Entity": "Medidas"
-              }
-            },
-            "Property": "TOTAL_TREINAMENTOS"
-          }
-        },
-        "type": "Advanced"
-      }
-    ]
   }
 }
