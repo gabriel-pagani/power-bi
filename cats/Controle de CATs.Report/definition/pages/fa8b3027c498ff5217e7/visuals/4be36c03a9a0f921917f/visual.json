@@ -5,8 +5,8 @@
     "x": 957.58186397984878,
     "y": 0,
     "z": 1005,
-    "height": 70.730478589420656,
-    "width": 239.39546599496219,
+    "height": 87.0528967254408,
+    "width": 322.82115869017628,
     "tabOrder": 1005
   },
   "visual": {
@@ -187,6 +187,21 @@
               "expr": {
                 "Literal": {
                   "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
