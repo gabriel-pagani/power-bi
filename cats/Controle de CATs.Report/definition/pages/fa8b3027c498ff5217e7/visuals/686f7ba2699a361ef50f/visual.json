@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "f53397e67549e7257dd8",
+  "name": "686f7ba2699a361ef50f",
   "position": {
-    "x": 0,
-    "y": 280.15860428231565,
-    "z": 10000,
-    "height": 70.039651070578913,
-    "width": 239.55590800951626,
-    "tabOrder": 10000
+    "x": 718.18639798488664,
+    "y": 0,
+    "z": 1004,
+    "height": 69.823677581863976,
+    "width": 239.39546599496219,
+    "tabOrder": 1004
   },
   "visual": {
     "visualType": "slicer",
@@ -23,13 +23,13 @@
                       "Entity": "CATs"
                     }
                   },
-                  "Property": "HOUVEAFASTAMENTO"
+                  "Property": "TIPOOCORRENCIA"
                 }
               },
-              "queryRef": "CATs.HOUVEAFASTAMENTO",
-              "nativeQueryRef": "Houve Afastamento",
+              "queryRef": "CATs.TIPOOCORRENCIA",
+              "nativeQueryRef": "Tipo de Ocorrência",
               "active": true,
-              "displayName": "Houve Afastamento"
+              "displayName": "Tipo de Ocorrência"
             }
           ]
         }
@@ -71,7 +71,7 @@
       ]
     },
     "syncGroup": {
-      "groupName": "HOUVEAFASTAMENTO",
+      "groupName": "TIPOOCORRENCIA",
       "fieldChanges": true,
       "filterChanges": true
     },

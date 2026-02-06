@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "c42389e45fad39186209",
+  "name": "6b7d8a649f967333bbe8",
   "position": {
-    "x": 0,
-    "y": 707.90067720090292,
-    "z": 1001,
-    "height": 12.520692249811889,
-    "width": 12.520692249811889,
-    "tabOrder": 1001
+    "x": 478.79093198992439,
+    "y": 0,
+    "z": 1003,
+    "height": 70.730478589420656,
+    "width": 239.39546599496219,
+    "tabOrder": 1003
   },
   "visual": {
     "visualType": "slicer",
@@ -23,13 +23,13 @@
                       "Entity": "CATs"
                     }
                   },
-                  "Property": "SETOR"
+                  "Property": "FUNCAO"
                 }
               },
-              "queryRef": "CATs.SETOR",
-              "nativeQueryRef": "Setor",
+              "queryRef": "CATs.FUNCAO",
+              "nativeQueryRef": "Função",
               "active": true,
-              "displayName": "Setor"
+              "displayName": "Função"
             }
           ]
         }
@@ -71,7 +71,7 @@
       ]
     },
     "syncGroup": {
-      "groupName": "SETOR",
+      "groupName": "FUNCAO",
       "fieldChanges": true,
       "filterChanges": true
     },

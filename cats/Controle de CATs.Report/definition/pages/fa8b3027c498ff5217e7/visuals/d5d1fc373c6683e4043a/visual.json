@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "9f8d975e914138751f4b",
+  "name": "d5d1fc373c6683e4043a",
   "position": {
-    "x": 0,
-    "y": 707.90067720090292,
-    "z": 1006,
-    "height": 12.520692249811889,
-    "width": 12.520692249811889,
-    "tabOrder": 1006
+    "x": 239.39546599496219,
+    "y": 0,
+    "z": 1001,
+    "height": 69.823677581863976,
+    "width": 239.39546599496219,
+    "tabOrder": 1001
   },
   "visual": {
     "visualType": "slicer",
@@ -23,13 +23,13 @@
                       "Entity": "CATs"
                     }
                   },
-                  "Property": "HOUVEAFASTAMENTO"
+                  "Property": "SETOR"
                 }
               },
-              "queryRef": "CATs.HOUVEAFASTAMENTO",
-              "nativeQueryRef": "Houve Afastamento",
+              "queryRef": "CATs.SETOR",
+              "nativeQueryRef": "Setor",
               "active": true,
-              "displayName": "Houve Afastamento"
+              "displayName": "Setor"
             }
           ]
         }
@@ -71,7 +71,7 @@
       ]
     },
     "syncGroup": {
-      "groupName": "HOUVEAFASTAMENTO",
+      "groupName": "SETOR",
       "fieldChanges": true,
       "filterChanges": true
     },

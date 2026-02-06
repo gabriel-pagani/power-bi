@@ -3,10 +3,10 @@
   "name": "f78feed5f3f83353b5e9",
   "position": {
     "x": 0,
-    "y": 0,
+    "y": 69.823677581863976,
     "z": 1000,
-    "height": 49,
-    "width": 1280,
+    "height": 48.967254408060448,
+    "width": 1280.4030226700252,
     "tabOrder": 1000
   },
   "visual": {
@@ -40,7 +40,7 @@
             "border": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
                 }
               }
             }
