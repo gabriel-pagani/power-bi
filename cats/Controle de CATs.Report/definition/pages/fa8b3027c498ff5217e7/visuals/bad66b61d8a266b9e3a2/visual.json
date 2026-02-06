@@ -3,9 +3,9 @@
   "name": "bad66b61d8a266b9e3a2",
   "position": {
     "x": 0,
-    "y": 49,
+    "y": 49.1196388261851,
     "z": 0,
-    "height": 671,
+    "height": 671.30173062452968,
     "width": 1280,
     "tabOrder": 0
   },
@@ -89,6 +89,21 @@
               "queryRef": "CATs.TIPOOCORRENCIA",
               "nativeQueryRef": "Tipo de Acidente",
               "displayName": "Tipo de Acidente"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Lesoes"
+                    }
+                  },
+                  "Property": "NATUREZA"
+                }
+              },
+              "queryRef": "Lesoes.NATUREZA",
+              "nativeQueryRef": "Lesão",
+              "displayName": "Lesão"
             }
           ]
         }
@@ -185,6 +200,22 @@
           },
           "selector": {
             "metadata": "CATs.TIPOOCORRENCIA"
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "357.5080449372022D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Lesoes.NATUREZA"
           }
         }
       ]

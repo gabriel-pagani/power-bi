@@ -70,6 +70,11 @@
         }
       ]
     },
+    "syncGroup": {
+      "groupName": "SETOR",
+      "fieldChanges": true,
+      "filterChanges": true
+    },
     "drillFilterOtherVisuals": true
   }
 }

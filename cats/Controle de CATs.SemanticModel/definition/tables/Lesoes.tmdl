@@ -1,0 +1,41 @@
+table Lesoes
+	lineageTag: c94c078f-e178-47f9-9ac1-158ff51b8e62
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 5aa462f2-4ab3-4e55-b7c8-231a62796f74
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODOCORRENCIA
+		dataType: string
+		lineageTag: 512af836-07c0-4015-9ec0-58edb2af9105
+		summarizeBy: none
+		sourceColumn: CODOCORRENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column NATUREZA
+		dataType: string
+		lineageTag: 60475007-8099-4725-9a2b-e0657cb52de5
+		summarizeBy: none
+		sourceColumn: NATUREZA
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Lesoes = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab)VONM.CODCOLIGADA, #(lf)#(tab)VONM.CODOCORRENCIA, #(lf)#(tab)VNATUREZACAT.NATUREZA #(lf)#(tab)#(lf)FROM VOCORRENCIANATUREZAMEDICA AS VONM#(lf)#(tab)JOIN VNATUREZACAT ON (#(lf)#(tab)#(tab)VNATUREZACAT.CODNATUREZA = VONM.CODNATUREZA#(lf)#(tab))"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Changed Type",{{"NATUREZA", Text.Proper, type text}})
+				in
+				    #"Capitalized Each Word"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

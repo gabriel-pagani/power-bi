@@ -45,3 +45,16 @@ relationship 553d809b-f3d7-0108-f1ba-4a08ebba1c56
 	fromColumn: 'Situacao Funcionarios'.CODCOLIGADA
 	toColumn: CATs.CODCOLIGADA
 
+relationship ac5fa4bc-92fb-24b4-00c9-0af0209ffe61
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Lesoes.CODOCORRENCIA
+	toColumn: CATs.CODOCORRENCIA
+
+relationship efc8e029-a9bc-3c3f-d01d-79d29128a427
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Lesoes.CODCOLIGADA
+	toColumn: CATs.CODCOLIGADA
+

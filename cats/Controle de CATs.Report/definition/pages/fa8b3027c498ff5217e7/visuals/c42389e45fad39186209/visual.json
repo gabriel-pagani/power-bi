@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "6e7aaa94d8d036cbcd8c",
+  "name": "c42389e45fad39186209",
   "position": {
     "x": 0,
-    "y": 210.11895321173674,
-    "z": 7000,
-    "height": 70.039651070578913,
-    "width": 239.55590800951626,
-    "tabOrder": 7000
+    "y": 707.90067720090292,
+    "z": 1001,
+    "height": 12.520692249811889,
+    "width": 12.520692249811889,
+    "tabOrder": 1001
   },
   "visual": {
     "visualType": "slicer",
@@ -23,13 +23,13 @@
                       "Entity": "CATs"
                     }
                   },
-                  "Property": "TIPOOCORRENCIA"
+                  "Property": "SETOR"
                 }
               },
-              "queryRef": "CATs.TIPOOCORRENCIA",
-              "nativeQueryRef": "Tipo de Ocorrência",
+              "queryRef": "CATs.SETOR",
+              "nativeQueryRef": "Setor",
               "active": true,
-              "displayName": "Tipo de Ocorrência"
+              "displayName": "Setor"
             }
           ]
         }
@@ -71,7 +71,7 @@
       ]
     },
     "syncGroup": {
-      "groupName": "TIPOOCORRENCIA",
+      "groupName": "SETOR",
       "fieldChanges": true,
       "filterChanges": true
     },
