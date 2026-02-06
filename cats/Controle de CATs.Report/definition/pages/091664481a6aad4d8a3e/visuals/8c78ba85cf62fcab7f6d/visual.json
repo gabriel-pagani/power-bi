@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "eb6c2dfcd557c105fcbd",
+  "name": "8c78ba85cf62fcab7f6d",
   "position": {
-    "x": 645.92592592592587,
-    "y": 15.925925925925926,
-    "z": 12000,
-    "height": 134.07407407407408,
-    "width": 193.33333333333331,
-    "tabOrder": 12000
+    "x": 1066.5336658354115,
+    "y": 16.159600997506235,
+    "z": 12002,
+    "height": 133.7655860349127,
+    "width": 199.30174563591021,
+    "tabOrder": 12002
   },
   "visual": {
     "visualType": "card",
@@ -20,15 +20,14 @@
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Metricas"
+                      "Entity": "Calculo de Taxas"
                     }
                   },
-                  "Property": "TOTAL_DE_ACIDENTES_COM_OBITO"
+                  "Property": "TAXA_DE_GRAVIDADE"
                 }
               },
-              "queryRef": "Metricas.TOTAL_DE_ACIDENTES_COM_OBITO",
-              "nativeQueryRef": "Com Óbito",
-              "displayName": "Com Óbito"
+              "queryRef": "Calculo de Taxas.TAXA_DE_GRAVIDADE",
+              "nativeQueryRef": "TAXA_DE_GRAVIDADE"
             }
           ]
         }
@@ -40,10 +39,10 @@
               "Measure": {
                 "Expression": {
                   "SourceRef": {
-                    "Entity": "Metricas"
+                    "Entity": "Calculo de Taxas"
                   }
                 },
-                "Property": "TOTAL_DE_ACIDENTES_COM_OBITO"
+                "Property": "TAXA_DE_GRAVIDADE"
               }
             },
             "direction": "Descending"
@@ -59,7 +58,14 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "40D"
+                  "Value": "30D"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
                 }
               }
             }

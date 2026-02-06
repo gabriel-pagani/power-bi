@@ -59,7 +59,7 @@
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "50D"
+                  "Value": "40D"
                 }
               }
             }
