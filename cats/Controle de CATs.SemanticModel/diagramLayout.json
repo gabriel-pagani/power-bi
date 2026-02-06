@@ -5,13 +5,13 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 0
+        "y": 2.514041486174885
       },
       "nodes": [
         {
           "location": {
             "x": 304.83821517855347,
-            "y": 181.48912554147535
+            "y": 235.13425070714595
           },
           "nodeIndex": "Calendario",
           "nodeLineageTag": "4790a696-482c-4c96-bdc9-58b599505920",
@@ -19,12 +19,12 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 8
+          "zIndex": 7
         },
         {
           "location": {
             "x": 622.38888762095712,
-            "y": 317.56841377879817
+            "y": 371.21353894446878
           },
           "nodeIndex": "CATs",
           "nodeLineageTag": "7c382a9b-f732-4e39-8a49-de550ea25f72",
@@ -32,42 +32,15 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 5
+          "zIndex": 4
         },
         {
           "location": {
             "x": 526.69292227537915,
-            "y": 46.59833172237483
+            "y": 100.24345688804544
           },
           "nodeIndex": "Metricas",
           "nodeLineageTag": "b20bf460-b2d3-4a99-a0b2-cd44443f7e25",
-          "size": {
-            "height": 72,
-            "width": 234
-          },
-          "zIndex": 4,
-          "expandedHeight": 104
-        },
-        {
-          "location": {
-            "x": 385.60927740781591,
-            "y": 647.74667910713219
-          },
-          "nodeIndex": "Horas Extras",
-          "nodeLineageTag": "db988b2c-bf76-4847-8653-6c78e5819012",
-          "size": {
-            "height": 233,
-            "width": 234
-          },
-          "zIndex": 2
-        },
-        {
-          "location": {
-            "x": 776.14468885368819,
-            "y": 42.916100132536542
-          },
-          "nodeIndex": "Calculo de Taxas",
-          "nodeLineageTag": "b2b28476-fd1e-4be6-b9b8-e1478d28612b",
           "size": {
             "height": 72,
             "width": 234
@@ -77,8 +50,35 @@
         },
         {
           "location": {
+            "x": 385.60927740781591,
+            "y": 701.3918042728028
+          },
+          "nodeIndex": "Horas Extras",
+          "nodeLineageTag": "db988b2c-bf76-4847-8653-6c78e5819012",
+          "size": {
+            "height": 233,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 776.14468885368819,
+            "y": 96.561225298207148
+          },
+          "nodeIndex": "Calculo de Taxas",
+          "nodeLineageTag": "b2b28476-fd1e-4be6-b9b8-e1478d28612b",
+          "size": {
+            "height": 72,
+            "width": 234
+          },
+          "zIndex": 2,
+          "expandedHeight": 104
+        },
+        {
+          "location": {
             "x": 948.14224983297572,
-            "y": 671.06108530527547
+            "y": 724.70621047094608
           },
           "nodeIndex": "Funcionarios",
           "nodeLineageTag": "b2198300-1073-422a-bb5e-f565e273828c",
@@ -86,12 +86,12 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 6
+          "zIndex": 5
         },
         {
           "location": {
             "x": 1047.3089126958471,
-            "y": 158.05177940669287
+            "y": 211.69690457236348
           },
           "nodeIndex": "Situacao Funcionarios",
           "nodeLineageTag": "0ab69f1c-44aa-40d5-8f5e-23c28bb1bc23",
@@ -99,20 +99,20 @@
             "height": 176,
             "width": 234
           },
-          "zIndex": 7
+          "zIndex": 6
         },
         {
           "location": {
-            "x": 971.1617848214463,
-            "y": 410.01552740781591
+            "x": 963.61966036292131,
+            "y": 444.12189957517097
           },
-          "nodeIndex": "Lesoes",
-          "nodeLineageTag": "c94c078f-e178-47f9-9ac1-158ff51b8e62",
+          "nodeIndex": "Causas e Lesoes",
+          "nodeLineageTag": "c7089bc0-74aa-4228-aa70-daae73821b96",
           "size": {
-            "height": 152,
+            "height": 218.85531114631158,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 8
         }
       ],
       "name": "All tables",

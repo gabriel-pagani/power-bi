@@ -95,15 +95,30 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Lesoes"
+                      "Entity": "Causas e Lesoes"
                     }
                   },
-                  "Property": "NATUREZA"
+                  "Property": "LESAO"
                 }
               },
-              "queryRef": "Lesoes.NATUREZA",
+              "queryRef": "Causas e Lesoes.LESAO",
               "nativeQueryRef": "Lesão",
               "displayName": "Lesão"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Causas e Lesoes"
+                    }
+                  },
+                  "Property": "CAUSA"
+                }
+              },
+              "queryRef": "Causas e Lesoes.CAUSA",
+              "nativeQueryRef": "Causa",
+              "displayName": "Causa"
             }
           ]
         }
@@ -209,13 +224,13 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "357.5080449372022D"
+                  "Value": "354.8612093390024D"
                 }
               }
             }
           },
           "selector": {
-            "metadata": "Lesoes.NATUREZA"
+            "metadata": "Causas e Lesoes.LESAO"
           }
         }
       ]

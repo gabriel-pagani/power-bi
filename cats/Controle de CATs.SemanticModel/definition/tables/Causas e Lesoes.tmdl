@@ -1,0 +1,57 @@
+table 'Causas e Lesoes'
+	lineageTag: c7089bc0-74aa-4228-aa70-daae73821b96
+
+	column CODCOLIGADA
+		dataType: string
+		lineageTag: 12ad4d5f-ef4c-4b5e-aac1-969d6c4d98b4
+		summarizeBy: none
+		sourceColumn: CODCOLIGADA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CHAPA
+		dataType: string
+		lineageTag: 150d6351-a748-4d83-8729-061f1defc102
+		summarizeBy: none
+		sourceColumn: CHAPA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CODOCORRENCIA
+		dataType: string
+		lineageTag: 6b94a735-7c63-4f09-be89-b02c531c017e
+		summarizeBy: none
+		sourceColumn: CODOCORRENCIA
+
+		annotation SummarizationSetBy = Automatic
+
+	column CAUSA
+		dataType: string
+		lineageTag: 448315c8-6ca1-4bc4-ac58-dfaf4db56755
+		summarizeBy: none
+		sourceColumn: CAUSA
+
+		annotation SummarizationSetBy = Automatic
+
+	column LESAO
+		dataType: string
+		lineageTag: 35aec697-26a1-4e3c-8dbf-a81d2fce9ade
+		summarizeBy: none
+		sourceColumn: LESAO
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Causas e Lesoes' = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database("192.168.42.153", "corpore", [Query="SELECT #(lf)#(tab)VOCORRENCIA.CODCOLIGADA,#(lf)#(tab)VOCORRENCIA.CHAPA,#(lf)#(tab)VOCORRENCIA.CODOCORRENCIA,#(lf)#(tab)VPPRAFONTEGERA.NOME AS CAUSA,#(lf)#(tab)VNATUREZACAT.NATUREZA AS LESAO#(lf)#(lf)FROM VOCORRENCIA#(lf)#(tab)LEFT JOIN VPPRAFONTEGERA ON (#(lf)#(tab)#(tab)VPPRAFONTEGERA.CODFONTEGERA=VOCORRENCIA.CODSITUACAOGERA#(lf)#(tab))#(lf)#(tab)LEFT JOIN VOCORRENCIANATUREZAMEDICA VONM ON (#(lf)#(tab)#(tab)VONM.CODCOLIGADA=VOCORRENCIA.CODCOLIGADA AND#(lf)#(tab)#(tab)VONM.CODOCORRENCIA=VOCORRENCIA.CODOCORRENCIA#(lf)#(tab))#(lf)#(tab)LEFT JOIN VNATUREZACAT ON (#(lf)#(tab)#(tab)VNATUREZACAT.CODNATUREZA = VONM.CODNATUREZA#(lf)#(tab))"]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"CODCOLIGADA", type text}}),
+				    #"Capitalized Each Word" = Table.TransformColumns(#"Changed Type",{{"CAUSA", Text.Proper, type text}, {"LESAO", Text.Proper, type text}})
+				in
+				    #"Capitalized Each Word"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

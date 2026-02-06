@@ -3086,25 +3086,32 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "lesoe": {
+			    "causas_e_lesoe": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lesoes"
+			          "ConceptualEntity": "Causas e Lesoes"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "lesoe": {
+			          "causas e lesoe": {
 			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "causa e lesoe": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
 			          }
 			        }
 			      ]
 			    },
-			    "lesoe.codcoligada": {
+			    "causas_e_lesoe.codcoligada": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lesoes",
+			          "ConceptualEntity": "Causas e Lesoes",
 			          "ConceptualProperty": "CODCOLIGADA"
 			        }
 			      },
@@ -3117,10 +3124,26 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "lesoe.codocorrencia": {
+			    "causas_e_lesoe.chapa": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lesoes",
+			          "ConceptualEntity": "Causas e Lesoes",
+			          "ConceptualProperty": "CHAPA"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "chapa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "causas_e_lesoe.codocorrencia": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Causas e Lesoes",
 			          "ConceptualProperty": "CODOCORRENCIA"
 			        }
 			      },
@@ -3136,17 +3159,33 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "lesoe.natureza": {
+			    "causas_e_lesoe.causa": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Lesoes",
-			          "ConceptualProperty": "NATUREZA"
+			          "ConceptualEntity": "Causas e Lesoes",
+			          "ConceptualProperty": "CAUSA"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "natureza": {
+			          "causa": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "causas_e_lesoe.lesao": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Causas e Lesoes",
+			          "ConceptualProperty": "LESAO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "lesao": {
 			            "State": "Generated"
 			          }
 			        },
@@ -3164,6 +3203,237 @@ cultureInfo en-US
 			    }
 			  },
 			  "Relationships": {
+			    "situacao_funcionario_datamudanca_month_has_situacao_funcionario_datamudanca_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario.datamudanca.month": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.month"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca.day": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_months_have_datamudanca_days"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.day"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_days_have_datamudanca_months"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.day"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_days_are_in_datamudanca_months"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_datamudanca_quarter_has_situacao_funcionario_datamudanca_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario.datamudanca.quarter": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.quarter"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca.month": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_quarters_have_datamudanca_months"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_months_have_datamudanca_quarters"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.month"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_months_are_in_datamudanca_quarters"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_datamudanca_year_has_situacao_funcionario_datamudanca_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario.datamudanca.year": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.year"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca.quarter": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.year"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_years_have_datamudanca_quarters"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_quarters_have_datamudanca_years"
+			        },
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.quarter"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_quarters_are_in_datamudanca_years"
+			        }
+			      ]
+			    },
+			    "situacao_funcionario_datamudanca_date_hierarchy_has_situacao_funcionario_datamudanca_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Situacao Funcionarios"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "situacao_funcionario.datamudanca.date_hierarchy": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.date_hierarchy"
+			          }
+			        },
+			        "situacao_funcionario.datamudanca.day": {
+			          "Target": {
+			            "Entity": "situacao_funcionario.datamudanca.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "situacao_funcionario.datamudanca.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "situacao_funcionario.datamudanca.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "datamudanca_date_hierarchies_have_datamudanca_days"
+			        }
+			      ]
+			    },
 			    "situacao_funcionario_datamudanca_date_hierarchy_has_situacao_funcionario_datamudanca_month": {
 			      "Binding": {
 			        "ConceptualEntity": "Situacao Funcionarios"
@@ -3956,15 +4226,15 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "lesoe_has_CA_ts": {
+			    "causas_e_lesoe_has_CA_ts": {
 			      "Binding": {
-			        "ConceptualEntity": "Lesoes"
+			        "ConceptualEntity": "Causas e Lesoes"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "lesoe": {
+			        "causas_e_lesoe": {
 			          "Target": {
-			            "Entity": "lesoe"
+			            "Entity": "causas_e_lesoe"
 			          }
 			        },
 			        "CA_ts": {
@@ -3977,7 +4247,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "lesoe"
+			              "Role": "causas_e_lesoe"
 			            },
 			            "Object": {
 			              "Role": "CA_ts"
@@ -3985,7 +4255,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "lesoes_have_CA_tses"
+			          "ID": "causas_e_lesoes_have_CA_tses"
 			        }
 			      ]
 			    },
@@ -4141,20 +4411,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "lesoe_has_natureza": {
+			    "causas_e_lesoe_has_lesao": {
 			      "Binding": {
-			        "ConceptualEntity": "Lesoes"
+			        "ConceptualEntity": "Causas e Lesoes"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "lesoe": {
+			        "causas_e_lesoe": {
 			          "Target": {
-			            "Entity": "lesoe"
+			            "Entity": "causas_e_lesoe"
 			          }
 			        },
-			        "lesoe.natureza": {
+			        "causas_e_lesoe.lesao": {
 			          "Target": {
-			            "Entity": "lesoe.natureza"
+			            "Entity": "causas_e_lesoe.lesao"
 			          }
 			        }
 			      },
@@ -4162,32 +4432,32 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "lesoe"
+			              "Role": "causas_e_lesoe"
 			            },
 			            "Object": {
-			              "Role": "lesoe.natureza"
+			              "Role": "causas_e_lesoe.lesao"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "lesoes_have_naturezas"
+			          "ID": "causas_e_lesoes_have_lesaos"
 			        }
 			      ]
 			    },
-			    "lesoe_has_codcoligada": {
+			    "causas_e_lesoe_has_causa": {
 			      "Binding": {
-			        "ConceptualEntity": "Lesoes"
+			        "ConceptualEntity": "Causas e Lesoes"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "lesoe": {
+			        "causas_e_lesoe": {
 			          "Target": {
-			            "Entity": "lesoe"
+			            "Entity": "causas_e_lesoe"
 			          }
 			        },
-			        "lesoe.codcoligada": {
+			        "causas_e_lesoe.causa": {
 			          "Target": {
-			            "Entity": "lesoe.codcoligada"
+			            "Entity": "causas_e_lesoe.causa"
 			          }
 			        }
 			      },
@@ -4195,15 +4465,81 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "lesoe"
+			              "Role": "causas_e_lesoe"
 			            },
 			            "Object": {
-			              "Role": "lesoe.codcoligada"
+			              "Role": "causas_e_lesoe.causa"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "lesoes_have_codcoligadas"
+			          "ID": "causas_e_lesoes_have_causas"
+			        }
+			      ]
+			    },
+			    "causas_e_lesoe_has_chapa": {
+			      "Binding": {
+			        "ConceptualEntity": "Causas e Lesoes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "causas_e_lesoe": {
+			          "Target": {
+			            "Entity": "causas_e_lesoe"
+			          }
+			        },
+			        "causas_e_lesoe.chapa": {
+			          "Target": {
+			            "Entity": "causas_e_lesoe.chapa"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "causas_e_lesoe"
+			            },
+			            "Object": {
+			              "Role": "causas_e_lesoe.chapa"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "causas_e_lesoes_have_chapa"
+			        }
+			      ]
+			    },
+			    "causas_e_lesoe_has_codcoligada": {
+			      "Binding": {
+			        "ConceptualEntity": "Causas e Lesoes"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "causas_e_lesoe": {
+			          "Target": {
+			            "Entity": "causas_e_lesoe"
+			          }
+			        },
+			        "causas_e_lesoe.codcoligada": {
+			          "Target": {
+			            "Entity": "causas_e_lesoe.codcoligada"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "causas_e_lesoe"
+			            },
+			            "Object": {
+			              "Role": "causas_e_lesoe.codcoligada"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "causas_e_lesoes_have_codcoligadas"
 			        }
 			      ]
 			    },
@@ -6316,237 +6652,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_dates"
-			        }
-			      ]
-			    },
-			    "situacao_funcionario_datamudanca_date_hierarchy_has_situacao_funcionario_datamudanca_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Situacao Funcionarios"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "situacao_funcionario.datamudanca.date_hierarchy": {
-			          "Target": {
-			            "Entity": "situacao_funcionario.datamudanca.date_hierarchy"
-			          }
-			        },
-			        "situacao_funcionario.datamudanca.day": {
-			          "Target": {
-			            "Entity": "situacao_funcionario.datamudanca.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "situacao_funcionario.datamudanca.date_hierarchy"
-			            },
-			            "Object": {
-			              "Role": "situacao_funcionario.datamudanca.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datamudanca_date_hierarchies_have_datamudanca_days"
-			        }
-			      ]
-			    },
-			    "situacao_funcionario_datamudanca_year_has_situacao_funcionario_datamudanca_quarter": {
-			      "Binding": {
-			        "ConceptualEntity": "Situacao Funcionarios"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "situacao_funcionario.datamudanca.year": {
-			          "Target": {
-			            "Entity": "situacao_funcionario.datamudanca.year"
-			          }
-			        },
-			        "situacao_funcionario.datamudanca.quarter": {
-			          "Target": {
-			            "Entity": "situacao_funcionario.datamudanca.quarter"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "situacao_funcionario.datamudanca.year"
-			            },
-			            "Object": {
-			              "Role": "situacao_funcionario.datamudanca.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datamudanca_years_have_datamudanca_quarters"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "situacao_funcionario.datamudanca.quarter"
-			            },
-			            "Object": {
-			              "Role": "situacao_funcionario.datamudanca.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datamudanca_quarters_have_datamudanca_years"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "situacao_funcionario.datamudanca.quarter"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "situacao_funcionario.datamudanca.year"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datamudanca_quarters_are_in_datamudanca_years"
-			        }
-			      ]
-			    },
-			    "situacao_funcionario_datamudanca_quarter_has_situacao_funcionario_datamudanca_month": {
-			      "Binding": {
-			        "ConceptualEntity": "Situacao Funcionarios"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "situacao_funcionario.datamudanca.quarter": {
-			          "Target": {
-			            "Entity": "situacao_funcionario.datamudanca.quarter"
-			          }
-			        },
-			        "situacao_funcionario.datamudanca.month": {
-			          "Target": {
-			            "Entity": "situacao_funcionario.datamudanca.month"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "situacao_funcionario.datamudanca.quarter"
-			            },
-			            "Object": {
-			              "Role": "situacao_funcionario.datamudanca.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datamudanca_quarters_have_datamudanca_months"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "situacao_funcionario.datamudanca.month"
-			            },
-			            "Object": {
-			              "Role": "situacao_funcionario.datamudanca.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datamudanca_months_have_datamudanca_quarters"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "situacao_funcionario.datamudanca.month"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "situacao_funcionario.datamudanca.quarter"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datamudanca_months_are_in_datamudanca_quarters"
-			        }
-			      ]
-			    },
-			    "situacao_funcionario_datamudanca_month_has_situacao_funcionario_datamudanca_day": {
-			      "Binding": {
-			        "ConceptualEntity": "Situacao Funcionarios"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "situacao_funcionario.datamudanca.month": {
-			          "Target": {
-			            "Entity": "situacao_funcionario.datamudanca.month"
-			          }
-			        },
-			        "situacao_funcionario.datamudanca.day": {
-			          "Target": {
-			            "Entity": "situacao_funcionario.datamudanca.day"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "situacao_funcionario.datamudanca.month"
-			            },
-			            "Object": {
-			              "Role": "situacao_funcionario.datamudanca.day"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datamudanca_months_have_datamudanca_days"
-			        },
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "situacao_funcionario.datamudanca.day"
-			            },
-			            "Object": {
-			              "Role": "situacao_funcionario.datamudanca.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datamudanca_days_have_datamudanca_months"
-			        },
-			        {
-			          "Preposition": {
-			            "Subject": {
-			              "Role": "situacao_funcionario.datamudanca.day"
-			            },
-			            "Prepositions": [
-			              {
-			                "in": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Object": {
-			              "Role": "situacao_funcionario.datamudanca.month"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "datamudanca_days_are_in_datamudanca_months"
 			        }
 			      ]
 			    }

@@ -45,16 +45,23 @@ relationship 553d809b-f3d7-0108-f1ba-4a08ebba1c56
 	fromColumn: 'Situacao Funcionarios'.CODCOLIGADA
 	toColumn: CATs.CODCOLIGADA
 
-relationship ac5fa4bc-92fb-24b4-00c9-0af0209ffe61
+relationship c21e38df-6ab4-b5a5-ccbe-ef0f04e409a4
 	crossFilteringBehavior: bothDirections
 	toCardinality: many
-	fromColumn: Lesoes.CODOCORRENCIA
+	fromColumn: 'Causas e Lesoes'.CODOCORRENCIA
 	toColumn: CATs.CODOCORRENCIA
 
-relationship efc8e029-a9bc-3c3f-d01d-79d29128a427
+relationship 39670490-1917-2011-c4af-012078dbd86f
 	isActive: false
 	crossFilteringBehavior: bothDirections
 	toCardinality: many
-	fromColumn: Lesoes.CODCOLIGADA
+	fromColumn: 'Causas e Lesoes'.CODCOLIGADA
 	toColumn: CATs.CODCOLIGADA
+
+relationship 26211537-7310-9081-c4d1-60a1f4b6ee74
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: 'Causas e Lesoes'.CHAPA
+	toColumn: CATs.CHAPA
 
