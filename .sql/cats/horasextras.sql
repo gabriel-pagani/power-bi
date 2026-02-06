@@ -1,0 +1,10 @@
+SELECT 
+    CODCOLIGADA, 
+    ANOCOMP, 
+    MESCOMP, 
+    REF 
+
+FROM PFMOVCC 
+
+WHERE 
+    CODEVENTO = '0082'
