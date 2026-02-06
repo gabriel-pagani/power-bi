@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.5.0/schema.json",
-  "name": "6d30c4b4f92bbf11fdc2",
+  "name": "a38fcf00983177b6782f",
   "position": {
     "x": 0,
-    "y": 190.42821158690174,
-    "z": 6,
+    "y": 126.9521410579345,
+    "z": 9,
     "height": 63.476070528967249,
-    "width": 263.87909319899245,
-    "tabOrder": 6
+    "width": 223.97984886649871,
+    "tabOrder": 9
   },
   "visual": {
     "visualType": "slicer",
@@ -20,36 +20,21 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Calendario"
+                      "Entity": "Treinamentos"
                     }
                   },
-                  "Property": "Date"
+                  "Property": "FUNCAO"
                 }
               },
-              "queryRef": "Calendario.Date",
-              "nativeQueryRef": "Período Analisado",
+              "queryRef": "Treinamentos.FUNCAO",
+              "nativeQueryRef": "Função",
               "active": true,
-              "displayName": "Período Analisado"
+              "displayName": "Função"
             }
           ]
         }
       },
       "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Column": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Calendario"
-                  }
-                },
-                "Property": "Date"
-              }
-            },
-            "direction": "Ascending"
-          }
-        ],
         "isDefaultSort": true
       }
     },
@@ -60,7 +45,7 @@
             "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "'Between'"
+                  "Value": "'Dropdown'"
                 }
               }
             }

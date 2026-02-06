@@ -4,5 +4,37 @@
   "displayName": "Página Principal",
   "displayOption": "FitToPage",
   "height": 720,
-  "width": 1280
+  "width": 1280,
+  "visualInteractions": [
+    {
+      "source": "7b9e6227210045c4f604",
+      "target": "afeeefdef31ead09ab1a",
+      "type": "DataFilter"
+    },
+    {
+      "source": "7b9e6227210045c4f604",
+      "target": "84f7418bc7d06cc6c113",
+      "type": "DataFilter"
+    },
+    {
+      "source": "afeeefdef31ead09ab1a",
+      "target": "7b9e6227210045c4f604",
+      "type": "DataFilter"
+    },
+    {
+      "source": "afeeefdef31ead09ab1a",
+      "target": "84f7418bc7d06cc6c113",
+      "type": "DataFilter"
+    },
+    {
+      "source": "84f7418bc7d06cc6c113",
+      "target": "7b9e6227210045c4f604",
+      "type": "DataFilter"
+    },
+    {
+      "source": "84f7418bc7d06cc6c113",
+      "target": "afeeefdef31ead09ab1a",
+      "type": "DataFilter"
+    }
+  ]
 }
