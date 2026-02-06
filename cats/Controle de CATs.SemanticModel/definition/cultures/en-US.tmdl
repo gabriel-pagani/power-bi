@@ -65,6 +65,16 @@ cultureInfo en-US
 			          }
 			        },
 			        {
+			          "Data de Ref para as Taxas": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        },
+			        {
 			          "Data Referência para o HHT": {
 			            "State": "Suggested",
 			            "Source": {
