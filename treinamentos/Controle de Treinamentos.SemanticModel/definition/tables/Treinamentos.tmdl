@@ -114,6 +114,21 @@ table Treinamentos
 
 		annotation SummarizationSetBy = Automatic
 
+	column INICIO_FORMATADO = ```
+			FORMAT ( 'Treinamentos'[INICIO], "MMM/yyyy", "pt-BR" )
+			
+			```
+		lineageTag: daf32841-f402-43a7-9d87-5a268c833b0e
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column FIM_FORMATADO = FORMAT ( 'Treinamentos'[FIM], "MMM/yyyy", "pt-BR" )
+		lineageTag: 9c5a7702-7d6a-422e-abee-91a9ad5a63a0
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
 	partition Treinamentos = m
 		mode: import
 		source =

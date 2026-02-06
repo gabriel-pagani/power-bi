@@ -68,10 +68,10 @@
                       "Entity": "Treinamentos"
                     }
                   },
-                  "Property": "INICIO"
+                  "Property": "INICIO_FORMATADO"
                 }
               },
-              "queryRef": "Treinamentos.INICIO",
+              "queryRef": "Treinamentos.INICIO_FORMATADO",
               "nativeQueryRef": "Início",
               "displayName": "Início"
             },
@@ -83,10 +83,10 @@
                       "Entity": "Treinamentos"
                     }
                   },
-                  "Property": "FIM"
+                  "Property": "FIM_FORMATADO"
                 }
               },
-              "queryRef": "Treinamentos.FIM",
+              "queryRef": "Treinamentos.FIM_FORMATADO",
               "nativeQueryRef": "Fim",
               "displayName": "Fim"
             }
@@ -151,34 +151,6 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "83D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Treinamentos.FIM"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
-                  "Value": "77D"
-                }
-              }
-            }
-          },
-          "selector": {
-            "metadata": "Treinamentos.INICIO"
-          }
-        },
-        {
-          "properties": {
-            "value": {
-              "expr": {
-                "Literal": {
                   "Value": "258D"
                 }
               }
@@ -215,6 +187,34 @@
           "selector": {
             "metadata": "Treinamentos.COLIGADA"
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "77.36363287626565D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Treinamentos.INICIO_FORMATADO"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "82.45454313535907D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Treinamentos.FIM_FORMATADO"
+          }
         }
       ],
       "columnFormatting": [
@@ -229,7 +229,7 @@
             }
           },
           "selector": {
-            "metadata": "Treinamentos.INICIO"
+            "metadata": "Treinamentos.FIM_FORMATADO"
           }
         },
         {
@@ -243,7 +243,7 @@
             }
           },
           "selector": {
-            "metadata": "Treinamentos.FIM"
+            "metadata": "Treinamentos.INICIO_FORMATADO"
           }
         }
       ]
@@ -277,5 +277,79 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "0f7acbbf00674f1f429b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Treinamentos"
+              }
+            },
+            "Property": "COLIGADA"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "19f088c28663b098605b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Treinamentos"
+              }
+            },
+            "Property": "COLABORADOR"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "c98ddd955e0c85b2258f",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Treinamentos"
+              }
+            },
+            "Property": "SECAO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0a12a380958cd66a1dba",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Treinamentos"
+              }
+            },
+            "Property": "INICIO_FORMATADO"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "9e10375d9364f7019553",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Treinamentos"
+              }
+            },
+            "Property": "FIM_FORMATADO"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

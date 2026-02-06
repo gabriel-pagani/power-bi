@@ -319,16 +319,6 @@ cultureInfo en-US
 			            "State": "Generated",
 			            "Weight": 0.7
 			          }
-			        },
-			        {
-			          "Início": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ],
 			      "SemanticType": "Time"
@@ -863,9 +853,799 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "treinamento.vencimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Treinamentos",
+			          "ConceptualProperty": "VENCIMENTO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "vencimento": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "treinamento.inicio_formatado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Treinamentos",
+			          "ConceptualProperty": "INICIO_FORMATADO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "inicio formatado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "INICIO_FORMATADO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Início": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "treinamento.fim_formatado": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Treinamentos",
+			          "ConceptualProperty": "FIM_FORMATADO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fim formatado": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FIM_FORMATADO": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "Fim": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "medida.total_treinamentos": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Medidas",
+			          "ConceptualProperty": "TOTAL_TREINAMENTOS"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "total treinamentos": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TOTAL_TREINAMENTOS": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "aggregate treinamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "overall treinamento": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "calendario_vencimento": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "calendario vencimento": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario_vencimento.date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos",
+			          "ConceptualProperty": "Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario_vencimento.date.date_hierarchy": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "date hierarchy": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario_vencimento.date.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period year": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario_vencimento.date.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.833
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        },
+			        {
+			          "moment quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period quarter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario_vencimento.date.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "moment month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period month": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario_vencimento.date.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos",
+			          "VariationSource": "Date",
+			          "VariationSet": "Variation",
+			          "Hierarchy": "Date Hierarchy",
+			          "HierarchyLevel": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "date day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "moment day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "period day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "calendario_vencimento.day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos",
+			          "ConceptualProperty": "Day"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "day": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "calendario_vencimento.month": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos",
+			          "ConceptualProperty": "Month"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "mth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "calendario_vencimento.month_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos",
+			          "ConceptualProperty": "MonthNo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "month no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MonthNo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "month number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "mth no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "calendario_vencimento.quarter": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos",
+			          "ConceptualProperty": "Quarter"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "qtr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.818
+			          }
+			        }
+			      ]
+			    },
+			    "calendario_vencimento.quarter_no": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos",
+			          "ConceptualProperty": "QuarterNo"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "quarter no": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "QuarterNo": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "quarter number": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "qtr no": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.667
+			          }
+			        }
+			      ]
+			    },
+			    "calendario_vencimento.year": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Calendario Vencimentos",
+			          "ConceptualProperty": "Year"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "year": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "yr": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
 			    }
 			  },
 			  "Relationships": {
+			    "calendario_vencimento_date_date_hierarchy_has_calendario_vencimento_date_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario Vencimentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario_vencimento.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.date.date_hierarchy"
+			          }
+			        },
+			        "calendario_vencimento.date.month": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.date.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario_vencimento.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario_vencimento.date.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_months"
+			        }
+			      ]
+			    },
+			    "calendario_vencimento_date_date_hierarchy_has_calendario_vencimento_date_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario Vencimentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario_vencimento.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.date.date_hierarchy"
+			          }
+			        },
+			        "calendario_vencimento.date.quarter": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.date.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario_vencimento.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario_vencimento.date.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_quarters"
+			        }
+			      ]
+			    },
+			    "calendario_vencimento_date_date_hierarchy_has_calendario_vencimento_date_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario Vencimentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario_vencimento.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.date.date_hierarchy"
+			          }
+			        },
+			        "calendario_vencimento.date.year": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.date.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario_vencimento.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario_vencimento.date.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_years"
+			        }
+			      ]
+			    },
+			    "calendario_vencimento_date_has_date_hierarchy": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario Vencimentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario_vencimento.date": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.date"
+			          }
+			        },
+			        "calendario_vencimento.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.date.date_hierarchy"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario_vencimento.date"
+			            },
+			            "Object": {
+			              "Role": "calendario_vencimento.date.date_hierarchy"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dates_have_date_hierarchies"
+			        }
+			      ]
+			    },
+			    "calendario_date_date_hierarchy_has_calendario_date_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario.date.date_hierarchy": {
+			          "Target": {
+			            "Entity": "calendario.date.date_hierarchy"
+			          }
+			        },
+			        "calendario.date.day": {
+			          "Target": {
+			            "Entity": "calendario.date.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario.date.date_hierarchy"
+			            },
+			            "Object": {
+			              "Role": "calendario.date.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "date_hierarchies_have_days"
+			        }
+			      ]
+			    },
 			    "calendario_date_date_hierarchy_has_calendario_date_month": {
 			      "Binding": {
 			        "ConceptualEntity": "Calendario"
@@ -895,7 +1675,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_months"
+			          "ID": "date_hierarchies_have_months1"
 			        }
 			      ]
 			    },
@@ -928,7 +1708,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_quarters"
+			          "ID": "date_hierarchies_have_quarters1"
 			        }
 			      ]
 			    },
@@ -961,7 +1741,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_years"
+			          "ID": "date_hierarchies_have_years1"
 			        }
 			      ]
 			    },
@@ -994,7 +1774,53 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dates_have_date_hierarchies"
+			          "ID": "dates_have_date_hierarchies1"
+			        }
+			      ]
+			    },
+			    "treinamento_has_calendario_vencimento": {
+			      "Binding": {
+			        "ConceptualEntity": "Treinamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "treinamento": {
+			          "Target": {
+			            "Entity": "treinamento"
+			          }
+			        },
+			        "calendario_vencimento": {
+			          "Target": {
+			            "Entity": "calendario_vencimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "treinamento"
+			            },
+			            "Object": {
+			              "Role": "calendario_vencimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "treinamentos_have_calendario_vencimentos"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario_vencimento"
+			            },
+			            "Object": {
+			              "Role": "treinamento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendario_vencimentos_have_treinamentos"
 			        }
 			      ]
 			    },
@@ -1041,6 +1867,369 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_treinamentos"
+			        }
+			      ]
+			    },
+			    "calendario_vencimento_has_year": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario Vencimentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario_vencimento": {
+			          "Target": {
+			            "Entity": "calendario_vencimento"
+			          }
+			        },
+			        "calendario_vencimento.year": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.year"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario_vencimento"
+			            },
+			            "Object": {
+			              "Role": "calendario_vencimento.year"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendario_vencimentos_have_years"
+			        }
+			      ]
+			    },
+			    "calendario_vencimento_has_quarter_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario Vencimentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario_vencimento": {
+			          "Target": {
+			            "Entity": "calendario_vencimento"
+			          }
+			        },
+			        "calendario_vencimento.quarter_no": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.quarter_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario_vencimento"
+			            },
+			            "Object": {
+			              "Role": "calendario_vencimento.quarter_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendario_vencimentos_have_quarter_noes"
+			        }
+			      ]
+			    },
+			    "calendario_vencimento_has_quarter": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario Vencimentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario_vencimento": {
+			          "Target": {
+			            "Entity": "calendario_vencimento"
+			          }
+			        },
+			        "calendario_vencimento.quarter": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.quarter"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario_vencimento"
+			            },
+			            "Object": {
+			              "Role": "calendario_vencimento.quarter"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendario_vencimentos_have_quarters"
+			        }
+			      ]
+			    },
+			    "calendario_vencimento_has_month_no": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario Vencimentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario_vencimento": {
+			          "Target": {
+			            "Entity": "calendario_vencimento"
+			          }
+			        },
+			        "calendario_vencimento.month_no": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.month_no"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario_vencimento"
+			            },
+			            "Object": {
+			              "Role": "calendario_vencimento.month_no"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendario_vencimentos_have_month_noes"
+			        }
+			      ]
+			    },
+			    "calendario_vencimento_has_month": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario Vencimentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario_vencimento": {
+			          "Target": {
+			            "Entity": "calendario_vencimento"
+			          }
+			        },
+			        "calendario_vencimento.month": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.month"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario_vencimento"
+			            },
+			            "Object": {
+			              "Role": "calendario_vencimento.month"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendario_vencimentos_have_months"
+			        }
+			      ]
+			    },
+			    "calendario_vencimento_has_day": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario Vencimentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario_vencimento": {
+			          "Target": {
+			            "Entity": "calendario_vencimento"
+			          }
+			        },
+			        "calendario_vencimento.day": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.day"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario_vencimento"
+			            },
+			            "Object": {
+			              "Role": "calendario_vencimento.day"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendario_vencimentos_have_days"
+			        }
+			      ]
+			    },
+			    "calendario_vencimento_has_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Calendario Vencimentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "calendario_vencimento": {
+			          "Target": {
+			            "Entity": "calendario_vencimento"
+			          }
+			        },
+			        "calendario_vencimento.date": {
+			          "Target": {
+			            "Entity": "calendario_vencimento.date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "calendario_vencimento"
+			            },
+			            "Object": {
+			              "Role": "calendario_vencimento.date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "calendario_vencimentos_have_dates"
+			        }
+			      ]
+			    },
+			    "treinamento_has_medida_total_treinamentos": {
+			      "Binding": {
+			        "ConceptualEntity": "Treinamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "treinamento": {
+			          "Target": {
+			            "Entity": "treinamento"
+			          }
+			        },
+			        "medida.total_treinamentos": {
+			          "Target": {
+			            "Entity": "medida.total_treinamentos"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "treinamento"
+			            },
+			            "Object": {
+			              "Role": "medida.total_treinamentos"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "treinamentos_have_total_treinamentos"
+			        }
+			      ]
+			    },
+			    "treinamento_has_fim_formatado": {
+			      "Binding": {
+			        "ConceptualEntity": "Treinamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "treinamento": {
+			          "Target": {
+			            "Entity": "treinamento"
+			          }
+			        },
+			        "treinamento.fim_formatado": {
+			          "Target": {
+			            "Entity": "treinamento.fim_formatado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "treinamento"
+			            },
+			            "Object": {
+			              "Role": "treinamento.fim_formatado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "treinamentos_have_fim_formatados"
+			        }
+			      ]
+			    },
+			    "treinamento_has_inicio_formatado": {
+			      "Binding": {
+			        "ConceptualEntity": "Treinamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "treinamento": {
+			          "Target": {
+			            "Entity": "treinamento"
+			          }
+			        },
+			        "treinamento.inicio_formatado": {
+			          "Target": {
+			            "Entity": "treinamento.inicio_formatado"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "treinamento"
+			            },
+			            "Object": {
+			              "Role": "treinamento.inicio_formatado"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "treinamentos_have_inicio_formatados"
+			        }
+			      ]
+			    },
+			    "treinamento_has_vencimento": {
+			      "Binding": {
+			        "ConceptualEntity": "Treinamentos"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "treinamento": {
+			          "Target": {
+			            "Entity": "treinamento"
+			          }
+			        },
+			        "treinamento.vencimento": {
+			          "Target": {
+			            "Entity": "treinamento.vencimento"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "treinamento"
+			            },
+			            "Object": {
+			              "Role": "treinamento.vencimento"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "treinamentos_have_vencimentos"
 			        }
 			      ]
 			    },
@@ -1140,39 +2329,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "calendarios_have_years"
-			        }
-			      ]
-			    },
-			    "treinamento_has_medida_total_treinamentos": {
-			      "Binding": {
-			        "ConceptualEntity": "Treinamentos"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "treinamento": {
-			          "Target": {
-			            "Entity": "treinamento"
-			          }
-			        },
-			        "medida.total_treinamentos": {
-			          "Target": {
-			            "Entity": "medida.total_treinamentos"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "treinamento"
-			            },
-			            "Object": {
-			              "Role": "medida.total_treinamentos"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "treinamentos_have_total_treinamentos"
 			        }
 			      ]
 			    },
@@ -1731,20 +2887,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "calendario_date_date_hierarchy_has_calendario_date_day": {
+			    "calendario_vencimento_date_date_hierarchy_has_calendario_vencimento_date_day": {
 			      "Binding": {
-			        "ConceptualEntity": "Calendario"
+			        "ConceptualEntity": "Calendario Vencimentos"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "calendario.date.date_hierarchy": {
+			        "calendario_vencimento.date.date_hierarchy": {
 			          "Target": {
-			            "Entity": "calendario.date.date_hierarchy"
+			            "Entity": "calendario_vencimento.date.date_hierarchy"
 			          }
 			        },
-			        "calendario.date.day": {
+			        "calendario_vencimento.date.day": {
 			          "Target": {
-			            "Entity": "calendario.date.day"
+			            "Entity": "calendario_vencimento.date.day"
 			          }
 			        }
 			      },
@@ -1752,15 +2908,15 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "calendario.date.date_hierarchy"
+			              "Role": "calendario_vencimento.date.date_hierarchy"
 			            },
 			            "Object": {
-			              "Role": "calendario.date.day"
+			              "Role": "calendario_vencimento.date.day"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "date_hierarchies_have_days"
+			          "ID": "date_hierarchies_have_days1"
 			        }
 			      ]
 			    }
